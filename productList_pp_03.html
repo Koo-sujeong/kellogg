@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kellogg</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="index.html"><img src="images/kellogg_logo_red.png" alt="kellogg"></a></h1>
+             <nav>
+                <ul>
+                    <li><a href="breakfastFavorites.html">OUR FOODS</a></li>
+                    <li><a href="sustainability.html">OUR IMPACT</a></li>
+                    <li><a href="whoWeAre.html">OUR STORE</a></li>
+                </ul>
+                <input type="button" data-panel="fnb_open" value="openMenu" class="fnbOpenBtn">
+            </nav>
+        </div>
+        <div class="fnbPanel" id="fnb_open">
+            <input type="button" class="btn_close" value="closeMenu">
+            <ol>
+                <li>
+                    OUR FOODS
+                    <ul>
+                        <li><a href="breakfastFavorites.html">BREAKFAST FAVORITES &amp; TREATS</a></li>
+                        <li><a href="cerealGranola.html">CEREAL &amp; GRANOLA</a></li>
+                        <li><a href="savorySnacks.html">SAVORY SNACKS</a></li>
+                        <li><a href="plantbasedProtein.html">PLANT-BASED PROTEINS</a></li>
+                        <li><a href="snackbarsBites.html">SNACK BARS &amp; BITES</a></li>
+                        <li><a href="proteinbarsShake.html">PROTEIN BARS &amp; SHAKES</a></li>
+                        <li><a href="frozenBreakfast.html">FROZEN BREAKFAST</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR IMPACT
+                    <ul>
+                        <li><a href="sustainability.html">SUSTAINABILITY</a></li>
+                        <li><a href="philanthropy.html">PHILANTHROPY</a></li>
+                        <li><a href="nourishment.html">NOURISHMENT</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR STORE
+                    <ul>
+                        <li><a href="whoWeAre.html">WHO WE ARE</a></li>
+                        <li><a href="kelloggHistory.html">KELLOGG HISTORY</a></li>
+                        <li><a href="openForBreakfast.html">OPEN FOR BREAKFAST</a></li>                    
+                    </ul>
+                </li>
+            </ol>
+            <div>
+                <form>
+                    <div>
+                        <input type="search" placeholder="search" title="insert ur search keyword's">
+                    </div>
+                </form>
+                <div>
+                    <h3>JOIN AND BE REWARDED</h3>
+                    <ul>
+                        <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                        <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                        <li><a href="logIn.html" target="_blank">Log In</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>CONNECT WITH US</h3>
+                    <ul>            
+                        <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                        <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                        <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 팝업창 -->
+    <div class="popupModule" id="popupReview">
+        <div>
+            <input type="button" value="X" class="btn_close">
+            <div class="writeContainer">
+                <img src="images/popup_productMain_pp03.png" alt="MorningStar Farms® Veggie Maple Flavored Sausage Patties">
+                <h2>
+                    <strong>MY REVIEW FOR</strong>
+                    MorningStar Farms® Veggie Maple Flavored Sausage Patties<br>
+                    <small>Required fields are marked with <mark>RED</mark></small>
+                </h2>
+                <form>
+                    <fieldset>
+                        <ul>
+                            <li>
+                                <label for="star1" class="requiredRed">
+                                    OVERALL RATING
+                                    <small>Required:Overall Rating</small>
+                                </label>
+                                <div class="starCount">
+                                    <input type="button" value="1" id="star1">
+                                    <input type="button" value="2" id="star2">
+                                    <input type="button" value="3" id="star3">
+                                    <input type="button" value="4" id="star4">
+                                    <input type="button" value="5" id="star5">
+                                    <mark>EXCELLENT</mark>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="reviewTitle" class="requiredRed">
+                                    REVIEW TITLE
+                                    <small>Required:Review Title</small>
+                                </label>                                
+                                <input type="text" id="reviewTitle" placeholder="Example: Tastes great!">
+                            </li>
+                            <li>
+                                <label for="reviewText" class="requiredRed">
+                                    REVIEW
+                                    <small>(numb) characters too short</small>
+                                </label>                                
+                                <textarea name="review" id="reviewText" placeholder="Example: I bought these for my family. Everyone loved the taste and texture..."></textarea>
+                            </li>                
+                            <li>
+                                <label for="reviewPurchase">WHERE DID YOU PURCHASE?</label>
+                                <span class="selectComponent">
+                                    <select id="reviewPurchase">
+                                        <option>Select</option>
+                                        <option value="inStore">In-Store</option>
+                                        <option value="onlineandPickup">Online, Curbside Pick-Up</option>
+                                        <option value="onlineandhome">Online, Ship-to-Home</option>
+                                    </select>                  
+                                </span>
+                            </li>
+                            <li>
+                                <label for="urGender">WHAT IS YOUR GENDER?</label>
+                                <span class="selectComponent">
+                                    <select id="urGender">
+                                        <option>Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>                
+                                </span>
+                            </li>
+                            <li>
+                                <label for="urAge">HOW OLD ARE YOU?</label>
+                                <span class="selectComponent">
+                                    <select id="urAge">
+                                        <option>Age</option>
+                                        <option value="18to24">18 to 24</option>
+                                        <option value="25to34">25 to 34</option>
+                                        <option value="35to44">35 to 44</option>
+                                        <option value="45to54">45 to 54</option>
+                                        <option value="55to64">55 to 64</option>
+                                        <option value="65orOver">65 or over</option>
+                                    </select>            
+                                </span>
+                            </li>
+                            <li>
+                                <label for="urLocation">LOCATION</label>
+                                <input type="text" id="urLocation" placeholder="Example: New York, NY">
+                            </li>
+                            <li>
+                                <label for="urNickname" class="requiredRed">
+                                    NICKNAME
+                                    <small>Required:Nickname</small>
+                                </label>                                
+                                <input type="text" id="urNickname" placeholder="Example: bob27">
+                            </li>
+                            <li>
+                                <label for="urMail" class="requiredRed">
+                                    EMAIL
+                                    <small>Required:Email</small>
+                                </label>                                
+                                <input type="email" id="urMail" placeholder="Example: youremail@example.com">
+                            </li>
+                            <li>
+                                <label for="productRecommend">WOULD YOU RECOMMEND THIS PRODUCT TO A FRIEND?</label>
+                                <input type="button" id="productRecommend" value="YES" class="btnRed btnRadius">
+                                <input type="button" value="NO" class="btnGray btnRadius">
+                            </li>                
+                            <li>                
+                                <input type="checkbox" id="termsCondition">
+                                <label for="termsCondition">
+                                    I agree to the Ratings and Reviews Terms and Conditions
+                                    <small class="requiredRed">Required:Agreements</small>
+                                </label>
+                                <span>You may receive emails regarding this submission. Any emails will include the ability to opt-out of future communications.</span>
+                            </li>  
+                        </ul>             
+                        <input type="submit" value="POST REVIEW" class="btnPost btnRed btnRadius">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>  
+    
+    <!-- 제품소개 -->
+    <section class="productInformation">
+        <ol class="pageNavigate">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="plantbasedProtein.html">OUR FOODS</a></li>
+            <li>MorningStar Farms® Veggie Maple Flavored Sausage Patties</li>            
+        </ol>
+        <div class="detailContainer">
+            <img src="images/productMain_pp03.png" alt="MorningStar Farms® Veggie Maple Flavored Sausage Patties">
+            <div>
+                <h2>MorningStar Farms® Veggie Maple Flavored Sausage Patties</h2>
+                <span>
+                    <mark>4.5</mark>• 26 REVIEWS
+                </span>
+                <div>
+                    <h3>ABOUT THIS ITEM</h3>
+                    <p>
+                        <strong class="titleRed">DETAILS</strong>
+                        Rise and shine for these vegetarian breakfast maple flavored sausage patties. Packed with flavor and 90 
+                        calories, these patties will make any syrup jealous.
+                    </p>
+                    <p>
+                        <strong class="titleRed">NUTRITION FACTS &amp; INGREDIENTS</strong>
+                        Nutrition Facts and Ingredients
+                    </p>
+                    <label for="selectThisSize">SELECT PACK SIZE</label>
+                    <span class="selectComponent">
+                        <select id="selectThisSize">
+                            <option>8oz</option>
+                        </select>
+                        <input type="button" value="print" class="btnPrint">
+                    </span>
+                </div>
+                <div>
+                    <!-- <a href="https://www.bearnaked.com/en_US/home.html" class="viewSite btnRed btnRadius">
+                        VIEW BRAND SITE
+                    </a> -->
+                    <a href="whyJoin.html" target="_blank" class="familyRewards btnGray btnRadius">KELLOGG’S FAMILY REWARDS</a>
+                    <!-- <small>Check out Bear Naked.com</small> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 리뷰모듈 -->
+    <div class="reviewModule">
+        <h2>REVIEWS</h2>
+        <div>
+            <small>24 out of 25 (96%) reviewers recommend this product</small>
+            <fieldset>
+                <legend>RATING SNAPSHOT</legend>
+                <ol>
+                    <li>
+                        <label for="count5">5</label>
+                        <meter value="70" min="0" max="100" id="count5"></meter>
+                        <span>70%</span>
+                    </li>
+                    <li>
+                        <label for="count4">4</label>
+                        <meter value="30" min="0" max="100" id="count4"></meter>
+                        <span>30%</span>
+                    </li>
+                    <li>
+                        <label for="count3">3</label>
+                        <meter value="0" min="0" max="100" id="count3"></meter>
+                        <span>0%</span>
+                    </li>
+                    <li>
+                        <label for="count2">2</label>
+                        <meter value="10" min="0" max="100" id="count2"></meter>
+                        <span>10%</span>
+                    </li>
+                    <li>
+                        <label for="count1">1</label>
+                        <meter value="10" min="0" max="100" id="count1"></meter>
+                        <span>10%</span>
+                    </li>
+                </ol>
+                <span class="starGraph graph4">
+                    4.5
+                </span>
+                <!-- scoreCount Background -->
+            </fieldset>
+        </div>
+
+        <div>
+            <a href="#" data-panel="popupReview" class="btnRed btnRadius">WRITE A REVIEW</a>
+            <fieldset>
+                <legend>26 REVIEWS</legend>
+                <!-- select module -->
+                <span class="selectComponent">
+                    <select id="reviewsRating">
+                        <option>Rating</option>
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Star</option>
+                        <option value="3">3 Star</option>
+                        <option value="4">4 Star</option>
+                        <option value="5">5 Star</option>
+                    </select>                    
+                </span>
+                <span class="selectComponent">
+                    <select id="reviewerGender">
+                        <option>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </span>
+                <span class="selectComponent">                    
+                    <select id="reviewerAge">
+                        <option>Age</option>
+                        <option value="18to24">18 to 24</option>
+                        <option value="25to34">25 to 34</option>
+                        <option value="35to44">35 to 44</option>
+                        <option value="45to54">45 to 54</option>
+                        <option value="55to64">55 to 64</option>
+                        <option value="65orOver">65 or over</option>
+                    </select>
+                </span>                
+                <span class="selectComponent">
+                    <select id="reviewsSortby">
+                        <option>Sort by</option>
+                        <option value="mostRelevant">Most Relevant</option>
+                        <option value="mostHelpful">Most Helpful</option>
+                        <option value="highestLowest">Highest to Lowest Rating</option>
+                        <option value="lowestHighest">Lowest to Highest Rating</option>
+                        <option value="mostRecent">Most Recent</option>
+                    </select>
+                </span>
+                <span class="selectComponent">
+                    <select id="englishLocale">
+                        <option>Locale</option>
+                        <option value="English">English</option>
+                        <option value="unitedStates">English(United States)</option>
+                    </select>
+                </span>
+            </fieldset>
+        </div>
+    </div>
+
+    <!-- 리뷰상세1 -->
+    <ul class="reviewDetails">
+        <li>
+            <dl>
+                <dt>Fix it</dt>
+                <dd>Michigan</dd>
+            </dl>
+            <div>
+                <span class="countingStar star1">
+                    <time datetime="2021-09">· 9 months ago </time>
+                </span>
+                <h3>
+                    Something is Different in the Maple Flavor
+                </h3>
+                <blockquote>
+                    I have had the Maple sausage everyday since they were offered. The taste & consistently was delicious. But the formulation has changed!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 3</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>ChelliBean</dt>
+                <dd>Austin</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021-08">· 10 months ago </time>
+                </span>
+                <h3>
+                    Tastes weird now
+                </h3>
+                <blockquote>
+                    Why did these change?!? I used to eat them all the time now they have a weird spongy consistency and taste strange.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 12</button>
+                    <button class="activate">NO · 1</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Report</dt>
+                <dd>barbd5318</dd>
+            </dl>
+            <div>
+                <span class="countingStar star4">
+                    <time datetime="2022-04">· 2 months ago </time>
+                </span>
+                <h3>
+                    Good healthy alternative
+                </h3>
+                <blockquote>
+                    I've had other Morning Star Farms products in the past but I was excited to try their sausage patties. Even better they were buy 1 get 1 free at my local supermarket!\
+                    I'm not a vegetarian but I look at this as a healthier option to real sausage..
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 10</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>VegeeGirl</dt>
+                <dd>North Carolina</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021-07">· 11 months ago </time>
+                </span>
+                <h3>
+                    Recipe Change
+                </h3>
+                <blockquote>
+                    The maple sausages have been a staple in my household for years. I'm sad to say however that I will no longer be purchasing them. The last several bags I've 
+                    purchased have tasted horrible. Not only has the taste been different, but they've had an almost soggy consistency.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 9</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>VikkyD</dt>
+                <dd>Harpers Ferry, WV</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021-08">· 10 months ago </time>
+                </span>
+                <h3>
+                    Switch to Vegan was a mistake
+                </h3>
+                <blockquote>
+                    These used to be absolutely delicious! We used to buy at least 3 bags of these a week!<br>
+                    Even my meat-eating husband ate these sausages...then something changed. Contacted MSF and found out they started making these vegan. They aren't even 
+                    edible. It's like a pile of mush pressed together into a patty shape. They no longer taste like sausage at all. Please bring back the non-vegan recipe as an option!!!!!!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Report</dt>
+                <dd>jamh2462</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2022-04">· 2 months ago </time>
+                </span>
+                <h3>
+                    A new breakfast!
+                </h3>
+                <blockquote>
+                    without that greasiness that makes you think your tummy might hurt if you eat too much. This was a quick, easy, and tasty breakfast that can work on its own or as 
+                    part of a breakfast sandwich. Good start to the day? Check!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 7</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>rachelh9284</dt>
+                <dd></dd>
+            </dl>
+            <div>
+                <span class="countingStar star4">
+                    <time datetime="2022-04">· 2 months ago </time>
+                </span>
+                <h3>
+                    Almost as good as a meat-based sausage patty
+                </h3>
+                <blockquote>
+                    I tried the Maple Flavored Sausage patty because it would be similar to the sausage we usually have for breakfast. I was pleased that the maple flavor was present, 
+                    but not overpowering. The level of spice was just right. If there was anything that made me notice the difference, it was the texture of the patty itself. It was close to 
+                    what I expected, but not quite what I was looking for.  
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>lizm4732</dt>
+                <dd></dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2022-04">· 2 months ago </time>
+                </span>
+                <h3>
+                    It's okay
+                </h3>
+                <blockquote>
+                    I have been some version of a vegetarian for about 30 years, so I have tried many varieties of meatless food. One thing that I have not gotten used to with 
+                    plant-based meat, is the texture and smell. Even though this is a patty, it's still crumbly. I could taste a hint of the maple flavor. It was easy to find in the store, but 
+                    I also knew exactly where to look.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>jennyh1402</dt>
+                <dd></dd>
+            </dl>
+            <div>
+                <span class="countingStar star4">
+                    <time datetime="2022-03">· 3 months ago </time>
+                </span>
+                <h3>
+                    Maple
+                </h3>
+                <blockquote>
+                    I received a complimentary package of MorningStar Farms Breakfast Sausage in Maple flavor. It was easy to locate in the freezer section. I liked that there 
+                    were many heating options on the package and went with the skillet preparation
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 1</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>meganc2868</dt>
+                <dd></dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2022-04">· 2 months ago </time>
+                </span>
+                <h3>
+                    Great breakfast sausage, and easy
+                </h3>
+                <blockquote>
+                    The sausage is less greasy than meat sausage, but has the mouthfeel and taste of meat. It feels odd cooking it, since its not juicy or greasy, so you are basically 
+                    just heating it up. They are very right on the "Do not overcook" instruction, as then it becomes woody and hard to chew, but when it's cooked according to the bag 
+                    instructions, it's really just like a sausage patty with less grease. 
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+    </ul>
+    <!-- 리뷰상세2 -->
+    <ul class="reviewDetails">
+        <li>
+            <dl>
+                <dt>lindsayo0647</dt>
+                <dd>York, Pa</dd>
+            </dl>
+            <div>
+                <span class="countingStar star4">
+                    <time datetime="2022-04">· 2 months ago </time>
+                </span>
+                <h3>
+                    FINALLY!
+                </h3>
+                <blockquote>
+                    I went vegetarian about a year ago because my fiancée is Hindu. There are a few things I miss and a Sunday breakfast of pancakes and sausage is one of them. 
+                    I’ve got the vegan pancakes down pat but I’ve missed that savory delightful sausage that just brings the meal together. These were amazing! Just slightly sweet 
+                    and oh so savory it made my year! I can’t wait to get more of these.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>mss</dt>
+                <dd>Charlotte, NC</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021-11">· 7 months ago </time>
+                </span>
+                <h3>
+                    New Recipe is So Gross
+                </h3>
+                <blockquote>
+                    I used to eat these all of the time, for like 4 years. I hadn’t bought them in probably a year and was craving them, so I bought a new bag. They taste nothing like the 
+                    old ones, they’re so gross and like fall apart….. won’t buy again unless they change the recipe back.. they made me rlly nauseous
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Jaspac13</dt>
+                <dd>Mississippi</dd>
+            </dl>
+            <div>
+                <span class="countingStar star4">
+                    <time datetime="2021-08">· 10 months ago </time>
+                </span>
+                <h3>
+                    Not Vegan
+                </h3>
+                <blockquote>
+                    I really enjoy the Morning Star brand but I ate this and immediately after had heartburn and and gas. I usually can count on this brand for not containing gluten or 
+                    dairy but was in was for a rude awakening. I guess that’s what you get for not reading the back.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Report</dt>
+                <dd>angiel899</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2022-03">· 3 months ago </time>
+                </span>
+                <h3>
+                    Light Maple Flavor adds so much!
+                </h3>
+                <blockquote>
+                    The Morningstar Farms plant based veggie maple sausage is delicious! It has a nice maple flavoring. The product was easy to find in the frozen section of my local 
+                    grocery store. I tried the sausage two different ways. The first day I had it with eggs to try it plain. It was so much less greasy than regular sausage with good flavor. 
+                    The second day I tried it with french toast. 
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>maryh8987</dt>
+                <dd></dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2022-03">· 3 months ago </time>
+                </span>
+                <h3>
+                    Love the Morning Star Farms sausage pattie
+                </h3>
+                <blockquote>
+                    I tried Morning Star Farms maple sausage pattie this morning. It had a good texture and was so easy to make. Being made out of 100% plant protein I was a little 
+                    skeptical but I love the taste. I made a breakfast sandwich with an English muffin, egg, cheese and my Morning Star Farms sausage pattie.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>beatricey9227</dt>
+                <dd></dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021">· a year ago </time>
+                </span>
+                <h3>
+                    Morning Deliciousness!
+                </h3>
+                <blockquote>
+                    I normally don’t go for anything maple flavored. But decided that I should try something new this time. I was blown away at how much my palate actually enjoyed 
+                    these! The flavor was not overwhelming, it tasted just like a breakfast sausage should.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>saral7028</dt>
+                <dd>Western, KY</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021">· a year ago </time>
+                </span>
+                <h3>
+                    Great product.
+                </h3>
+                <blockquote>
+                    So, I've been a long time fan of Morning Star Veggie Burgers. So, imagine my excitement to try the veggie sausage. I was thrilled. I've been a vegetarian sense I was 
+                    7. I'm so glad people are giving us new foods to enjoy. 
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark>YES</mark>
+                    <mark class="activate">NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Amanda01</dt>
+                <dd>Maine</dd>
+            </dl>
+            <div>
+                <span class="countingStar star2">
+                    <time datetime="2021-09">· 9 months ago </time>
+                </span>
+                <h3>
+                    Why did these change?
+                </h3>
+                <blockquote>
+                    I have been buying these for years but recently the taste and flavor has changed for the worse. Not sure what happened as I thought they were so delicious but now 
+                    are hard to even finish. Wish you would bring back the original!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>sandrab473</dt>
+                <dd>Columbus Nebraska</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Satisfying
+                </h3>
+                <blockquote>
+                    I tried the MorningStar Farms Veggie Maple Flavored Sausage Patties. When heating them, they definitely smelled like maple sausage patties. The flavor was not 
+                    overwhelmingly maple, however. They tasted pretty good and they kept me satisfied for several hours, which I found to be great.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>katreset610</dt>
+                <dd>Salem, VA</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021">· a year ago </time>
+                </span>
+                <h3>
+                    What a surprise!
+                </h3>
+                <blockquote>
+                    I tried the Veggie Maple Flavored Sausage Patties this morning and was pleasantly surprised. The frozen patties went right into the skillet and were ready in a 
+                    matter of minutes...without a drop of grease in the pan. The outer edge had a slight crispness to it but the center was tender and flavorful.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+    </ul>
+    <!-- 리뷰상세3 -->
+    <ul class="reviewDetails">
+        <li>
+            <dl>
+                <dt>jenniferr016</dt>
+                <dd>Brighton, MI</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2022-03">· 3 months ago </time>
+                </span>
+                <h3>
+                    Really good!
+                </h3>
+                <blockquote>
+                    I am not vegetarian but due to some recent health issues I have had to cut back on my regular meat and regular dairy consumption and use more plant based 
+                    products. I have been using plant based milk and dairy alternatives for awhile but have been hesitant to get into the plant based meat scene.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark>YES</mark>
+                    <mark class="activate">NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>lisab9886</dt>
+                <dd>Cincinnati OH</dd>
+            </dl>
+            <div>
+                <span class="countingStar star4">
+                    <time datetime="2021">· a year ago </time>
+                </span>
+                <h3>
+                    Morning Star Veggie Sausage
+                </h3>
+                <blockquote>
+                    I was able to try MorningStar Farms Veggies Maple flavored Sausage Patties. I wasn’t sure about a plant based product but to my surprise, it tasted just like regular 
+                    sausage. 
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>op2022</dt>
+                <dd>Tampa, FL</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2022-05">· a months ago </time>
+                </span>
+                <h3>
+                    change back to original recipe
+                </h3>
+                <blockquote>
+                    used to buy bags of these at a time but the new recipe tastes awful. also has the grossest texture ever.<br>
+                    sad but i wont be buying these anymore
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>jenniferf600</dt>
+                <dd>New York</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Delicious Meat Alternative
+                </h3>
+                <blockquote>
+                    I love that Morning Star Farms Veggie Maple Flavored Sausage Patties are not only healthy but tasty at the same time.<br>
+                    This is something that we will be purchasing and eating along with other Morning Star Farms products so we can feel better and eat better as a family.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>kimf4290</dt>
+                <dd>Holiday, FL</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021">· a year ago </time>
+                </span>
+                <h3>
+                    Better for me breakfast patties
+                </h3>
+                <blockquote>
+                    I decided to cook my patties in a pan on the stove. They browned up with a nice crispy crust on the outside. I found the texture to be a little mushy and more 
+                    crumbly. That being said, if I didn't know these were made from plants, I would swear it was actual pork sausage
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>terrig435</dt>
+                <dd>Fresno, California</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Morningstar Sausage Patties
+                </h3>
+                <blockquote>
+                    I was excited to try the plant based Maple Flavored sausage patties. I went to Safeway and used my Chatterbox coupon. The next day, I made them on an iron 
+                    skillet and served them with eggs and cinnamon toast for my husband and myself.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+    </ul>
+
+    <!-- 컨트롤러 -->
+    <div class="reviewControler activated">
+        1 / 3
+        <a href="#" class="prevPage">prevPage</a>
+        <a href="#" class="nextPage">nextPage</a>
+        <!-- 
+            <button enabled></button>
+            <button disabled></button>
+         -->
+    </div>
+
+    <footer>
+        <div>
+            <div>
+                <h2>GET SUPPORT</h2>
+                <ul>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>KELLOGG'S FAMILY REWARDS</h2>
+                <ul>
+                    <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                    <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                    <li><a href="logIn.html" target="_blank">Log In</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>CONNECT WITH US</h2>
+                <ul>            
+                    <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                    <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                    <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.kelloggcompany.com/en_US/privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="https://www.kelloggcompany.com/en_US/legal.html">Terms Of Use</a></li>
+                <li><a href="https://www.privacy.kelloggcompany.com/us/homepage.html">California Consumer Rights</a></li>
+            </ul>
+            <p>
+                ®Kellogg's Company 2022
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

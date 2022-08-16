@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kellogg</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="index.html"><img src="images/kellogg_logo_red.png" alt="kellogg"></a></h1>
+             <nav>
+                <ul>
+                    <li><a href="breakfastFavorites.html">OUR FOODS</a></li>
+                    <li><a href="sustainability.html">OUR IMPACT</a></li>
+                    <li><a href="whoWeAre.html">OUR STORE</a></li>
+                </ul>
+                <input type="button" data-panel="fnb_open" value="openMenu" class="fnbOpenBtn">
+            </nav>
+        </div>
+        <div class="fnbPanel" id="fnb_open">
+            <input type="button" class="btn_close" value="closeMenu">
+            <ol>
+                <li>
+                    OUR FOODS
+                    <ul>
+                        <li><a href="breakfastFavorites.html">BREAKFAST FAVORITES &amp; TREATS</a></li>
+                        <li><a href="cerealGranola.html">CEREAL &amp; GRANOLA</a></li>
+                        <li><a href="savorySnacks.html">SAVORY SNACKS</a></li>
+                        <li><a href="plantbasedProtein.html">PLANT-BASED PROTEINS</a></li>
+                        <li><a href="snackbarsBites.html">SNACK BARS &amp; BITES</a></li>
+                        <li><a href="proteinbarsShake.html">PROTEIN BARS &amp; SHAKES</a></li>
+                        <li><a href="frozenBreakfast.html">FROZEN BREAKFAST</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR IMPACT
+                    <ul>
+                        <li><a href="sustainability.html">SUSTAINABILITY</a></li>
+                        <li><a href="philanthropy.html">PHILANTHROPY</a></li>
+                        <li><a href="nourishment.html">NOURISHMENT</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR STORE
+                    <ul>
+                        <li><a href="whoWeAre.html">WHO WE ARE</a></li>
+                        <li><a href="kelloggHistory.html">KELLOGG HISTORY</a></li>
+                        <li><a href="openForBreakfast.html">OPEN FOR BREAKFAST</a></li>                    
+                    </ul>
+                </li>
+            </ol>
+            <div>
+                <form>
+                    <div>
+                        <input type="search" placeholder="search" title="insert ur search keyword's">
+                    </div>
+                </form>
+                <div>
+                    <h3>JOIN AND BE REWARDED</h3>
+                    <ul>
+                        <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                        <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                        <li><a href="logIn.html" target="_blank">Log In</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>CONNECT WITH US</h3>
+                    <ul>            
+                        <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                        <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                        <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 팝업창 -->
+    <div class="popupModule" id="popupReview">
+        <div>
+            <input type="button" value="X" class="btn_close">
+            <div class="writeContainer">
+                <img src="images/popup_productMain_fb01.png" alt="Kellogg's® Eggo® Thick & Fluffy Whole Grain Original Waffles">
+                <h2>
+                    <strong>MY REVIEW FOR</strong>
+                    Kellogg's® Eggo® Thick & Fluffy Whole Grain Original Waffles<br>
+                    <small>Required fields are marked with <mark>RED</mark></small>
+                </h2>
+                <form>
+                    <fieldset>
+                        <ul>
+                            <li>
+                                <label for="star1" class="requiredRed">
+                                    OVERALL RATING
+                                    <small>Required:Overall Rating</small>
+                                </label>
+                                <div class="starCount">
+                                    <input type="button" value="1" id="star1">
+                                    <input type="button" value="2" id="star2">
+                                    <input type="button" value="3" id="star3">
+                                    <input type="button" value="4" id="star4">
+                                    <input type="button" value="5" id="star5">
+                                    <mark>EXCELLENT</mark>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="reviewTitle" class="requiredRed">
+                                    REVIEW TITLE
+                                    <small>Required:Review Title</small>
+                                </label>                                
+                                <input type="text" id="reviewTitle" placeholder="Example: Tastes great!">
+                            </li>
+                            <li>
+                                <label for="reviewText" class="requiredRed">
+                                    REVIEW
+                                    <small>(numb) characters too short</small>
+                                </label>                                
+                                <textarea name="review" id="reviewText" placeholder="Example: I bought these for my family. Everyone loved the taste and texture..."></textarea>
+                            </li>                
+                            <li>
+                                <label for="reviewPurchase">WHERE DID YOU PURCHASE?</label>
+                                <span class="selectComponent">
+                                    <select id="reviewPurchase">
+                                        <option>Select</option>
+                                        <option value="inStore">In-Store</option>
+                                        <option value="onlineandPickup">Online, Curbside Pick-Up</option>
+                                        <option value="onlineandhome">Online, Ship-to-Home</option>
+                                    </select>                  
+                                </span>
+                            </li>
+                            <li>
+                                <label for="urGender">WHAT IS YOUR GENDER?</label>
+                                <span class="selectComponent">
+                                    <select id="urGender">
+                                        <option>Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>                
+                                </span>
+                            </li>
+                            <li>
+                                <label for="urAge">HOW OLD ARE YOU?</label>
+                                <span class="selectComponent">
+                                    <select id="urAge">
+                                        <option>Age</option>
+                                        <option value="18to24">18 to 24</option>
+                                        <option value="25to34">25 to 34</option>
+                                        <option value="35to44">35 to 44</option>
+                                        <option value="45to54">45 to 54</option>
+                                        <option value="55to64">55 to 64</option>
+                                        <option value="65orOver">65 or over</option>
+                                    </select>            
+                                </span>
+                            </li>
+                            <li>
+                                <label for="urLocation">LOCATION</label>
+                                <input type="text" id="urLocation" placeholder="Example: New York, NY">
+                            </li>
+                            <li>
+                                <label for="urNickname" class="requiredRed">
+                                    NICKNAME
+                                    <small>Required:Nickname</small>
+                                </label>                                
+                                <input type="text" id="urNickname" placeholder="Example: bob27">
+                            </li>
+                            <li>
+                                <label for="urMail" class="requiredRed">
+                                    EMAIL
+                                    <small>Required:Email</small>
+                                </label>                                
+                                <input type="email" id="urMail" placeholder="Example: youremail@example.com">
+                            </li>
+                            <li>
+                                <label for="productRecommend">WOULD YOU RECOMMEND THIS PRODUCT TO A FRIEND?</label>
+                                <input type="button" id="productRecommend" value="YES" class="btnRed btnRadius">
+                                <input type="button" value="NO" class="btnGray btnRadius">
+                            </li>                
+                            <li>                
+                                <input type="checkbox" id="termsCondition">
+                                <label for="termsCondition">
+                                    I agree to the Ratings and Reviews Terms and Conditions
+                                    <small class="requiredRed">Required:Agreements</small>
+                                </label>
+                                <span>You may receive emails regarding this submission. Any emails will include the ability to opt-out of future communications.</span>
+                            </li>  
+                        </ul>             
+                        <input type="submit" value="POST REVIEW" class="btnPost btnRed btnRadius">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>  
+    
+    <!-- 제품소개 -->
+    <section class="productInformation">
+        <ol class="pageNavigate">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="frozenBreakfast.html">OUR FOODS</a></li>
+            <li>Kellogg's® Eggo® Thick & Fluffy Whole Grain Original Waffles</li>            
+        </ol>
+        <div class="detailContainer">
+            <img src="images/productMain_fb01.png" alt="Kellogg's® Eggo® Thick & Fluffy Whole Grain Original Waffles">
+            <div>
+                <h2>Kellogg's® Eggo® Thick & Fluffy Whole Grain Original Waffles</h2>
+                <span>
+                    <mark>1.9</mark>• 2 REVIEWS
+                </span>
+                <div>
+                    <h3>ABOUT THIS ITEM</h3>
+                    <p>
+                        <strong class="titleRed">DETAILS</strong>
+                        Wake up and greet the day with the feel-good taste of Kellogg's® Eggo® Thick & Fluffy Whole Grain Original 
+                        Waffles made with 11g of Whole Grain and Madagascar vanilla.
+                    </p>
+                    <p>
+                        <strong class="titleRed">NUTRITION FACTS &amp; INGREDIENTS</strong>
+                        Nutrition Facts and Ingredients
+                    </p>
+                    <label for="selectThisSize">SELECT PACK SIZE</label>
+                    <span class="selectComponent">
+                        <select id="selectThisSize">
+                            <option>13.5oz</option>
+                        </select>
+                        <input type="button" value="print" class="btnPrint">
+                    </span>
+                </div>
+                <div>
+                    <a href="https://www.leggowitheggo.com/en_US/home.html" class="viewSite btnRed btnRadius">
+                        VIEW BRAND SITE
+                    </a>
+                    <a href="whyJoin.html" target="_blank" class="familyRewards btnGray btnRadius">KELLOGG’S FAMILY REWARDS</a>
+                    <small>Check out LeggoMyEggo.com</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 리뷰모듈 -->
+    <div class="reviewModule">
+        <h2>REVIEWS</h2>
+        <div>
+            <small>3 out of 12 (25%) reviewers recommend this product</small>
+            <fieldset>
+                <legend>RATING SNAPSHOT</legend>
+                <ol>
+                    <li>
+                        <label for="count5">5</label>
+                        <meter value="10" min="0" max="100" id="count5"></meter>
+                        <span>10%</span>
+                    </li>
+                    <li>
+                        <label for="count4">4</label>
+                        <meter value="10" min="0" max="100" id="count4"></meter>
+                        <span>10%</span>
+                    </li>
+                    <li>
+                        <label for="count3">3</label>
+                        <meter value="0" min="0" max="100" id="count3"></meter>
+                        <span>0%</span>
+                    </li>
+                    <li>
+                        <label for="count2">2</label>
+                        <meter value="40" min="0" max="100" id="count2"></meter>
+                        <span>40%</span>
+                    </li>
+                    <li>
+                        <label for="count1">1</label>
+                        <meter value="40" min="0" max="100" id="count1"></meter>
+                        <span>40%</span>
+                    </li>
+                </ol>
+                <span class="starGraph graph1">
+                    1.9
+                </span>
+                <!-- scoreCount Background -->
+            </fieldset>
+        </div>
+
+        <div>
+            <a href="#" data-panel="popupReview" class="btnRed btnRadius">WRITE A REVIEW</a>
+            <fieldset>
+                <legend>2 REVIEWS</legend>
+                <!-- select module -->
+                <span class="selectComponent">
+                    <select id="reviewsRating">
+                        <option>Rating</option>
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Star</option>
+                        <option value="3">3 Star</option>
+                        <option value="4">4 Star</option>
+                        <option value="5">5 Star</option>
+                    </select>                    
+                </span>
+                <span class="selectComponent">
+                    <select id="reviewerGender">
+                        <option>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </span>
+                <span class="selectComponent">                    
+                    <select id="reviewerAge">
+                        <option>Age</option>
+                        <option value="18to24">18 to 24</option>
+                        <option value="25to34">25 to 34</option>
+                        <option value="35to44">35 to 44</option>
+                        <option value="45to54">45 to 54</option>
+                        <option value="55to64">55 to 64</option>
+                        <option value="65orOver">65 or over</option>
+                    </select>
+                </span>                
+                <span class="selectComponent">
+                    <select id="reviewsSortby">
+                        <option>Sort by</option>
+                        <option value="mostRelevant">Most Relevant</option>
+                        <option value="mostHelpful">Most Helpful</option>
+                        <option value="highestLowest">Highest to Lowest Rating</option>
+                        <option value="lowestHighest">Lowest to Highest Rating</option>
+                        <option value="mostRecent">Most Recent</option>
+                    </select>
+                </span>
+                <span class="selectComponent">
+                    <select id="englishLocale">
+                        <option>Locale</option>
+                        <option value="English">English</option>
+                        <option value="unitedStates">English(United States)</option>
+                    </select>
+                </span>
+            </fieldset>
+        </div>
+    </div>
+
+    <!-- 리뷰상세1 -->
+    <ul class="reviewDetails">
+        <li>
+            <dl>
+                <dt>cpb</dt>
+                <dd>Philly</dd>
+            </dl>
+            <div>
+                <span class="countingStar star1">
+                    <time datetime="2021-12">· 6 months ago </time>
+                </span>
+                <h3>
+                    not as good as the nutrigrain ones
+                </h3>
+                <blockquote>
+                    I bought these as a replacement for the nutrigrain waffles, and my kids do not like them. I have to say I agree. The waffles are mushy and the flavor is too sweet. I 
+                    used to be willing to get the nutrigrain ones whenever i could find them (they were always out of stock) bc i felt they were a quick healthy breakfast for my kids 
+                    when rushing to get to school. I do not feel the same about these waffles and we will not be buying them again.
+                    considering the nutrigrain ones were the only ones i would buy, looks like we are now a eggo-free household.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 6</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Winters</dt>
+                <dd>Seattle, WA</dd>
+            </dl>
+            <div>
+                <span class="countingStar star1">
+                    <time datetime="2021-08">· 10 months ago </time>
+                </span>
+                <h3>
+                    Fine. Too sweet.
+                </h3>
+                <blockquote>
+                    Eggo has rolled out these whole grain waffles as a replacement for the nutrigrain waffles. The problem is that they're too sweet! They're so sweet that I don't even 
+                    need to add syrup and they're too sweet to go well with a dollop of peanut butter on top. 
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 16</button>
+                    <button class="activate">NO · 3</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Waffler</dt>
+                <dd>Southern California</dd>
+            </dl>
+            <div>
+                <span class="countingStar star1">
+                    <time datetime="2021-10">· 8 months ago </time>
+                </span>
+                <h3>
+                    Original Whole Grain Way Better
+                </h3>
+                <blockquote>
+                    I was so sad to see my regular whole grain waffles disappear and be replaced by these. They are so thick that they don't cook properly, even after following the 
+                    updated directions. They stay mushy on the inside and char on the outside. 
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 6</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>allaboutthelip</dt>
+                <dd></dd>
+            </dl>
+            <div>
+                <span class="countingStar star2">
+                    <time datetime="2021-09">· 9 months ago </time>
+                </span>
+                <h3>
+                    These aren't your kid's waffles
+                </h3>
+                <blockquote>
+                    I was excited to see a new type of waffle by Eggo because I have always enjoyed their waffles for being quick and convenient.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 9</button>
+                    <button class="activate">NO · 2</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>katm96</dt>
+                <dd>Roanoke Virginia</dd>
+            </dl>
+            <div>
+                <span class="countingStar star1">
+                    <time datetime="2021-11">· 7 months ago </time>
+                </span>
+                <h3>
+                    so yummy!
+                </h3>
+                <blockquote>
+                    I really liked these! It’s nice to see more whole grain options in stores now. 
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 3</button>
+                    <button class="activate">NO · 1</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>katm96</dt>
+                <dd></dd>
+            </dl>
+            <div>
+                <span class="countingStar star2">
+                    <time datetime="2021-10">· 8 months ago </time>
+                </span>
+                <h3>
+                    These aren't your kid's waffles
+                </h3>
+                <blockquote>
+                    Kellogg’s hit just the right balance of sweet and sour. Wish this was a permanent flavor.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 3</button>
+                    <button class="activate">NO · 1</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Granny82</dt>
+                <dd>California</dd>
+            </dl>
+            <div>
+                <span class="countingStar star2">
+                    <time datetime="2021-09">· 9 months ago </time>
+                </span>
+                <h3>
+                    Yuck!
+                </h3>
+                <blockquote>
+                    My daughter bought these for me as she couldn't find the nutri-grain ones. I do not like them at all! They're too thick they're too sweet and they don't have that 
+                    crunch to them that I enjoyed with nutri-grain. The flavor is entirely different. Not sure what I'll buy now but I certainly won't buy these. If you've been a fan of the 
+                    nutri-grain waffles these are a poor replacement.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 2</button>
+                    <button class="activate">NO · 1</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Carmel3r</dt>
+                <dd>Baltimore, MD</dd>
+            </dl>
+            <div>
+                <span class="countingStar star2">
+                    <time datetime="2021-11">· 7 months ago </time>
+                </span>
+                <h3>
+                    Bring back Nutrigrain!
+                </h3>
+                <blockquote>
+                    Have you noticed that every positive review is “incentivized?” The only honest reviews on here are very negative. <br>
+                    Why take away the popular and relatively healthy Nutrigrain waffles for a soggy, over-sweet, sugar-filled imitation? Deeply disappointed. It seems that all 
+                    independent reviewers are as well.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark>YES</mark>
+                    <mark class="activate">NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 2</button>
+                    <button class="activate">NO · 3</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Wafflemom</dt>
+                <dd>Texas</dd>
+            </dl>
+            <div>
+                <span class="countingStar star1">
+                    <time datetime="2022-04">· 2 months ago </time>
+                </span>
+                <h3>
+                    Awful waffles!
+                </h3>
+                <blockquote>
+                    My kids used to eat the nutrigrain waffles every day for breakfast. Since we can't find them anymore we thought we would try these and not one of them liked them! 
+                    Please bring back the nutrigrain waffles!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>LeeinNC</dt>
+                <dd>NC</dd>
+            </dl>
+            <div>
+                <span class="countingStar star2">
+                    <time datetime="2021-11">· 7 months ago </time>
+                </span>
+                <h3>
+                    Disappointed.
+                </h3>
+                <blockquote>
+                    Why oh why??? Do manufacturers take the good stuff away!!!!! These are way toooo sweet for a diabetic.....WHEREAS, the NUTRI GRAIN ONES WERE PERFECT!!! 
+                    I just don't get it!!!!!! Yes, I do....greed~!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button class="activate">NO · 1</button>
+                </fieldset>
+            </form>
+        </li>
+    </ul>
+    <!-- 리뷰상세2 -->
+    <ul class="reviewDetails">
+        <li>
+            <dl>
+                <dt>Nan</dt>
+                <dd>Centennial, CO</dd>
+            </dl>
+            <div>
+                <span class="countingStar star4">
+                    <time datetime="2021-09">· 9 months ago </time>
+                </span>
+                <h3>
+                    Poor substitute for Nutri-Grain Original
+                </h3>
+                <blockquote>
+                    I purchased a package of these when the Original was no longer available. When eaten with butter and syrup they become unpleasantly mushy. 
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button class="activate">NO · 1</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>DC</dt>
+                <dd>Texas</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2022-04">· 2 months ago </time>
+                </span>
+                <h3>
+                    Just Not Good
+                </h3>
+                <blockquote>
+                    The original whole grain / nutri-grain waffle was much better. These are too thick, 
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>WaffleMom</dt>
+                <dd>Chattanooga, TN</dd>
+            </dl>
+            <div>
+                <span class="countingStar star2">
+                    <time datetime="2021-11">· 7 months ago </time>
+                </span>
+                <h3>
+                    I want the Nutrigrain waffles back!
+                </h3>
+                <blockquote>
+                    Everyone I know bought the old nutrigrain waffles, including us, for YEARS!! They were the best waffles and they tasted great! These new ones are too thick and too 
+                    filling for kids. They don’t like the taste as much either, especially the added sweetness. Sooo disappointed, I can’t believe there “weren’t enough fans”!!!! I feel like 
+                    this was a selfish move!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Waffle Sadness</dt>
+                <dd>Michigan</dd>
+            </dl>
+            <div>
+                <span class="countingStar star1">
+                    <time datetime="2021-09">· 9 months ago </time>
+                </span>
+                <h3>
+                    GROSS
+                </h3>
+                <blockquote>
+                    Hate the taste and texture. Nutrigrain low fat waffles were perfect! You messed up. My rating is really a zero.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark>YES</mark>
+                    <mark class="activate">NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button class="activate">NO · 2</button>
+                </fieldset>
+            </form>
+        </li>
+    </ul>
+
+    <!-- 컨트롤러 -->
+    <div class="reviewControler activated">
+        1 / 2
+        <a href="#" class="prevPage">prevPage</a>
+        <a href="#" class="nextPage">nextPage</a>
+        <!-- 
+            <button enabled></button>
+            <button disabled></button>
+         -->
+    </div>
+
+    <footer>
+        <div>
+            <div>
+                <h2>GET SUPPORT</h2>
+                <ul>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>KELLOGG'S FAMILY REWARDS</h2>
+                <ul>
+                    <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                    <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                    <li><a href="logIn.html" target="_blank">Log In</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>CONNECT WITH US</h2>
+                <ul>            
+                    <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                    <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                    <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.kelloggcompany.com/en_US/privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="https://www.kelloggcompany.com/en_US/legal.html">Terms Of Use</a></li>
+                <li><a href="https://www.privacy.kelloggcompany.com/us/homepage.html">California Consumer Rights</a></li>
+            </ul>
+            <p>
+                ®Kellogg's Company 2022
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

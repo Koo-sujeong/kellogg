@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kellogg</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="index.html"><img src="images/kellogg_logo_red.png" alt="kellogg"></a></h1>
+             <nav>
+                <ul>
+                    <li><a href="breakfastFavorites.html">OUR FOODS</a></li>
+                    <li><a href="sustainability.html">OUR IMPACT</a></li>
+                    <li><a href="whoWeAre.html">OUR STORE</a></li>
+                </ul>
+                <input type="button" data-panel="fnb_open" value="openMenu" class="fnbOpenBtn">
+            </nav>
+        </div>
+        <div class="fnbPanel" id="fnb_open">
+            <input type="button" class="btn_close" value="closeMenu">
+            <ol>
+                <li>
+                    OUR FOODS
+                    <ul>
+                        <li><a href="breakfastFavorites.html">BREAKFAST FAVORITES &amp; TREATS</a></li>
+                        <li><a href="cerealGranola.html">CEREAL &amp; GRANOLA</a></li>
+                        <li><a href="savorySnacks.html">SAVORY SNACKS</a></li>
+                        <li><a href="plantbasedProtein.html">PLANT-BASED PROTEINS</a></li>
+                        <li><a href="snackbarsBites.html">SNACK BARS &amp; BITES</a></li>
+                        <li><a href="proteinbarsShake.html">PROTEIN BARS &amp; SHAKES</a></li>
+                        <li><a href="frozenBreakfast.html">FROZEN BREAKFAST</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR IMPACT
+                    <ul>
+                        <li><a href="sustainability.html">SUSTAINABILITY</a></li>
+                        <li><a href="philanthropy.html">PHILANTHROPY</a></li>
+                        <li><a href="nourishment.html">NOURISHMENT</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR STORE
+                    <ul>
+                        <li><a href="whoWeAre.html">WHO WE ARE</a></li>
+                        <li><a href="kelloggHistory.html">KELLOGG HISTORY</a></li>
+                        <li><a href="openForBreakfast.html">OPEN FOR BREAKFAST</a></li>                    
+                    </ul>
+                </li>
+            </ol>
+            <div>
+                <form>
+                    <div>
+                        <input type="search" placeholder="search" title="insert ur search keyword's">
+                    </div>
+                </form>
+                <div>
+                    <h3>JOIN AND BE REWARDED</h3>
+                    <ul>
+                        <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                        <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                        <li><a href="logIn.html" target="_blank">Log In</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>CONNECT WITH US</h3>
+                    <ul>            
+                        <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                        <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                        <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 팝업창 -->
+    <div class="popupModule" id="popupReview">
+        <div>
+            <input type="button" value="X" class="btn_close">
+            <div class="writeContainer">
+                <img src="images/popup_productMain_ss01.png" alt="Pringles® Pizza Crisps">
+                <h2>
+                    <strong>MY REVIEW FOR</strong>
+                    Pringles® Pizza Crisps<br>
+                    <small>Required fields are marked with <mark>RED</mark></small>
+                </h2>
+                <form>
+                    <fieldset>
+                        <ul>
+                            <li>
+                                <label for="star1" class="requiredRed">
+                                    OVERALL RATING
+                                    <small>Required:Overall Rating</small>
+                                </label>
+                                <div class="starCount">
+                                    <input type="button" value="1" id="star1">
+                                    <input type="button" value="2" id="star2">
+                                    <input type="button" value="3" id="star3">
+                                    <input type="button" value="4" id="star4">
+                                    <input type="button" value="5" id="star5">
+                                    <mark>EXCELLENT</mark>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="reviewTitle" class="requiredRed">
+                                    REVIEW TITLE
+                                    <small>Required:Review Title</small>
+                                </label>                                
+                                <input type="text" id="reviewTitle" placeholder="Example: Tastes great!">
+                            </li>
+                            <li>
+                                <label for="reviewText" class="requiredRed">
+                                    REVIEW
+                                    <small>(numb) characters too short</small>
+                                </label>                                
+                                <textarea name="review" id="reviewText" placeholder="Example: I bought these for my family. Everyone loved the taste and texture..."></textarea>
+                            </li>                
+                            <li>
+                                <label for="reviewPurchase">WHERE DID YOU PURCHASE?</label>
+                                <span class="selectComponent">
+                                    <select id="reviewPurchase">
+                                        <option>Select</option>
+                                        <option value="inStore">In-Store</option>
+                                        <option value="onlineandPickup">Online, Curbside Pick-Up</option>
+                                        <option value="onlineandhome">Online, Ship-to-Home</option>
+                                    </select>                  
+                                </span>
+                            </li>
+                            <li>
+                                <label for="urGender">WHAT IS YOUR GENDER?</label>
+                                <span class="selectComponent">
+                                    <select id="urGender">
+                                        <option>Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>                
+                                </span>
+                            </li>
+                            <li>
+                                <label for="urAge">HOW OLD ARE YOU?</label>
+                                <span class="selectComponent">
+                                    <select id="urAge">
+                                        <option>Age</option>
+                                        <option value="18to24">18 to 24</option>
+                                        <option value="25to34">25 to 34</option>
+                                        <option value="35to44">35 to 44</option>
+                                        <option value="45to54">45 to 54</option>
+                                        <option value="55to64">55 to 64</option>
+                                        <option value="65orOver">65 or over</option>
+                                    </select>            
+                                </span>
+                            </li>
+                            <li>
+                                <label for="urLocation">LOCATION</label>
+                                <input type="text" id="urLocation" placeholder="Example: New York, NY">
+                            </li>
+                            <li>
+                                <label for="urNickname" class="requiredRed">
+                                    NICKNAME
+                                    <small>Required:Nickname</small>
+                                </label>                                
+                                <input type="text" id="urNickname" placeholder="Example: bob27">
+                            </li>
+                            <li>
+                                <label for="urMail" class="requiredRed">
+                                    EMAIL
+                                    <small>Required:Email</small>
+                                </label>                                
+                                <input type="email" id="urMail" placeholder="Example: youremail@example.com">
+                            </li>
+                            <li>
+                                <label for="productRecommend">WOULD YOU RECOMMEND THIS PRODUCT TO A FRIEND?</label>
+                                <input type="button" id="productRecommend" value="YES" class="btnRed btnRadius">
+                                <input type="button" value="NO" class="btnGray btnRadius">
+                            </li>                
+                            <li>                
+                                <input type="checkbox" id="termsCondition">
+                                <label for="termsCondition">
+                                    I agree to the Ratings and Reviews Terms and Conditions
+                                    <small class="requiredRed">Required:Agreements</small>
+                                </label>
+                                <span>You may receive emails regarding this submission. Any emails will include the ability to opt-out of future communications.</span>
+                            </li>  
+                        </ul>             
+                        <input type="submit" value="POST REVIEW" class="btnPost btnRed btnRadius">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>  
+    
+    <!-- 제품소개 -->
+    <section class="productInformation">
+        <ol class="pageNavigate">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="savorySnacks.html">OUR FOODS</a></li>
+            <li>Pringles® Pizza Crisps</li>            
+        </ol>
+        <div class="detailContainer">
+            <img src="images/productMain_ss01.png" alt="Pringles® Pizza Crisps">
+            <div>
+                <h2>Pringles® Pizza Crisps</h2>
+                <span>
+                    <mark>3.9</mark>• 15 REVIEWS
+                </span>
+                <div>
+                    <h3>ABOUT THIS ITEM</h3>
+                    <p>
+                        <strong class="titleRed">DETAILS</strong>
+                        Pizza makes people happy. Pringles® make people happy. Combine the two, and your party will be known as 
+                        the happiest place on earth. If morning-after cold pizza is your thing, store the can in the fridge.
+                    </p>
+                    <p>
+                        <strong class="titleRed">NUTRITION FACTS &amp; INGREDIENTS</strong>
+                        Nutrition Facts and Ingredients
+                    </p>
+                    <label for="selectThisSize">SELECT PACK SIZE</label>
+                    <span class="selectComponent">
+                        <select id="selectThisSize">
+                            <option>18.8oz</option>
+                        </select>
+                        <input type="button" value="print" class="btnPrint">
+                    </span>
+                </div>
+                <div>
+                    <a href="https://www.pringles.com/us/home.html" class="viewSite btnRed btnRadius">
+                        VIEW BRAND SITE
+                    </a>
+                    <a href="whyJoin.html" target="_blank" class="familyRewards btnGray btnRadius">KELLOGG’S FAMILY REWARDS</a>
+                    <small>Check out Pringles.com</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 리뷰모듈 -->
+    <div class="reviewModule">
+        <h2>REVIEWS</h2>
+        <div>
+            <small>10 out of 14 (71%) reviewers recommend this product</small>
+            <fieldset>
+                <legend>RATING SNAPSHOT</legend>
+                <ol>
+                    <li>
+                        <label for="count5">5</label>
+                        <meter value="60" min="0" max="100" id="count5"></meter>
+                        <span>60%</span>
+                    </li>
+                    <li>
+                        <label for="count4">4</label>
+                        <meter value="20" min="0" max="100" id="count4"></meter>
+                        <span>20%</span>
+                    </li>
+                    <li>
+                        <label for="count3">3</label>
+                        <meter value="0" min="0" max="100" id="count3"></meter>
+                        <span>0%</span>
+                    </li>
+                    <li>
+                        <label for="count2">2</label>
+                        <meter value="10" min="0" max="100" id="count2"></meter>
+                        <span>10%</span>
+                    </li>
+                    <li>
+                        <label for="count1">1</label>
+                        <meter value="30" min="0" max="100" id="count1"></meter>
+                        <span>30%</span>
+                    </li>
+                </ol>
+                <span class="starGraph graph3">
+                    3.9
+                </span>
+                <!-- scoreCount Background -->
+            </fieldset>
+        </div>
+
+        <div>
+            <a href="#" data-panel="popupReview" class="btnRed btnRadius">WRITE A REVIEW</a>
+            <fieldset>
+                <legend>15 REVIEWS</legend>
+                <!-- select module -->
+                <span class="selectComponent">
+                    <select id="reviewsRating">
+                        <option>Rating</option>
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Star</option>
+                        <option value="3">3 Star</option>
+                        <option value="4">4 Star</option>
+                        <option value="5">5 Star</option>
+                    </select>                    
+                </span>
+                <span class="selectComponent">
+                    <select id="reviewerGender">
+                        <option>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </span>
+                <span class="selectComponent">                    
+                    <select id="reviewerAge">
+                        <option>Age</option>
+                        <option value="18to24">18 to 24</option>
+                        <option value="25to34">25 to 34</option>
+                        <option value="35to44">35 to 44</option>
+                        <option value="45to54">45 to 54</option>
+                        <option value="55to64">55 to 64</option>
+                        <option value="65orOver">65 or over</option>
+                    </select>
+                </span>                
+                <span class="selectComponent">
+                    <select id="reviewsSortby">
+                        <option>Sort by</option>
+                        <option value="mostRelevant">Most Relevant</option>
+                        <option value="mostHelpful">Most Helpful</option>
+                        <option value="highestLowest">Highest to Lowest Rating</option>
+                        <option value="lowestHighest">Lowest to Highest Rating</option>
+                        <option value="mostRecent">Most Recent</option>
+                    </select>
+                </span>
+                <span class="selectComponent">
+                    <select id="englishLocale">
+                        <option>Locale</option>
+                        <option value="English">English</option>
+                        <option value="unitedStates">English(United States)</option>
+                    </select>
+                </span>
+            </fieldset>
+        </div>
+    </div>
+
+    <!-- 리뷰상세1 -->
+    <ul class="reviewDetails">
+        <li>
+            <dl>
+                <dt>Meeran</dt>
+                <dd>Canada</dd>
+            </dl>
+            <div>
+                <span class="countingStar star4">
+                    <time datetime="2021">· a year ago </time>
+                </span>
+                <h3>
+                    Amazing
+                </h3>
+                <blockquote>
+                    At first it does not taste so good but as you get used to it it tastes amazing!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 13</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Jhwells21</dt>
+                <dd>Normal, IL</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021-09">· 9 months ago </time>
+                </span>
+                <h3>
+                    Yummy in his tummy!
+                </h3>
+                <blockquote>
+                    My 6-year old would eat the whole can if I let him. He really, really, really loves them!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 5</button>
+                    <button class="activate">NO · 1</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>J</dt>
+                <dd>UK</dd>
+            </dl>
+            <div>
+                <span class="countingStar star4">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Class Crisps
+                </h3>
+                <blockquote>
+                    Absolutely class pringles, ate em all meself, this bits just cause there’s a minimum character count, innit
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 14</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Martina</dt>
+                <dd>Vienna, Austria</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Best pringels ever what a surprise!
+                </h3>
+                <blockquote>
+                    These pringels are beating the original ones and the sour cream ones. Thank you that they are availabe in europe for a decent price.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 7</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Lizzie</dt>
+                <dd>Pgh, PA</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    A crowd pleaser
+                </h3>
+                <blockquote>
+                    This has always been my husband's favourite go-to flavour! Every week when we go grocery shopping, this item must be added to our shopping list! He loves it!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>MK</dt>
+                <dd>Gurgaon, India</dd>
+            </dl>
+            <div>
+                <span class="countingStar star1">
+                    <time datetime="2021">· a year ago </time>
+                </span>
+                <h3>
+                    Horrible - It doesnt taste anywhere near to pizza
+                </h3>
+                <blockquote>
+                    I am a big fan of Pringles but this one doesnt taste at all like a pizza. Worst flavour of pringles..
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 3</button>
+                    <button>NO · 33</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Jayson</dt>
+                <dd>Chicago</dd>
+            </dl>
+            <div>
+                <span class="countingStar star1">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Pizza-licious
+                </h3>
+                <blockquote>
+                    Italy has nothing on this pizza flavor! Seductive cheesy base with a tinge of tomato in the aftertaste - keeps my mouth moist any time I can find them.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Eileen</dt>
+                <dd>Dimondale, MI</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Taste Great!
+                </h3>
+                <blockquote>
+                    My husband ate most of the can, but I got to eat the last four chips and they were very good. He was definitely enjoying them.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>kyuso-X</dt>
+                <dd>Europe</dd>
+            </dl>
+            <div>
+                <span class="countingStar star2">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Bad pizza taste
+                </h3>
+                <blockquote>
+                    I don't know why but these Pringles taste like the cheapest pizza that you buy from the nearest convenience store. I don't know.. maybe I just had high expectations.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 1</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Kenzie10621</dt>
+                <dd>Claremore Ok</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Pizza Pringle’s!
+                </h3>
+                <blockquote>
+                    These are the best Pringles yet! The flavor fits so good band I highly recommended trying these!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+    </ul>
+    <!-- 리뷰상세2 -->
+    <ul class="reviewDetails">
+        <li>
+            <dl>
+                <dt>jackie27</dt>
+                <dd>New York, NY</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Meh
+                </h3>
+                <blockquote>
+                    These are not the worst chips, but definitely not the best. These don't really taste like pizza, they taste more like spices and tomato seasoning, which I guess is 
+                    understandable since they're Pringles. Not my favorite chips.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark>YES</mark>
+                    <mark class="activate">NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Leaha L.</dt>
+                <dd>San Antonio, Tx</dd>
+            </dl>
+            <div>
+                <span class="countingStar star1">
+                    <time datetime="2021">· a year ago </time>
+                </span>
+                <h3>
+                    Omg I love the pizza flavor, BEST 1 ever!!!
+                </h3>
+                <blockquote>
+                    I've done gotta like 4 different boxes. I love them so much. Like the taste is the boom, the shape is good for a 1 bite. Really something I hope that stays around. All 
+                    my friends love them, almost as much as me.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>ChaseKnicks</dt>
+                <dd>Lake George NY</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021">· a year ago </time>
+                </span>
+                <h3>
+                    Didnt care for it
+                </h3>
+                <blockquote>
+                    Just didnt have the flavor I expected. It was bland and weak.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>bob27</dt>
+                <dd>street st.</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    amazing taste
+                </h3>
+                <blockquote>
+                    these are my favorite pringles. I really love these pringles. pizza is good and so is pringles i love pizza pringles because they are pirngles that are pizza pizza prinlges
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Azebraslife</dt>
+                <dd>St. Charles, MO</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    One of his faves!
+                </h3>
+                <blockquote>
+                    My little guy loves the Pizza Pringle’s. My husband and I call it “school pizza chips”. Good seasoning. Definitely reminds me of being a kid. We buy these quite often.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+    </ul>
+
+    <!-- 컨트롤러 -->
+    <div class="reviewControler activated">
+        1 / 2
+        <a href="#" class="prevPage">prevPage</a>
+        <a href="#" class="nextPage">nextPage</a>
+        <!-- 
+            <button enabled></button>
+            <button disabled></button>
+         -->
+    </div>
+
+    <footer>
+        <div>
+            <div>
+                <h2>GET SUPPORT</h2>
+                <ul>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>KELLOGG'S FAMILY REWARDS</h2>
+                <ul>
+                    <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                    <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                    <li><a href="logIn.html" target="_blank">Log In</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>CONNECT WITH US</h2>
+                <ul>            
+                    <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                    <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                    <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.kelloggcompany.com/en_US/privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="https://www.kelloggcompany.com/en_US/legal.html">Terms Of Use</a></li>
+                <li><a href="https://www.privacy.kelloggcompany.com/us/homepage.html">California Consumer Rights</a></li>
+            </ul>
+            <p>
+                ®Kellogg's Company 2022
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

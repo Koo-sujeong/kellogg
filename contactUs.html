@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kellogg</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="index.html"><img src="images/kellogg_logo_red.png" alt="kellogg"></a></h1>
+             <nav>
+                <ul>
+                    <li><a href="breakfastFavorites.html">OUR FOODS</a></li>
+                    <li><a href="sustainability.html">OUR IMPACT</a></li>
+                    <li><a href="whoWeAre.html">OUR STORE</a></li>
+                </ul>
+                <input type="button" data-panel="fnb_open" value="openMenu" class="fnbOpenBtn">
+            </nav>
+        </div>
+        <div class="fnbPanel" id="fnb_open">
+            <input type="button" class="btn_close" value="closeMenu">
+            <ol>
+                <li>
+                    OUR FOODS
+                    <ul>
+                        <li><a href="breakfastFavorites.html">BREAKFAST FAVORITES &amp; TREATS</a></li>
+                        <li><a href="cerealGranola.html">CEREAL &amp; GRANOLA</a></li>
+                        <li><a href="savorySnacks.html">SAVORY SNACKS</a></li>
+                        <li><a href="plantbasedProtein.html">PLANT-BASED PROTEINS</a></li>
+                        <li><a href="snackbarsBites.html">SNACK BARS &amp; BITES</a></li>
+                        <li><a href="proteinbarsShake.html">PROTEIN BARS &amp; SHAKE</a></li>
+                        <li><a href="frozenBreakfast.html">FROZEN BREAKFAST</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR IMPACT
+                    <ul>
+                        <li><a href="sustainability.html">SUSTAINABILITY</a></li>
+                        <li><a href="philanthropy.html">PHILANTHROPY</a></li>
+                        <li><a href="nourishment.html">NOURISHMENT</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR STORE
+                    <ul>
+                        <li><a href="whoWeAre.html">WHO WE ARE</a></li>
+                        <li><a href="kelloggHistory.html">KELLOGG HISTORY</a></li>
+                        <li><a href="openForBreakfast.html">OPEN FOR BREAKFAST</a></li>                    
+                    </ul>
+                </li>
+            </ol>
+            <div>
+                <form>
+                    <div>
+                        <input type="search" placeholder="search" title="insert ur search keyword's">
+                    </div>
+                </form>
+                <div>
+                    <h3>JOIN AND BE REWARDED</h3>
+                    <ul>
+                        <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                        <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                        <li><a href="logIn.html" target="_blank">Log In</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>CONNECT WITH US</h3>
+                    <ul>            
+                        <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                        <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                        <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    <section class="contactUs">
+        <!-- 입력창 -->
+        <div>
+            <form>
+                <fieldset>
+                    <legend>CONTACT US BY EMAIL</legend>
+                    <ul>
+                        <li>
+                            <label for="urFirstname">FIRST NAME</label>                                
+                            <input type="text" id="urFirstname">
+                        </li>
+                        <li>
+                            <label for="urLastname">LAST NAME</label>                                
+                            <input type="text" id="urLastname">
+                        </li>
+                        <li>
+                            <label for="urAddress">ADDRESS</label>                                
+                            <input type="text" id="urAddress">
+                        </li>
+                        <li>
+                            <label for="urCity">CITY</label>                                
+                            <input type="text" id="urCity">
+                        </li>
+                        <li>
+                            <label for="urEmail">EMAIL</label>                                
+                            <input type="email" id="urEmail">
+                        </li>
+                        <li>
+                            <label for="messageText">MESSAGE</label>                                
+                            <textarea id="messageText"></textarea>
+                        </li>                        
+                        <li>                
+                            <input type="checkbox" id="privacyPolicy">
+                            <label for="privacyPolicy">
+                                I acknowledge that I have read the Privacy Policy.
+                            </label>
+                            <span>By choosing, "I agree," you consent to receive news, surveys, updates and offers from Kellogg®.</span>
+                        </li>  
+                    </ul>             
+                    <input type="submit" value="SUBMIT" class="btnRed btnRadius">
+                </fieldset>
+            </form>
+        </div> 
+
+        <div>
+            <h2>CONTACT US</h2>
+            <p>Choose topic below that most closely identifies your reason for contacting us. If you are contacting us from a 
+                country outside of the US, please visit our website in your region.</p>
+            <p>If you are under 16, please have a parent or guardian contact us on your behalf.</p>
+
+            <div>
+                <!-- 
+                    a href="tel:"
+                    small
+                -->
+                <a href="tel:1-800-962-1413">1-800-962-1413</a>
+                <small>Call Monday - Friday | 10 AM to 5 PM ET</small>
+                <address>
+                    Kellogg's Consumer Affairs | P.O. Box CAMB | Battle Creek, MI 49016
+                </address>
+                <small>* Message and data rates may apply</small>
+            </div>
+            <div>
+                <h3>CONTACT US</h3>
+                <p>
+                    <strong class="titleRed">CHECK YOUR ORDER STATUS</strong>
+                    Are you a member of Kellogg’s Family Rewards and want to check the status of your online order?<br>
+                    Track it here.
+                </p>
+                <a href="whyJoin.html" class="arrowRedBTN">CHECK YOUR ORDER</a>
+                <p>
+                    <strong class="titleRed">FAQ</strong>
+                    Read the answers to the most frequently asked questions we receive on Kelloggs.com
+                </p>
+                <a href="FAQs.html" class="arrowRedBTN">CHECK OUR FAQ</a>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer>
+        <div>
+            <div>
+                <h2>GET SUPPORT</h2>
+                <ul>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>KELLOGG'S FAMILY REWARDS</h2>
+                <ul>
+                    <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                    <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                    <li><a href="logIn.html" target="_blank">Log In</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>CONNECT WITH US</h2>
+                <ul>            
+                    <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                    <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                    <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.kelloggcompany.com/en_US/privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="https://www.kelloggcompany.com/en_US/legal.html">Terms Of Use</a></li>
+                <li><a href="https://www.privacy.kelloggcompany.com/us/homepage.html">California Consumer Rights</a></li>
+            </ul>
+            <p>
+                ®Kellogg's Company 2022
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

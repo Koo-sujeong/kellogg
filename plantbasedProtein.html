@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kellogg</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="index.html"><img src="images/kellogg_logo_red.png" alt="kellogg"></a></h1>
+             <nav>
+                <ul>
+                    <li><a href="breakfastFavorites.html">OUR FOODS</a></li>
+                    <li><a href="sustainability.html">OUR IMPACT</a></li>
+                    <li><a href="whoWeAre.html">OUR STORE</a></li>
+                </ul>
+                <input type="button" data-panel="fnb_open" value="openMenu" class="fnbOpenBtn">
+            </nav>
+        </div>
+        <div class="fnbPanel" id="fnb_open">
+            <input type="button" class="btn_close" value="closeMenu">
+            <ol>
+                <li>
+                    OUR FOODS
+                    <ul>
+                        <li><a href="breakfastFavorites.html">BREAKFAST FAVORITES &amp; TREATS</a></li>
+                        <li><a href="cerealGranola.html">CEREAL &amp; GRANOLA</a></li>
+                        <li><a href="savorySnacks.html">SAVORY SNACKS</a></li>
+                        <li><a href="plantbasedProtein.html">PLANT-BASED PROTEINS</a></li>
+                        <li><a href="snackbarsBites.html">SNACK BARS &amp; BITES</a></li>
+                        <li><a href="proteinbarsShake.html">PROTEIN BARS &amp; SHAKE</a></li>
+                        <li><a href="frozenBreakfast.html">FROZEN BREAKFAST</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR IMPACT
+                    <ul>
+                        <li><a href="sustainability.html">SUSTAINABILITY</a></li>
+                        <li><a href="philanthropy.html">PHILANTHROPY</a></li>
+                        <li><a href="nourishment.html">NOURISHMENT</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR STORE
+                    <ul>
+                        <li><a href="whoWeAre.html">WHO WE ARE</a></li>
+                        <li><a href="kelloggHistory.html">KELLOGG HISTORY</a></li>
+                        <li><a href="openForBreakfast.html">OPEN FOR BREAKFAST</a></li>                    
+                    </ul>
+                </li>
+            </ol>
+            <div>
+                <form>
+                    <div>
+                        <input type="search" placeholder="search" title="insert ur search keyword's">
+                    </div>
+                </form>
+                <div>
+                    <h3>JOIN AND BE REWARDED</h3>
+                    <ul>
+                        <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                        <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                        <li><a href="logIn.html" target="_blank">Log In</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>CONNECT WITH US</h3>
+                    <ul>            
+                        <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                        <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                        <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 팝업창1 -->
+    <div class="popupModule" id="popupRecipes_pp01">
+        <div>
+            <input type="button" value="X" class="btn_close">
+            <!-- <a href="" id="popup_open"></a> -->
+            <figure>
+                <img src="images/popuprecipes_pp_01.jpg" alt="french onion melt burger">
+                <figcaption>
+                    <h2>RFRENCH ONION MELT BURGER</h2>
+                    <p>We topped these Swiss-inspired burgers with brown mustard, caramelized onions 
+                        seasoned with caraway seeds and Gruyére cheese.</p>
+                    <div>
+                        <input type="button" value="print" class="btnPrint">
+                        <mark>PREP TIME : 20 MINUTES | TOTAL TIME : 20 MINUTES | 4 SERVINGS</mark>
+                    </div>
+                    <strong class="popupTitleGray">INGREDIENTS</strong>
+                    <ol>
+                        <li>3/4 cup very thinly sliced sweet onion</li>
+                        <li>1 tablespoon butter</li>
+                        <li>1 / 2 teaspoon caraway seed (optional)</li>
+                        <li>4 MorningStar Farms® Grillers Prime® Veggie Burgers</li>
+                        <li>1 tablespoon brown mustard or Dijon mustard</li>
+                        <li>2 ounces thinly sliced Gruyére cheese or Swiss cheese</li>
+                        <li>2 ounces thinly sliced soy cheese</li>
+                    </ol>
+                </figcaption>
+            </figure>
+            <div>
+                <strong class="popupTitleRed">DIRECTIONS</strong>
+                <ol>
+                    <li>Cook onion in hot butter in nonstick frypan over medium-low heat, stirring frequently, for 14 to 18 minutes or until lightly browned. Stir in caraway seed, if desired.</li>
+                    <li>Meanwhile, place patties on baking sheet. Bake at 350ºF for 8 minutes. Turn patties. Bake 7 minutes more. Spread mustard on top of patties. Top with cheese. Bake 
+                        for 1 to 2 minutes more or until cheese melts.</li>
+                    <li>Spoon onions over top of patties.</li>
+                </ol>
+            </div>
+        </div>
+    </div>    
+    <!-- 팝업창2 -->
+    <div class="popupModule" id="popupRecipes_pp02">
+        <div>
+            <input type="button" value="X" class="btn_close">
+            <!-- <a href="" id="popup_open"></a> -->
+            <figure>
+                <img src="images/popuprecipes_pp_02.jpg" alt="better breakfast casserole">
+                <figcaption>
+                    <h2>BETTER BREAKFAST CASSEROLE</h2>
+                    <p>This hearty casserole combines hash brown potatoes, eggs, onions, cheese and 
+                        Morningstar Farms® Original Sausage Patties. Serve it for casual brunches.</p>
+                    <div>
+                        <input type="button" value="print" class="btnPrint">
+                        <mark>PREP TIME : 10 MINUTES | TOTAL TIME : 65 MINUTES | 9 SERVINGS</mark>
+                    </div>
+                    <strong class="popupTitleGray">INGREDIENTS</strong>
+                    <ol>
+                        <li>6 MorningStar Farms® Original Sausage Patties</li>
+                        <li>package (20 oz.) refrigerated shredded hash brown potatoes (about 3 1 / 2 cups)</li>
+                        <li>1 1 / 4 cups (5 oz.) shredded Monterey Jack cheese with peppers or shredded cheddar
+                            cheese</li>
+                        <li>1 / 2 cup sliced green onions</li>
+                        <li>6 eggs</li>
+                        <li>1 cup milk</li>
+                        <li>1 / 4 teaspoon salt</li>
+                        <li>1 / 4 teaspoon garlic powder</li>
+                        <li>1 / 4 teaspoon pepper</li>
+                    </ol>
+                </figcaption>
+            </figure>
+            <div>
+                <strong class="popupTitleRed">DIRECTIONS</strong>
+                <ol>
+                    <li>Place MORNINGSTAR FARMS Original Sausage Patties on microwave-safe plate. Microwave at high about 1 minute or until thawed. Cut patties into quarters.</li>
+                    <li>In 8- x 8- x 2-inch baking dish coated with cooking spray arrange half of the potatoes. Top with sausage patty pieces, 3/4 cup of the cheese and 1 / 3 cup of the onions. 
+                        Arrange remaining potatoes on top. Top with the remaining cheese and the remaining onions.</li>
+                    <li>In medium bowl lightly beat together eggs, milk, salt, garlic powder and pepper. Pour over mixture in baking dish. Bake, uncovered, at 350° F for 45 to 55 minutes or 
+                        until a knife inserted near center comes out clean. Let stand for 10 minutes. Cut into squares to serve.</li>
+                </ol>
+            </div>
+        </div>
+    </div>  
+    <!-- 팝업창3 -->
+    <div class="popupModule" id="popupRecipes_pp03">
+        <div>
+            <input type="button" value="X" class="btn_close">
+            <!-- <a href="" id="popup_open"></a> -->
+            <figure>
+                <img src="images/popuprecipes_pp_03.jpg" alt="chik patty and veggie wrap">
+                <figcaption>
+                    <h2>CHIK PATTY &amp; VEGGIE WRAP</h2>
+                    <p>Lemon juice and creamy Dijon mustard season the loads of fresh vegetables and 
+                        Morningstar Farms® Chik Patties® in this wrap.</p>
+                    <div>
+                        <input type="button" value="print" class="btnPrint">
+                        <mark>PREP TIME : 20 MINUTES | TOTAL TIME : 20 MINUTES | 1 SERVING</mark>
+                    </div>
+                    <strong class="popupTitleGray">INGREDIENTS</strong>
+                    <ol>
+                        <li>1 Morningstar Farms® Chik Patties® Original</li>
+                        <li>1 tablespoon creamy Dijon mustard</li>
+                        <li>1 (8 inch) whole wheat tortilla</li>
+                        <li>1 tablespoon chopped red onion</li>
+                        <li>1 medium romaine lettuce leaf, center vein removed</li>
+                        <li>3-4 ribbon-cut carrot slices or 2 tablespoons shredded carrot</li>
+                        <li>3-4 ribbon-cut zucchini slices or 2 tablespoons shredded zucchini</li>
+                        <li>1 / 2 teaspoon lemon juice</li>
+                    </ol>
+                </figcaption>
+            </figure>
+            <div>
+                <strong class="popupTitleRed">DIRECTIONS</strong>
+                <ol>
+                    <li>Prepare MORNINGSTAR FARMS CHIK PATTIES Original according to package directions. Cut into four strips.</li>
+                    <li>Meanwhile, spread creamy Dijon mustard on tortilla. Sprinkle with onion. Top with lettuce leaf. Arrange chik patty strips, carrot and zucchini on top. Sprinkle with 
+                        lemon juice. Roll-up. Diagonally cut into halves. Serve immediately.</li>
+                </ol>
+            </div>
+        </div>
+    </div>  
+    
+    
+    <section class="listContainer">
+        <!-- listContainer -> 첫번째 div로 선택자 -->
+        <!-- 메인배너 -->
+        <div class="listTitle listbanner04">
+            <h2>PLANT-BASED PROTEINS</h2>
+            <p>
+                Plant-based eating has never been more delicious or convenient with <br>
+                Morningstar Farms, America’s #1 veggie burger brand, Incogmeato,<br>
+                the next generation of plant-based protein and Kashi.
+            </p>
+        </div>
+        <!-- 브랜드로고 -->
+        <div class="listBrand">
+            <h3 class="titleModule">
+                <small>PLANT-BASED PROTEINS</small>
+                BRANDS
+            </h3>
+            <ul class="brandSlider">
+                <li>
+                    <img src="images/logo_morningstarFarms.png" alt="MorningStar Farms">
+                    <p>
+                        <strong>AMERICA'S FAVORITES</strong>
+                        MorningStar Farms® is plant-based goodness made for everyone.
+                    </p>  
+                </li>  
+                <li>
+                    <img src="images/logo_incogmeato.png" alt="Incogmeato">
+                    <p>
+                        <strong>A WHOLE DIFFERENT ANIMAL</strong>
+                        Trick your taste buds with plant-based protein that looks, cooks &amp; tastes like meat.
+                    </p>  
+                </li>  
+                <li>
+                    <img src="images/logo_kashi.png" alt="Kashi">
+                    <p>
+                        <strong>SIMPE, WHOLESOME INGREDIENTS</strong>
+                        Combining plant-based, nutritious ingredients in our cereal,
+                        bars and waffles makes choosing wholesome a little easier. 
+                    </p>  
+                </li>  
+                <li>
+                    <img src="images/logo_gardenburger.png" alt="Gardenburger">
+                    <p>
+                        <strong>EAT POSITIVE®</strong>
+                        Made with simple, delicious ingredients you can feel good about.
+                    </p>  
+                </li>  
+            </ul>        
+        </div>
+        <!-- 제품목록 -->
+        <div class="listProduct">
+            <h3 class="titleModule">
+                <small>PLANT-BASED PROTEINS</small>
+                FOODS
+            </h3>
+            <ul class="productModule">
+                <li>
+                    <img src="images/productList_pp_01.png" alt="MorningStar Farms® Spicy Black Bean Burgers">
+                    <dl>
+                        <dt>MorningStar Farms® Spicy Black
+                            Bean Burgers</dt>
+                        <dd><span>4.9</span> • 9 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_pp_01.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_pp_02.png" alt="MorningStar Farms® Veggie Sweet Mustard Chik’n Nuggets">
+                    <dl>
+                        <dt>MorningStar Farms® Veggie Sweet
+                            Mustard Chik’n Nuggets</dt>
+                        <dd><span>4.7</span> • 12 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_pp_02.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_pp_03.png" alt="MorningStar Farms® Veggie Maple Flavored Sausage Patties">
+                    <dl>
+                        <dt>MorningStar Farms® Veggie Maple
+                            Flavored Sausage Patties</dt>
+                        <dd><span>4.5</span> • 26 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_pp_03.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_pp_04.png" alt="MorningStar Farms® Veggie Chik'n Nuggets">
+                    <dl>
+                        <dt>MorningStar Farms® Veggie
+                            Chik'n Nuggets</dt>
+                        <dd><span>4.8</span> • 12 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_pp_04.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_pp_05.png" alt="MorningStar Farms® Chipotle Black Bean Crumbles™">
+                    <dl>
+                        <dt>MorningStar Farms® Chipotle Black
+                            Bean Crumbles™</dt>
+                        <dd><span>3.0</span> • 23 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_pp_05.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_pp_06.png" alt="MorningStar Farms® Tomato and Basil Pizza Burgers">
+                    <dl>
+                        <dt>MorningStar Farms® Tomato &amp;
+                            Basil Pizza Burgers</dt>
+                        <dd><span>4.8</span> • 12 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_pp_06.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_pp_07.png" alt="MorningStar Farms® Veggie Spicy Popcorn Chik’n">
+                    <dl>
+                        <dt>MorningStar Farms® Veggie Spicy
+                            Popcorn Chik’n</dt>
+                        <dd><span>4.5</span> • 2 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_pp_07.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_pp_08.png" alt="MorningStar Farms® Veggie Dogs">
+                    <dl>
+                        <dt>MorningStar Farms® Veggie Dogs</dt>
+                        <dd><span>4.8</span> • 11 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_pp_08.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_pp_09.png" alt="MorningStar Farms® Veggie Chik’n and Cheeze Taquito Bites">
+                    <dl>
+                        <dt>MorningStar Farms® Veggie Chik’n &amp; Cheeze Taquito Bites</dt>
+                        <dd><span>3.7</span> • 17 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_pp_09.html">RATE REVIEW</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 레시피 -->
+        <div class="lastContent">
+            <h3 class="titleModule">
+                <small>CREATIVE RECIPES USING PLANT-BASED PROTEINS</small>
+                RESIPES
+            </h3>
+            <ul id="recipesList">
+                <li>
+                    <a href="#recipesList" data-panel="popupRecipes_pp01"><img src="images/recipes_pp_01.jpg" alt="french onion melt burger"></a>
+                    <strong>FRENCH ONION MELT BURGER</strong>
+                    <small>20 MIN | 4 SERVINGS</small>              
+                </li>
+                <li>
+                    <a href="#recipesList" data-panel="popupRecipes_pp02"><img src="images/recipes_pp_02.jpg" alt="better breakfast casserole"></a>
+                    <strong>BETTER BREAKFAST CASSEROLE</strong>
+                    <small>10 MIN | 9 SERVINGS</small>
+                </li>
+                <li>
+                    <a href="#recipesList" data-panel="popupRecipes_pp03"><img src="images/recipes_pp_03.jpg" alt="chik patty and veggie wrap"></a>
+                    <strong>CHIK PATTY &amp; VEGGIE WRAP</strong>
+                    <small>20 MIN | 1 SERVING</small>
+                </li>
+            </ul>        
+        </div>
+        <!-- 와이조인 -->    
+        <div class="joinUsModule">
+        <h2>EXCITING CHANGES ARE COMING TO<br>
+            KELLOGG’S FAMILY REWARDS®.
+        </h2>
+            <a href="whyJoin.html" target="_blank">JOIN THE FAM</a>
+            <p>
+                Check out the new Kellogg’s Family Rewards®! More of what you love, less stuff you don’t.<br>
+                It’s a new way of earning and getting rewarded. Simpler, faster, better - and best of all - fun-er!
+            </p>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div>
+            <div>
+                <h2>GET SUPPORT</h2>
+                <ul>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>KELLOGG'S FAMILY REWARDS</h2>
+                <ul>
+                    <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                    <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                    <li><a href="logIn.html" target="_blank">Log In</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>CONNECT WITH US</h2>
+                <ul>            
+                    <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                    <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                    <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.kelloggcompany.com/en_US/privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="https://www.kelloggcompany.com/en_US/legal.html">Terms Of Use</a></li>
+                <li><a href="https://www.privacy.kelloggcompany.com/us/homepage.html">California Consumer Rights</a></li>
+            </ul>
+            <p>
+                ®Kellogg's Company 2022
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

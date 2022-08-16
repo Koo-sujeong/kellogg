@@ -1,0 +1,2736 @@
+
+    header > div nav , header .fnbPanel div form div input[type='search'] ,
+    header .fnbPanel ol li ul , 
+    footer div ul li ,
+    footer div p{
+        font-family: 'Roboto';
+    }
+
+    header .fnbPanel ol , 
+    header .fnbPanel div , 
+    footer div > div h2,
+    .joinUsModule h2 , .bx-wrapper .bx-pager.bx-default-pager a , strong{
+        font-family: 'open Sans';
+    }
+a{
+    text-decoration: none;
+}
+button{
+    background-color: transparent;
+}
+
+/* ! fna 부분 코드 전체수정 */
+
+
+@media screen and (min-width: 280px){
+    /* 좌우 패딩 2% ~ 3% */
+
+    
+    /* 공통 */
+
+    * > .btnRed{           
+        display: inline-block; background-color: #d31245; color: white;
+    }
+
+    * > .btnGray{
+        display: inline-block; background-color: #e6e6e6; color: black;
+    }
+
+    * > .btnRadius{
+        border-radius: 5px;
+    }
+
+    .titleModule{
+        font-size: 18px; font-weight: 900; color: black;
+    }
+
+    .titleModule small{
+        font-size: 12px; color: #bfbfbf; display: block; margin-bottom: 15px;
+    }    
+
+    .countingStar{
+       display: inline-block;  width: 130px; height: 22px;
+    }
+
+    .star5{
+        background: url('../images/icon_starCounting.png') no-repeat left top;
+    }
+    .star4{ 
+        background: url('../images/icon_starCounting.png') no-repeat left -22px;
+    }
+    .star3{ 
+        background: url('../images/icon_starCounting.png') no-repeat left -44px;
+    }
+    .star2{ 
+        background: url('../images/icon_starCounting.png') no-repeat left -66px;
+    }
+    .star1{ 
+        background: url('../images/icon_starCounting.png') no-repeat left -88px;
+    }
+    .star0{ 
+        background: url('../images/icon_starCounting.png') no-repeat left -110px;
+    }
+    
+    * > mark{font-style: normal; background: none;}
+
+
+    header > div:first-of-type,
+    .reviewModule,
+    .ourfoodsBFList , .impactSustainList ,
+    .listContainer .listBrand ,
+    .listContainer .listProduct ,
+    .listContainer .lastContent ,
+    .productInformation, .reviewDetails , .reviewControler ,
+    .listContainer .listNews .titleModule ,
+    .impactNewsContainer .newsTitle , .impactNewsContainer .newsDetails , .impactNewsContainer small ,
+    .whoWeAreContainer .betterDays , .whoWeAreContainer .ourLatestNews ,
+    .openContainer .honestAnswers , .historyContainer .titleModule , .contactUs , 
+    .faqMenu , .topAcc , .companyAcc , .ingredientAcc , .promotionAss , .recipesAcc
+    .rewardsWhyjoin 
+    {
+        max-width: 990px; margin: 0 auto; padding: 0 3%; box-sizing: border-box;
+    }
+    header{
+        background-color: white; padding: 50px 0;
+    }
+
+    header > div{
+        position: relative;
+    }
+    header > div h1{
+        max-width: 200px; 
+    }
+    header > div h1.active{
+        position: fixed; z-index: 1000;
+    }
+    header > div h1 a{
+        display: block;
+    }
+    header > div h1 a img{
+        width: 80%;
+    }
+    header > div nav{
+        position: absolute; right: 3%; top: 0; line-height: 50px;
+    }
+    header > div nav ul{
+        display: none;
+    }
+    header > div nav input[type='button']{
+        width: 40px; height: 24px; text-indent: -9999px; border: none; vertical-align: middle;
+        background: url('../images/icon_fnb_open.png') no-repeat center; cursor: pointer;
+    }
+
+    header .fnbPanel{
+        position: fixed; width: 100%; height: 100%; left: 0; top: 0;
+        background: #d31245; 
+        display: none; z-index: 100;
+        box-sizing: border-box; padding: 0 8.3%;
+    }
+    header .fnbPanel.active{
+        display: block;
+    }
+    header .fnbPanel input[type='button']{
+        width: 30px; height: 30px; text-indent: -9999px; border: none;
+        background: url('../images/icon_fnb_close.png')  center / contain no-repeat transparent;
+        position: absolute;  z-index: 5000; right: 3%; top: 55px;
+
+    }
+
+    header .fnbPanel ol{
+        padding-top: 180px;
+        /* max-width: 768%; */
+        list-style: decimal-leading-zero outside;
+    } 
+
+    header .fnbPanel ol li:hover{
+        color: #e5ff00; cursor: default;
+    }
+
+    header .fnbPanel ol > li{
+        font-size: 20px; font-weight: 900; color: white;
+        list-style-position: inside;
+    }
+
+    header .fnbPanel ol > li:not(:last-child){
+        margin-bottom: 30px;
+    }
+    header .fnbPanel ol li ul{
+        z-index: 100;
+        margin-top: 20px;
+        list-style: none;
+        display: none;
+        width: 100%;
+    }
+    header .fnbPanel ol li:hover ul{
+        display: block;
+    }
+
+    header .fnbPanel ol li ul li{
+        margin-bottom: 10px;
+    }
+
+    header .fnbPanel ol li ul li a{
+        font-size: 13px; font-weight: 400; color: white; 
+    }
+
+    header .fnbPanel ol li ul li:hover a{
+        color: black; font-weight: 500;
+    }
+
+    header .fnbPanel > div{
+        color: white; padding-top: 50px; 
+    }
+
+    header .fnbPanel div > div:first-of-type{
+        margin-bottom: 30px;
+    }
+    
+    header .fnbPanel div form div{
+        background: url('../images/icon_search.png') no-repeat left;
+        padding-left: 30px;
+        margin-bottom: 50px;
+    }
+
+    header .fnbPanel div form div input[type='search']{
+        background-color: rgba(0, 0, 0, 0); border-style: none;
+        line-height: 25px;
+        border-bottom: 1px solid white;
+    }
+    header .fnbPanel div form div input[type='search']::placeholder{
+        color: white;
+    }
+    
+    header .fnbPanel div div h3{
+        font-size: 18px; margin-bottom: 25px;
+    }
+
+    header .fnbPanel div div ul{
+        list-style: none; 
+    }
+    header .fnbPanel div div:first-of-type ul li{
+        font-size: 14px; font-weight: 200; display: inline-block;
+    }
+    header .fnbPanel div div:first-of-type ul li:not(:first-child){
+        margin-left: 10%;
+        /* margin-bottom: 25px; */
+    }
+
+    header .fnbPanel div div:last-of-type ul li{
+        display: inline-block;
+    }
+    header .fnbPanel div div:last-of-type ul li:not(:first-child){
+        margin-left: 10%;
+    }
+
+    header .fnbPanel div div ul li a{
+        color: white;
+    }
+
+
+    .joinUsModule{
+        background-color: #f9f8f4; padding: 25px 10%; box-sizing: border-box;
+        text-align: center;
+    }
+    .joinUsModule > *:not(p){
+        display: inline-block; vertical-align: middle; margin-bottom: 20px;
+    }
+
+    .joinUsModule h2{
+        text-align: center; font-size: 14px; font-weight: 900; line-height: 20px;
+    }
+
+    .joinUsModule a{
+        background-color: #d31245; min-width: 200px; text-align: center; line-height: 40px;
+        border-radius: 2px; font-size: 14px; font-weight: 900; color: white;
+    }
+
+    .joinUsModule p{
+        color: #4d4d4d; text-align: center; font-size: 12px;  line-height: 18px;
+    }
+    /* 푸터상단 조인모듈 */
+
+
+
+    /* 푸터 */
+    footer{
+        background-color: black; padding: 70px 10%; 
+    }
+
+    footer > div{
+        color: white;  max-width: 1600px; width: 100%;
+         margin: 0 auto; 
+    } 
+    
+    /* 푸터 - 상단 */
+    footer > div:first-child{
+        margin-bottom: 115px; display: block;
+    }
+    
+    
+    footer div > div:not(:last-child){
+        margin-bottom: 40px;
+    }
+
+    
+    footer div > div h2{
+        margin-bottom: 25px; font-size: 18px; font-weight: 900;
+    }
+
+    footer div > div ul li{
+        list-style: none; font-size: 14px; font-weight: 200;
+    }
+
+    footer div > div:not(:last-of-type) ul li:not(:last-child){
+        margin-bottom: 25px;
+    }
+
+    footer div > div ul li a{
+        color: white;
+    }
+    
+    footer div > div:last-child ul{
+        display: flex; 
+         align-content: space-between; 
+    }
+    footer div > div:last-child ul li{
+        width: 25%; margin-bottom: 20px;
+    }
+    footer div > div:last-child ul li a{
+        display: block;
+    }
+
+
+
+    /* 푸터 - 하단 */
+    footer > div:last-of-type ul{
+        margin-bottom: 20px; text-align: left;
+    }
+    footer > div:last-of-type ul li{
+        list-style: none; font-size: 15px; font-weight: 200; display: block;
+    }
+
+    footer > div:last-of-type ul li a{
+        color: #999999; line-height: 25px;
+    }    
+
+    footer > div ul li:hover a{
+        color: #e5ff00;
+    }
+
+    footer > div:last-of-type p{
+        font-size: 15px; text-align: right;
+    }
+
+
+    meter {
+        --background: #e6e6e6;
+        --optimum: #d31245;
+        --sub-optimum: gold;
+        display: block;
+        width: 100%;
+        height: 25px;
+        border-radius: 2px;
+        max-width: 200px;
+        
+        
+      }
+      
+      /* The gray background in Chrome, etc. */
+      meter::-webkit-meter-bar {
+        background: var(--background);
+      }
+      
+      /* The green (optimum) bar in Firefox */
+      meter:-moz-meter-optimum::-moz-meter-bar {
+        background: var(--optimum);
+      }
+      
+      /* The green (optimum) bar in Chrome etc. */
+      meter::-webkit-meter-optimum-value {
+        background: var(--optimum);
+      }
+      
+      /* The yellow (sub-optimum) bar in Firefox */
+      meter:-moz-meter-sub-optimum::-moz-meter-bar {
+        background: var(--sub-optimum);
+      }
+      
+      /* The yellow (sub-optimum) bar in Chrome etc. */
+      meter::-webkit-meter-suboptimum-value {
+        background: var(--sub-optimum);
+      }
+      
+      /* The red (even less good) bar in Firefox */
+      meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+        background: var(--sub-sub-optimum);
+      }
+      
+      /* The red (even less good) bar in Chrome etc. */
+      meter::-webkit-meter-even-less-good-value {
+        background: var(--sub-sub-optimum);
+      }
+
+
+      /* select */
+    * > .selectComponent select{
+        -webkit-appearance: none; -moz-appearance: none;  appearance: none;
+        height: 40px; border: #bfbfbf solid 1px; border-radius: 3px; box-sizing: border-box;
+        font-size: 12px; font-weight: 200; color: #999999; padding-left: 10px;
+        background: url('../images/icon_select_arrow.png') no-repeat right 10px center;
+    }
+
+    * > .selectComponent select option{
+        font-size: 12px; font-weight: 200;
+    }
+
+    * > .btnPrint[type='button']{
+        width: 40px; height: 40px; text-indent: -9999px; border: #bfbfbf solid 1px; border-radius: 5px;
+        background: url('../images/icon_print.png') no-repeat center;
+    }
+    
+
+      /* starGraph */
+      
+    * > .starGraph{
+        display: block; width: 100%; 
+        text-align: center; line-height: 260px; font-size: 50px; color: #4d4d4d; font-weight: 500;
+    }
+    * > .graph5{
+        background:url('../images/icon_redStarBig.png') no-repeat center top 30% , 
+        url('../images/starGraph_5.png') center 210px / 211px repeat; height: 210px;
+    }
+    * > .graph4{
+        background:url('../images/icon_redStarBig.png') no-repeat center top 30% , 
+        url('../images/starGraph_4.png') center / contain no-repeat ; height: 210px;
+    }
+    * > .graph3{
+        background:url('../images/icon_redStarBig.png') no-repeat center top 30% , 
+        url('../images/starGraph_3.png') center / contain no-repeat ; height: 210px;
+    }
+    * > .graph2{
+        background:url('../images/icon_redStarBig.png') no-repeat center top 30% , 
+        url('../images/starGraph_2.png') center / contain no-repeat ; height: 210px;
+    }    
+    * > .graph1{
+        background:url('../images/icon_redStarBig.png') no-repeat center top 30% , 
+        url('../images/starGraph_1.png') center / contain no-repeat ; height: 210px;
+    }
+    * > .graph0{
+        background:url('../images/icon_redStarBig.png') no-repeat center top 30% , 
+        url('../images/starGraph_0.png') center / contain no-repeat ; height: 210px;
+    }
+
+
+
+    /* popup */
+    .popupModule{
+        display: none; background-color: rgba(0, 0, 0, 0.6); width: 100%; height: 100%;
+        position: fixed; left: 0; top: 0; z-index: 10; padding: 2% 3% 2% 0;
+    }
+
+    .popupModule.active{
+        display: block;
+    }
+
+    [id ^= 'popupRecipes'] > div input.btn_close[type='button'] , 
+    [id ^= 'popupPlanet'] > div input.btn_close[type='button'] ,
+    #popupReview > div input.btn_close[type='button']{
+        width: 17px; height: 16px; text-indent: -9999px; border: none; vertical-align: middle;
+        background: url('../images/icon_popupClose.png') no-repeat center; cursor: pointer;
+        position: absolute; right: 15px; top: 15px;
+    }   
+    
+    * > .popupTitleGray{
+        display: block; font-size: 15px; font-weight: 800; color: #bfbfbf;
+    }
+
+    * > .popupTitleRed{
+        display: block; font-size: 15px; font-weight: 800; color: #d31245;
+    }  
+
+    
+    /* our Foods 리스트_팝업 */
+    
+    [id ^= 'popupRecipes'] > div{
+        background-color: white; min-width: 265px; width: 95%; height: 97%;
+        margin: 0 auto; border-radius: 10px; padding: 40px 5% 20px 5%; box-sizing: border-box;
+        position: relative; overflow-y: scroll;
+    } 
+
+    [id ^= 'popupRecipes'] div figure{
+        width: 100%;
+    }
+
+    [id ^= 'popupRecipes'] div figure img{
+        width: 100%;
+    }
+
+    [id ^= 'popupRecipes'] div figure figcaption{
+        padding-top: 25px;
+    }
+
+    [id ^= 'popupRecipes'] div figure figcaption h2{
+        font-size:  20px; font-weight: 900; margin-bottom: 10px;
+    }
+
+    [id ^= 'popupRecipes'] div figure figcaption p{
+        font-size: 14px; line-height: 20px; color: #999999;
+    }
+
+    [id ^= 'popupRecipes'] div figure figcaption div{
+        padding-top: 15px; margin-bottom: 25px; text-align: right;
+    }
+
+    [id ^= 'popupRecipes'] div figure figcaption div .btnPrint[type='button']{
+        width: 30px; height: 30px; text-indent: -9999px; border: #bfbfbf solid 1px; border-radius: 3px;
+        background: url('../images/icon_popupPrint.png') no-repeat center;
+        background-size: 65%; margin-bottom: 10px;
+    }
+
+    [id ^= 'popupRecipes'] div figure figcaption div mark{
+        background-color: #d31245; border-radius: 3px; display: block; line-height: 18px;
+        padding: 5px 10px; font-size: 12px; font-weight: 200; color: white;
+        box-sizing: border-box;  text-align: center;
+    }  
+
+    [id ^= 'popupRecipes'] > div > div{
+        padding-top: 25px;
+    }
+
+    [id ^= 'popupRecipes'] div strong{
+        margin-bottom: 10px;
+    }
+
+    [id ^= 'popupRecipes'] div ol{
+        list-style-position: inside;
+        font-weight: 200; font-size: 12px; line-height: 20px;
+    }
+
+    [id ^= 'popupRecipes'] div ol li::marker{
+        font-weight: 500;
+    }
+
+
+    /* our impact 리스트_팝업 */
+    [id ^= 'popupPlanet'] > div{
+        background-color: white; min-width: 265px; width: 95%; height: 97%;
+        margin: 0 auto; border-radius: 10px; padding: 50px 2%; box-sizing: border-box;
+        position: relative; overflow-y: scroll;
+        
+    } 
+
+
+    [id ^= 'popupPlanet'] div figure img{
+        width: 100%; max-height: 400px;
+    }
+
+    [id ^= 'popupPlanet'] div figure figcaption{
+        padding-top: 15px; box-sizing: border-box;
+    }
+
+
+    [id ^= 'popupPlanet'] div figure figcaption h2{
+        font-size:  20px; font-weight: 900; margin-bottom: 20px;
+    }
+
+    [id ^= 'popupPlanet'] div figure figcaption p{
+        font-size: 12px; line-height: 18px; color: #999999; line-height: 20px;
+    }
+
+    [id ^= 'popupPlanet'] div figure figcaption p:not(:last-child){
+        margin-bottom: 20px;
+    }
+
+    [id ^= 'popupPlanet'] div figure figcaption p strong{
+        padding-bottom: 10px;
+    }
+
+    /* 디테일 팝업 */
+   
+    #popupReview > div{
+        background-color: white; min-width: 265px; width: 95%; height: 97%;
+        margin: 0 auto; border-radius: 10px; padding: 35px 2%; box-sizing: border-box;
+        position: relative;
+        overflow-y: scroll;
+    }
+
+    #popupReview div .writeContainer img{
+        width: 40%; max-width: 200px; position: absolute; top: 4%; right: 2%;
+    }
+
+    #popupReview div .writeContainer h2{
+        font-size: 20px; font-weight: 900; padding-right: 35%; box-sizing: border-box;
+        margin-bottom: 30px; line-height: 25px;
+    }
+    
+    #popupReview div .writeContainer h2 strong{
+        display: block; font-size: 14px; font-weight: 800; color: #bfbfbf; 
+    }
+
+    #popupReview div .writeContainer h2 small{
+        font-size: 10px; font-weight: 200; color: #bfbfbf; 
+    }
+
+    #popupReview div .writeContainer h2 small mark{
+        font-weight: 600; color: #d31245;
+    }
+
+
+    #popupReview div .writeContainer form fieldset ul li{
+        list-style: none; 
+    }    
+
+    #popupReview div .writeContainer form fieldset ul li::after{
+        content: ''; display: block; clear: both;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li:first-child{
+        padding-right: 0%; box-sizing: border-box;
+    }
+    #popupReview div .writeContainer form fieldset ul li:not(:last-child){
+        margin-bottom: 25px;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li input[type='text'],
+    #popupReview div .writeContainer form fieldset ul li input[type='email'],
+    #popupReview div .writeContainer form fieldset ul li textarea{
+        border: 1px solid #bfbfbf; box-sizing: border-box; display: block; width: 100%;    
+    }
+    
+    #popupReview div .writeContainer form fieldset ul li input[type='text'],
+    #popupReview div .writeContainer form fieldset ul li input[type='email']{
+        line-height: 35px;
+    }
+
+    /* ? :nth-child(n+4):nth-child(-n+9) = 4,5,6,7,8,9만 잡힘 -> 양쪽에서 서로 만나서 맞물림(영역을 잡을때 편리) */
+
+
+    #popupReview div .writeContainer form fieldset ul li{
+        width: 100%;
+    }
+
+
+
+    #popupReview div .writeContainer form fieldset ul li textarea{
+        font-family: 'Roboto'; font-size: 13px; font-weight: 200; color: #d9d9d9;
+        border-radius: 5px; border: #bfbfbf solid 1px; 
+        padding-left: 10px; height: 80px; resize: none; line-height: 20px; padding-top: 10px;
+    }
+
+    
+    .btnPost{
+        clear: both;
+    }
+
+
+    #popupReview div .writeContainer form fieldset ul li label{
+        font-weight: 500; color: #4d4d4d; padding-bottom: 5px; box-sizing: border-box; font-size: 14px;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li:not(:last-child) label{
+        display: block;
+    }
+
+    
+
+    #popupReview div .writeContainer form fieldset ul li .requiredRed{
+        color: #d31245; 
+    }
+
+    #popupReview div .writeContainer form fieldset ul li label small{
+        font-size: 10px; font-weight: 200; float: right; 
+    }
+
+    #popupReview div .writeContainer form fieldset ul li .starCount{
+        line-height: 40px; border-radius: 5px; border: #bfbfbf solid 1px;
+        padding-left: 15px;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li .starCount input{
+        width: 30px; height: 28px;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li .starCount mark{
+        color: #26784b; font-size: 14px;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li input{
+        line-height: 40px; border-radius: 5px; border: #bfbfbf solid 1px;
+        padding-left: 10px; box-sizing: border-box;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li input::-webkit-input-placeholder{
+        font-size: 13px; font-weight: 200; color: #d9d9d9;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li input:-moz-placeholder{
+        font-size: 1wpx; font-weight: 200; color: #d9d9d9;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li input[type='text']{
+        width: 100%;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li:nth-child(10) label{
+        font-size: 14px; line-height: 18px; width: 100%;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li:nth-child(10) input{
+        display: inline-block; width: 100px; line-height: 30px; border: none; font-weight: 800;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li:nth-child(10) input:first-of-type{
+        margin-right: 12px;
+    }
+
+
+    #popupReview div .writeContainer form fieldset ul li:nth-child(11){
+        position: relative;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li:nth-child(11) label{
+        font-size: 12px; font-weight: 200; color: #999999; display: block; margin-bottom: 15px;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li:nth-child(11) small{
+        position: absolute; top: 0; right: 0;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li:nth-child(11) span{
+        display: block; font-size: 10px; font-weight: 200; color: #bfbfbf
+    }
+
+    
+    #reviewPurchase , #urGender , #urAge{
+        width: 100%;
+    }
+
+    #popupReview div .writeContainer form fieldset input[type='submit']{
+        width: 60%; line-height: 50px; font-size: 16px; font-weight: 900;
+        border: none; margin: 30px 20% 0;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li .starCount input[type='button']{
+        width: 20px; height: 18px; text-indent: -9999px; border: none; vertical-align: middle;
+        background: url('../images/icon_starone.png') no-repeat center; cursor: pointer;  
+        background-size: cover;      
+    }
+
+
+    /* family rewards */
+    .Rewardsheader{
+        padding: 120px 0 50px;
+        background: url('../images/familyReward_headerBG.png') no-repeat top;
+        background-size: 200%;
+
+    }
+
+    .Rewardsheader h1{
+        max-width: 100px;  margin: 0 auto;
+    }
+
+    .Rewardsheader h1 a{
+        display: block;
+    }
+
+    .Rewardsheader h1 a img{
+        width: 100%;
+    }
+
+    .Rewardsheader p{
+       display: block; text-align: center; margin: 0 auto; font-size: 12px; line-height: 18px;
+       width: 90%;
+    }
+
+    .Rewardsheader p strong{
+        display: block; font-size: 20px; font-weight: 900; line-height: 28px;
+        padding-bottom: 20px; padding-top: 20px;
+    }
+    
+    .joinUsBTN{
+        padding: 100px 10% 120px;
+        background: url('../images/familyReward_btnBG.png') no-repeat bottom;
+        background-size: 300%;
+    }
+    .joinUsBTN a{
+        display: inline-block; background-color: #d31245; color: white;
+        width: 100%; line-height: 50px; text-align: center; font-size: 18px; font-weight: 900;
+        border-radius: 35px; 
+    }
+   
+
+    .bx-wrapper{
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        margin-bottom: 0;
+    }
+
+    .bx-wrapper .bx-pager{
+        padding: 0 10%; top: 35% !important; width: 6%;
+    }
+
+    .bx-wrapper .bx-pager.bx-default-pager{
+        display: flex; justify-content: space-between;
+    }
+    
+    .bx-wrapper .bx-pager.bx-default-pager a:hover,
+    .bx-wrapper .bx-pager.bx-default-pager a.active,
+    .bx-wrapper .bx-pager.bx-default-pager a:focus{
+        background: transparent;
+    }
+
+    .bx-wrapper .bx-pager.bx-default-pager a{
+        font-size: 16px; line-height: 20px; color: white; font-weight: 200;
+        opacity: 50%;
+    }
+
+    .bx-wrapper .bx-pager.bx-default-pager a.active{
+        font-size: 16px; line-height: 20px; color: white; font-weight: 900;
+        opacity: 100%;
+    }
+
+    .bx-wrapper .bx-pager.bx-default-pager a{
+        text-indent: 0; background: transparent; color: white;
+    }
+
+    .bx-wrapper .bx-controls-direction{
+        width: 200px;
+    }
+
+    .bx-wrapper .bx-controls-direction a{
+        top: 35%; margin-top: 0;
+        width: 20px;
+        height: 20px;
+        z-index: 9;
+        background-size: cover;
+    }
+
+    .bx-wrapper .bx-prev{        
+        right: 20%;
+        background: url('../images/icon_mainController_prevPage.png') no-repeat;
+    }
+
+    .bx-wrapper .bx-next{
+        right: 10%; 
+        background: url('../images/icon_mainController_nextPage.png') no-repeat;
+    }
+
+    .bx-wrapper .bx-next:hover,
+    .bx-wrapper .bx-next:focus{
+        background-position: 0 0;
+    }
+
+    
+    /* OPEN FOR BREAKFAST */
+
+    .openContainer .honestAnswers div div{
+        padding-top: 0;
+    }
+
+    .openContainer .honestAnswers div div:first-child .bx-wrapper{
+        width: 100%; border: none;
+    }
+
+    .openContainer .honestAnswers div div .bx-wrapper .bx-viewport{
+        overflow: visible;
+    }
+
+    .openContainer .honestAnswers div div .bx-wrapper .bx-viewport .videoSlider{        
+        width: 100%;
+        position: relative;
+        transition-duration: none;
+        transform: none;
+    }
+
+    .honestAnswers div div .bx-wrapper{
+        position: static;
+    }
+    
+    .openContainer .honestAnswers > div > div:first-of-type{
+        position: relative;
+    }
+
+    .honestAnswers div div .bx-wrapper .bx-controls.bx-has-controls-direction .bx-controls-direction .bx-prev{
+        left: 0; top: 30%;
+        width: 20px; height: 20px; border: 1px solid #d9d9d9; border-radius: 3px;
+        background: white url('../images/icon_controller_prevPage_active.png') no-repeat center;
+        background-size: 30%;
+    }
+
+
+    .honestAnswers div div .bx-wrapper .bx-controls.bx-has-controls-direction .bx-controls-direction .bx-next{
+        right: 0; top: 35%;
+        width: 20px; height: 20px; border: 1px solid #d9d9d9; border-radius: 3px;
+        background: white url('../images/icon_controller_nextPage_active.png') no-repeat center;
+        background-size: 30%;
+    }
+
+    
+
+    /* brand slider */
+    .listBrand .bx-wrapper{
+        margin: 0 auto; padding-top: 0;
+    }
+
+    .listBrand .bx-wrapper .bx-viewport{
+        min-height: 255px;
+    }
+    .listBrand .bx-wrapper .bx-viewport .brandSlider li{
+        width: 30%;
+    }
+
+    .listBrand .bx-wrapper .bx-viewport .brandSlider li img{
+        object-fit: contain; margin: 0 auto; height: 135px; width: 70%;
+    }
+
+    .listBrand .bx-wrapper .bx-viewport .brandSlider li p{
+        text-align: center; font-size: 12px; font-weight: 400; color: #bfbfbf; line-height: 20px;
+        width: 80%; margin: 0 auto;
+    }
+
+    .listBrand .bx-wrapper .bx-viewport .brandSlider li p strong{
+        display: block; font-size: 16px; font-weight: 800; color: black;
+        padding: 30px 0 10px;
+    }
+
+    
+    .listBrand .bx-wrapper .bx-controls.bx-has-controls-direction .bx-controls-direction .bx-prev{
+        left: 0; top: 35%;
+        width: 20px; height: 20px; border: 1px solid #d9d9d9; border-radius: 3px;
+        background: white url('../images/icon_controller_prevPage_active.png') no-repeat center;
+        background-size: 30%;
+    }
+    
+    .listBrand .bx-wrapper .bx-controls.bx-has-controls-direction .bx-controls-direction .bx-next{
+        right: 0; top: 35%;
+        width: 20px; height: 20px; border: 1px solid #d9d9d9; border-radius: 3px;
+        background: white url('../images/icon_controller_nextPage_active.png') no-repeat center;
+        background-size: 30%;
+    }    
+}
+
+
+
+@media screen and (min-width: 768px){
+    /* 좌우 패딩 2% ~ 3% */
+
+    
+    /* 공통 */
+
+    * > .btnRed{
+        display: inline-block; background-color: #d31245; color: white;
+    }
+
+    * > .btnGray{
+        display: inline-block; background-color: #e6e6e6; color: black;
+    }
+
+    * > .btnRadius{
+        border-radius: 5px;
+    }
+
+    .titleModule{
+        font-size: 32px; font-weight: 900; color: black;
+    }
+
+    .titleModule small{
+        font-size: 18px; color: #bfbfbf; display: block; margin-bottom: 25px;
+    }    
+
+    .countingStar{
+       display: inline-block;  width: 130px; height: 22px;
+    }
+
+    .star5{
+        background: url('../images/icon_starCounting.png') no-repeat left top;
+    }
+    .star4{ 
+        background: url('../images/icon_starCounting.png') no-repeat left -22px;
+    }
+    .star3{ 
+        background: url('../images/icon_starCounting.png') no-repeat left -44px;
+    }
+    .star2{ 
+        background: url('../images/icon_starCounting.png') no-repeat left -66px;
+    }
+    .star1{ 
+        background: url('../images/icon_starCounting.png') no-repeat left -88px;
+    }
+    .star0{ 
+        background: url('../images/icon_starCounting.png') no-repeat left -110px;
+    }
+    
+    * > mark{font-style: normal; background: none;}
+
+
+    header > div:first-of-type,
+    .reviewModule,
+    .ourfoodsBFList , .impactSustainList ,
+    .listContainer .listBrand ,
+    .listContainer .listProduct ,
+    .listContainer .lastContent ,
+    .productInformation, .reviewDetails , .reviewControler ,
+    .listContainer .listNews .titleModule ,
+    .impactNewsContainer .newsTitle , .impactNewsContainer .newsDetails , .impactNewsContainer small ,
+    .whoWeAreContainer .betterDays , .whoWeAreContainer .ourLatestNews ,
+    .openContainer .honestAnswers , .historyContainer .titleModule , .contactUs , 
+    .faqMenu , .topAcc , .companyAcc , .ingredientAcc , .promotionAss , .recipesAcc
+    .rewardsWhyjoin 
+    {
+        max-width: 1260px; margin: 0 auto; padding: 0 3%; box-sizing: border-box;
+    }
+    header{
+        background-color: white; padding: 50px 0;
+    }
+
+    header > div{
+        position: relative;
+    }
+    header > div h1{
+        max-width: 258px; 
+    }
+    header > div h1.active{
+        position: fixed; z-index: 1000;
+    }
+    header > div h1 a{
+        display: block;
+    }
+    header > div h1 a img{
+        width: 100%;
+    }
+    header > div nav{
+        position: absolute; right: 0; top: 0; line-height: 90px;
+        width: 60%; max-width: 768px; 
+        /* padding-left: 18.75%; box-sizing: border-box; */
+        font-size: 16px; font-weight: 500;
+    }
+    header > div nav ul{
+        text-align: right; width: calc(100% - 95px); display: inline-block; vertical-align: -2%;
+    }
+    header > div nav ul li{
+        display: inline-block;
+    }
+    header > div nav ul li a{
+        display: block; color:black;
+    }
+    header > div nav ul li a.active,
+    header > div nav ul li a:hover{
+        color: #bfbfbf;
+    }
+    header > div nav ul li:not(:first-child),
+    header > div nav input[type='button']{
+        margin-left: 2.8%;
+    }
+    header > div nav input[type='button']{
+        width: 40px; height: 24px; text-indent: -9999px; border: none; vertical-align: middle;
+        background: url('../images/icon_fnb_open.png') no-repeat center; cursor: pointer;
+    }
+
+    header .fnbPanel{
+        position: fixed; width: 100%; height: 100%; left: 0; top: 0;
+        background: #d31245; 
+        /* background-size: 65.3%; */
+        /* url('../images/BG_fnb.jpg') no-repeat right bottom fixed */
+        display: none; z-index: 100;
+        box-sizing: border-box; padding: 0 8.3%;
+        /* padding: 0 8.3% 120px;  */
+    }
+    header .fnbPanel.active{
+        display: block;
+    }
+    header .fnbPanel input[type='button']{
+        width: 30px; height: 30px; text-indent: -9999px; border: none; margin-top: 80px;
+        background: url('../images/icon_fnb_close.png') no-repeat center; float: right; cursor: pointer;
+    }
+
+    header .fnbPanel ol{
+        padding-top: 205px;
+        /* max-width: 768%; */
+        max-width: 90%;
+        list-style: decimal-leading-zero outside;
+        position: relative;
+    } 
+
+    header .fnbPanel ol li:hover{
+        color: #e5ff00; cursor: default;
+    }
+
+    header .fnbPanel ol li{
+        font-size: 32px; font-weight: 900; color: white;
+        list-style-position: inside;
+    }
+
+    header .fnbPanel ol > li:not(:last-child){
+        margin-bottom: 40px;
+    }
+
+    
+
+    header .fnbPanel ol li ul{
+        position: absolute; right: 0; top: 205px;
+        max-width: 400px; 
+        z-index: 100;
+        list-style: none;
+        display: none;
+        width: 40%;
+    }
+    header .fnbPanel ol li:hover ul{
+        display: block;
+    }
+
+    header .fnbPanel ol li ul li{
+        margin-bottom: 40px;
+    }
+
+    header .fnbPanel ol li ul li a{
+        font-size: 23px; font-weight: 400; color: white; 
+    }
+
+    header .fnbPanel ol li ul li:hover a{
+        color: black; font-weight: 500;
+    }
+
+    header .fnbPanel > div{
+        color: white; padding-top: 50px;
+    }
+
+    header .fnbPanel div > div:first-of-type{
+        margin-bottom: 50px;
+    }
+    
+    header .fnbPanel div form div{
+        background: url('../images/icon_search.png') no-repeat left;
+        width: 25px; height: 25px; padding-left:0
+    }
+
+    header .fnbPanel div form div input[type='search']{
+        background-color: rgba(0, 0, 0, 0); border-style: none; height: 25px;
+        border-bottom: 1px solid white; margin-left: 38px;
+    }
+    header .fnbPanel div form div input[type='search']::placeholder{
+        color: white;
+    }
+    
+    header .fnbPanel div div h3{
+        font-size: 18px; margin-bottom: 25px;
+    }
+
+    header .fnbPanel div div ul li{
+        list-style: none; font-size: 14px; font-weight: 200; 
+    }
+
+    header .fnbPanel div div:first-of-type ul li{
+        display: block; 
+    }
+    
+    header .fnbPanel div div:first-of-type ul li:not(:first-child){
+        margin-left: 0;
+    }
+
+    header .fnbPanel div div:first-of-type ul li:not(:last-child){
+        margin-bottom: 25px; 
+    }
+
+    header .fnbPanel div div:last-of-type ul li{
+        display: inline-block;
+    }
+    header .fnbPanel div div:last-of-type ul li:not(:first-child){
+        margin-left: 8%;
+    }
+
+    header .fnbPanel div div ul li a{
+        color: white;
+    }
+
+
+    .joinUsModule{
+        background-color: #f9f8f4; padding: 50px 10%; box-sizing: border-box;
+        text-align: right;
+    }
+    .joinUsModule > *:not(p){
+        display: inline-block; vertical-align: middle; margin-bottom: 30px;
+    }
+
+    .joinUsModule h2{
+        text-align: right; font-size: 18px; font-weight: 900; padding-right: 20px; line-height: 24px;
+    }
+
+    .joinUsModule a{
+        background-color: #d31245; min-width: 310px; text-align: center; line-height: 40px;
+        border-radius: 2px; font-size: 18px; font-weight: 900; color: white;
+    }
+
+    .joinUsModule p{
+        color: #4d4d4d; text-align: right; font-size: 15px; 
+    }
+    /* 푸터상단 조인모듈 */
+
+
+
+    /* 푸터 */
+    footer{
+        background-color: black; padding: 70px 10%; 
+    }
+
+    footer > div{
+        color: white;  max-width: 1600px; width: 100%;
+         margin: 0 auto; 
+    } 
+    
+    /* 푸터 - 상단 */
+    footer > div:first-child{
+        margin-bottom: 115px; display: flex;
+    }
+    footer div:last-child{
+        justify-content: space-between;
+    }
+
+    footer div > div:not(:last-child){
+        margin-bottom: 0;
+    }
+    
+    footer div > div:first-child{
+        margin-right: 13%;
+    }
+    
+    footer div > div:last-child{
+        margin-left: auto;
+    }
+    
+    footer div > div h2{
+        margin-bottom: 25px; font-size: 18px; font-weight: 900;
+    }
+
+    footer div > div ul li{
+        list-style: none; font-size: 14px; font-weight: 200;
+    }
+
+    footer div > div:not(:last-of-type) ul li:not(:last-child){
+        margin-bottom: 25px;
+    }
+
+    footer div > div ul li a{
+        color: white;
+    }
+
+    
+    
+    footer div > div:last-child ul{
+        display: flex; justify-content: space-between;
+         align-content: space-between; flex-flow: row wrap;
+    }
+    footer div > div:last-child ul li{
+        width: 50%; margin-bottom: 20px;
+    }
+    footer div > div:last-child ul li a{
+        display: block;
+    }
+
+
+
+    /* 푸터 - 하단 */
+    footer > div:last-of-type ul{
+        margin-bottom: 20px; text-align: left;
+    }
+    footer > div:last-of-type ul li{
+        list-style: none; font-size: 15px; font-weight: 200; display: inline-block;
+    }
+
+    footer > div:last-of-type ul li:not(:first-child){
+        margin-left: 40px;
+    }
+
+    footer > div:last-of-type ul li a{
+        color: #999999; line-height: 25px;
+    }    
+
+    footer > div:last-of-type ul li:hover a{
+        color: #e5ff00;
+    }
+
+    footer > div:last-of-type p{
+        font-size: 15px; text-align: right;
+        /* margin-left: auto; */
+    }
+
+
+    meter {
+        --background: #e6e6e6;
+        --optimum: #d31245;
+        --sub-optimum: gold;
+        display: block;
+        width: 100%;
+        height: 25px;
+        border-radius: 2px;
+        
+        
+      }
+      
+      /* The gray background in Chrome, etc. */
+      meter::-webkit-meter-bar {
+        background: var(--background);
+      }
+      
+      /* The green (optimum) bar in Firefox */
+      meter:-moz-meter-optimum::-moz-meter-bar {
+        background: var(--optimum);
+      }
+      
+      /* The green (optimum) bar in Chrome etc. */
+      meter::-webkit-meter-optimum-value {
+        background: var(--optimum);
+      }
+      
+      /* The yellow (sub-optimum) bar in Firefox */
+      meter:-moz-meter-sub-optimum::-moz-meter-bar {
+        background: var(--sub-optimum);
+      }
+      
+      /* The yellow (sub-optimum) bar in Chrome etc. */
+      meter::-webkit-meter-suboptimum-value {
+        background: var(--sub-optimum);
+      }
+      
+      /* The red (even less good) bar in Firefox */
+      meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+        background: var(--sub-sub-optimum);
+      }
+      
+      /* The red (even less good) bar in Chrome etc. */
+      meter::-webkit-meter-even-less-good-value {
+        background: var(--sub-sub-optimum);
+      }
+
+
+      /* select */
+    * > .selectComponent select{
+        -webkit-appearance: none; -moz-appearance: none;  appearance: none;
+        height: 40px; border: #bfbfbf solid 1px; border-radius: 5px; box-sizing: border-box;
+        font-size: 15px; font-weight: 200; color: #999999; padding-left: 10px;
+        background: url('../images/icon_select_arrow.png') no-repeat right 10px center;
+    }
+
+    * > .selectComponent select option{
+        font-size: 15px; font-weight: 200;
+    }
+
+    * > .btnPrint[type='button']{
+        width: 40px; height: 40px; text-indent: -9999px; border: #bfbfbf solid 1px; border-radius: 5px;
+        background: url('../images/icon_print.png') no-repeat center;
+    }
+
+
+    
+
+      /* starGraph */
+      
+    * > .starGraph{
+        position: absolute; right: 10%; bottom:0;display: block; width: 35%; max-width: 211px; 
+        text-align: center; line-height: 260px; font-size: 50px; color: #4d4d4d; font-weight: 500;
+    }
+    * > .graph5{
+        background:url('../images/icon_redStarBig.png') no-repeat center top 30% , 
+        url('../images/starGraph_5.png') left 210px / 211px repeat; height: 210px;
+    }
+    * > .graph4{
+        background:url('../images/icon_redStarBig.png') no-repeat center top 30% , 
+        url('../images/starGraph_4.png') left / contain no-repeat ; height: 210px;
+    }
+    * > .graph3{
+        background:url('../images/icon_redStarBig.png') no-repeat center top 30% , 
+        url('../images/starGraph_3.png') left / contain no-repeat ; height: 210px;
+    }
+    * > .graph2{
+        background:url('../images/icon_redStarBig.png') no-repeat center top 30% , 
+        url('../images/starGraph_2.png') left / contain no-repeat ; height: 210px;
+    }    
+    * > .graph1{
+        background:url('../images/icon_redStarBig.png') no-repeat center top 30% , 
+        url('../images/starGraph_1.png') left / contain no-repeat ; height: 210px;
+    }
+    * > .graph0{
+        background:url('../images/icon_redStarBig.png') no-repeat center top 30% , 
+        url('../images/starGraph_0.png') left / contain no-repeat ; height: 210px;
+    }
+
+
+
+    /* popup */
+    .popupModule{
+        display: none; background-color: rgba(0, 0, 0, 0.6); width: 100%; height: 100%;
+        position: fixed; left: 0; top: 0; z-index: 10; padding: 2% 3% 2% 0;
+    }
+
+    .popupModule.active{
+        display: block;
+    }
+
+    [id ^= 'popupRecipes'] > div input.btn_close[type='button'] , 
+    [id ^= 'popupPlanet'] > div input.btn_close[type='button'] ,
+    #popupReview > div input.btn_close[type='button']{
+        width: 17px; height: 16px; text-indent: -9999px; border: none; vertical-align: middle;
+        background: url('../images/icon_popupClose.png') no-repeat center; cursor: pointer;
+        position: absolute; right: 15px; top: 15px;
+    }   
+    
+    * > .popupTitleGray{
+        display: block; font-size: 18px; font-weight: 800; color: #bfbfbf;
+    }
+
+    * > .popupTitleRed{
+        display: block; font-size: 18px; font-weight: 800; color: #d31245;
+    }  
+
+    
+    /* our Foods 리스트_팝업 */
+    
+    [id ^= 'popupRecipes'] > div{
+        background-color: white; max-width: 680px; width: 100%;  height: 95%;
+        margin: 0 auto; border-radius: 10px; padding: 40px 2%; box-sizing: border-box;
+        position: relative; overflow-y: scroll;
+    } 
+
+    [id ^= 'popupRecipes'] div figure::after{
+        content: ''; display: block; clear: both;
+    }
+
+    [id ^= 'popupRecipes'] div figure img{
+        width: 100%; float: left; margin-bottom: 2%;
+    }
+
+    [id ^= 'popupRecipes'] div figure figcaption{
+        float: left; 
+        width: 100%; 
+        padding-top: 0;
+    }
+
+    [id ^= 'popupRecipes'] div figure figcaption h2{
+        font-size:  32px; font-weight: 900; margin-bottom: 10px;
+    }
+
+    [id ^= 'popupRecipes'] div figure figcaption p{
+        line-height: 23px; color: #999999;
+    }
+
+    [id ^= 'popupRecipes'] div figure figcaption div{
+        padding-top: 10px; margin-bottom: 25px;
+    }
+
+    [id ^= 'popupRecipes'] div figure figcaption div .btnPrint[type='button']{
+        width: 30px; height: 30px; text-indent: -9999px; border: #bfbfbf solid 1px; border-radius: 5px;
+        background: url('../images/icon_popupPrint.png') no-repeat center; margin-bottom: 0;
+    }
+
+    [id ^= 'popupRecipes'] div figure figcaption div mark{
+        background-color: #d31245; border-radius: 5px; display: inline-block; line-height: 30px;
+        padding: 0 12px; font-size: 14px; font-weight: 200; color: white;
+        box-sizing: border-box; 
+    }  
+
+    [id ^= 'popupRecipes'] > div > div{
+        padding-top: 25px;
+    }
+
+    [id ^= 'popupRecipes'] div strong{
+        margin-bottom: 10px;
+    }
+
+    [id ^= 'popupRecipes'] div ol{
+        list-style-position: inside;
+        font-weight: 200; font-size: 15px; line-height: 22px;
+    }
+
+    [id ^= 'popupRecipes'] div ol li::marker{
+        font-weight: 500;
+    }
+
+
+    /* our impact 리스트_팝업 */
+    [id ^= 'popupPlanet'] > div{
+        background-color: white; max-width: 680px; width: 100%;  height: 95%;
+        margin: 0 auto; border-radius: 10px; padding: 50px 2%; box-sizing: border-box;
+        position: relative;
+        overflow-y: scroll;
+    } 
+
+
+    [id ^= 'popupPlanet'] div figure img{
+        width: 100%; max-height: 400px;
+    }
+
+    [id ^= 'popupPlanet'] div figure figcaption{
+        padding-top: 20px; box-sizing: border-box;
+    }
+
+
+    [id ^= 'popupPlanet'] div figure figcaption h2{
+        font-size:  32px; font-weight: 900; margin-bottom: 10px;
+    }
+
+    [id ^= 'popupPlanet'] div figure figcaption p{
+        font-size: 15px; line-height: 23px; color: #999999; line-height: 20px;
+    }
+
+    [id ^= 'popupPlanet'] div figure figcaption p:not(:last-child){
+        margin-bottom: 10px;
+    }
+
+    [id ^= 'popupPlanet'] div figure figcaption p strong{
+        padding-bottom: 10px;
+    }
+
+    /* 디테일 팝업 */
+   
+    #popupReview > div{
+        background-color: white; max-width: 680px; width: 100%; height: 95%;
+        margin: 0 auto; border-radius: 10px; padding: 35px 2%; box-sizing: border-box;
+        position: relative; overflow-y: scroll;
+    }
+
+    #popupReview div .writeContainer img{
+        width: 20%; max-width: 200px; position: absolute; top: 4%; right: 2%;
+    }
+
+    #popupReview div .writeContainer h2{
+        font-size: 25px; font-weight: 900; padding-right: 20%; box-sizing: border-box;
+        margin-bottom: 60px;
+    }
+    
+    #popupReview div .writeContainer h2 strong{
+        display: block; font-size: 18px; font-weight: 800; color: #bfbfbf;
+        padding-bottom: 10px;
+    }
+
+    #popupReview div .writeContainer h2 small{
+        font-size: 12px; font-weight: 200; color: #bfbfbf; 
+    }
+
+    #popupReview div .writeContainer h2 small mark{
+        font-weight: 600; color: #d31245;
+    }
+
+
+    #popupReview div .writeContainer form fieldset ul li{
+        list-style: none; 
+    }    
+
+    #popupReview div .writeContainer form fieldset ul li::after{
+        content: ''; display: block; clear: both;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li:first-child{
+        padding-right: 0%; box-sizing: border-box;
+    }
+    #popupReview div .writeContainer form fieldset ul li:not(:last-child){
+        margin-bottom: 15px;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li input[type='text'],
+    #popupReview div .writeContainer form fieldset ul li input[type='email'],
+    #popupReview div .writeContainer form fieldset ul li textarea{
+        line-height: 40px; border: 1px solid #bfbfbf; box-sizing: border-box; display: block; width: 100%;    
+    }
+
+    /* ? :nth-child(n+4):nth-child(-n+9) = 4,5,6,7,8,9만 잡힘 -> 양쪽에서 서로 만나서 맞물림(영역을 잡을때 편리) */
+
+    #popupReview div .writeContainer form fieldset ul li:nth-child(n+4):nth-child(-n+9){
+        float: left; width: 48%;
+    }
+
+    
+
+    #popupReview div .writeContainer form fieldset ul li:nth-child(2n+4):nth-child(-n+9){
+        margin-right: 4%;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li textarea{
+        font-family: 'Roboto'; font-size: 15px; font-weight: 200; color: #d9d9d9;
+        border-radius: 5px; border: #bfbfbf solid 1px; 
+        padding-left: 10px; height: 80px; resize: none; padding-top: 0;
+    }
+
+    
+    .btnPost{
+        clear: both;
+    }
+
+
+    #popupReview div .writeContainer form fieldset ul li label{
+        font-weight: 500; color: #4d4d4d; padding-bottom: 5px; box-sizing: border-box; font-size: 16px;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li:not(:last-child) label{
+        display: block;
+    }
+
+    
+
+    #popupReview div .writeContainer form fieldset ul li .requiredRed{
+        color: #d31245; 
+    }
+
+    #popupReview div .writeContainer form fieldset ul li label small{
+        font-size: 12px; font-weight: 200; float: right; 
+    }
+
+    #popupReview div .writeContainer form fieldset ul li .starCount{
+        line-height: 50px; border-radius: 5px; border: #bfbfbf solid 1px;
+        padding-left: 15px;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li .starCount input{
+        width: 30px; height: 28px;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li .starCount mark{
+        color: #26784b; font-size: 16px;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li input{
+        line-height: 40px; border-radius: 5px; border: #bfbfbf solid 1px;
+        padding-left: 10px; box-sizing: border-box;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li input::-webkit-input-placeholder{
+        font-size: 15px; font-weight: 200; color: #d9d9d9;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li input:-moz-placeholder{
+        font-size: 15px; font-weight: 200; color: #d9d9d9;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li input[type='text']{
+        width: 100%;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li:nth-child(10) label{
+        float: left; line-height: 22px; margin-right: 5%; width: 47%; font-size: 16px;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li:nth-child(10) input{
+        display: inline-block; width: 100px; line-height: 30px; border: none; font-weight: 800;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li:nth-child(10) input:first-of-type{
+        margin-right: 12px;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li:nth-child(11) label{
+        font-size: 14px; font-weight: 200; color: #999999; display: inline; margin-bottom: 0;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li:nth-child(11) span{
+        display: block; font-size: 12px; font-weight: 200; color: #bfbfbf
+    }
+
+    
+
+    
+    #reviewPurchase , #urGender , #urAge{
+        width: 100%;
+    }
+
+    #popupReview div .writeContainer form fieldset input[type='submit']{
+        width: 30%; line-height: 50px; font-size: 18px; font-weight: 900;
+        border: none; margin: 30px 35% 0;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li .starCount input[type='button']{
+        width: 30px; height: 28px; text-indent: -9999px; border: none; vertical-align: middle;
+        background: url('../images/icon_starone.png') no-repeat center; cursor: pointer;        
+    }
+
+
+    /* family rewards */
+    .Rewardsheader{
+        padding: 250px 0 50px;
+        background: url('../images/familyReward_headerBG.png') no-repeat top;
+
+    }
+
+    .Rewardsheader h1{
+        max-width: 214px;  margin: 0 auto;
+    }
+
+    .Rewardsheader h1 a{
+        display: block;
+    }
+
+    .Rewardsheader h1 a img{
+        width: 100%;
+    }
+
+    .Rewardsheader p{
+       display: block; text-align: center; margin: 0 auto; font-size: 16px; line-height: 28px;
+       width: 90%;
+    }
+
+    .Rewardsheader p strong{
+        display: block; font-size: 45px; font-weight: 900; line-height: 58px;
+        padding-bottom: 40px; padding-top: 0;
+    }
+    
+    .joinUsBTN{
+        padding: 240px 10% 145px;
+        background: url('../images/familyReward_btnBG.png') no-repeat bottom;
+    }
+    .joinUsBTN a{
+        display: inline-block; background-color: #d31245; color: white;
+        width: 100%; line-height: 70px; text-align: center; font-size: 30px; font-weight: 900;
+        border-radius: 35px; 
+    }
+   
+
+    .bx-wrapper{
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        margin-bottom: 0;
+    }
+
+
+    .bx-wrapper .bx-pager{
+        padding: 0 10%; top: 40% !important; width: 6%;
+    }
+
+    .bx-wrapper .bx-pager.bx-default-pager{
+        display: flex; justify-content: space-between;
+    }
+    
+    .bx-wrapper .bx-pager.bx-default-pager a:hover,
+    .bx-wrapper .bx-pager.bx-default-pager a.active,
+    .bx-wrapper .bx-pager.bx-default-pager a:focus{
+        background: transparent;
+    }
+
+    .bx-wrapper .bx-pager.bx-default-pager a{
+        font-size: 20px; line-height: 20px; color: white; font-weight: 200;
+        opacity: 50%;
+    }
+
+    .bx-wrapper .bx-pager.bx-default-pager a.active{
+        font-size: 20px; line-height: 20px; color: white; font-weight: 900;
+        opacity: 100%;
+    }
+
+    .bx-wrapper .bx-pager.bx-default-pager a{
+        text-indent: 0; background: transparent; color: white;
+    }
+
+    .bx-wrapper .bx-controls-direction{
+        width: 200px;
+    }
+
+    .bx-wrapper .bx-controls-direction a{
+        top: 40%; margin-top: 0;
+        width: 35px;
+        height: 35px;
+        z-index: 9;
+    }
+
+    .bx-wrapper .bx-prev{        
+        right: 20%;
+        background: url('../images/icon_mainController_prevPage.png') no-repeat;
+    }
+
+    .bx-wrapper .bx-next{
+        right: 10%; 
+        background: url('../images/icon_mainController_nextPage.png') no-repeat;
+    }
+
+    .bx-wrapper .bx-next:hover,
+    .bx-wrapper .bx-next:focus{
+        background-position: 0 0;
+    }
+
+    
+    /* OPEN FOR BREAKFAST */
+
+    .openContainer .honestAnswers div div{
+        padding-top: 0;
+    }
+
+    .openContainer .honestAnswers div div:first-child .bx-wrapper{
+        width: 100%; border: none;
+    }
+
+    .openContainer .honestAnswers div div .bx-wrapper .bx-viewport{
+        overflow: visible;
+    }
+
+    .openContainer .honestAnswers div div .bx-wrapper .bx-viewport .videoSlider{        
+        width: 100%;
+        position: relative;
+        transition-duration: none;
+        transform: none;
+    }
+
+    .honestAnswers div div .bx-wrapper{
+        position: static;
+    }
+    
+    .openContainer .honestAnswers > div > div:first-of-type{
+        position: relative;
+    }
+
+    .honestAnswers div div .bx-wrapper .bx-controls.bx-has-controls-direction .bx-controls-direction .bx-prev{
+        left: 0; top: 35%;
+        width: 35px; height: 35px; border: 2px solid #d9d9d9; border-radius: 3px;
+        background: white url('../images/icon_controller_prevPage_active.png') no-repeat center;
+    }
+
+
+    .honestAnswers div div .bx-wrapper .bx-controls.bx-has-controls-direction .bx-controls-direction .bx-next{
+        right: 0; top: 35%;
+        width: 35px; height: 35px; border: 2px solid #d9d9d9; border-radius: 3px;
+        background: white url('../images/icon_controller_nextPage_active.png') no-repeat center;
+    }
+
+    
+
+    /* brand slider */
+    .listBrand .bx-wrapper{
+        margin: 0 auto; padding-top: 45px;
+    }
+
+    .listBrand .bx-wrapper .bx-viewport{
+        min-height: 255px;
+    }
+    .listBrand .bx-wrapper .bx-viewport .brandSlider li{
+        width: 30%;
+    }
+
+    .listBrand .bx-wrapper .bx-viewport .brandSlider li img{
+        object-fit: contain; margin: 0 auto; height: 135px;
+    }
+
+    .listBrand .bx-wrapper .bx-viewport .brandSlider li p{
+        text-align: center; font-size: 16px; font-weight: 400; color: #bfbfbf; line-height: 20px;
+        width: 80%; margin: 0 auto;
+    }
+
+    .listBrand .bx-wrapper .bx-viewport .brandSlider li p strong{
+        display: block; font-size: 19px; font-weight: 800; color: black;
+        padding: 30px 0 10px;
+    }
+
+    
+    .listBrand .bx-wrapper .bx-controls.bx-has-controls-direction .bx-controls-direction .bx-prev{
+        left: 0; top: 35%;
+        width: 35px; height: 35px; border: 2px solid #d9d9d9; border-radius: 3px;
+        background: white url('../images/icon_controller_prevPage_active.png') no-repeat center;
+    }
+    
+    .listBrand .bx-wrapper .bx-controls.bx-has-controls-direction .bx-controls-direction .bx-next{
+        right: 0; top: 35%;
+        width: 35px; height: 35px; border: 2px solid #d9d9d9; border-radius: 3px;
+        background: white url('../images/icon_controller_nextPage_active.png') no-repeat center;
+    }    
+}
+
+
+
+@media screen and (min-width: 1280px){
+
+    /* 공통 */
+
+    * > .btnRed{
+        display: inline-block; background-color: #d31245; color: white;
+    }
+
+    * > .btnGray{
+        display: inline-block; background-color: #e6e6e6; color: black;
+    }
+
+    * > .btnRadius{
+        border-radius: 5px;
+    }
+
+    .titleModule{
+        font-size: 32px; font-weight: 900; color: black;
+    }
+
+    .titleModule small{
+        font-size: 18px; color: #bfbfbf; display: block; margin-bottom: 25px;
+    }    
+
+    .countingStar{
+       display: inline-block;  width: 130px; height: 22px;
+    }
+
+    .star5{
+        background: url('../images/icon_starCounting.png') no-repeat left top;
+    }
+    .star4{ 
+        background: url('../images/icon_starCounting.png') no-repeat left -22px;
+    }
+    .star3{ 
+        background: url('../images/icon_starCounting.png') no-repeat left -44px;
+    }
+    .star2{ 
+        background: url('../images/icon_starCounting.png') no-repeat left -66px;
+    }
+    .star1{ 
+        background: url('../images/icon_starCounting.png') no-repeat left -88px;
+    }
+    .star0{ 
+        background: url('../images/icon_starCounting.png') no-repeat left -110px;
+    }
+    
+    * > mark{font-style: normal; background: none;}
+
+
+    header > div:first-of-type,
+    .reviewModule,
+    .ourfoodsBFList , .impactSustainList ,
+    .listContainer .listBrand ,
+    .listContainer .listProduct ,
+    .listContainer .lastContent ,
+    .productInformation, .reviewDetails , .reviewControler ,
+    .listContainer .listNews .titleModule ,
+    .impactNewsContainer .newsTitle , .impactNewsContainer .newsDetails , .impactNewsContainer small ,
+    .whoWeAreContainer .betterDays , .whoWeAreContainer .ourLatestNews ,
+    .openContainer .honestAnswers , .historyContainer .titleModule , .contactUs , 
+    .faqMenu , .topAcc , .companyAcc , .ingredientAcc , .promotionAss , .recipesAcc
+    .rewardsWhyjoin{
+        max-width: 1600px; margin: 0 auto; 
+    }
+    header{
+        background-color: white; padding: 50px 0;
+    }
+    header > div{
+        position: relative;
+    }
+    header > div h1{
+        max-width: 258px;
+    }
+    header > div h1.active{
+        position: fixed; z-index: 1000;
+    }
+    header > div h1 a{
+        display: block;
+    }
+    header > div h1 a img{
+        width: 100%;
+    }
+    header > div nav{
+        position: absolute; right: 0; top: 0; line-height: 90px;
+        width: 100%; max-width: 1300px; padding-left: 18.75%; box-sizing: border-box;
+        font-size: 16px; font-weight: 500;
+    }
+    header > div nav ul{
+        text-align: right; width: calc(100% - 95px); display: inline-block; vertical-align: -2%;
+    }
+    header > div nav ul li{
+        display: inline-block;
+    }
+    header > div nav ul li a{
+        display: block; color:black;
+    }
+    header > div nav ul li a.active,
+    header > div nav ul li a:hover{
+        color: #bfbfbf;
+    }
+    header > div nav ul li:not(:first-child),
+    header > div nav input[type='button']{
+        margin-left: 2.8%;
+    }
+    header > div nav input[type='button']{
+        width: 40px; height: 24px; text-indent: -9999px; border: none; vertical-align: middle;
+        background: url('../images/icon_fnb_open.png') no-repeat center; cursor: pointer;
+    }
+    
+    
+    header .fnbPanel{
+        position: fixed; width: 100%; height: 100%; left: 0; top: 0;
+        background: #d31245 url('../images/BG_fnb.jpg') no-repeat right bottom fixed; background-size: 65.3%;
+        display: none; z-index: 100;
+        box-sizing: border-box; padding: 0 8.3%;
+        /* padding: 0 8.3% 120px;  */
+    }
+    header .fnbPanel.active{
+        display: block;
+    }
+    header .fnbPanel input[type='button']{
+        width: 30px; height: 30px; text-indent: -9999px; border: none; margin-top: 80px;
+        background: url('../images/icon_fnb_close.png') no-repeat center; float: right; cursor: pointer;
+    }
+
+    header .fnbPanel ol{
+        padding-top: 205px;
+        /* max-width: 1070px; */
+        max-width: 66.8%;
+        list-style: decimal-leading-zero outside;
+        position: relative;
+    } 
+
+    header .fnbPanel ol li:hover{
+        color: #e5ff00; cursor: default;
+    }
+
+    header .fnbPanel ol li{
+        font-size: 32px; font-weight: 900; color: white;
+        list-style-position: inside;
+    }
+
+    header .fnbPanel ol > li:not(:last-child){
+        margin-bottom: 70px;
+    }
+
+    
+
+    header .fnbPanel ol li ul{
+        position: absolute; right: 0; top: 205px;
+        max-width: 400px; width: 40%; z-index: 100;
+        list-style: none;
+        display: none;
+    }
+    header .fnbPanel ol li:hover ul{
+        display: block;
+    }
+
+    header .fnbPanel ol li ul li{
+        margin-bottom: 50px;
+    }
+
+    header .fnbPanel ol li ul li a{
+        font-size: 25px; font-weight: 400; color: #bfbfbf; 
+    }
+
+    header .fnbPanel ol li ul li:hover a{
+        color: black; font-weight: 500;
+    }
+
+    header .fnbPanel > div{
+        color: white; padding-top: 70px;
+    }
+
+    header .fnbPanel div > div:first-of-type{
+        margin-bottom: 50px;
+    }
+    
+    header .fnbPanel div form div{
+        background: url('../images/icon_search.png') no-repeat left;
+        width: 25px; height: 25px; padding-left:0
+    }
+
+    header .fnbPanel div form div input[type='search']{
+        background-color: rgba(0, 0, 0, 0); border-style: none; height: 25px;
+        border-bottom: 1px solid white; margin-left: 38px;
+    }
+    header .fnbPanel div form div input[type='search']::placeholder{
+        color: white;
+    }
+    
+    header .fnbPanel div div h3{
+        font-size: 18px; margin-bottom: 25px;
+    }
+
+    header .fnbPanel div div ul li{
+        list-style: none; font-size: 14px; font-weight: 200;
+    }
+    header .fnbPanel div div:first-of-type ul li:not(:last-child){
+        margin-bottom: 25px;
+    }
+
+    header .fnbPanel div div:last-of-type ul li{
+        display: inline-block;
+    }
+    header .fnbPanel div div:last-of-type ul li:not(:first-child){
+        margin-left: 3%;
+    }
+
+
+    header .fnbPanel div div ul li a{
+        color: white;
+    }
+
+
+    .joinUsModule{
+        background-color: #f9f8f4; padding: 50px 10%; box-sizing: border-box;
+        text-align: right;
+    }
+    .joinUsModule > *:not(p){
+        display: inline-block; vertical-align: middle; margin-bottom: 30px;
+    }
+
+    .joinUsModule h2{
+        text-align: right; font-size: 18px; font-weight: 900; padding-right: 20px; line-height: 24px;
+    }
+
+    .joinUsModule a{
+        background-color: #d31245; min-width: 310px; text-align: center; line-height: 40px;
+        border-radius: 2px; font-size: 18px; font-weight: 900; color: white;
+    }
+
+    .joinUsModule p{
+        color: #4d4d4d; text-align: right; 
+    }
+    /* 푸터상단 조인모듈 */
+
+
+
+    /* 푸터 */
+    footer{
+        background-color: black; padding: 70px 10%; 
+    }
+
+    footer > div{
+        color: white;  max-width: 1600px; width: 100%;
+        display: flex; margin: 0 auto; 
+        /* justify-content: space-between;  */
+        
+    } 
+    
+    /* 푸터 - 상단 */
+    footer > div:first-child{
+        margin-bottom: 115px;
+    }
+    footer div:last-child{
+        justify-content: space-between;
+    }
+    
+    footer div > div:not(:last-child){
+        margin-bottom: 0;
+    }
+
+    footer div > div:first-child{
+        margin-right: 13%;
+    }
+    
+    footer div > div:last-child{
+        margin-left: auto;
+    }
+
+    footer div > div:last-child::after{
+        content: ''; display: block; clear: both;
+    }
+    
+    footer div > div h2{
+        margin-bottom: 25px; font-size: 18px; font-weight: 900;
+    }
+
+    footer div > div ul li{
+        list-style: none; font-size: 14px; font-weight: 200;
+    }
+
+    footer div > div ul li:not(:last-child){
+        margin-bottom: 25px;
+    }
+
+    footer div > div ul li a{
+        color: white;
+    }
+    
+    footer div > div:last-child ul{
+        display: flex; 
+        justify-content: space-between;
+        align-content: space-between; flex-flow: row wrap;
+        min-width: 250px;
+         
+    }
+    footer div > div:last-child ul li{
+        width: 25px; margin-bottom: 0px;
+    }
+    footer div > div:last-child ul li a{
+        display: block;
+    }
+
+
+    /* 푸터 - 하단 */
+    footer div:last-child ul li{
+        list-style: none; font-size: 15px; font-weight: 200; float: left;
+    }
+
+    footer > div:last-of-type ul li:not(:first-child){
+        margin-left: 40px;
+    }
+
+    footer div ul li a{
+        color: #999999; 
+    }    
+
+    footer div ul li:hover a{
+        color: #e5ff00;
+    }
+
+    footer div p{
+        font-size: 15px; 
+    }
+    
+
+    
+
+    meter {
+        --background: #e6e6e6;
+        --optimum: #d31245;
+        --sub-optimum: gold;
+        display: block;
+        width: 100%;
+        height: 25px;
+        border-radius: 2px;
+        
+        
+      }
+      
+      /* The gray background in Chrome, etc. */
+      meter::-webkit-meter-bar {
+        background: var(--background);
+      }
+      
+      /* The green (optimum) bar in Firefox */
+      meter:-moz-meter-optimum::-moz-meter-bar {
+        background: var(--optimum);
+      }
+      
+      /* The green (optimum) bar in Chrome etc. */
+      meter::-webkit-meter-optimum-value {
+        background: var(--optimum);
+      }
+      
+      /* The yellow (sub-optimum) bar in Firefox */
+      meter:-moz-meter-sub-optimum::-moz-meter-bar {
+        background: var(--sub-optimum);
+      }
+      
+      /* The yellow (sub-optimum) bar in Chrome etc. */
+      meter::-webkit-meter-suboptimum-value {
+        background: var(--sub-optimum);
+      }
+      
+      /* The red (even less good) bar in Firefox */
+      meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+        background: var(--sub-sub-optimum);
+      }
+      
+      /* The red (even less good) bar in Chrome etc. */
+      meter::-webkit-meter-even-less-good-value {
+        background: var(--sub-sub-optimum);
+      }
+
+
+      /* select */
+    * > .selectComponent select{
+        -webkit-appearance: none; -moz-appearance: none;  appearance: none;
+        height: 40px; border: #bfbfbf solid 1px; border-radius: 5px; box-sizing: border-box;
+        font-size: 15px; font-weight: 200; color: #999999; padding-left: 10px;
+        background: url('../images/icon_select_arrow.png') no-repeat right 10px center;
+    }
+
+    * > .selectComponent select option{
+        font-size: 15px; font-weight: 200;
+    }
+
+    * > .btnPrint[type='button']{
+        width: 40px; height: 40px; text-indent: -9999px; border: #bfbfbf solid 1px; border-radius: 5px;
+        background: url('../images/icon_print.png') no-repeat center;
+    }
+
+
+    
+
+      /* starGraph */
+      
+    * > .starGraph{
+        position: absolute; right: 0; bottom:0;display: block; width: 35%; max-width: 211px; 
+        text-align: center; line-height: 260px; font-size: 50px; color: #4d4d4d; font-weight: 500;
+    }
+    * > .graph5{
+        background:url('../images/icon_redStarBig.png') no-repeat center top 30% , 
+        url('../images/starGraph_5.png') left 210px / 211px repeat; height: 210px;
+    }
+    * > .graph4{
+        background:url('../images/icon_redStarBig.png') no-repeat center top 30% , 
+        url('../images/starGraph_4.png') left / contain no-repeat ; height: 210px;
+    }
+    * > .graph3{
+        background:url('../images/icon_redStarBig.png') no-repeat center top 30% , 
+        url('../images/starGraph_3.png') left / contain no-repeat ; height: 210px;
+    }
+    * > .graph2{
+        background:url('../images/icon_redStarBig.png') no-repeat center top 30% , 
+        url('../images/starGraph_2.png') left / contain no-repeat ; height: 210px;
+    }    
+    * > .graph1{
+        background:url('../images/icon_redStarBig.png') no-repeat center top 30% , 
+        url('../images/starGraph_1.png') left / contain no-repeat ; height: 210px;
+    }
+    * > .graph0{
+        background:url('../images/icon_redStarBig.png') no-repeat center top 30% , 
+        url('../images/starGraph_0.png') left / contain no-repeat ; height: 210px;
+    }
+
+
+
+    /* popup */
+    .popupModule{
+        display: none; background-color: rgba(0, 0, 0, 0.6); width: 100%; height: 100%;
+        position: fixed; left: 0; top: 0; z-index: 10; padding: 2% 0;
+    }
+
+    .popupModule.active{
+        display: block;
+    }
+
+    [id ^= 'popupRecipes'] > div input.btn_close[type='button'] , 
+    [id ^= 'popupPlanet'] > div input.btn_close[type='button'] ,
+    #popupReview > div input.btn_close[type='button']{
+        width: 17px; height: 16px; text-indent: -9999px; border: none; vertical-align: middle;
+        background: url('../images/icon_popupClose.png') no-repeat center; cursor: pointer;
+        position: absolute; right: 15px; top: 15px;
+    }   
+    
+    * > .popupTitleGray{
+        display: block; font-size: 18px; font-weight: 800; color: #bfbfbf;
+    }
+
+    * > .popupTitleRed{
+        display: block; font-size: 18px; font-weight: 800; color: #d31245;
+    }  
+
+    
+    /* our Foods 리스트_팝업 */
+    
+    [id ^= 'popupRecipes'] > div{
+        background-color: white; max-width: 1200px; width: 100%;  height: 93%;
+        margin: 0 auto; border-radius: 10px; padding: 50px 2%; box-sizing: border-box;
+        position: relative; overflow-y: scroll;
+    } 
+
+    [id ^= 'popupRecipes'] div figure::after{
+        content: ''; display: block; clear: both;
+    }
+
+    [id ^= 'popupRecipes'] div figure img{
+        width: 35%; float: left; margin-right: 2%; margin-bottom: 0;
+    }
+
+    [id ^= 'popupRecipes'] div figure figcaption{
+        float: left; width: 63%; padding-top: 0;
+    }
+
+    [id ^= 'popupRecipes'] div figure figcaption h2{
+        font-size:  32px; font-weight: 900; margin-bottom: 10px;
+    }
+
+    [id ^= 'popupRecipes'] div figure figcaption p{
+        line-height: 23px; color: #999999;
+    }
+
+    [id ^= 'popupRecipes'] div figure figcaption div{
+        padding-top: 10px; margin-bottom: 25px;
+    }
+
+    [id ^= 'popupRecipes'] div figure figcaption div .btnPrint[type='button']{
+        width: 30px; height: 30px; text-indent: -9999px; border: #bfbfbf solid 1px; border-radius: 5px;
+        background: url('../images/icon_popupPrint.png') no-repeat center; margin-bottom: 0;
+    }
+
+    [id ^= 'popupRecipes'] div figure figcaption div mark{
+        background-color: #d31245; border-radius: 5px; display: inline-block; line-height: 30px;
+        padding: 0 12px; font-size: 14px; font-weight: 200; color: white;
+        box-sizing: border-box; 
+    }  
+
+    [id ^= 'popupRecipes'] > div > div{
+        padding-top: 25px;
+    }
+
+    [id ^= 'popupRecipes'] div strong{
+        margin-bottom: 10px;
+    }
+
+    [id ^= 'popupRecipes'] div ol{
+        list-style-position: inside;
+        font-weight: 200; font-size: 15px; line-height: 28px;
+    }
+
+    [id ^= 'popupRecipes'] div ol li::marker{
+        font-weight: 500;
+    }
+
+
+    /* our impact 리스트_팝업 */
+    [id ^= 'popupPlanet'] > div{
+        background-color: white; max-width: 1200px; width: 100%;  height: 93%;
+        margin: 0 auto; border-radius: 10px; padding: 50px 2%; box-sizing: border-box;
+        position: relative; overflow-y: scroll;
+    } 
+
+
+    [id ^= 'popupPlanet'] div figure img{
+        width: 100%; max-height: 400px;
+    }
+
+    [id ^= 'popupPlanet'] div figure figcaption{
+        padding-top: 20px; box-sizing: border-box;
+    }
+
+
+    [id ^= 'popupPlanet'] div figure figcaption h2{
+        font-size:  32px; font-weight: 900; margin-bottom: 10px;
+    }
+
+    [id ^= 'popupPlanet'] div figure figcaption p{
+        font-size: 15px; line-height: 23px; color: #999999; line-height: 20px;
+    }
+
+    [id ^= 'popupPlanet'] div figure figcaption p:not(:last-child){
+        margin-bottom: 10px;
+    }
+
+    [id ^= 'popupPlanet'] div figure figcaption p strong{
+        padding-bottom: 10px;
+    }
+
+    /* 디테일 팝업 */
+   
+    #popupReview > div{
+        background-color: white; max-width: 1000px; width: 100%;  height: 93%;
+        margin: 0 auto; border-radius: 10px; padding: 35px 2%; box-sizing: border-box;
+        position: relative; overflow-y: scroll;
+    }
+
+    #popupReview div .writeContainer img{
+        width: 20%; max-width: 200px; position: absolute; top: 4%; right: 2%;
+    }
+
+    #popupReview div .writeContainer h2{
+        font-size: 25px; font-weight: 900; padding-right: 20%; box-sizing: border-box;
+        margin-bottom: 30px;
+    }
+    
+    #popupReview div .writeContainer h2 strong{
+        display: block; font-size: 18px; font-weight: 800; color: #bfbfbf;
+        padding-bottom: 0;
+    }
+
+    #popupReview div .writeContainer h2 small{
+        font-size: 12px; font-weight: 200; color: #bfbfbf; 
+    }
+
+    #popupReview div .writeContainer h2 small mark{
+        font-weight: 600; color: #d31245;
+    }
+
+
+    #popupReview div .writeContainer form fieldset ul li{
+        list-style: none; 
+    }    
+
+    #popupReview div .writeContainer form fieldset ul li::after{
+        content: ''; display: block; clear: both;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li:first-child{
+        padding-right: 20%; box-sizing: border-box;
+    }
+    #popupReview div .writeContainer form fieldset ul li:not(:last-child){
+        margin-bottom: 15px;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li input[type='text'],
+    #popupReview div .writeContainer form fieldset ul li input[type='email'],
+    #popupReview div .writeContainer form fieldset ul li textarea{
+        line-height: 40px; border: 1px solid #bfbfbf; box-sizing: border-box; display: block; width: 100%;    
+    }
+
+    /* ? :nth-child(n+4):nth-child(-n+9) = 4,5,6,7,8,9만 잡힘 -> 양쪽에서 서로 만나서 맞물림(영역을 잡을때 편리) */
+
+    #popupReview div .writeContainer form fieldset ul li:nth-child(n+4):nth-child(-n+9){
+        float: left; width: 48%;
+    }
+
+    
+
+    #popupReview div .writeContainer form fieldset ul li:nth-child(2n+4):nth-child(-n+9){
+        margin-right: 4%;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li textarea{
+        font-family: 'Roboto'; font-size: 15px; font-weight: 200; color: #d9d9d9;
+        border-radius: 5px; border: #bfbfbf solid 1px; 
+        padding-left: 10px; height: 80px; resize: none;
+    }
+
+    
+    .btnPost{
+        clear: both;
+    }
+
+
+    #popupReview div .writeContainer form fieldset ul li label{
+        font-weight: 500; color: #4d4d4d; padding-bottom: 5px; box-sizing: border-box; font-size: 16px;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li:not(:last-child) label{
+        display: block;
+    }
+
+    
+
+    #popupReview div .writeContainer form fieldset ul li .requiredRed{
+        color: #d31245; 
+    }
+
+    #popupReview div .writeContainer form fieldset ul li label small{
+        font-size: 12px; font-weight: 200; float: right; 
+    }
+
+    #popupReview div .writeContainer form fieldset ul li .starCount{
+        line-height: 50px; border-radius: 5px; border: #bfbfbf solid 1px;
+        padding-left: 15px;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li .starCount input{
+        width: 30px; height: 28px;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li .starCount mark{
+        color: #26784b; font-size: 16px;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li input{
+        line-height: 40px; border-radius: 5px; border: #bfbfbf solid 1px;
+        padding-left: 10px; box-sizing: border-box;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li input::-webkit-input-placeholder{
+        font-size: 15px; font-weight: 200; color: #d9d9d9;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li input:-moz-placeholder{
+        font-size: 15px; font-weight: 200; color: #d9d9d9;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li input[type='text']{
+        width: 100%;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li:nth-child(10) label{
+        float: left; line-height: 30px; margin-right: 5%; font-size: 16px;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li:nth-child(10) input{
+        display: inline-block; width: 100px; line-height: 30px; border: none; font-weight: 800;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li:nth-child(10) input:first-of-type{
+        margin-right: 12px;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li:nth-child(11) label{
+        font-size: 14px; font-weight: 200; color: #999999; display: inline; margin-bottom: 0;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li:nth-child(11) span{
+        display: block; font-size: 12px; font-weight: 200; color: #bfbfbf
+    }
+
+    
+    #reviewPurchase , #urGender , #urAge{
+        width: 100%;
+    }
+
+    #popupReview div .writeContainer form fieldset input[type='submit']{
+        width: 20%; line-height: 50px; font-size: 18px; font-weight: 900;
+        border: none; margin: 30px 40% 0;
+    }
+
+    #popupReview div .writeContainer form fieldset ul li .starCount input[type='button']{
+        width: 30px; height: 28px; text-indent: -9999px; border: none; vertical-align: middle;
+        background: url('../images/icon_starone.png') no-repeat center; cursor: pointer;        
+    }
+
+
+    /* family rewards */
+    .Rewardsheader{
+        padding: 250px 0 50px;
+        background: url('../images/familyReward_headerBG.png') no-repeat top;
+
+    }
+
+    .Rewardsheader h1{
+        max-width: 214px;  margin: 0 auto;
+    }
+
+    .Rewardsheader h1 a{
+        display: block;
+    }
+
+    .Rewardsheader h1 a img{
+        width: 100%;
+    }
+
+    .Rewardsheader p{
+       display: block; text-align: center; margin: 0 auto; font-size: 19px; line-height: 28px;
+    }
+
+    .Rewardsheader p strong{
+        display: block; font-size: 50px; font-weight: 900; line-height: 65px;
+        padding-bottom: 40px; padding-top: 0;
+    }
+    
+    .joinUsBTN{
+        padding: 240px 25% 145px;
+        background: url('../images/familyReward_btnBG.png') no-repeat bottom;
+    }
+    .joinUsBTN a{
+        display: inline-block; background-color: #d31245; color: white;
+        width: 100%; line-height: 70px; text-align: center; font-size: 30px; font-weight: 900;
+        border-radius: 35px; 
+    }
+
+    .bx-wrapper{
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        margin-bottom: 0;
+    }
+
+
+    .bx-wrapper .bx-pager{
+        padding: 0 10%; top: 50% !important; width: 6%;
+    }
+
+    .bx-wrapper .bx-pager.bx-default-pager{
+        display: flex; justify-content: space-between;
+    }
+    
+    .bx-wrapper .bx-pager.bx-default-pager a:hover,
+    .bx-wrapper .bx-pager.bx-default-pager a.active,
+    .bx-wrapper .bx-pager.bx-default-pager a:focus{
+        background: transparent;
+    }
+
+    .bx-wrapper .bx-pager.bx-default-pager a{
+        font-size: 20px; line-height: 20px; color: white; font-weight: 200;
+        opacity: 50%;
+    }
+
+    .bx-wrapper .bx-pager.bx-default-pager a.active{
+        font-size: 20px; line-height: 20px; color: white; font-weight: 900;
+        opacity: 100%;
+    }
+
+    .bx-wrapper .bx-pager.bx-default-pager a{
+        text-indent: 0; background: transparent; color: white;
+    }
+
+    .bx-wrapper .bx-controls-direction{
+        width: 200px;
+    }
+
+    .bx-wrapper .bx-controls-direction a{
+        top: 50%; margin-top: 0;
+        width: 35px;
+        height: 35px;
+        z-index: 9;
+    }
+
+    .bx-wrapper .bx-prev{
+        right: 15%;
+        background: url('../images/icon_mainController_prevPage.png') no-repeat;
+    }
+
+    .bx-wrapper .bx-next{
+        right: 10%; 
+        background: url('../images/icon_mainController_nextPage.png') no-repeat;
+    }
+
+    .bx-wrapper .bx-next:hover,
+    .bx-wrapper .bx-next:focus{
+        background-position: 0 0;
+    }
+
+
+
+
+
+    /* OPEN FOR BREAKFAST */
+
+    .openContainer .honestAnswers div div{
+        padding-top: 0;
+    }
+
+    .openContainer .honestAnswers div div:first-child .bx-wrapper{
+        width: 100%; border: none;
+    }
+
+    .openContainer .honestAnswers div div .bx-wrapper .bx-viewport{
+        overflow: visible;
+    }
+
+    .openContainer .honestAnswers div div .bx-wrapper .bx-viewport .videoSlider{        
+        width: 100%;
+        position: relative;
+        transition-duration: none;
+        transform: none;
+    }
+
+    .honestAnswers div div .bx-wrapper{
+        position: static;
+    }
+    
+    .openContainer .honestAnswers > div > div:first-of-type{
+        position: relative;
+    }
+
+    .honestAnswers div div .bx-wrapper .bx-controls.bx-has-controls-direction .bx-controls-direction .bx-prev{
+        left: 0; top: 35%;
+        width: 35px; height: 35px; border: 2px solid #d9d9d9; border-radius: 3px;
+        background: white url('../images/icon_controller_prevPage_active.png') no-repeat center;
+    }
+
+
+    .honestAnswers div div .bx-wrapper .bx-controls.bx-has-controls-direction .bx-controls-direction .bx-next{
+        right: 0; top: 35%;
+        width: 35px; height: 35px; border: 2px solid #d9d9d9; border-radius: 3px;
+        background: white url('../images/icon_controller_nextPage_active.png') no-repeat center;
+    }
+
+    
+
+    /* brand slider */
+    .listBrand .bx-wrapper{
+        margin: 0 auto; padding-top: 45px;
+    }
+
+    .listBrand .bx-wrapper .bx-viewport{
+        min-height: 255px;
+    }
+    .listBrand .bx-wrapper .bx-viewport .brandSlider li{
+        width: 30%;
+    }
+
+    .listBrand .bx-wrapper .bx-viewport .brandSlider li img{
+        object-fit: contain; margin: 0 auto; height: 135px;
+    }
+
+    .listBrand .bx-wrapper .bx-viewport .brandSlider li p{
+        text-align: center; font-size: 16px; font-weight: 400; color: #bfbfbf; line-height: 20px;
+        width: 80%; margin: 0 auto;
+    }
+
+    .listBrand .bx-wrapper .bx-viewport .brandSlider li p strong{
+        display: block; font-size: 19px; font-weight: 800; color: black;
+        padding: 30px 0 10px;
+    }
+
+    
+    .listBrand .bx-wrapper .bx-controls.bx-has-controls-direction .bx-controls-direction .bx-prev{
+        left: 0; top: 35%;
+        width: 35px; height: 35px; border: 2px solid #d9d9d9; border-radius: 3px;
+        background: white url('../images/icon_controller_prevPage_active.png') no-repeat center;
+    }
+    
+    .listBrand .bx-wrapper .bx-controls.bx-has-controls-direction .bx-controls-direction .bx-next{
+        right: 0; top: 35%;
+        width: 35px; height: 35px; border: 2px solid #d9d9d9; border-radius: 3px;
+        background: white url('../images/icon_controller_nextPage_active.png') no-repeat center;
+    }
+}   
+
+
+

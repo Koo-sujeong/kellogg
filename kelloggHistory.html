@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kellogg</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="index.html"><img src="images/kellogg_logo_red.png" alt="kellogg"></a></h1>
+             <nav>
+                <ul>
+                    <li><a href="breakfastFavorites.html">OUR FOODS</a></li>
+                    <li><a href="sustainability.html">OUR IMPACT</a></li>
+                    <li><a href="whoWeAre.html">OUR STORE</a></li>
+                </ul>
+                <input type="button" data-panel="fnb_open" value="openMenu" class="fnbOpenBtn">
+            </nav>
+        </div>
+        <div class="fnbPanel" id="fnb_open">
+            <input type="button" class="btn_close" value="closeMenu">
+            <ol>
+                <li>
+                    OUR FOODS
+                    <ul>
+                        <li><a href="breakfastFavorites.html">BREAKFAST FAVORITES &amp; TREATS</a></li>
+                        <li><a href="cerealGranola.html">CEREAL &amp; GRANOLA</a></li>
+                        <li><a href="savorySnacks.html">SAVORY SNACKS</a></li>
+                        <li><a href="plantbasedProtein.html">PLANT-BASED PROTEINS</a></li>
+                        <li><a href="snackbarsBites.html">SNACK BARS &amp; BITES</a></li>
+                        <li><a href="proteinbarsShake.html">PROTEIN BARS &amp; SHAKE</a></li>
+                        <li><a href="frozenBreakfast.html">FROZEN BREAKFAST</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR IMPACT
+                    <ul>
+                        <li><a href="sustainability.html">SUSTAINABILITY</a></li>
+                        <li><a href="philanthropy.html">PHILANTHROPY</a></li>
+                        <li><a href="nourishment.html">NOURISHMENT</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR STORE
+                    <ul>
+                        <li><a href="whoWeAre.html">WHO WE ARE</a></li>
+                        <li><a href="kelloggHistory.html">KELLOGG HISTORY</a></li>
+                        <li><a href="openForBreakfast.html">OPEN FOR BREAKFAST</a></li>                    
+                    </ul>
+                </li>
+            </ol>
+            <div>
+                <form>
+                    <div>
+                        <input type="search" placeholder="search" title="insert ur search keyword's">
+                    </div>
+                </form>
+                <div>
+                    <h3>JOIN AND BE REWARDED</h3>
+                    <ul>
+                        <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                        <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                        <li><a href="logIn.html" target="_blank">Log In</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>CONNECT WITH US</h3>
+                    <ul>            
+                        <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                        <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                        <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="listTitle listbanner12">
+        <h2>HISTORY</h2>
+        <p>
+            From feeding the US Army to going to the moon to making <br>
+            everyday moments G-r-r-r-eat!
+        </p>
+    </div>
+
+    <section class="historyContainer">
+        <h3 class="titleModule">
+            <small>HISTORY</small>         
+        </h3>
+        <ul class="historySlider">
+            <li data-tabName="historyPanel01" class="active">
+                    <!-- <img src="images/historySlider01.jpg" alt="1894 - 1950"> -->
+                <h4 class="active">
+                    1894 <span>- 1950</span>
+                </h4>
+            </li>
+            <li data-tabName="historyPanel02">
+                <h4>
+                    1952 <span>- 1999</span>
+                </h4>
+            </li>
+            <li data-tabName="historyPanel03">
+                <h4>
+                    2000 <span>- 2015</span>
+                </h4>
+            </li>
+            <li data-tabName="historyPanel04">
+                <h4>
+                    2016 <span>- 2020</span>
+                </h4>
+            </li>
+        </ul>
+
+        <div id="historyPanel01" class="active">
+            <ol>
+                <li>
+                    <mark>1894</mark>
+                    <p>
+                        <strong>THE CREATION</strong>
+                        W.K. Kellogg changed breakfast forever by creating Corn Flakes.
+                    </p>
+                </li>
+                <li>
+                    <mark>1906</mark>
+                    <p>
+                        <strong>THE FOUNDING</strong>
+                        W.K. Kellogg opened the “Battle Creek Toasted Corn Flake 
+                        Company”
+                    </p>
+                </li>
+                <li>
+                    <mark>1914</mark>
+                    <p>
+                        <strong>CORN FLAKES TO CANADA</strong>
+                        Kellogg’s® Corn Flakes® was introduced in Canada.
+                    </p>
+                </li>
+                <li>
+                    <mark>1915</mark>
+                    <p>
+                        <strong>BRAN FLAKES</strong>
+                        Kellogg introduced Bran Flakes, the first high-fiber cereal
+                    </p>
+                </li>
+                <li>
+                    <mark>1923</mark>
+                    <p>
+                        <strong>KELLOGG'S 1ST DIETICIAN</strong>
+                        Kellogg Company hired a dietitian, Mary Barber, to help create a 
+                        proper diet.                            
+                    </p>
+                </li>
+                <li>
+                    <mark>1928</mark>
+                    <p>
+                        <strong>RICE KRISPIES DEBUT</strong>
+                        Kellogg's Rice Krispies were released
+                    </p>
+                </li>
+                <li>
+                    <mark>1930s</mark>
+                    <p>
+                        <strong>WK KELLOGG FOUNDATION FORMED</strong>
+                        The W.K. Kellogg Foundation was founded, to help children 
+                        realize their potential
+                    </p>
+                </li>
+                <li>
+                    <mark>1940s</mark>
+                    <p>
+                        <strong>SUPPORTING US TROOPS</strong>
+                        Kellogg’s employees produced K-rations for the U.S. armed forces 
+                        during WWII                         
+                    </p>
+                </li>
+                <li>
+                    <mark>1950</mark>
+                    <p>
+                        <strong>CORN POPS RELEASED</strong>
+                        Corn Pops released                         
+                    </p>
+                </li>
+            </ol>
+        </div>
+
+        <div id="historyPanel02">            
+            <ol>
+                <li>
+                    <mark>1952</mark>
+                    <p>
+                        <strong>MEET TONY</strong>
+                        Tony the Tiger was introduced along with Sugar Frosted Flakes
+                    </p>
+                </li>
+                <li>
+                    <mark>1953</mark>
+                    <p>
+                        <strong>FIRST HONEY SMACKS</strong>
+                        The present day Honey Smacks was introduced as Sugar 
+                        Smacks 
+                    </p>
+                </li>
+                <li>
+                    <mark>1955</mark>
+                    <p>
+                        <strong>SPECIAL K DEBUT</strong>
+                        Special K® was released and became the first cereal with seven
+                        vitamins and iron
+                    </p>
+                </li>
+                <li>
+                    <mark>1958</mark>
+                    <p>
+                        <strong>MEET CORNELIUS</strong>
+                        Introduction of Cornelius.
+                    </p>
+                </li>
+                <li>
+                    <mark>1963</mark>
+                    <p>
+                        <strong>FIRST FROOT LOOPS</strong>
+                        Froot Loops introduced    
+                    </p>
+                </li>
+                <li>
+                    <mark>1970</mark>
+                    <p>
+                        <strong>FIRST FROSTED MINI WHEATS</strong>
+                        Kellogg's® Frosted Mini-Wheats® cereal debuted nationally.
+                    </p>
+                </li>
+                <li>
+                    <mark>1991</mark>
+                    <p>
+                        <strong>NEW NUTRI-GRAIN</strong>
+                        Nutri-Grain® Bars released in 1991. 
+                    </p>
+                </li>
+                <li>
+                    <mark>1997</mark>
+                    <p>
+                        <strong>WKKI FOUNDING</strong>
+                        The W.K. Kellogg Institute for Food and Nutrition Research 
+                        was opened.   
+                    </p>
+                </li>
+                <li>
+                    <mark>1999</mark>
+                    <p>
+                        <strong>MEET MORNING STAR FARMS</strong>
+                        Kellogg acquired Morning Star Farms soy-based vegetarian foods
+                    </p>
+                </li>
+            </ol>
+        </div>
+
+        <div id="historyPanel03">
+            <ol>
+                <li>
+                    <mark>2000</mark>
+                    <p>
+                        <strong>HELL KASHI</strong>
+                        Kellogg acquired Kashi Cereal 
+                    </p>
+                </li>
+                <li>
+                    <mark>2001</mark>
+                    <p>
+                        <strong>KEEBLER ACQUISITION</strong>
+                        Kellogg purchases Keebler Company  
+                    </p>
+                </li>
+                <li>
+                    <mark>2006</mark>
+                    <p>
+                        <strong>100 YEARS</strong>
+                        Kellogg celebrated its 100th anniversary and created 100-calorie 
+                        snack.
+                    </p>
+                </li>
+                <li>
+                    <mark>2012</mark>
+                    <p>
+                        <strong>KRAVE HITS SHELVES</strong>
+                        Krave cereal was introduced & Kellogg acquired Pringles.
+                    </p>
+                </li>
+                <li>
+                    <mark>2015</mark>
+                    <p>
+                        <strong>TOLARAM AND BISCO MISR</strong>
+                        Formed Tolaram Africa Joint Venture. Acquired stake in Bisco 
+                        Misr and Mass Food Group.              
+                    </p>
+                </li>
+            </ol>
+        </div>
+
+        <div id="historyPanel04">  
+            <ol>
+                <li>
+                    <mark>2016</mark>
+                    <p>
+                        <strong>PARATI</strong>
+                        Acquired Parati, leading Brazilian biscuit company
+                    </p>
+                </li>
+                <li>
+                    <mark>2017</mark>
+                    <p>
+                        <strong>RXBAR</strong>
+                        Acquired RXBAR, fastest growing US nutrition bar brand
+                    </p>
+                </li>
+                <li>
+                    <mark>2018</mark>
+                    <p>
+                        <strong>HAPPY INSIDEA</strong>
+                        Debuts HI! Happy Inside™ Cereal That Supports Digestive 
+                        Wellness 
+                    </p>
+                </li>
+                <li>
+                    <mark>2019</mark>
+                    <p>
+                        <strong>MISSION TIGER</strong>
+                        Launch of Mission Tiger across the USA
+                    </p>
+                </li>
+                <li>
+                    <mark>2020</mark>
+                    <p>
+                        <strong>WK KELLOGG BY KIDS CEREAL</strong>
+                        W.K. Kellogg by Kids cereal in Europe was introduced           
+                    </p>
+                </li>
+            </ol>      
+        </div>
+
+        <!-- 와이조인 -->
+        <div class="joinUsModule">
+        <h2>EXCITING CHANGES ARE COMING TO<br>
+            KELLOGG’S FAMILY REWARDS®.
+        </h2>
+            <a href="whyJoin.html" target="_blank">JOIN THE FAM</a>
+            <p>
+                Check out the new Kellogg’s Family Rewards®! More of what you love, less stuff you don’t.<br>
+                It’s a new way of earning and getting rewarded. Simpler, faster, better - and best of all - fun-er!
+            </p>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div>
+            <div>
+                <h2>GET SUPPORT</h2>
+                <ul>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>KELLOGG'S FAMILY REWARDS</h2>
+                <ul>
+                    <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                    <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                    <li><a href="logIn.html" target="_blank">Log In</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>CONNECT WITH US</h2>
+                <ul>            
+                    <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                    <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                    <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.kelloggcompany.com/en_US/privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="https://www.kelloggcompany.com/en_US/legal.html">Terms Of Use</a></li>
+                <li><a href="https://www.privacy.kelloggcompany.com/us/homepage.html">California Consumer Rights</a></li>
+            </ul>
+            <p>
+                ®Kellogg's Company 2022
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

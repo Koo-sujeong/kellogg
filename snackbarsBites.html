@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kellogg</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="index.html"><img src="images/kellogg_logo_red.png" alt="kellogg"></a></h1>
+             <nav>
+                <ul>
+                    <li><a href="breakfastFavorites.html">OUR FOODS</a></li>
+                    <li><a href="sustainability.html">OUR IMPACT</a></li>
+                    <li><a href="whoWeAre.html">OUR STORE</a></li>
+                </ul>
+                <input type="button" data-panel="fnb_open" value="openMenu" class="fnbOpenBtn">
+            </nav>
+        </div>
+        <div class="fnbPanel" id="fnb_open">
+            <input type="button" class="btn_close" value="closeMenu">
+            <ol>
+                <li>
+                    OUR FOODS
+                    <ul>
+                        <li><a href="breakfastFavorites.html">BREAKFAST FAVORITES &amp; TREATS</a></li>
+                        <li><a href="cerealGranola.html">CEREAL &amp; GRANOLA</a></li>
+                        <li><a href="savorySnacks.html">SAVORY SNACKS</a></li>
+                        <li><a href="plantbasedProtein.html">PLANT-BASED PROTEINS</a></li>
+                        <li><a href="snackbarsBites.html">SNACK BARS &amp; BITES</a></li>
+                        <li><a href="proteinbarsShake.html">PROTEIN BARS &amp; SHAKE</a></li>
+                        <li><a href="frozenBreakfast.html">FROZEN BREAKFAST</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR IMPACT
+                    <ul>
+                        <li><a href="sustainability.html">SUSTAINABILITY</a></li>
+                        <li><a href="philanthropy.html">PHILANTHROPY</a></li>
+                        <li><a href="nourishment.html">NOURISHMENT</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR STORE
+                    <ul>
+                        <li><a href="whoWeAre.html">WHO WE ARE</a></li>
+                        <li><a href="kelloggHistory.html">KELLOGG HISTORY</a></li>
+                        <li><a href="openForBreakfast.html">OPEN FOR BREAKFAST</a></li>                    
+                    </ul>
+                </li>
+            </ol>
+            <div>
+                <form>
+                    <div>
+                        <input type="search" placeholder="search" title="insert ur search keyword's">
+                    </div>
+                </form>
+                <div>
+                    <h3>JOIN AND BE REWARDED</h3>
+                    <ul>
+                        <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                        <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                        <li><a href="logIn.html" target="_blank">Log In</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>CONNECT WITH US</h3>
+                    <ul>            
+                        <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                        <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                        <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 팝업창1 -->
+    <div class="popupModule" id="popupRecipes_sb01">
+        <div>
+            <input type="button" value="X" class="btn_close">
+            <!-- <a href="" id="popup_open"></a> -->
+            <figure>
+                <img src="images/popuprecipes_sb_01.jpg" alt="rice krispies treats® on a stick">
+                <figcaption>
+                    <h2>RICE KRISPIES TREATS® ON A STICK</h2>
+                    <p>These all-time-favorite treats are perfect for any celebration.</p>
+                    <div>
+                        <input type="button" value="print" class="btnPrint">
+                        <mark>PREP TIME : 20 MINUTES | TOTAL TIME : 40 MINUTES | 12 SERVINGS</mark>
+                    </div>
+                    <strong class="popupTitleGray">INGREDIENTS</strong>
+                    <ol>
+                        <li>3 tablespoons butter or margarine</li>
+                        <li>1 package (10 oz., about 40) JET-PUFFED Marshmallows</li>
+                        <li>4 cups JET-PUFFED Miniature Marshmallows</li>
+                        <li>Food coloring</li>
+                        <li>6 cups Kellogg's® Rice Krispies® cereal</li>
+                        <li>6 cups Kellogg's® Cocoa Krispies® cereal</li>
+                        <li>12 wooden ice cream sticks</li>
+                        <li>Flaked coconut</li>
+                        <li>Multi-colored sprinkles</li>
+                        <li>Semi-sweet chocolate morsels, melted</li>
+                    </ol>
+                </figcaption>
+            </figure>
+            <div>
+                <strong class="popupTitleRed">DIRECTIONS</strong>
+                <ol>
+                    <li>In large saucepan melt butter over low heat. Add marshmallows and stir until completely melted. Remove from heat. Stir in food coloring, if desired.</li>
+                    <li>Add KELLOGG'S RICE KRISPIES cereal. Stir until well coated.</li>
+                    <li>Using 1 / 2-cup measuring cup coated with cooking spray divide warm cereal mixture into portions. Using buttered hands shape each portion into ball. Cool. Insert wooden stick, if desired. Decorate with coconut, multi-colored sprinkles and/or melted chocolate, if desired. Let stand until firm. Best if served the same day.</li>
+                </ol>
+            </div>
+        </div>
+    </div>    
+    <!-- 팝업창2 -->
+    <div class="popupModule" id="popupRecipes_sb02">
+        <div>
+            <input type="button" value="X" class="btn_close">
+            <!-- <a href="" id="popup_open"></a> -->
+            <figure>
+                <img src="images/popuprecipes_sb_02.jpg" alt="ice cream cone rice krispies treats®">
+                <figcaption>
+                    <h2>ICE CREAM CONE RICE KRISPIES TREATS®</h2>
+                    <p>Perfect for parties! These Rice Krispies Treats®-filled, Fudge-Dipped Ice Cream Cups delight young and old alike.</p>
+                    <div>
+                        <input type="button" value="print" class="btnPrint">
+                        <mark>PREP TIME : 30 MINUTES | TOTAL TIME : 30 MINUTES | 24 SERVINGS</mark>
+                    </div>
+                    <strong class="popupTitleGray">INGREDIENTS</strong>
+                    <ol>
+                        <li>1 3/4 cups candy-coated chocolate pieces</li>
+                        <li>24 Fudge Dipped Ice Cream Cones</li>
+                        <li>3 tablespoons butter or margarine</li>
+                        <li>1 package (10 oz., about 40) regular marshmallows or 4 cups miniature marshmallows</li>
+                        <li>6 cups Kellogg’s® Rice Krispies® cereal</li>
+                        <li>Multi-colored sprinkles</li>
+                    </ol>
+                </figcaption>
+            </figure>
+            <div>
+                <strong class="popupTitleRed">DIRECTIONS</strong>
+                <ol>
+                    <li>Place about 1 tablespoon of the candies inside of each Fudge Dipped Ice Cream Cones. Reserve 24 pieces of the candy for garnish. Set aside.</li>
+                    <li>Meanwhile, in large saucepan melt butter over low heat. Add marshmallows and stir until completely melted. Remove from heat. Add KELLOGG’S RICE KRISPIES cereal. Stir until well coated. Cool slightly.</li>
+                    <li>Divide cereal mixture into twenty-four 1 / 2-cup portions. Using buttered hands shape each cereal portion into cone with rounded top. Gently press into ice cream cups, rounded side up. Press sprinkles and reserved candy pieces on tops. Cool completely. Best if served the same day.</li>
+                </ol>
+            </div>
+        </div>
+    </div>  
+    <!-- 팝업창3 -->
+    <div class="popupModule" id="popupRecipes_sb03">
+        <div>
+            <input type="button" value="X" class="btn_close">
+            <!-- <a href="" id="popup_open"></a> -->
+            <figure>
+                <img src="images/popuprecipes_sb_03.jpg" alt="chocolate tropics">
+                <figcaption>
+                    <h2>CHOCOLATE TROPICS</h2>
+                    <p>Tropical fruit is extraordinary dipped in chocolate. Enjoy that deliciousness for breakfast with a sprinkling of chocolate milk powder on your bowl of fruit and Rice Krispies®. A spring treat for sure!</p>
+                    <div>
+                        <input type="button" value="print" class="btnPrint">
+                        <mark>PREP TIME : 5 MINUTES | TOTAL TIME : 5 MINUTES | 1 SERVING</mark>
+                    </div>
+                    <strong class="popupTitleGray">INGREDIENTS</strong>
+                    <ol>
+                        <li>1 1 / 4 cups Kellogg’s® Rice Krispies® cereal</li>
+                        <li>1 / 3 cup chopped pineapple</li>
+                        <li>1 / 3 cup chopped papaya</li>
+                        <li>1 teaspoon chocolate milk powder</li>
+                        <li>1 / 2 cup fat-free milk</li>
+                    </ol>
+                </figcaption>
+            </figure>
+            <div>
+                <strong class="popupTitleRed">DIRECTIONS</strong>
+                <ol>
+                    <li>Place KELLOGG’S RICE KRISPIES cereal in serving bowl.</li>
+                    <li>Top with pineapple and papaya. Sprinkle with chocolate milk powder. Serve with milk.</li>
+                </ol>
+            </div>
+        </div>
+    </div>      
+    
+        
+    <section class="listContainer">
+        <!-- listContainer -> 첫번째 div로 선택자 -->
+        <!-- 메인배너 -->
+        <div class="listTitle listbanner05">
+            <h2>SNACK BARS &amp; BITES</h2>
+            <p>
+                Our lineup of snack bars and bites from Kashi®,<br>
+                Bear Naked® and Special K® fit your needs for eating great all day.
+            </p>
+        </div>
+        <!-- 브랜드로고 -->
+        <div class="listBrand">
+            <h3 class="titleModule">
+                <small>SNACK BARS &amp; BITES</small>
+                BRANDS
+            </h3>
+            <ul class="brandSlider">
+                <li>
+                    <img src="images/logo_specialK.png" alt="Special K">
+                    <p>
+                        <strong>HELP FEED YOUR HUNGER</strong>
+                        Special K® has snacks and cereal to fuel your amazing.
+                    </p>  
+                </li>  
+                <li>
+                    <img src="images/logo_cornPops.png" alt="Corn Pops">
+                    <p>
+                        <strong>GOTTA HAVE MY POPS!</strong>
+                        A sweet, crispy, crunchy way to start your day.
+                    </p>  
+                </li> 
+                <li>
+                    <img src="images/logo_riceKrispies.png" alt="Rice Krispies">
+                    <p>
+                        <strong>SIMPLE MOMENTS OF FUN</strong>
+                        The classic cereal and treat that has been making memories for kids and parents alike for generations.
+                    </p>  
+                </li> 
+                <li>
+                    <img src="images/logo_Austin.png" alt="Austin">
+                    <p>
+                        <strong>A GREAT GRAB'N GO SNACK</strong>
+                        Conveniently packaged to fit your busy lifestyle, it's easy to grab a pack and go.
+                    </p>  
+                </li> 
+                <li>
+                    <img src="images/logo_appleJacks.png" alt="Apple Jacks">
+                    <p>
+                        <strong>THE SWEET TASTE OF APPLE CINNAMON</strong>
+                        A delicious cereal the whole family can enjoy.
+                    </p>  
+                </li> 
+                <li>
+                    <img src="images/logo_jumboSnax.png" alt="Jumbo Snax">
+                    <p>
+                        <strong>JUMBO SNAX</strong>
+                        Now jumbo-sized, your favorite cereal brands are packaged perfectly for snacking anytime, anywhere.
+                    </p>  
+                </li> 
+                <li>
+                    <img src="images/logo_frootLoops.png" alt="Froot Loops">
+                    <p>
+                        <strong>#FOLLOW YOUR NOSE</strong>
+                        Whether it's morning, noon or night, it's always a good time for Froot Loops®.
+                    </p>  
+                </li> 
+                <li>
+                    <img src="images/logo_nutriGrain.png" alt="Nutri-Grain">
+                    <p>
+                        <strong>MADE FOR MORNINGS</strong>
+                        Rise and thrive with a soft, chewy crust made with whole grains  and a sweet filling for feel good mornings.
+                    </p>  
+                </li> 
+                <li>
+                    <img src="images/logo_kashi.png" alt="Kashi">
+                    <p>
+                        <strong>SIMPE, WHOLESOME INGREDIENTS</strong>
+                        Combining plant-based, nutritious ingredients in our cereal,
+                        bars and waffles makes choosing wholesome a little easier.
+                    </p>  
+                </li> 
+            </ul>        
+        </div>
+        <!-- 제품목록 -->
+        <div class="listProduct">
+            <h3 class="titleModule">
+                <small>SNACK BARS &amp; BITES</small>
+                FOODS
+            </h3>
+            <ul class="productModule">
+                <li>
+                    <img src="images/productList_sb_01.png" alt="Kellogg’s® Cinnabon® Jumbo Snax">
+                    <dl>
+                        <dt>Kellogg’s® Cinnabon® Jumbo Snax</dt>
+                        <dd><span>4.7</span> • 12 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_sb_01.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_sb_02.png" alt="Kellogg's® Special K® Cranberry Almond Chewy Nut Bar">
+                    <dl>
+                        <dt>Kellogg's® Special K® Cranberry
+                            Almond Chewy Nut Bar</dt>
+                        <dd><span>4.9</span> • 5 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_sb_02.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_sb_03.png" alt="Kellogg's® Special K® Chocolate Almond Chewy Nut Bar">
+                    <dl>
+                        <dt>Kellogg's® Special K® Chocolate
+                            Almond Chewy Nut Bar</dt>
+                        <dd><span>4.9</span> • 13 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_sb_03.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_sb_04.png" alt="Pure Organic Pineapple and Passion Fruit, Layered Fruit Bar">
+                    <dl>
+                        <dt>Pure Organic Pineapple &amp; Passion Fruit,
+                            Layered Fruit Bar</dt>
+                        <dd><span>4.2</span> • 5 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_sb_04.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_sb_05.png" alt="Kashi® Grain Free Granola Bars, Coconut Almond">
+                    <dl>
+                        <dt>Kashi® Grain Free Granola Bars,
+                            Coconut Almond</dt>
+                        <dd><span>0.0</span> • 0 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_sb_05.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_sb_06.png" alt="Kellogg's® Special K® Cookies'n Créme Pastry Crisps">
+                    <dl>
+                        <dt>Kellogg's® Special K® Cookies'n
+                            Créme Pastry Crisps</dt>
+                        <dd><span>4.6</span> • 13 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_sb_06.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_sb_07.png" alt="Kashi® Chewy Granola Bars, Cherry Dark Chocolate">
+                    <dl>
+                        <dt>Kashi® Chewy Granola Bars,
+                            Cherry Dark Chocolate</dt>
+                        <dd><span>5.0</span> • 1 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_sb_07.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_sb_08.png" alt="Kellogg's® Special K® Chocolate Peanut Pecan Protein Snack Bars">
+                    <dl>
+                        <dt>Kellogg's® Special K® Chocolate Peanut
+                            Pecan Protein Snack Bars</dt>
+                        <dd><span>5.0</span> • 5 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_sb_08.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_sb_09.png" alt="Kashi® Chewy Granola Bars, Chocolate Almond Sea Salt">
+                    <dl>
+                        <dt>Kashi® Chewy Granola Bars,
+                            Chocolate Almond Sea Salt</dt>
+                        <dd><span>0.0</span> • 0 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_sb_09.html">RATE REVIEW</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 레시피 -->
+        <div class="lastContent">
+            <h3 class="titleModule">
+                <small>CREATIVE RECIPES USING SNACK BARS &amp; BITES</small>
+                RESIPES
+            </h3>
+            <ul id="recipesList">
+                <li>
+                    <a href="#recipesList" data-panel="popupRecipes_sb01"><img src="images/recipes_sb_01.jpg" alt="rice krispies treats® on a stick"></a>
+                    <strong>RICE KRISPIES TREATS® ON A STICK</strong>
+                    <small>20 MIN | 12 SERVINGS</small>              
+                </li>
+                <li>
+                    <a href="#recipesList" data-panel="popupRecipes_sb02"><img src="images/recipes_sb_02.jpg" alt="ice cream cone rice krispies treats®"></a>
+                    <strong>ICE CREAM CONE RICE KRISPIES TREATS®</strong>
+                    <small>30 MIN | 24 SERVINGS</small>   
+                </li>
+                <li>
+                    <a href="#recipesList" data-panel="popupRecipes_sb03"><img src="images/recipes_sb_03.jpg" alt="chocolate tropics"></a>
+                    <strong>CHOCOLATE TROPICS</strong>
+                    <small>5 MIN | 1 SERVINGS</small>   
+                </li>
+            </ul>        
+        </div>
+        <!-- 와이조인 -->    
+        <div class="joinUsModule">
+        <h2>EXCITING CHANGES ARE COMING TO<br>
+            KELLOGG’S FAMILY REWARDS®.
+        </h2>
+            <a href="whyJoin.html" target="_blank">JOIN THE FAM</a>
+            <p>
+                Check out the new Kellogg’s Family Rewards®! More of what you love, less stuff you don’t.<br>
+                It’s a new way of earning and getting rewarded. Simpler, faster, better - and best of all - fun-er!
+            </p>
+        </div>
+    </section>
+
+
+    <footer>
+        <div>
+            <div>
+                <h2>GET SUPPORT</h2>
+                <ul>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>KELLOGG'S FAMILY REWARDS</h2>
+                <ul>
+                    <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                    <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                    <li><a href="logIn.html" target="_blank">Log In</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>CONNECT WITH US</h2>
+                <ul>            
+                    <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                    <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                    <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.kelloggcompany.com/en_US/privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="https://www.kelloggcompany.com/en_US/legal.html">Terms Of Use</a></li>
+                <li><a href="https://www.privacy.kelloggcompany.com/us/homepage.html">California Consumer Rights</a></li>
+            </ul>
+            <p>
+                ®Kellogg's Company 2022
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

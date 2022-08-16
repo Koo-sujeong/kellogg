@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kellogg</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="index.html"><img src="images/kellogg_logo_red.png" alt="kellogg"></a></h1>
+             <nav>
+                <ul>
+                    <li><a href="breakfastFavorites.html">OUR FOODS</a></li>
+                    <li><a href="sustainability.html">OUR IMPACT</a></li>
+                    <li><a href="whoWeAre.html">OUR STORE</a></li>
+                </ul>
+                <input type="button" data-panel="fnb_open" value="openMenu" class="fnbOpenBtn">
+            </nav>
+        </div>
+        <div class="fnbPanel" id="fnb_open">
+            <input type="button" class="btn_close" value="closeMenu">
+            <ol>
+                <li>
+                    OUR FOODS
+                    <ul>
+                        <li><a href="breakfastFavorites.html">BREAKFAST FAVORITES &amp; TREATS</a></li>
+                        <li><a href="cerealGranola.html">CEREAL &amp; GRANOLA</a></li>
+                        <li><a href="savorySnacks.html">SAVORY SNACKS</a></li>
+                        <li><a href="plantbasedProtein.html">PLANT-BASED PROTEINS</a></li>
+                        <li><a href="snackbarsBites.html">SNACK BARS &amp; BITES</a></li>
+                        <li><a href="proteinbarsShake.html">PROTEIN BARS &amp; SHAKE</a></li>
+                        <li><a href="frozenBreakfast.html">FROZEN BREAKFAST</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR IMPACT
+                    <ul>
+                        <li><a href="sustainability.html">SUSTAINABILITY</a></li>
+                        <li><a href="philanthropy.html">PHILANTHROPY</a></li>
+                        <li><a href="nourishment.html">NOURISHMENT</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR STORE
+                    <ul>
+                        <li><a href="whoWeAre.html">WHO WE ARE</a></li>
+                        <li><a href="kelloggHistory.html">KELLOGG HISTORY</a></li>
+                        <li><a href="openForBreakfast.html">OPEN FOR BREAKFAST</a></li>                    
+                    </ul>
+                </li>
+            </ol>
+            <div>
+                <form>
+                    <div>
+                        <input type="search" placeholder="search" title="insert ur search keyword's">
+                    </div>
+                </form>
+                <div>
+                    <h3>JOIN AND BE REWARDED</h3>
+                    <ul>
+                        <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                        <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                        <li><a href="logIn.html" target="_blank">Log In</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>CONNECT WITH US</h3>
+                    <ul>            
+                        <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                        <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                        <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 팝업창1 -->
+    <div class="popupModule" id="popupRecipes_ss01">
+        <div>
+            <input type="button" value="X"  class="btn_close">
+            <!-- <a href="" id="popup_open"></a> -->
+            <figure>
+                <img src="images/popuprecipes_ss_01.jpg" alt="roasted vegetable spread">
+                <figcaption>
+                    <h2>ROASTED VEGETABLE SPREAD</h2>
+                    <p>This spread blends the wonderful flavors of roasted carrots, tomatoes and shallots 
+                        with balsamic vinegar and fresh rosemary.</p>
+                    <div>
+                        <input type="button" value="print" class="btnPrint">
+                        <mark>PREP TIME : 5 MINUTES | TOTAL TIME : 50 MINUTES | 10 SERVINGS</mark>
+                    </div>
+                    <strong class="popupTitleGray">INGREDIENTS</strong>
+                    <ol>
+                        <li>4 medium carrots, cut into 1-inch pieces</li>
+                        <li>2 medium shallots, halved</li>
+                        <li>1 clove garlic ,1 tablespoon olive oil</li>
+                        <li>1 / 3 pound roma tomatoes, halved and seeded (about 2 medium)</li>
+                        <li>1 / 2 teaspoon coarsely ground black pepper</li>
+                        <li>1 / 4 teaspoon salt</li>
+                        <li>2 teaspoons balsamic vinegar</li>
+                        <li>1 teaspoon chopped fresh rosemary</li>
+                        <li>Kellogg's® Town House® Pita Crackers Mediterranean Herb</li>
+                    </ol>
+                </figcaption>
+            </figure>
+            <div>
+                <strong class="popupTitleRed">DIRECTIONS</strong>
+                <ol>
+                    <li>In 13 x 9 x 2-inch baking pan lined with foil and coated with cooking spray arrange carrots, shallots and garlic. Drizzle with olive oil. Sprinkle with pepper and salt. 
+                        Tightly cover with foil. Bake at 425° F for 20 minutes.</li>
+                    <li>Uncover pan. Stir vegetables. Add tomatoes to pan, cut side down. Roast, uncovered, at 425° F for 20 to 25 minutes more or until vegetables are soft. Cool slightly.</li>
+                    <li>Remove skin from tomatoes. Place tomatoes and remaining vegetables in food processor. Add vinegar and rosemary. Cover and process until smooth.</li>
+                    <li>Spoon vegetable mixture into serving dish. Garnish with rosemary sprig (if desired). Serve warm with KEEBLER TOWN HOUSE Pita Crackers Mediterranean Herb.</li>
+                </ol>
+            </div>
+        </div>
+    </div>    
+    <!-- 팝업창2 -->
+    <div class="popupModule" id="popupRecipes_ss02">
+        <div>
+            <input type="button" value="X"  class="btn_close">
+            <!-- <a href="" id="popup_open"></a> -->
+            <figure>
+                <img src="images/popuprecipes_ss_02.jpg" alt="buffalo chicken dip">
+                <figcaption>
+                    <h2>BUFFALO CHICKEN DIP</h2>
+                    <p>This easy dip combines all the favorite flavors of Buffalo wings without all the work, 
+                        making it the perfect fare for before the big game or a casual gathering.</p>
+                    <div>
+                        <input type="button" value="print" class="btnPrint">
+                        <mark>PREP TIME : 5 MINUTES | TOTAL TIME : 25 MINUTES | 24 SERVINGS</mark>
+                    </div>
+                    <strong class="popupTitleGray">INGREDIENTS</strong>
+                    <ol>
+                        <li>2 cups shredded, cooked chicken</li>
+                        <li>1 package (8 oz.) PHILADELPHIA Cream Cheese, softened</li>
+                        <li>1 / 2 cup KRAFT Classic Ranch Dressing</li>
+                        <li>1 / 2 cup FRANK’S® RedHot® Original Cayenne Pepper Sauce or FRANK’S® RedHot® 
+                            Buffalo Wings sauce</li>
+                        <li>1 / 2 cup KRAFT Natural Blue Cheese Crumbles</li>
+                        <li>1 tablespoon chopped green onion</li>
+                        <li>Kelloggs® Town House® Pita Crackers Sea Salt</li>
+                        <li>Kelloggs® Town House® Original Crackers</li>
+                    </ol>
+                </figcaption>
+            </figure>
+            <div>
+                <strong class="popupTitleRed">DIRECTIONS</strong>
+                <ol>
+                    <li>In medium bowl combine all ingredients, except green onion and crackers. Spread in shallow 1-quart baking dish. Bake, uncovered, at 350° F about 20 minutes or 
+                        until heated through. Stir. Sprinkle with green onion. Serve warm with Kelloggs® Town House® Original Crackers and/or cut-up fresh vegetables.</li>
+                </ol>
+            </div>
+        </div>
+    </div>  
+    <!-- 팝업창3 -->
+    <div class="popupModule" id="popupRecipes_ss03">
+        <div>
+            <input type="button" value="X"  class="btn_close">
+            <!-- <a href="" id="popup_open"></a> -->
+            <figure>
+                <img src="images/popuprecipes_ss_03.jpg" alt="new york cheesecake">
+                <figcaption>
+                    <h2>NEW YORK CHEESECAKE</h2>
+                    <p>Enjoy two holiday classics, cheesecake and eggnog, rolled into one terrific bar cookie</p>
+                    <div>
+                        <input type="button" value="print" class="btnPrint">
+                        <mark>PREP TIME : 5 MINUTES | TOTAL TIME : 5 MINUTES | 13 SERVINGS</mark>
+                    </div>
+                    <strong class="popupTitleGray">INGREDIENTS</strong>
+                    <ol>
+                        <li>2 cups (8 1 / 2 ounces) Kellogg's® Graham Cracker Crumbs</li>
+                        <li>1 / 2 cup (4 fl ounces) margarine or butter, melted</li>
+                        <li>2 tablespoons (1 ounce) sugar</li>
+                        <li>4 packages (32 ounces) cream cheese, softened</li>
+                        <li>1 1 / 3 cups (9 1 / 2 ounces) sugar</li>
+                        <li>2 tablespoons (1 / 2 ounce) cornstarch</li>
+                        <li>1 tablespoon (1 / 2 ounce) vanilla</li>
+                        <li>3 each eggs, large</li>
+                        <li>1 cup (8 fl ounces) sour cream</li>
+                    </ol>
+                </figcaption>
+            </figure>
+            <div>
+                <strong class="popupTitleRed">DIRECTIONS</strong>
+                <ol>
+                    <li>In small bowl toss together graham crumbs, margarine or butter and 2 tablespoons sugar. Reserve 2 tablespoons of crumb mixture for garnish. Press remaining 
+                        crumb mixture onto bottom and 2 1 / 4-inches up sides of 9-inch springform pan. Chill in freezer while preparing filling.</li>
+                    <li>In large mixing bowl beat cream cheese on medium speed of electric mixer until fluffy. Add 1 1 / 3 cups sugar, cornstarch and vanilla. Beat until combined. Add eggs, 
+                        one at a time, beating until just combined after each addition. Stir in sour cream.</li>
+                    <li>Pour into crust. Bake at 325°F about 1 1 / 4 hours or until center is almost set. Cool on wire rack for 15 minutes. Loosen sides of pan. Continue cooling on wire rack for 
+                        45 minutes more.</li>
+                    <li>Sprinkle top with reserved crumbs. Refrigerate at least 3 hours. Garnish as desired. Store in refrigerator.</li>
+                </ol>
+            </div>
+        </div>
+    </div>  
+
+    <section class="listContainer">
+        <!-- listContainer -> 첫번째 div로 선택자 -->
+        <!-- 메인배너 -->
+        <div class="listTitle listbanner03">
+            <h2>SAVORY SNACKS</h2>
+            <p>
+                Now presenting all your savory snackable, munchable favorites including Pringle’s,<br>
+                Cheez-It snacks, Club and Town House crackers.
+            </p>
+        </div>
+        <!-- 브랜드로고 -->
+        <div class="listBrand">
+            <h3 class="titleModule">
+                <small>SAVORY SNACKS</small>
+                BRANDS
+            </h3>
+            <ul class="brandSlider">
+                <li>
+                    <img src="images/logo_Pringles.png" alt="Pringles">
+                    <p>
+                        <strong>STACK PRINGLES FLAVORS</strong>
+                        Trust us, every crisp is your favorite crisp when they're Pringles®.
+                    </p>  
+                </li>       
+                <li>
+                    <img src="images/logo_cheezIt.png" alt="Cheez-It">
+                    <p>
+                        <strong>CHEESY, CRUNCHY SATISTACTION</strong>
+                        100% Real cheese baked into every crunchy cracker.
+                    </p>  
+                </li>  
+                <li>
+                    <img src="images/logo_club.png" alt="Club">
+                    <p>
+                        <strong>SAVOR WHAT'S SIMPLE</strong>
+                        Delicious melt-in-your-mouth crackers with an indulgent buttery taste and a flaky texture.
+                    </p>  
+                </li>  
+                <li>
+                    <img src="images/logo_Austin.png" alt="Austin">
+                    <p>
+                        <strong>A GREAT GRAB'N GO SNACK</strong>
+                        Conveniently packaged to fit your busy lifestyle, it's easy to grab a pack and go.
+                    </p>  
+                </li>  
+                <li>
+                    <img src="images/logo_carrs.png" alt="Carr's">
+                    <p>
+                        <strong>MAKE ANY MOMENT SPECIAL</strong>
+                        Since 1831, Carr's® Crackers have been invited to the party.
+                    </p>  
+                </li>  
+                <li>
+                    <img src="images/logo_specialK.png" alt="Special K">
+                    <p>
+                        <strong>HELP FEED YOUR HUNGER</strong>
+                        Special K® has snacks and cereal to fuel your amazing.
+                    </p>  
+                </li>  
+                <li>
+                    <img src="images/logo_zesta.png" alt="Zesta">
+                    <p>
+                        <strong>LITTLE BIT TOASTY</strong>
+                        Made with our tried and true recipe, Zesta® Crackers are a must-have for comfort foods like soups and chilli.
+                    </p>  
+                </li>  
+                <li>
+                    <img src="images/logo_toasteds.png" alt="Toasteds">
+                    <p>
+                        <strong>CRISP TEXTURE</strong>
+                        Whether enjoyed with a simple slice of cheddar or a hearty dip.
+                    </p>  
+                </li>  
+                <li>
+                    <img src="images/logo_cornFlakes.png" alt="Kellogg’s Corn Flakes">
+                    <p>
+                        <strong>THE ORIGINAL AND BEST</strong>
+                        Every bite of these crispy, golden flakes is just as delicious as the first.
+                    </p>  
+                </li> 
+                <li>
+                    <img src="images/logo_townHouse.png" alt="Town House">
+                    <p>
+                        <strong>ENDLESS POSSIBILITIES!</strong>
+                        Get creative and entertain your way with all the dipping and topping potential of Town House® crackers.
+                    </p>  
+                </li>       
+            </ul>        
+        </div>
+        <!-- 제품목록 -->
+        <div class="listProduct">
+            <h3 class="titleModule">
+                <small>SAVORY SNACKS</small>
+                FOODS
+            </h3>
+            <ul class="productModule">
+                <li>
+                    <img src="images/productList_ss_01.png" alt="Pringles® Pizza Crisps">
+                    <dl>
+                        <dt>Pringles® Pizza Crisps</dt>
+                        <dd><span>3.9</span> • 15 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_ss_01.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_ss_02.png" alt="Pringles® Party Stack Cheddar Cheese Crisps">
+                    <dl>
+                        <dt>Pringles® Party Stack Cheddar
+                            Cheese Crisps</dt>
+                        <dd><span>4.0</span> • 4 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_ss_02.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_ss_03.png" alt="Kelloggs® Zesta® Wheat Saltine crackers">
+                    <dl>
+                        <dt>Kelloggs® Zesta® Wheat Saltine
+                            crackers</dt>
+                        <dd><span>4.8</span> • 18 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_ss_03.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_ss_04.png" alt="Cheez-It® Variety Snack Packs">
+                    <dl>
+                        <dt>Cheez-It® Variety Snack Packs
+                            (Cheddar Jack, White Cheddar, Original)</dt>
+                        <dd><span>4.6</span> • 13 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_ss_04.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_ss_05.png" alt="Pringles® Scorchin' Wavy Loaded Nachos Crisps">
+                    <dl>
+                        <dt>Pringles® Scorchin' Wavy Loaded
+                            Nachos Crisps</dt>
+                        <dd><span>4.1</span> • 7 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_ss_05.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_ss_06.png" alt="Pringles® Snack Stack Variety Pack">
+                    <dl>
+                        <dt>Pringles® Snack Stack Variety Pack,
+                            6 Crisp Flavors</dt>
+                        <dd><span>4.4</span> • 7 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_ss_06.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_ss_07.png" alt="Carr's® Table Water® Crackers with Cracked Pepper">
+                    <dl>
+                        <dt>Carr's® Table Water® Crackers with
+                            Cracked Pepper</dt>
+                        <dd><span>4.3</span> • 3 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_ss_07.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_ss_08.png" alt="Pringles® Parmesan and Roasted Garlic Crisps">
+                    <dl>
+                        <dt>Pringles® Parmesan &amp; Roasted Garlic
+                            Crisps</dt>
+                        <dd><span>4.2</span> • 13 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_ss_08.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_ss_09.png" alt="Kellogg's® Club® Crisps Ranch">
+                    <dl>
+                        <dt>Kellogg's® Club® Crisps Ranch</dt>
+                        <dd><span>4.7</span> • 6 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_ss_09.html">RATE REVIEW</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 레시피 -->
+        <div class="lastContent">
+            <h3 class="titleModule">
+                <small>CREATIVE RECIPES USING SAVORY SNACKS</small>
+                RESIPES
+            </h3>
+            <ul id="recipesList">
+                <li>
+                    <a href="#recipesList" data-panel="popupRecipes_ss01"><img src="images/recipes_ss_01.jpg" alt="roasted vegetable spread"></a>
+                    <strong>ROASTED VEGETABLE SPREAD</strong>
+                    <small>5 MIN | 10 SERVINGS</small>              
+                </li>
+                <li>
+                    <a href="#recipesList" data-panel="popupRecipes_ss02"><img src="images/recipes_ss_02.jpg" alt="buffalo chicken dip"></a>
+                    <strong>BUFFALO CHICHEN DIP</strong>
+                    <small>5 MIN | 24 SERVINGS</small>
+                </li>
+                <li>
+                    <a href="#recipesList" data-panel="popupRecipes_ss03"><img src="images/recipes_ss_03.jpg" alt="new york cheesecake"></a>
+                    <strong>NEW YORK CHEESECAKE</strong>
+                    <small>15 MIN | 16 SERVINGS</small>   
+                </li>
+            </ul>        
+        </div>
+        <!-- 와이조인 -->    
+        <div class="joinUsModule">
+        <h2>EXCITING CHANGES ARE COMING TO<br>
+            KELLOGG’S FAMILY REWARDS®.
+        </h2>
+            <a href="whyJoin.html" target="_blank">JOIN THE FAM</a>
+            <p>
+                Check out the new Kellogg’s Family Rewards®! More of what you love, less stuff you don’t.<br>
+                It’s a new way of earning and getting rewarded. Simpler, faster, better - and best of all - fun-er!
+            </p>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div>
+            <div>
+                <h2>GET SUPPORT</h2>
+                <ul>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>KELLOGG'S FAMILY REWARDS</h2>
+                <ul>
+                    <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                    <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                    <li><a href="logIn.html" target="_blank">Log In</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>CONNECT WITH US</h2>
+                <ul>            
+                    <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                    <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                    <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.kelloggcompany.com/en_US/privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="https://www.kelloggcompany.com/en_US/legal.html">Terms Of Use</a></li>
+                <li><a href="https://www.privacy.kelloggcompany.com/us/homepage.html">California Consumer Rights</a></li>
+            </ul>
+            <p>
+                ®Kellogg's Company 2022
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

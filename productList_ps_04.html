@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kellogg</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="index.html"><img src="images/kellogg_logo_red.png" alt="kellogg"></a></h1>
+             <nav>
+                <ul>
+                    <li><a href="breakfastFavorites.html">OUR FOODS</a></li>
+                    <li><a href="sustainability.html">OUR IMPACT</a></li>
+                    <li><a href="whoWeAre.html">OUR STORE</a></li>
+                </ul>
+                <input type="button" data-panel="fnb_open" value="openMenu" class="fnbOpenBtn">
+            </nav>
+        </div>
+        <div class="fnbPanel" id="fnb_open">
+            <input type="button" class="btn_close" value="closeMenu">
+            <ol>
+                <li>
+                    OUR FOODS
+                    <ul>
+                        <li><a href="breakfastFavorites.html">BREAKFAST FAVORITES &amp; TREATS</a></li>
+                        <li><a href="cerealGranola.html">CEREAL &amp; GRANOLA</a></li>
+                        <li><a href="savorySnacks.html">SAVORY SNACKS</a></li>
+                        <li><a href="plantbasedProtein.html">PLANT-BASED PROTEINS</a></li>
+                        <li><a href="snackbarsBites.html">SNACK BARS &amp; BITES</a></li>
+                        <li><a href="proteinbarsShake.html">PROTEIN BARS &amp; SHAKES</a></li>
+                        <li><a href="frozenBreakfast.html">FROZEN BREAKFAST</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR IMPACT
+                    <ul>
+                        <li><a href="sustainability.html">SUSTAINABILITY</a></li>
+                        <li><a href="philanthropy.html">PHILANTHROPY</a></li>
+                        <li><a href="nourishment.html">NOURISHMENT</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR STORE
+                    <ul>
+                        <li><a href="whoWeAre.html">WHO WE ARE</a></li>
+                        <li><a href="kelloggHistory.html">KELLOGG HISTORY</a></li>
+                        <li><a href="openForBreakfast.html">OPEN FOR BREAKFAST</a></li>                    
+                    </ul>
+                </li>
+            </ol>
+            <div>
+                <form>
+                    <div>
+                        <input type="search" placeholder="search" title="insert ur search keyword's">
+                    </div>
+                </form>
+                <div>
+                    <h3>JOIN AND BE REWARDED</h3>
+                    <ul>
+                        <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                        <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                        <li><a href="logIn.html" target="_blank">Log In</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>CONNECT WITH US</h3>
+                    <ul>            
+                        <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                        <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                        <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 팝업창 -->
+    <div class="popupModule" id="popupReview">
+        <div>
+            <input type="button" value="X" class="btn_close">
+            <div class="writeContainer">
+                <img src="images/popup_productMain_ps04.png" alt="Kellogg's® Special K® Protein Honey Almond Ancient Grain Cereal">
+                <h2>
+                    <strong>MY REVIEW FOR</strong>
+                    Kellogg's® Special K® Protein Honey Almond Ancient Grain Cereal<br>
+                    <small>Required fields are marked with <mark>RED</mark></small>
+                </h2>
+                <form>
+                    <fieldset>
+                        <ul>
+                            <li>
+                                <label for="star1" class="requiredRed">
+                                    OVERALL RATING
+                                    <small>Required:Overall Rating</small>
+                                </label>
+                                <div class="starCount">
+                                    <input type="button" value="1" id="star1">
+                                    <input type="button" value="2" id="star2">
+                                    <input type="button" value="3" id="star3">
+                                    <input type="button" value="4" id="star4">
+                                    <input type="button" value="5" id="star5">
+                                    <mark>EXCELLENT</mark>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="reviewTitle" class="requiredRed">
+                                    REVIEW TITLE
+                                    <small>Required:Review Title</small>
+                                </label>                                
+                                <input type="text" id="reviewTitle" placeholder="Example: Tastes great!">
+                            </li>
+                            <li>
+                                <label for="reviewText" class="requiredRed">
+                                    REVIEW
+                                    <small>(numb) characters too short</small>
+                                </label>                                
+                                <textarea name="review" id="reviewText" placeholder="Example: I bought these for my family. Everyone loved the taste and texture..."></textarea>
+                            </li>                
+                            <li>
+                                <label for="reviewPurchase">WHERE DID YOU PURCHASE?</label>
+                                <span class="selectComponent">
+                                    <select id="reviewPurchase">
+                                        <option>Select</option>
+                                        <option value="inStore">In-Store</option>
+                                        <option value="onlineandPickup">Online, Curbside Pick-Up</option>
+                                        <option value="onlineandhome">Online, Ship-to-Home</option>
+                                    </select>                  
+                                </span>
+                            </li>
+                            <li>
+                                <label for="urGender">WHAT IS YOUR GENDER?</label>
+                                <span class="selectComponent">
+                                    <select id="urGender">
+                                        <option>Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>                
+                                </span>
+                            </li>
+                            <li>
+                                <label for="urAge">HOW OLD ARE YOU?</label>
+                                <span class="selectComponent">
+                                    <select id="urAge">
+                                        <option>Age</option>
+                                        <option value="18to24">18 to 24</option>
+                                        <option value="25to34">25 to 34</option>
+                                        <option value="35to44">35 to 44</option>
+                                        <option value="45to54">45 to 54</option>
+                                        <option value="55to64">55 to 64</option>
+                                        <option value="65orOver">65 or over</option>
+                                    </select>            
+                                </span>
+                            </li>
+                            <li>
+                                <label for="urLocation">LOCATION</label>
+                                <input type="text" id="urLocation" placeholder="Example: New York, NY">
+                            </li>
+                            <li>
+                                <label for="urNickname" class="requiredRed">
+                                    NICKNAME
+                                    <small>Required:Nickname</small>
+                                </label>                                
+                                <input type="text" id="urNickname" placeholder="Example: bob27">
+                            </li>
+                            <li>
+                                <label for="urMail" class="requiredRed">
+                                    EMAIL
+                                    <small>Required:Email</small>
+                                </label>                                
+                                <input type="email" id="urMail" placeholder="Example: youremail@example.com">
+                            </li>
+                            <li>
+                                <label for="productRecommend">WOULD YOU RECOMMEND THIS PRODUCT TO A FRIEND?</label>
+                                <input type="button" id="productRecommend" value="YES" class="btnRed btnRadius">
+                                <input type="button" value="NO" class="btnGray btnRadius">
+                            </li>                
+                            <li>                
+                                <input type="checkbox" id="termsCondition">
+                                <label for="termsCondition">
+                                    I agree to the Ratings and Reviews Terms and Conditions
+                                    <small class="requiredRed">Required:Agreements</small>
+                                </label>
+                                <span>You may receive emails regarding this submission. Any emails will include the ability to opt-out of future communications.</span>
+                            </li>  
+                        </ul>             
+                        <input type="submit" value="POST REVIEW" class="btnPost btnRed btnRadius">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>  
+    
+    <!-- 제품소개 -->
+    <section class="productInformation">
+        <ol class="pageNavigate">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="proteinbarsShake.html">OUR FOODS</a></li>
+            <li>Kellogg's® Special K® Protein Honey Almond Ancient Grain Cereal</li>            
+        </ol>
+        <div class="detailContainer">
+            <img src="images/productMain_ps04.png" alt="Kellogg's® Special K® Protein Honey Almond Ancient Grain Cereal">
+            <div>
+                <h2>Kellogg's® Special K® Protein Honey Almond Ancient Grain Cereal</h2>
+                <span>
+                    <mark>4.3</mark>• 18 REVIEWS
+                </span>
+                <div>
+                    <h3>ABOUT THIS ITEM</h3>
+                    <p>
+                        <strong class="titleRed">DETAILS</strong>
+                        Crunchy and not too sweet, Kellogg's® Special K® Protein Honey Almond Ancient Grain is made with a 
+                        delicious protein blend to help fuel your momentum. It's perfect for afternoon, late-night snacks
+                    </p>
+                    <p>
+                        <strong class="titleRed">NUTRITION FACTS &amp; INGREDIENTS</strong>
+                        Nutrition Facts and Ingredients
+                    </p>
+                    <label for="selectThisSize">SELECT PACK SIZE</label>
+                    <span class="selectComponent">
+                        <select id="selectThisSize">
+                            <option>17.1oz</option>
+                        </select>
+                        <input type="button" value="print" class="btnPrint">
+                    </span>
+                </div>
+                <div>
+                    <!-- <a href="https://www.bearnaked.com/en_US/home.html" class="viewSite btnRed btnRadius">
+                        VIEW BRAND SITE
+                    </a> -->
+                    <a href="whyJoin.html" target="_blank" class="familyRewards btnGray btnRadius">KELLOGG’S FAMILY REWARDS</a>
+                    <!-- <small>Check out Bear Naked.com</small> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 리뷰모듈 -->
+    <div class="reviewModule">
+        <h2>REVIEWS</h2>
+        <div>
+            <small>15 out of 18 (83%) reviewers recommend this product</small>
+            <fieldset>
+                <legend>RATING SNAPSHOT</legend>
+                <ol>
+                    <li>
+                        <label for="count5">5</label>
+                        <meter value="80" min="0" max="100" id="count5"></meter>
+                        <span>80%</span>
+                    </li>
+                    <li>
+                        <label for="count4">4</label>
+                        <meter value="20" min="0" max="100" id="count4"></meter>
+                        <span>20%</span>
+                    </li>
+                    <li>
+                        <label for="count3">3</label>
+                        <meter value="30" min="0" max="100" id="count3"></meter>
+                        <span>30%</span>
+                    </li>
+                    <li>
+                        <label for="count2">2</label>
+                        <meter value="0" min="0" max="100" id="count2"></meter>
+                        <span>0%</span>
+                    </li>
+                    <li>
+                        <label for="count1">1</label>
+                        <meter value="10" min="0" max="100" id="count1"></meter>
+                        <span>10%</span>
+                    </li>
+                </ol>
+                <span class="starGraph graph4">
+                    4.3
+                </span>
+                <!-- scoreCount Background -->
+            </fieldset>
+        </div>
+
+        <div>
+            <a href="#" data-panel="popupReview" class="btnRed btnRadius">WRITE A REVIEW</a>
+            <fieldset>
+                <legend>18 REVIEWS</legend>
+                <!-- select module -->
+                <span class="selectComponent">
+                    <select id="reviewsRating">
+                        <option>Rating</option>
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Star</option>
+                        <option value="3">3 Star</option>
+                        <option value="4">4 Star</option>
+                        <option value="5">5 Star</option>
+                    </select>                    
+                </span>
+                <span class="selectComponent">
+                    <select id="reviewerGender">
+                        <option>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </span>
+                <span class="selectComponent">                    
+                    <select id="reviewerAge">
+                        <option>Age</option>
+                        <option value="18to24">18 to 24</option>
+                        <option value="25to34">25 to 34</option>
+                        <option value="35to44">35 to 44</option>
+                        <option value="45to54">45 to 54</option>
+                        <option value="55to64">55 to 64</option>
+                        <option value="65orOver">65 or over</option>
+                    </select>
+                </span>                
+                <span class="selectComponent">
+                    <select id="reviewsSortby">
+                        <option>Sort by</option>
+                        <option value="mostRelevant">Most Relevant</option>
+                        <option value="mostHelpful">Most Helpful</option>
+                        <option value="highestLowest">Highest to Lowest Rating</option>
+                        <option value="lowestHighest">Lowest to Highest Rating</option>
+                        <option value="mostRecent">Most Recent</option>
+                    </select>
+                </span>
+                <span class="selectComponent">
+                    <select id="englishLocale">
+                        <option>Locale</option>
+                        <option value="English">English</option>
+                        <option value="unitedStates">English(United States)</option>
+                    </select>
+                </span>
+            </fieldset>
+        </div>
+    </div>
+
+    <!-- 리뷰상세1 -->
+    <ul class="reviewDetails">
+        <li>
+            <dl>
+                <dt>Anna143</dt>
+                <dd>Riverton, Utah</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021-12">· 6 months ago </time>
+                </span>
+                <h3>
+                    Favorite Cold Cereal!
+                </h3>
+                <blockquote>
+                    This is my favorite cold cereal. I love the flavor, the sweetness, and the way it fills me up. I feel it is a healthy breakfast option. I love the almond and honey flavor 
+                    with the grains and milk. It does require a bit of chewing so don't get it if you can't do that. Otherwise, try it!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 6</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Mjsba</dt>
+                <dd>Wisconsin</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021-08">· 10 months ago </time>
+                </span>
+                <h3>
+                    Crunchy, flavorful, not too sweet
+                </h3>
+                <blockquote>
+                    I was looking for a cereal with lots of protein and came across this cereal at target. I liked the idea of ancient grains too. I loved this cereal at first bite! It is crunchy, 
+                    not too sweet but flavorful. 
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 16</button>
+                    <button class="activate">NO · 3</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Noob1</dt>
+                <dd>Portland, OR</dd>
+            </dl>
+            <div>
+                <span class="countingStar star4">
+                    <time datetime="2021-10">· 8 months ago </time>
+                </span>
+                <h3>
+                    Exceptional!
+                </h3>
+                <blockquote>
+                    As an active individual who values nutrition before anything else, this cereal has exceeded my expectations for both performance with 15grams of protien per 
+                    serving and my insatiable need for taste with sweet,
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 6</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>James</dt>
+                <dd></dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020"> 2 years ago </time>
+                </span>
+                <h3>
+                    Great cereal, if you can find it.
+                </h3>
+                <blockquote>
+                    Honest, hearty flavor, satisfying. I'd buy it again if I could find it.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 9</button>
+                    <button class="activate">NO · 2</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Panda</dt>
+                <dd>Toledo, OH</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021-11">· 7 months ago </time>
+                </span>
+                <h3>
+                    Not what I expected.
+                </h3>
+                <blockquote>
+                    Taste was terrible. Flakes are big and hard. Left a terrible after taste in my mouth. Pitched the box after I ate one bowl.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 3</button>
+                    <button class="activate">NO · 1</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Renee</dt>
+                <dd>Georgia</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021-10">· 8 months ago </time>
+                </span>
+                <h3>
+                    Please don't discontinue!
+                </h3>
+                <blockquote>
+                    I've been buying this delicious high-protein cereal for my son for two years. Please don't discontinue!!!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 3</button>
+                    <button class="activate">NO · 1</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Lisa77</dt>
+                <dd>Dallas, Tx</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2022-01">· 5 months ago </time>
+                </span>
+                <h3>
+                    Hmmm....not so much.
+                </h3>
+                <blockquote>
+                    I'm addicted to Special K Protein - love it! But I ran across the Honey Almond Ancient Grain and thought I'd try it. Sorry Kellogg's, but it's a no for me. The flakes had 
+                    an odd flavor, but more than that, they tasted burnt. Very burnt. Very ancient? I never throw food away, but after several tries of this, I just couldn't do it. Sticking 
+                    with my Special K Original Protein.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 2</button>
+                    <button class="activate">NO · 1</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Frankoamerican</dt>
+                <dd>Rancho</dd>
+            </dl>
+            <div>
+                <span class="countingStar star3">
+                    <time datetime="2021-11">· 7 months ago </time>
+                </span>
+                <h3>
+                    Amaze
+                </h3>
+                <blockquote>
+                    Love this cereal! high protein content, delicious flavor. <br>
+                    I usually eat it at night and it’s just enough it’s so good!! <br>
+                    Love the almonds and honey also so yummy! I usually pair with soy or almond/cashew milks
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark>YES</mark>
+                    <mark class="activate">NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 2</button>
+                    <button class="activate">NO · 3</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Ranger Rick</dt>
+                <dd>Roscoe, IL</dd>
+            </dl>
+            <div>
+                <span class="countingStar star4">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Its okay but I will not buy it again.
+                </h3>
+                <blockquote>
+                    Both my son and I tried it but the flavor was kind of, well, ancient. <br>
+                    It just didn't have a flavor I want to start my day with.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>David</dt>
+                <dd>Kansas City</dd>
+            </dl>
+            <div>
+                <span class="countingStar star3">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Best cereal I’ve ever had
+                </h3>
+                <blockquote>
+                    I typically like bran or wheat cereals with nuts or Special K’s strawberry cereal but, once I tried this cereal, I made it my everyday breakfast cereal. My only complaint 
+                    is most boxes sold at stores are typically small with only about 5 or 6 servings (let’s be honest, it’s only 4 for me).
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button class="activate">NO · 1</button>
+                </fieldset>
+            </form>
+        </li>
+    </ul>
+    <!-- 리뷰상세2 -->
+    <ul class="reviewDetails">
+        <li>
+            <dl>
+                <dt>Dt</dt>
+                <dd>SoCal</dd>
+            </dl>
+            <div>
+                <span class="countingStar star3">
+                    <time datetime="2022-01">· 5 months ago </time>
+                </span>
+                <h3>
+                    Box tastes better than the contents
+                </h3>
+                <blockquote>
+                    If you are starving this may keep you alive. But you may not want to be after eating this. Hard to figure out how this got to market.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button class="activate">NO · 1</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>AlanH</dt>
+                <dd>New Jersey</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2022-04">· 2 months ago </time>
+                </span>
+                <h3>
+                    Great crunch
+                </h3>
+                <blockquote>
+                    The cereal has a high protein level which is why I primarily purchase it.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>DKN</dt>
+                <dd>Pennsylvania</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021-11">· 7 months ago </time>
+                </span>
+                <h3>
+                    Not great.
+                </h3>
+                <blockquote>
+                    Tried this as a replacement for your discontinued honey oats cereal (please bring back). 
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Marti</dt>
+                <dd>Pleasant Valley</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Awful
+                </h3>
+                <blockquote>
+                    First Special K cereal that I don’t like. Too strong flavored, too hard, after taste.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Laura23</dt>
+                <dd>vermont</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2022-05">· a month ago </time>
+                </span>
+                <h3>
+                    Love fast of them would buy more
+                </h3>
+                <blockquote>
+                    I bought trY at work and love them may be if get some more my self
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Erin</dt>
+                <dd>Cincinnati ohio</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2022-03">· 3 months ago </time>
+                </span>
+                <h3>
+                    Healthy
+                </h3>
+                <blockquote>
+                    I've never had ancient grains, however they're really good. Other reviews said the smell is bad 
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Jerry</dt>
+                <dd>VA</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2022-01">· 5 months ago </time>
+                </span>
+                <h3>
+                    Great Cereal
+                </h3>
+                <blockquote>
+                    I have eaten several boxes of this cereal over the past few months and I absolutely love it. It tastes great, 
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Map</dt>
+                <dd>San Antonio</dd>
+            </dl>
+            <div>
+                <span class="countingStar star1">
+                    <time datetime="2021-11">· 7 months ago </time>
+                </span>
+                <h3>
+                    Delicious taste and protein too!!!
+                </h3>
+                <blockquote>
+                    This cereal is wonderful!! The taste is so yummy and you have a little hint of honey that just tops it off! 
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark>YES</mark>
+                    <mark class="activate">NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button class="activate">NO · 2</button>
+                </fieldset>
+            </form>
+        </li>
+    </ul>
+
+    <!-- 컨트롤러 -->
+    <div class="reviewControler activated">
+        1 / 2
+        <a href="#" class="prevPage">prevPage</a>
+        <a href="#" class="nextPage">nextPage</a>
+        <!-- 
+            <button enabled></button>
+            <button disabled></button>
+         -->
+    </div>
+
+    <footer>
+        <div>
+            <div>
+                <h2>GET SUPPORT</h2>
+                <ul>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>KELLOGG'S FAMILY REWARDS</h2>
+                <ul>
+                    <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                    <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                    <li><a href="logIn.html" target="_blank">Log In</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>CONNECT WITH US</h2>
+                <ul>            
+                    <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                    <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                    <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.kelloggcompany.com/en_US/privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="https://www.kelloggcompany.com/en_US/legal.html">Terms Of Use</a></li>
+                <li><a href="https://www.privacy.kelloggcompany.com/us/homepage.html">California Consumer Rights</a></li>
+            </ul>
+            <p>
+                ®Kellogg's Company 2022
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

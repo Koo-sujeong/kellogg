@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kellogg</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="index.html"><img src="images/kellogg_logo_red.png" alt="kellogg"></a></h1>
+             <nav>
+                <ul>
+                    <li><a href="breakfastFavorites.html">OUR FOODS</a></li>
+                    <li><a href="sustainability.html">OUR IMPACT</a></li>
+                    <li><a href="whoWeAre.html">OUR STORE</a></li>
+                </ul>
+                <input type="button" data-panel="fnb_open" value="openMenu" class="fnbOpenBtn">
+            </nav>
+        </div>
+        <div class="fnbPanel" id="fnb_open">
+            <input type="button" class="btn_close" value="closeMenu">
+            <ol>
+                <li>
+                    OUR FOODS
+                    <ul>
+                        <li><a href="breakfastFavorites.html">BREAKFAST FAVORITES &amp; TREATS</a></li>
+                        <li><a href="cerealGranola.html">CEREAL &amp; GRANOLA</a></li>
+                        <li><a href="savorySnacks.html">SAVORY SNACKS</a></li>
+                        <li><a href="plantbasedProtein.html">PLANT-BASED PROTEINS</a></li>
+                        <li><a href="snackbarsBites.html">SNACK BARS &amp; BITES</a></li>
+                        <li><a href="proteinbarsShake.html">PROTEIN BARS &amp; SHAKE</a></li>
+                        <li><a href="frozenBreakfast.html">FROZEN BREAKFAST</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR IMPACT
+                    <ul>
+                        <li><a href="sustainability.html">SUSTAINABILITY</a></li>
+                        <li><a href="philanthropy.html">PHILANTHROPY</a></li>
+                        <li><a href="nourishment.html">NOURISHMENT</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR STORE
+                    <ul>
+                        <li><a href="whoWeAre.html">WHO WE ARE</a></li>
+                        <li><a href="kelloggHistory.html">KELLOGG HISTORY</a></li>
+                        <li><a href="openForBreakfast.html">OPEN FOR BREAKFAST</a></li>                    
+                    </ul>
+                </li>
+            </ol>
+            <div>
+                <form>
+                    <div>
+                        <input type="search" placeholder="search" title="insert ur search keyword's">
+                    </div>
+                </form>
+                <div>
+                    <h3>JOIN AND BE REWARDED</h3>
+                    <ul>
+                        <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                        <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                        <li><a href="logIn.html" target="_blank">Log In</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>CONNECT WITH US</h3>
+                    <ul>            
+                        <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                        <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                        <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 팝업창1 -->
+    <div class="popupModule" id="popupRecipes_fb01">
+        <div>
+            <input type="button" value="X"  class="btn_close">
+            <!-- <a href="" id="popup_open"></a> -->
+            <figure>
+                <img src="images/popuprecipes_fb_01.jpg" alt="curried grape and chicken salad on waffles">
+                <figcaption>
+                    <h2>CURRIED GRAPE AND CHICKEN SALAD
+                        ON WAFFLES</h2>
+                    <p>This refreshing version of chicken salad looks to the East for its flavorings of soy sauce
+                        and curry. Red grapes and green celery add crunch, flavor and color to the mix.</p>
+                    <div>
+                        <input type="button" value="print" class="btnPrint">
+                        <mark>PREP TIME : 20 MINUTES | TOTAL TIME : 20 MINUTES | 4 SERVINGS</mark>
+                    </div>
+                    <strong class="popupTitleGray">INGREDIENTS</strong>
+                    <ol>
+                        <li>1 / 2 cup fat free plain Greek yogurt</li>
+                        <li>1 tablespoon reduced-sodium soy sauce</li>
+                        <li>3/4 teaspoon curry powder</li>
+                        <li>1/8 teaspoon pepper</li>
+                        <li>2 cups chopped, cooked chicken</li>
+                        <li>1 cup red grapes, seeded and halved</li>
+                        <li>1 cup sliced celery</li>
+                        <li>8 Kellogg’s® Eggo® Homestyle waffles</li>
+                    </ol>
+                </figcaption>
+            </figure>
+            <div>
+                <strong class="popupTitleRed">DIRECTIONS</strong>
+                <ol>
+                    <li>In small bowl stir together yogurt, soy sauce, curry powder and pepper. Set aside.</li>
+                    <li>In medium bowl toss together chicken, grapes and celery. Add yogurt mixture. Toss until combined. Refrigerate for up to 2 hours (if desired).</li>
+                    <li>Before serving, toast KELLOGG’S EGGO Homestyle waffles according to package directions. Stir chicken mixture and spoon on top of waffles. Serve immediately.</li>
+                </ol>
+            </div>
+        </div>
+    </div>    
+    <!-- 팝업창2 -->
+    <div class="popupModule" id="popupRecipes_fb02">
+        <div>
+            <input type="button" value="X"  class="btn_close">
+            <!-- <a href="" id="popup_open"></a> -->
+            <figure>
+                <img src="images/popuprecipes_fb_02.jpg" alt="western waffles">
+                <figcaption>
+                    <h2>WESTERN WAFFLES</h2>
+                    <p>Satisfy your cravings with this hearty breakfast option.</p>
+                    <div>
+                        <input type="button" value="print" class="btnPrint">
+                        <mark>PREP TIME : 15 MINUTES | TOTAL TIME : 40 MINUTES | 24 SERVINGS</mark>
+                    </div>
+                    <strong class="popupTitleGray">INGREDIENTS</strong>
+                    <ol>
+                        <li>24 Kellogg's® Eggo® Homestyle waffles</li>
+                        <li>4 cups shredded low-fat swiss cheese</li>
+                        <li>2 cups diced smoked turkey breasts</li>
+                        <li>2 cups low-fat sour cream</li>
+                        <li>2 cups egg substitute</li>
+                        <li>1 teaspoon salt</li>
+                        <li>1 teaspoon garlic powder</li>
+                        <li>1 teaspoon black pepper</li>
+                    </ol>
+                </figcaption>
+            </figure>
+            <div>
+                <strong class="popupTitleRed">DIRECTIONS</strong>
+                <ol>
+                    <li>Preheat oven to 350° F.</li>    
+                    <li>Place heated waffles on foil-lined 26 x 18 x 1-inch full sheet pan coated with cooking spray. Evenly top each waffle with cheese and turkey. Combine remaining 
+                        ingredients and spread evenly over each waffle.</li>    
+                    <li>Bake 25 minutes or until set and lightly browned. Serve hot.</li>    
+                </ol>
+            </div>
+        </div>
+    </div>  
+    <!-- 팝업창3 -->
+    <div class="popupModule" id="popupRecipes_fb03">
+        <div>
+            <input type="button" value="X"  class="btn_close">
+            <!-- <a href="" id="popup_open"></a> -->
+            <figure>
+                <img src="images/popuprecipes_fb_03.jpg" alt="eggo glazed waffle donuts">
+                <figcaption>
+                    <h2>EGGO GLAZED WAFFLE DONUTS</h2>
+                    <p>A quick glaze of powdered sugar and milk turns these Thick &amp; Fluffy waffles into 
+                        delicious donuts.</p>
+                    <div>
+                        <input type="button" value="print" class="btnPrint">
+                        <mark>PREP TIME : 15 MINUTES | TOTAL TIME : 15 MINUTES | 6 SERVINGS</mark>
+                    </div>
+                    <strong class="popupTitleGray">INGREDIENTS</strong>
+                    <ol>
+                        <li>6 Kellogg's® Eggo® Thick &amp; Fluffy Original waffles</li>
+                        <li>1 cup sifted powdered sugar</li>
+                        <li>2 to 3 tablespoons milk</li>
+                        <li>Unsweetened cocoa powder</li>
+                        <li>Food coloring</li>
+                        <li>Multi-colored sprinkles</li>
+                    </ol>
+                </figcaption>
+            </figure>
+            <div>
+                <strong class="popupTitleRed">DIRECTIONS</strong>
+                <ol>
+                    <li>Prepare KELLOGG'S EGGO Thick &amp; Fluffy Original waffles according to package directions. Cool completely. </li>
+                    <li>Using 4-inch donut cutter or round cookie cutters, cut out donut shapes.</li>
+                    <li>In small bowl stir together powdered sugar and enough milk to make of drizzling consistency. Stir in cocoa powder or food coloring (if desired). Drizzle over waffles.
+                        Garnish with sprinkles or additional white glaze (if desired).</li>
+                </ol>
+            </div>
+        </div>
+    </div>  
+        
+
+    <section class="listContainer">
+        <!-- listContainer -> 첫번째 div로 선택자 -->
+        <!-- 메인배너 -->
+        <div class="listTitle listbanner07">
+            <h2>FROZEN BREAKFAST</h2>
+            <p>
+                Warm, delicious, convenient and<br>
+                versatile from the iconic Eggo to whole-grain goodness of Kashi.
+            </p>
+        </div>
+        <!-- 브랜드로고 -->
+        <div class="listBrand">
+            <h3 class="titleModule">
+                <small>FROZEN BREAKFAST</small>
+                BRANDS
+            </h3>
+            <ul class="brandSlider">
+                <li>
+                    <img src="images/logo_eggo.png" alt="eggo">
+                    <p>
+                        <strong>GOOD MORNING, INDEED.</strong>
+                        Would you l’eggo your Eggo?
+                    </p>
+                </li>
+                <li>
+                    <img src="images/logo_kashi.png" alt="kashi">
+                    <p>
+                        <strong>SIMPE, WHOLESOME INGREDIENTS</strong>
+                        Combining plant-based, nutritious ingredients in our cereal,
+                        bars and waffles makes choosing wholesome a little easier.  
+                    </p>
+                </li>
+            </ul>        
+        </div>
+        <!-- 제품목록 -->
+        <div class="listProduct">
+            <h3 class="titleModule">
+                <small>FROZEN BREAKFAST</small>
+                FOODS
+            </h3>
+            <ul class="productModule">
+                <li>
+                    <img src="images/productList_fb_01.png" alt="Kellogg's® Eggo® Thick and Fluffy Whole Grain Original Waffles">
+                    <dl>
+                        <dt>Kellogg's® Eggo® Thick &amp; Fluffy Whole
+                            Grain Original Waffles</dt>
+                        <dd><span>1.9</span> • 14 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_fb_01.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_fb_02.png" alt="Kellogg's® Eggo® Chocolatey Chip Waffles">
+                    <dl>
+                        <dt>Kellogg's® Eggo® Chocolatey
+                            Chip Waffles</dt>
+                        <dd><span>4.9</span> • 19 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_fb_02.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_fb_03.png" alt="Kellogg's® Eggo® Blueberry Pancakes">
+                    <dl>
+                        <dt>Kellogg's® Eggo® Blueberry Pancakes</dt>
+                        <dd><span>5.0</span> • 3 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_fb_03.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_fb_04.png" alt="Kellogg's® Eggo® French Toaster Sticks Original">
+                    <dl>
+                        <dt>Kellogg's® Eggo® French Toaster
+                            Sticks Original</dt>
+                        <dd><span>4.1</span> • 11 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_fb_04.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_fb_05.png" alt="Kellogg's® Eggo® Chocolatey Chip Pancakes">
+                    <dl>
+                        <dt>Kellogg's® Eggo® Chocolatey
+                            Chip Pancakes</dt>
+                        <dd><span>0.0</span> • 0 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_fb_05.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_fb_06.png" alt="Kellogg's® Eggo® Thick and Fluffy Whole Grain Apple Cinnamon Waffles">
+                    <dl>
+                        <dt>Kellogg's® Eggo® Thick &amp; Fluffy Whole
+                            Grain Apple Cinnamon Waffles</dt>
+                        <dd><span>3.8</span> • 27 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_fb_06.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_fb_07.png" alt="Kellogg's® Eggo® Buttermilk Waffles">
+                    <dl>
+                        <dt>Kellogg's® Eggo® Buttermilk Waffles</dt>
+                        <dd><span>4.9</span> • 5 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_fb_07.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_fb_08.png" alt="Kellogg's® Eggo® Thick and Fluffy Classic French Toast">
+                    <dl>
+                        <dt>Kellogg's® Eggo® Thick &amp; Fluffy Classic
+                            French Toast</dt>
+                        <dd><span>4.2</span> • 5 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_fb_08.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_fb_09.png" alt="Kellogg's® Eggo® French Toaster Sticks Cinnamon">
+                    <dl>
+                        <dt>Kellogg's® Eggo® French Toaster
+                            Sticks Cinnamon</dt>
+                        <dd><span>4.1</span> • 7 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_fb_09.html">RATE REVIEW</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 레시피 -->
+        <div class="lastContent">
+            <h3 class="titleModule">
+                <small>CREATIVE RECIPES USING FROZEN BREAKFAST</small>
+                RESIPES
+            </h3>
+            <ul di="recipesList">
+                <li>
+                    <a href="#recipesList" data-panel="popupRecipes_fb01"><img src="images/recipes_fb_01.jpg" alt="curried grape and chicken salad on waffles"></a>
+                    <strong>CURRIED GRAPE AND CHICKEN SALAD ON WAFFLES</strong>
+                    <small>20 MIN | 4 SERVING</small>             
+                </li>
+                <li>
+                    <a href="#recipesList" data-panel="popupRecipes_fb02"><img src="images/recipes_fb_02.jpg" alt="western waffles"></a>
+                    <strong>WESTERN WAFFLES</strong>
+                    <small>15 MIN | 24 SERVING</small>
+                </li>
+                <li>
+                    <a href="#recipesList" data-panel="popupRecipes_fb03"><img src="images/recipes_fb_03.jpg" alt="eggo glazed waffle donuts"></a>
+                    <strong>EGGO GLAZED WAFFLE DONUTS</strong>
+                    <small>15 MIN | 6 SERVINGS</small>      
+                </li>
+            </ul>        
+        </div>
+        <!-- 와이조인 -->    
+        <div class="joinUsModule">
+        <h2>EXCITING CHANGES ARE COMING TO<br>
+            KELLOGG’S FAMILY REWARDS®.
+        </h2>
+            <a href="whyJoin.html" target="_blank">JOIN THE FAM</a>
+            <p>
+                Check out the new Kellogg’s Family Rewards®! More of what you love, less stuff you don’t.<br>
+                It’s a new way of earning and getting rewarded. Simpler, faster, better - and best of all - fun-er!
+            </p>
+        </div>
+    </section>
+        
+
+    <footer>
+        <div>
+            <div>
+                <h2>GET SUPPORT</h2>
+                <ul>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>KELLOGG'S FAMILY REWARDS</h2>
+                <ul>
+                    <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                    <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                    <li><a href="logIn.html" target="_blank">Log In</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>CONNECT WITH US</h2>
+                <ul>            
+                    <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                    <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                    <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.kelloggcompany.com/en_US/privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="https://www.kelloggcompany.com/en_US/legal.html">Terms Of Use</a></li>
+                <li><a href="https://www.privacy.kelloggcompany.com/us/homepage.html">California Consumer Rights</a></li>
+            </ul>
+            <p>
+                ®Kellogg's Company 2022
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

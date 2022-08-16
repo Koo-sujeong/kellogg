@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kellogg</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="index.html"><img src="images/kellogg_logo_red.png" alt="kellogg"></a></h1>
+             <nav>
+                <ul>
+                    <li><a href="breakfastFavorites.html">OUR FOODS</a></li>
+                    <li><a href="sustainability.html">OUR IMPACT</a></li>
+                    <li><a href="whoWeAre.html">OUR STORE</a></li>
+                </ul>
+                <input type="button" data-panel="fnb_open" value="openMenu" class="fnbOpenBtn">
+            </nav>
+        </div>
+        <div class="fnbPanel" id="fnb_open">
+            <input type="button" class="btn_close" value="closeMenu">
+            <ol>
+                <li>
+                    OUR FOODS
+                    <ul>
+                        <li><a href="breakfastFavorites.html">BREAKFAST FAVORITES &amp; TREATS</a></li>
+                        <li><a href="cerealGranola.html">CEREAL &amp; GRANOLA</a></li>
+                        <li><a href="savorySnacks.html">SAVORY SNACKS</a></li>
+                        <li><a href="plantbasedProtein.html">PLANT-BASED PROTEINS</a></li>
+                        <li><a href="snackbarsBites.html">SNACK BARS &amp; BITES</a></li>
+                        <li><a href="proteinbarsShake.html">PROTEIN BARS &amp; SHAKES</a></li>
+                        <li><a href="frozenBreakfast.html">FROZEN BREAKFAST</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR IMPACT
+                    <ul>
+                        <li><a href="sustainability.html">SUSTAINABILITY</a></li>
+                        <li><a href="philanthropy.html">PHILANTHROPY</a></li>
+                        <li><a href="nourishment.html">NOURISHMENT</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR STORE
+                    <ul>
+                        <li><a href="whoWeAre.html">WHO WE ARE</a></li>
+                        <li><a href="kelloggHistory.html">KELLOGG HISTORY</a></li>
+                        <li><a href="openForBreakfast.html">OPEN FOR BREAKFAST</a></li>                    
+                    </ul>
+                </li>
+            </ol>
+            <div>
+                <form>
+                    <div>
+                        <input type="search" placeholder="search" title="insert ur search keyword's">
+                    </div>
+                </form>
+                <div>
+                    <h3>JOIN AND BE REWARDED</h3>
+                    <ul>
+                        <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                        <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                        <li><a href="logIn.html" target="_blank">Log In</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>CONNECT WITH US</h3>
+                    <ul>            
+                        <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                        <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                        <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 팝업창 -->
+    <div class="popupModule" id="popupReview">
+        <div>
+            <input type="button" value="X" class="btn_close">
+            <div class="writeContainer">
+                <img src="images/popup_productMain_bf01.png" alt="Pop-Tarts® Crisps Brown Sugar Cinnamazing">
+                <h2>
+                    <strong>MY REVIEW FOR</strong>
+                    Pop-Tarts® Crisps Brown Sugar Cinnamazing<br>
+                    <small>Required fields are marked with <mark>RED</mark></small>
+                </h2>
+                <form>
+                    <fieldset>
+                        <ul>
+                            <li>
+                                <label for="star1" class="requiredRed">
+                                    OVERALL RATING
+                                    <small>Required:Overall Rating</small>
+                                </label>
+                                <div class="starCount">
+                                    <input type="button" value="1" id="star1">
+                                    <input type="button" value="2" id="star2">
+                                    <input type="button" value="3" id="star3">
+                                    <input type="button" value="4" id="star4">
+                                    <input type="button" value="5" id="star5">
+                                    <mark>EXCELLENT</mark>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="reviewTitle" class="requiredRed">
+                                    REVIEW TITLE
+                                    <small>Required:Review Title</small>
+                                </label>                                
+                                <input type="text" id="reviewTitle" placeholder="Example: Tastes great!">
+                            </li>
+                            <li>
+                                <label for="reviewText" class="requiredRed">
+                                    REVIEW
+                                    <small>(numb) characters too short</small>
+                                </label>                                
+                                <textarea name="review" id="reviewText" placeholder="Example: I bought these for my family. Everyone loved the taste and texture..."></textarea>
+                            </li>                
+                            <li>
+                                <label for="reviewPurchase">WHERE DID YOU PURCHASE?</label>
+                                <span class="selectComponent">
+                                    <select id="reviewPurchase">
+                                        <option>Select</option>
+                                        <option value="inStore">In-Store</option>
+                                        <option value="onlineandPickup">Online, Curbside Pick-Up</option>
+                                        <option value="onlineandhome">Online, Ship-to-Home</option>
+                                    </select>                  
+                                </span>
+                            </li>
+                            <li>
+                                <label for="urGender">WHAT IS YOUR GENDER?</label>
+                                <span class="selectComponent">
+                                    <select id="urGender">
+                                        <option>Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>                
+                                </span>
+                            </li>
+                            <li>
+                                <label for="urAge">HOW OLD ARE YOU?</label>
+                                <span class="selectComponent">
+                                    <select id="urAge">
+                                        <option>Age</option>
+                                        <option value="18to24">18 to 24</option>
+                                        <option value="25to34">25 to 34</option>
+                                        <option value="35to44">35 to 44</option>
+                                        <option value="45to54">45 to 54</option>
+                                        <option value="55to64">55 to 64</option>
+                                        <option value="65orOver">65 or over</option>
+                                    </select>            
+                                </span>
+                            </li>
+                            <li>
+                                <label for="urLocation">LOCATION</label>
+                                <input type="text" id="urLocation" placeholder="Example: New York, NY">
+                            </li>
+                            <li>
+                                <label for="urNickname" class="requiredRed">
+                                    NICKNAME
+                                    <small>Required:Nickname</small>
+                                </label>                                
+                                <input type="text" id="urNickname" placeholder="Example: bob27">
+                            </li>
+                            <li>
+                                <label for="urMail" class="requiredRed">
+                                    EMAIL
+                                    <small>Required:Email</small>
+                                </label>                                
+                                <input type="email" id="urMail" placeholder="Example: youremail@example.com">
+                            </li>
+                            <li>
+                                <label for="productRecommend">WOULD YOU RECOMMEND THIS PRODUCT TO A FRIEND?</label>
+                                <input type="button" id="productRecommend" value="YES" class="btnRed btnRadius">
+                                <input type="button" value="NO" class="btnGray btnRadius">
+                            </li>                
+                            <li>                
+                                <input type="checkbox" id="termsCondition">
+                                <label for="termsCondition">
+                                    I agree to the Ratings and Reviews Terms and Conditions
+                                    <small class="requiredRed">Required:Agreements</small>
+                                </label>
+                                <span>You may receive emails regarding this submission. Any emails will include the ability to opt-out of future communications.</span>
+                            </li>  
+                        </ul>             
+                        <input type="submit" value="POST REVIEW" class="btnPost btnRed btnRadius">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>  
+    
+    <!-- 제품소개 -->
+    <section class="productInformation">
+        <ol class="pageNavigate">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="breakfastFavorites.html">OUR FOODS</a></li>
+            <li>Pop-Tarts® Crisps Brown Sugar Cinnamazing</li>            
+        </ol>
+        <div class="detailContainer">
+            <img src="images/productMain_bf01.png" alt="Pop-Tarts® Crisps Brown Sugar Cinnamazing">
+            <div>
+                <h2>Pop-Tarts® Crisps Brown Sugar Cinnamazing</h2>
+                <span>
+                    <mark>4.9</mark>• 9 REVIEWS
+                </span>
+                <div>
+                    <h3>ABOUT THIS ITEM</h3>
+                    <p>
+                        <strong class="titleRed">DETAILS</strong>
+                        Pop-Tarts® Crisps are made with a light, crisp layer of Pop-Tarts® pastry made with whole grains, filled with 
+                        yummy Brown Sugar Cinnamon filling, then topped with the sweet delicious icing you love.
+                    </p>
+                    <p>
+                        <strong class="titleRed">NUTRITION FACTS &amp; INGREDIENTS</strong>
+                        Nutrition Facts and Ingredients
+                    </p>
+                    <label for="selectThisSize">SELECT PACK SIZE</label>
+                    <span class="selectComponent">
+                        <select id="selectThisSize">
+                            <option>5.9oz</option>
+                        </select>
+                        <input type="button" value="print" class="btnPrint">
+                    </span>
+                </div>
+                <div>
+                    <a href="https://www.poptarts.com/en_US/home.html" class="viewSite btnRed btnRadius">
+                        VIEW BRAND SITE
+                    </a>
+                    <a href="whyJoin.html" target="_blank" class="familyRewards btnGray btnRadius">KELLOGG’S FAMILY REWARDS</a>
+                    <small>Check out Pop-Tarts.com</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 리뷰모듈 -->
+    <div class="reviewModule">
+        <h2>REVIEWS</h2>
+        <div>
+            <small>8 out of 8 (100%) reviewers recommend this product</small>
+            <fieldset>
+                <legend>RATING SNAPSHOT</legend>
+                <ol>
+                    <li>
+                        <label for="count5">5</label>
+                        <meter value="80" low="10" high="90" min="0" max="100" id="count5"></meter>
+                        <span>80%</span>
+                    </li>
+                    <li>
+                        <label for="count4">4</label>
+                        <meter value="10" low="10" high="90" min="0" max="100" id="count4"></meter>
+                        <span>10%</span>
+                    </li>
+                    <li>
+                        <label for="count3">3</label>
+                        <meter value="0" low="10" high="90" min="0" max="100" id="count3"></meter>
+                        <span>0%</span>
+                    </li>
+                    <li>
+                        <label for="count2">2</label>
+                        <meter value="0" low="10" high="90" min="0" max="100" id="count2"></meter>
+                        <span>0%</span>
+                    </li>
+                    <li>
+                        <label for="count1">1</label>
+                        <meter value="0" low="10" high="90" min="0" max="100" id="count1"></meter>
+                        <span>0%</span>
+                    </li>
+                </ol>
+                <span class="starGraph graph4">
+                    4.9
+                </span>
+                <!-- scoreCount Background -->
+            </fieldset>
+        </div>
+
+        <div>
+            <a href="#" data-panel="popupReview" class="btnRed btnRadius">WRITE A REVIEW</a>
+            <fieldset>
+                <legend>9 REVIEWS</legend>
+                <!-- select module -->
+                <span class="selectComponent">
+                    <select id="reviewsRating">
+                        <option>Rating</option>
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Star</option>
+                        <option value="3">3 Star</option>
+                        <option value="4">4 Star</option>
+                        <option value="5">5 Star</option>
+                    </select>                    
+                </span>
+                <span class="selectComponent">
+                    <select id="reviewerGender">
+                        <option>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </span>
+                <span class="selectComponent">                    
+                    <select id="reviewerAge">
+                        <option>Age</option>
+                        <option value="18to24">18 to 24</option>
+                        <option value="25to34">25 to 34</option>
+                        <option value="35to44">35 to 44</option>
+                        <option value="45to54">45 to 54</option>
+                        <option value="55to64">55 to 64</option>
+                        <option value="65orOver">65 or over</option>
+                    </select>
+                </span>                
+                <span class="selectComponent">
+                    <select id="reviewsSortby">
+                        <option>Sort by</option>
+                        <option value="mostRelevant">Most Relevant</option>
+                        <option value="mostHelpful">Most Helpful</option>
+                        <option value="highestLowest">Highest to Lowest Rating</option>
+                        <option value="lowestHighest">Lowest to Highest Rating</option>
+                        <option value="mostRecent">Most Recent</option>
+                    </select>
+                </span>
+                <span class="selectComponent">
+                    <select id="englishLocale">
+                        <option>Locale</option>
+                        <option value="English">English</option>
+                        <option value="unitedStates">English(United States)</option>
+                    </select>
+                </span>
+            </fieldset>
+        </div>
+    </div>
+
+    <!-- 리뷰상세 -->
+    <ul class="reviewDetails">
+        <li>
+            <dl>
+                <dt>Special K</dt>
+                <dd>Atlanta GA</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021">· a year ago </time>
+                </span>
+                <h3>
+                    Really tasty!
+                </h3>
+                <blockquote>
+                    I tried these the other day and was pleasantly surprised! They are super tasty and filling. I love that you get the taste of having a pop tart, but not so much of the
+                    guilt, being I’m not 13 anymore! The only negative is that I can’t find this flavor anywhere!! I had to order from Target on line and now they’re out! I’m only finding 
+                    strawberry and blueberry. Please send this option to the stores!
+                </blockquote>
+                <blockquote>
+                    Thank you for your feedback
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Cuddlebug</dt>
+                <dd>MO</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021">· a year ago </time>
+                </span>
+                <h3>
+                    Excellent New Product
+                </h3>
+                <blockquote>
+                    I was very first introduced to this product by my daughter, she was getting them from her school. I was only introduced to a different flavor. I liked it well enough 
+                    that I started buying them. When this new flavor shows up. I WAS HOOKED. I don't think I will ever stop buying these. Just the perfect amount of brown sugar and 
+                    cinnamon.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark>YES</mark>
+                    <mark class="activate">NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>MACan</dt>
+                <dd>Charlotte, NC</dd>
+            </dl>
+            <div>
+                <span class="countingStar star4">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Good for a quick snack.
+                </h3>
+                <blockquote>
+                    I bought these to try something new from Kellogg's. These are a great addition a protein and carb snack with not a lot of calories.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Bobby Smiles</dt>
+                <dd>Machesney Park</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Really tasty!
+                </h3>
+                <blockquote>
+                    I like these better than the original Pop-Tarts, they taste great and not as many calories.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Philly Mom</dt>
+                <dd>Philadelphia, PA</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 year ago </time>
+                </span>
+                <h3>
+                    Delicious!!
+                </h3>
+                <blockquote>
+                    Great taste!! Why not come out with more flavors? Chocolate. Peanut Butter.<br>
+                    Blueberry.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Darbaby</dt>
+                <dd>Bradenton, FL</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Yummy!
+                </h3>
+                <blockquote>
+                    I love them! They are basically skinny pop tarts but are so delicious!!!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>pamg@57</dt>
+                <dd>Orlando FL</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Awesome Breakfast Food
+                </h3>
+                <blockquote>
+                    I bought for the grandkids and they love it,anything with cinnamon they love
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>bobthehobo 51</dt>
+                <dd>target</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021">· a year ago </time>
+                </span>
+                <h3>
+                    awesome
+                </h3>
+                <blockquote>
+                    I ate this and immediately after eating it I splooged everywhere
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Cindy C</dt>
+                <dd>Charlotte, NC</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    perfect on the go snack
+                </h3>
+                <blockquote>
+                    My son loved it. Easy and simple on the go. Thank you!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+    </ul>
+
+    <!-- 컨트롤러 -->
+    <div class="reviewControler activated">
+        1 / 1
+        <a href="#" class="prevPage">prevPage</a>
+        <a href="#" class="nextPage">nextPage</a>
+        <!-- 
+            <button enabled></button>
+            <button disabled></button>
+         -->
+    </div>
+
+    <footer>
+        <div>
+            <div>
+                <h2>GET SUPPORT</h2>
+                <ul>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>KELLOGG'S FAMILY REWARDS</h2>
+                <ul>
+                    <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                    <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                    <li><a href="logIn.html" target="_blank">Log In</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>CONNECT WITH US</h2>
+                <ul>            
+                    <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                    <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                    <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.kelloggcompany.com/en_US/privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="https://www.kelloggcompany.com/en_US/legal.html">Terms Of Use</a></li>
+                <li><a href="https://www.privacy.kelloggcompany.com/us/homepage.html">California Consumer Rights</a></li>
+            </ul>
+            <p>
+                ®Kellogg's Company 2022
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,1787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kellogg</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="index.html"><img src="images/kellogg_logo_red.png" alt="kellogg"></a></h1>
+             <nav>
+                <ul>
+                    <li><a href="breakfastFavorites.html">OUR FOODS</a></li>
+                    <li><a href="sustainability.html">OUR IMPACT</a></li>
+                    <li><a href="whoWeAre.html">OUR STORE</a></li>
+                </ul>
+                <input type="button" data-panel="fnb_open" value="openMenu" class="fnbOpenBtn">
+            </nav>
+        </div>
+        <div class="fnbPanel" id="fnb_open">
+            <input type="button" class="btn_close" value="closeMenu">
+            <ol>
+                <li>
+                    OUR FOODS
+                    <ul>
+                        <li><a href="breakfastFavorites.html">BREAKFAST FAVORITES &amp; TREATS</a></li>
+                        <li><a href="cerealGranola.html">CEREAL &amp; GRANOLA</a></li>
+                        <li><a href="savorySnacks.html">SAVORY SNACKS</a></li>
+                        <li><a href="plantbasedProtein.html">PLANT-BASED PROTEINS</a></li>
+                        <li><a href="snackbarsBites.html">SNACK BARS &amp; BITES</a></li>
+                        <li><a href="proteinbarsShake.html">PROTEIN BARS &amp; SHAKES</a></li>
+                        <li><a href="frozenBreakfast.html">FROZEN BREAKFAST</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR IMPACT
+                    <ul>
+                        <li><a href="sustainability.html">SUSTAINABILITY</a></li>
+                        <li><a href="philanthropy.html">PHILANTHROPY</a></li>
+                        <li><a href="nourishment.html">NOURISHMENT</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR STORE
+                    <ul>
+                        <li><a href="whoWeAre.html">WHO WE ARE</a></li>
+                        <li><a href="kelloggHistory.html">KELLOGG HISTORY</a></li>
+                        <li><a href="openForBreakfast.html">OPEN FOR BREAKFAST</a></li>                    
+                    </ul>
+                </li>
+            </ol>
+            <div>
+                <form>
+                    <div>
+                        <input type="search" placeholder="search" title="insert ur search keyword's">
+                    </div>
+                </form>
+                <div>
+                    <h3>JOIN AND BE REWARDED</h3>
+                    <ul>
+                        <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                        <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                        <li><a href="logIn.html" target="_blank">Log In</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>CONNECT WITH US</h3>
+                    <ul>            
+                        <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                        <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                        <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 팝업창 -->
+    <div class="popupModule" id="popupReview">
+        <div>
+            <input type="button" value="X" class="btn_close">
+            <div class="writeContainer">
+                <img src="images/popup_productMain_cg02.png" alt="Kellogg's® Apple Jacks® Jumbo Snax">
+                <h2>
+                    <strong>MY REVIEW FOR</strong>
+                    Kellogg's® Apple Jacks® Jumbo Snax<br>
+                    <small>Required fields are marked with <mark>RED</mark></small>
+                </h2>
+                <form>
+                    <fieldset>
+                        <ul>
+                            <li>
+                                <label for="star1" class="requiredRed">
+                                    OVERALL RATING
+                                    <small>Required:Overall Rating</small>
+                                </label>
+                                <div class="starCount">
+                                    <input type="button" value="1" id="star1">
+                                    <input type="button" value="2" id="star2">
+                                    <input type="button" value="3" id="star3">
+                                    <input type="button" value="4" id="star4">
+                                    <input type="button" value="5" id="star5">
+                                    <mark>EXCELLENT</mark>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="reviewTitle" class="requiredRed">
+                                    REVIEW TITLE
+                                    <small>Required:Review Title</small>
+                                </label>                                
+                                <input type="text" id="reviewTitle" placeholder="Example: Tastes great!">
+                            </li>
+                            <li>
+                                <label for="reviewText" class="requiredRed">
+                                    REVIEW
+                                    <small>(numb) characters too short</small>
+                                </label>                                
+                                <textarea name="review" id="reviewText" placeholder="Example: I bought these for my family. Everyone loved the taste and texture..."></textarea>
+                            </li>                
+                            <li>
+                                <label for="reviewPurchase">WHERE DID YOU PURCHASE?</label>
+                                <span class="selectComponent">
+                                    <select id="reviewPurchase">
+                                        <option>Select</option>
+                                        <option value="inStore">In-Store</option>
+                                        <option value="onlineandPickup">Online, Curbside Pick-Up</option>
+                                        <option value="onlineandhome">Online, Ship-to-Home</option>
+                                    </select>                  
+                                </span>
+                            </li>
+                            <li>
+                                <label for="urGender">WHAT IS YOUR GENDER?</label>
+                                <span class="selectComponent">
+                                    <select id="urGender">
+                                        <option>Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>                
+                                </span>
+                            </li>
+                            <li>
+                                <label for="urAge">HOW OLD ARE YOU?</label>
+                                <span class="selectComponent">
+                                    <select id="urAge">
+                                        <option>Age</option>
+                                        <option value="18to24">18 to 24</option>
+                                        <option value="25to34">25 to 34</option>
+                                        <option value="35to44">35 to 44</option>
+                                        <option value="45to54">45 to 54</option>
+                                        <option value="55to64">55 to 64</option>
+                                        <option value="65orOver">65 or over</option>
+                                    </select>            
+                                </span>
+                            </li>
+                            <li>
+                                <label for="urLocation">LOCATION</label>
+                                <input type="text" id="urLocation" placeholder="Example: New York, NY">
+                            </li>
+                            <li>
+                                <label for="urNickname" class="requiredRed">
+                                    NICKNAME
+                                    <small>Required:Nickname</small>
+                                </label>                                
+                                <input type="text" id="urNickname" placeholder="Example: bob27">
+                            </li>
+                            <li>
+                                <label for="urMail" class="requiredRed">
+                                    EMAIL
+                                    <small>Required:Email</small>
+                                </label>                                
+                                <input type="email" id="urMail" placeholder="Example: youremail@example.com">
+                            </li>
+                            <li>
+                                <label for="productRecommend">WOULD YOU RECOMMEND THIS PRODUCT TO A FRIEND?</label>
+                                <input type="button" id="productRecommend" value="YES" class="btnRed btnRadius">
+                                <input type="button" value="NO" class="btnGray btnRadius">
+                            </li>                
+                            <li>                
+                                <input type="checkbox" id="termsCondition">
+                                <label for="termsCondition">
+                                    I agree to the Ratings and Reviews Terms and Conditions
+                                    <small class="requiredRed">Required:Agreements</small>
+                                </label>
+                                <span>You may receive emails regarding this submission. Any emails will include the ability to opt-out of future communications.</span>
+                            </li>  
+                        </ul>             
+                        <input type="submit" value="POST REVIEW" class="btnPost btnRed btnRadius">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>  
+    
+    <!-- 제품소개 -->
+    <section class="productInformation">
+        <ol class="pageNavigate">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="cerealGranola.html">OUR FOODS</a></li>
+            <li>Kellogg's® Apple Jacks® Jumbo Snax</li>            
+        </ol>
+        <div class="detailContainer">
+            <img src="images/productMain_cg02.png" alt="Kellogg's® Apple Jacks® Jumbo Snax">
+            <div>
+                <h2>Kellogg's® Apple Jacks® Jumbo Snax</h2>
+                <span>
+                    <mark>4.7</mark>• 47 REVIEWS
+                </span>
+                <div>
+                    <h3>ABOUT THIS ITEM</h3>
+                    <p>
+                        <strong class="titleRed">DETAILS</strong>
+                        Now jumbo-sized, your favorite cereal brand is packaged perfectly for on-the-go snacking. This convenient 
+                        multi-pack 5.4oz box includes 12 pouches of Kellogg’s® Apple Jacks® Jumbo Snax, which makes it easy to 
+                        enjoy these jumbo loops and the delicious flavor of apples and cinnamon anytime, anywhere.
+                    </p>
+                    <p>
+                        <strong class="titleRed">NUTRITION FACTS &amp; INGREDIENTS</strong>
+                        Nutrition Facts and Ingredients
+                    </p>
+                    <label for="selectThisSize">SELECT PACK SIZE</label>
+                    <span class="selectComponent">
+                        <select id="selectThisSize">
+                            <option>6oz</option>
+                            <option>5.4oz</option>
+                        </select>
+                        <input type="button" value="print" class="btnPrint">
+                    </span>
+                </div>
+                <div>
+                    <!-- <a href="https://www.bearnaked.com/en_US/home.html" class="viewSite btnRed btnRadius">
+                        VIEW BRAND SITE
+                    </a> -->
+                    <a href="whyJoin.html" target="_blank" class="familyRewards btnGray btnRadius">KELLOGG’S FAMILY REWARDS</a>
+                    <!-- <small>Check out Bear Naked.com</small> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 리뷰모듈 -->
+    <div class="reviewModule">
+        <h2>REVIEWS</h2>
+        <div>
+            <small>43 out of 45 (96%) reviewers recommend this product</small>
+            <fieldset>
+                <legend>RATING SNAPSHOT</legend>
+                <ol>
+                    <li>
+                        <label for="count5">5</label>
+                        <meter value="90" min="0" max="100" id="count5"></meter>
+                        <span>90%</span>
+                    </li>
+                    <li>
+                        <label for="count4">4</label>
+                        <meter value="30" min="0" max="100" id="count4"></meter>
+                        <span>30%</span>
+                    </li>
+                    <li>
+                        <label for="count3">3</label>
+                        <meter value="20" min="0" max="100" id="count3"></meter>
+                        <span>20%</span>
+                    </li>
+                    <li>
+                        <label for="count2">2</label>
+                        <meter value="0" min="0" max="100" id="count2"></meter>
+                        <span>0%</span>
+                    </li>
+                    <li>
+                        <label for="count1">1</label>
+                        <meter value="20" min="0" max="100" id="count1"></meter>
+                        <span>20%</span>
+                    </li>
+                </ol>
+                <span class="starGraph graph4">
+                    4.7
+                </span>
+                <!-- scoreCount Background -->
+            </fieldset>
+        </div>
+
+        <div>
+            <a href="#" data-panel="popupReview" class="btnRed btnRadius">WRITE A REVIEW</a>
+            <fieldset>
+                <legend>47 REVIEWS</legend>
+                <!-- select module -->
+                <span class="selectComponent">
+                    <select id="reviewsRating">
+                        <option>Rating</option>
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Star</option>
+                        <option value="3">3 Star</option>
+                        <option value="4">4 Star</option>
+                        <option value="5">5 Star</option>
+                    </select>                    
+                </span>
+                <span class="selectComponent">
+                    <select id="reviewerGender">
+                        <option>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </span>
+                <span class="selectComponent">                    
+                    <select id="reviewerAge">
+                        <option>Age</option>
+                        <option value="18to24">18 to 24</option>
+                        <option value="25to34">25 to 34</option>
+                        <option value="35to44">35 to 44</option>
+                        <option value="45to54">45 to 54</option>
+                        <option value="55to64">55 to 64</option>
+                        <option value="65orOver">65 or over</option>
+                    </select>
+                </span>                
+                <span class="selectComponent">
+                    <select id="reviewsSortby">
+                        <option>Sort by</option>
+                        <option value="mostRelevant">Most Relevant</option>
+                        <option value="mostHelpful">Most Helpful</option>
+                        <option value="highestLowest">Highest to Lowest Rating</option>
+                        <option value="lowestHighest">Lowest to Highest Rating</option>
+                        <option value="mostRecent">Most Recent</option>
+                    </select>
+                </span>
+                <span class="selectComponent">
+                    <select id="englishLocale">
+                        <option>Locale</option>
+                        <option value="English">English</option>
+                        <option value="unitedStates">English(United States)</option>
+                    </select>
+                </span>
+            </fieldset>
+        </div>
+    </div>
+
+    <!-- 리뷰상세1 -->
+    <ul class="reviewDetails">
+        <li>
+            <dl>
+                <dt>Tess</dt>
+                <dd>South Carolina</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021-10">· 8 months ago </time>
+                </span>
+                <h3>
+                    Absolutely delicious
+                </h3>
+                <blockquote>
+                    Hi I don’t normally buy frosted mini wheat cereal because it was my moms fav and she went to Heaven not too long ago and it reminded me of her but then I was 
+                    reminded of the good times of us sitting and eating a bowl with laughing and peace so I decided to try the strawberry frosted mini wheats and much to my surprise 
+                    I absolutely love it it has the beat flavor so I’m going to stock up on this thank you and God bless all who came up with this you’re all in my prayers please don’t 
+                    change a thing with this cereal stay original
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 2</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Cleanfreak</dt>
+                <dd>Niagara Falls, NY</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021-07">· 11 months ago</time>
+                </span>
+                <h3>
+                    Makes a great Greek yogurt strawberry banana split
+                </h3>
+                <blockquote>
+                    I bought these because I thought the flavor of the strawberry would make strawberry milk in my bowl and it did. Then I got the idea to use them on Plain Greek 
+                    yogurt with strawberries and blue berries topped blueberry home made jam and a banana as a banana split and it tasted amazing. I love this and will make it often. 
+                    Cereal bowl or split bowl. I love t his Strawberry mini wheat cereal.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Trish</dt>
+                <dd>North Carolina</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Double Duty
+                </h3>
+                <blockquote>
+                    Strawberry Frosted Mini-Wheats do double duty in my home. A bowl in the morning to start my day and energize. Later if I'm craving a sweet snack, instead of a 
+                    candy bar or ice cream, a handful of mini-wheats is my go-to!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 2</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>taurusgirl79</dt>
+                <dd>Somerset, NJ</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    My new favorite cereal
+                </h3>
+                <blockquote>
+                    I was shopping & wanted to buy some cereal. Strawberry Frosted Mini Wheats caught my attention. When I made a bowl, the sweet strawberry taste was very 
+                    delicious.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 1</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>SteveD</dt>
+                <dd>Fair Lawn, NJ</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Great tasting, simple flavor
+                </h3>
+                <blockquote>
+                    This is a great tasting flavor option of Frosted Mini-Wheats. The strawberry flavor tastes more on the natural side and is quite enjoyable. These are great in milk or 
+                    even just to snack on by themselves.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Missy</dt>
+                <dd>Cincinnati, OH</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021-12">· 6 months ago </time>
+                </span>
+                <h3>
+                    strawberry is my favorite
+                </h3>
+                <blockquote>
+                    I've tried several of the flavors and keep going back to the strawberry. The only flavor that beats the strawberry is the pumpkin spice. Unfortunately my store hasn't 
+                    started carrying them yet. :(
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Rabitz8400</dt>
+                <dd>Tulsa, OK</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Delicious!
+                </h3>
+                <blockquote>
+                    I love Strawberries and this was very good. I like how the mini wheats are always a little more filling. I also liked how it wasn't too sweet, but gave it that little extra 
+                    flavor.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Shannan40</dt>
+                <dd>Clinton twp michigan</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Love my frosted mini wheats
+                </h3>
+                <blockquote>
+                    I bought the frosted mini wheats in august and ohh how i love them. I like that they are mini and very filling. I would say the only down side is not much strawberry 
+                    flavor
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Barb</dt>
+                <dd>Pittsburgh PA</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Strawberry Frosted Mini Wheats
+                </h3>
+                <blockquote>
+                    Once I tried the Strawberry Frosted Mini Wheats, there was no going back. I love them and have them for breakfast quite frequently. They are !he best
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>K57</dt>
+                <dd>Ohio</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2022-05">· a month ago </time>
+                </span>
+                <h3>
+                    Great taste
+                </h3>
+                <blockquote>
+                    I am9n a strict low salt diet and Frosted Mini Wheats has the lowest amount of salt of all the cereals a checked. And love the different flavors!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+    </ul>
+    <!-- 리뷰상세2 -->
+    <ul class="reviewDetails">
+        <li>
+            <dl>
+                <dt>klrdolls</dt>
+                <dd>Charlotte, NC</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Just the right amount of strawberry flavor!!
+                </h3>
+                <blockquote>
+                    I bought these for a finaky eater (my mom) and we both love them!! Just the right texture & amount pof strawberry flavor! 5 stars all the way!!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Robin71</dt>
+                <dd>Muskegon, MI</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021">· a year ago </time>
+                </span>
+                <h3>
+                    A favorite.
+                </h3>
+                <blockquote>
+                    Officially my favorite cereal The flavor is fantastic, I enjoyba bowl with milk for breakfast and snack on them throughout the day.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>MarkR42</dt>
+                <dd>Johnstown Pa</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Amazing cereal
+                </h3>
+                <blockquote>
+                    Bought them and they are great !!! They had me wanting more , but now I can’t find them anywhere. Please bring them back full time
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · .</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Shopping for
+                    Seven</dt>
+                <dd>Toledo, Oh</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021">· a year ago </time>
+                </span>
+                <h3>
+                    Great Flavor
+                </h3>
+                <blockquote>
+                    We’ve been eating this cereal for years. The kids like the strawberry flavor - not too sweet but definitely a strawberry flavor.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Landman</dt>
+                <dd>York, PA</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Great crunchy sweet strawberry
+                </h3>
+                <blockquote>
+                    I love strawberry mini wheats. By themselves as a snack or on a bowl of milk. Sweet and crunchy and a healthy choice as well.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Sammy</dt>
+                <dd>IN</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Right Amount of Strawberry
+                </h3>
+                <blockquote>
+                    Finally tried the Frosted Mini-Wheats Strawberry flavored cereal. Just the right amount of strawberry. Really liked them.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>v61</dt>
+                <dd>si, n y</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    yummy good
+                </h3>
+                <blockquote>
+                    Love to eat them solo without milk. When you just need that tide over till the next meal these are the perfect treat.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark>YES</mark>
+                    <mark class="activate">NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>missing my mini 
+                    wheats</dt>
+                <dd>New Jersey</dd>
+            </dl>
+            <div>
+                <span class="countingStar star1">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    prefer the original strawberry unstuffed version
+                </h3>
+                <blockquote>
+                    Do not like the strawberry stuffed mini wheats at all. Can't find the original strawberry at my shoprite now. Bummed
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Morgandorffer</dt>
+                <dd>Los Angeles, CA</dd>
+            </dl>
+            <div>
+                <span class="countingStar star3">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Good
+                </h3>
+                <blockquote>
+                    It was pretty good, just a little too sweet. I would probably buy it again when I want strawberry flavored cereal.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Maggi</dt>
+                <dd>Winnebago, MN</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2022-05">· a months ago </time>
+                </span>
+                <h3>
+                    wonderful strawberry flavor.
+                </h3>
+                <blockquote>
+                    My husband loves these and rarely leaves any for me to eat. They are so full of strawberry flavor and crunchy.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+    </ul>    
+    <!-- 리뷰상세3 -->
+    <ul class="reviewDetails">
+        <li>
+            <dl>
+                <dt>dhope</dt>
+                <dd>Cochran, GA</dd>
+            </dl>
+            <div>
+                <span class="countingStar star4">
+                    <time datetime="2021-10">· 8 months ago </time>
+                </span>
+                <h3>
+                    Good, but not great!!
+                </h3>
+                <blockquote>
+                    I enjoyed them, but did not love them. I would probably not buy them again--and they have a lot of carbs.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark>YES</mark>
+                    <mark class="activate">NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Ellen</dt>
+                <dd>Staten Island, NY</dd>
+            </dl>
+            <div>
+                <span class="countingStar star4">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Frosted MiniWheats Strawberry Cereal
+                </h3>
+                <blockquote>
+                    Frosted Mini-wheats is a great cereal but add in the Strawberry filling and you have a real WINNER!!!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>bob6767</dt>
+                <dd>maryland</dd>
+            </dl>
+            <div>
+                <span class="countingStar star3">
+                    <time datetime="2022-03">· 3 months ago </time>
+                </span>
+                <h3>
+                    Bring back the Fruit Filled Cereal !!!
+                </h3>
+                <blockquote>
+                    This doesn't compare at all the fruit in the middle/fruit filled cereal that's no longer being made
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Kzoomomma</dt>
+                <dd>Kalamazoo.</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021-08">· 10 months ago  </time>
+                </span>
+                <h3>
+                    Was not expecting the flavor inside!
+                </h3>
+                <blockquote>
+                    I love original mini wheats but the strawberry flavor you get from the inside is soooooo good.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Shirl</dt>
+                <dd>Kennewick, Washington</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Great cereal!
+                </h3>
+                <blockquote>
+                    I always like fruit with my cereal and the Kellogg’s mini wheats strawberry cereal has it all.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Josephwatkinsjr</dt>
+                <dd>Buffalo NY</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Best Breakfast Cereal ever
+                </h3>
+                <blockquote>
+                    This is my favorite cereal. Good for you shredded wheat, with a delicious Strawberry flavor.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Mom</dt>
+                <dd></dd>
+            </dl>
+            <div>
+                <span class="countingStar star4">
+                    <time datetime="2021">· a year ago </time>
+                </span>
+                <h3>
+                    Tasted good
+                </h3>
+                <blockquote>
+                    The strawberry flavor was good. Nice change from the regular frosted mini wheats.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>owlbe1</dt>
+                <dd>Pgh , Pa</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Great taste!
+                </h3>
+                <blockquote>
+                    So happy I received the Frosted Mini Wheats. They are one of my favorite cereals!!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>BAMM</dt>
+                <dd>Jersey City</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Love this traditional flavor.
+                </h3>
+                <blockquote>
+                    Too bad ACME no longer carries this flavor. But buy it at Target when on sale.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Trixx</dt>
+                <dd>North Platte, NE</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2022-11">· 7 months ago </time>
+                </span>
+                <h3>
+                    We have loved snacking
+                </h3>
+                <blockquote>
+                    We have loved snacking on alll our JumboSnax this month!! They remind me of my childhood...jumbo sized!! And...without having to add milk or pour Apple Jacks in 
+                    a baggie for your toddler...these are the perfect on the go snack for moms of ALL ages!!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+    </ul>    
+    <!-- 리뷰상세4 -->
+    <ul class="reviewDetails">
+        <li>
+            <dl>
+                <dt>Vlopez</dt>
+                <dd>New Jersey</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Great taste
+                </h3>
+                <blockquote>
+                    I love strawberry frosted mini wheats it's so delicious and it fills you up.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Scooter</dt>
+                <dd>Richland, WA</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021">· a year ago </time>
+                </span>
+                <h3>
+                    Exellant way to start the day
+                </h3>
+                <blockquote>
+                    A breakfast cereal that not only tastes good but is healthy for you as well
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>djohns66</dt>
+                <dd>Charlotte, NC</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Fruity deliciousness!
+                </h3>
+                <blockquote>
+                    Cereal is my go to snack and Strawberry Mini Wheats is my new favorite !!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Meag</dt>
+                <dd>Bolingbrook, Il</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021">· a year ago </time>
+                </span>
+                <h3>
+                    Delicious!
+                </h3>
+                <blockquote>
+                    This cereal is amazing! Good with milk—great as a snack all by itself.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>PKOSulli</dt>
+                <dd>Clinton, NJ</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Great Taste
+                </h3>
+                <blockquote>
+                    Love the Strawberry flavor, good nutrients and good source of fiber.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Nash</dt>
+                <dd>Cadet, Missouri</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Great review
+                </h3>
+                <blockquote>
+                    I am glad I bought this cereal because both of my daughters love it
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>lisa</dt>
+                <dd></dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    delish!
+                </h3>
+                <blockquote>
+                    soooo good!! i would buy again and again!<br>
+                    I could eat a whole box!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Lolla</dt>
+                <dd>MI</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021-08">· 10 months ago </time>
+                </span>
+                <h3>
+                    Very good
+                </h3>
+                <blockquote>
+                    For me I absolutely love the cereal. My kids also love the cereal
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Dovpat</dt>
+                <dd>NH</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Great taste!
+                </h3>
+                <blockquote>
+                    I haven’t had these in years...surprisingly they were great!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>mel</dt>
+                <dd>pa</dd>
+            </dl>
+            <div>
+                <span class="countingStar star4">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Strawberry Frosted Mini Wheats
+                </h3>
+                <blockquote>
+                    It was a nice change from the ordinary. I will get it again
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+    </ul>    
+    <!-- 리뷰상세5 -->
+    <ul class="reviewDetails">
+        <li>
+            <dl>
+                <dt>Perry</dt>
+                <dd></dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Tast great
+                </h3>
+                <blockquote>
+                    I'll buy it a gain the next time I go to the Grocery store.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>ConnieK</dt>
+                <dd>Roanoke VA</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Mini Wheats
+                </h3>
+                <blockquote>
+                    I love shredded wheat & strawberries so this was perfect!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Redhead</dt>
+                <dd>Houston,tx</dd>
+            </dl>
+            <div>
+                <span class="countingStar star4">
+                    <time datetime="2021-07">· 11 months ago </time>
+                </span>
+                <h3>
+                    Good taste
+                </h3>
+                <blockquote>
+                    I purchased the cookies and creme krispies to share with my family. We agreed that even though they were good, they left a weird aftertaste
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>none</dt>
+                <dd>Fort Worth</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021-08">· 8 months ago </time>
+                </span>
+                <h3>
+                    Taste great
+                </h3>
+                <blockquote>
+                    I have always enjoyed all the flavores of the mini wheats
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>SLP</dt>
+                <dd>LA</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Love it hot
+                </h3>
+                <blockquote>
+                    I love to heat it up in the microwave on cold mornings.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>MrsV</dt>
+                <dd>Mississippi</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021">· a year ago </time>
+                </span>
+                <h3>
+                    Great snack
+                </h3>
+                <blockquote>
+                    I bought these a month ago and will go and get more
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>JS</dt>
+                <dd>New York NY</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Delicious
+                </h3>
+                <blockquote>
+                    It's one of our favorites. We buy it all the time.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+    </ul>
+
+    <!-- 컨트롤러 -->
+    <div class="reviewControler activated">
+        1 / 5
+        <a href="#" class="prevPage">prevPage</a>
+        <a href="#" class="nextPage">nextPage</a>
+        <!-- 
+            <button enabled></button>
+            <button disabled></button>
+         -->
+    </div>
+
+    <footer>
+        <div>
+            <div>
+                <h2>GET SUPPORT</h2>
+                <ul>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>KELLOGG'S FAMILY REWARDS</h2>
+                <ul>
+                    <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                    <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                    <li><a href="logIn.html" target="_blank">Log In</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>CONNECT WITH US</h2>
+                <ul>            
+                    <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                    <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                    <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.kelloggcompany.com/en_US/privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="https://www.kelloggcompany.com/en_US/legal.html">Terms Of Use</a></li>
+                <li><a href="https://www.privacy.kelloggcompany.com/us/homepage.html">California Consumer Rights</a></li>
+            </ul>
+            <p>
+                ®Kellogg's Company 2022
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

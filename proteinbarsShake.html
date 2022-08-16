@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kellogg</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="index.html"><img src="images/kellogg_logo_red.png" alt="kellogg"></a></h1>
+             <nav>
+                <ul>
+                    <li><a href="breakfastFavorites.html">OUR FOODS</a></li>
+                    <li><a href="sustainability.html">OUR IMPACT</a></li>
+                    <li><a href="whoWeAre.html">OUR STORE</a></li>
+                </ul>
+                <input type="button" data-panel="fnb_open" value="openMenu" class="fnbOpenBtn">
+            </nav>
+        </div>
+        <div class="fnbPanel" id="fnb_open">
+            <input type="button" class="btn_close" value="closeMenu">
+            <ol>
+                <li>
+                    OUR FOODS
+                    <ul>
+                        <li><a href="breakfastFavorites.html">BREAKFAST FAVORITES &amp; TREATS</a></li>
+                        <li><a href="cerealGranola.html">CEREAL &amp; GRANOLA</a></li>
+                        <li><a href="savorySnacks.html">SAVORY SNACKS</a></li>
+                        <li><a href="plantbasedProtein.html">PLANT-BASED PROTEINS</a></li>
+                        <li><a href="snackbarsBites.html">SNACK BARS &amp; BITES</a></li>
+                        <li><a href="proteinbarsShake.html">PROTEIN BARS &amp; SHAKE</a></li>
+                        <li><a href="frozenBreakfast.html">FROZEN BREAKFAST</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR IMPACT
+                    <ul>
+                        <li><a href="sustainability.html">SUSTAINABILITY</a></li>
+                        <li><a href="philanthropy.html">PHILANTHROPY</a></li>
+                        <li><a href="nourishment.html">NOURISHMENT</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR STORE
+                    <ul>
+                        <li><a href="whoWeAre.html">WHO WE ARE</a></li>
+                        <li><a href="kelloggHistory.html">KELLOGG HISTORY</a></li>
+                        <li><a href="openForBreakfast.html">OPEN FOR BREAKFAST</a></li>                    
+                    </ul>
+                </li>
+            </ol>
+            <div>
+                <form>
+                    <div>
+                        <input type="search" placeholder="search" title="insert ur search keyword's">
+                    </div>
+                </form>
+                <div>
+                    <h3>JOIN AND BE REWARDED</h3>
+                    <ul>
+                        <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                        <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                        <li><a href="logIn.html" target="_blank">Log In</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>CONNECT WITH US</h3>
+                    <ul>            
+                        <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                        <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                        <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 팝업창1 -->
+    <div class="popupModule" id="popupRecipes_ps01">
+        <div>
+            <input type="button" value="X" class="btn_close">
+            <!-- <a href="" id="popup_open"></a> -->
+            <figure>
+                <img src="images/popuprecipes_ps_01.jpg" alt="almond crunch pudding">
+                <figcaption>
+                    <h2>ALMOND CRUNCH PUDDING</h2>
+                    <p>Two great flavors--sweet, crunchy, orange-scented cereal and creamy, vanilla pudding-
+                        intertwine to make a fabulous dessert.</p>
+                    <div>
+                        <input type="button" value="print" class="btnPrint">
+                        <mark>PREP TIME : 20 MINUTES | TOTAL TIME : 40 MINUTES | 6 SERVINGS</mark>
+                    </div>
+                    <strong class="popupTitleGray">INGREDIENTS</strong>
+                    <ol>
+                        <li>1 tablespoon margarine or butter</li>
+                        <li>3/4 cup coarsely chopped almonds</li>
+                        <li>1 / 4 cup honey</li>
+                        <li>1 tablespoon grated orange peel</li>
+                        <li>1/8 teaspoon salt, 1 cup cold milk</li>
+                        <li>1 1 / 2 cups Kellogg's Corn Flakes® cereal</li>
+                        <li>1 package (3 5/8 oz.) vanilla instant pudding mix</li>
+                        <li>1 / 2 pint (1 cup) whipping cream whipped</li>
+                        <li>1 corn flakes</li>
+                    </ol>
+                </figcaption>
+            </figure>
+            <div>
+                <strong class="popupTitleRed">DIRECTIONS</strong>
+                <ol>
+                    <li>In medium fry pan, melt margarine. Add almonds. Cook over medium heat, stirring frequently, until almonds are lightly browned. Reduce heat to low. Add honey, 
+                        orange peel and salt. Cook 2 minutes longer, stirring constantly or until almonds are golden brown. Remove from heat. Add Kellogg's Corn Flakes® cereal, stirring until 
+                        well coated. Spread on waxed paper or buttered baking sheet. Cool completely. Break into small pieces. Set aside.</li>
+                    <li>Prepare pudding according to package directions using 1 cup milk. Fold in cream.</li>
+                    <li>For each serving, place spoonful of cereal mixture in dessert dish. Top with pudding mixture. Sprinkle with additional cereal mixture on top. Serve immediately.</li>
+                </ol>
+            </div>
+        </div>
+    </div>    
+    <!-- 팝업창2 -->
+    <div class="popupModule" id="popupRecipes_ps02">
+        <div>
+            <input type="button" value="X" class="btn_close">
+            <!-- <a href="" id="popup_open"></a> -->
+            <figure>
+                <img src="images/popuprecipes_ps_02.jpg" alt="caramel cashew crunch bars">
+                <figcaption>
+                    <h2>CARAMEL CASHEW CRUNCH BARS</h2>
+                    <p>For a sweet and salty snack, try these bars, which are chock-full of cashews, white 
+                        chocolate chips and melted caramel in place of marshmallows.</p>
+                    <div>
+                        <input type="button" value="print" class="btnPrint">
+                        <mark>PREP TIME : 10 MINUTES | TOTAL TIME : 10 MINUTES | 24 SERVINGS</mark>
+                    </div>
+                    <strong class="popupTitleGray">INGREDIENTS</strong>
+                    <ol>
+                        <li>6 MorningStar Farms® Original Sausage Patties</li>
+                        <li>2 tablespoons margarine</li>
+                        <li>2 tablespoons water</li>
+                        <li>6 cups Kellogg's® Cocoa Krispies® cereal</li>
+                        <li>1 cup cashews</li>
+                        <li>1 cup white chocolate chips divided</li>
+                    </ol>
+                </figcaption>
+            </figure>
+            <div>
+                <strong class="popupTitleRed">DIRECTIONS</strong>
+                <ol>
+                    <li>In large microwave-safe mixing bowl, microwave caramels, margarine and water at HIGH 3 minutes or until melted and smooth, stirring after each minute.</li>
+                    <li>Add KELLOGG'S COCOA KRISPIES cereal and cashews. Stir until well coated. Add 1 / 2 cup white chocolate chips, stirring until combined.</li>
+                    <li>Spread mixture into 13 x 9 x 2-inch pan coated with cooking spray. Let stand about 2 minutes. Sprinkle the remaining white chocolate chips over the mixture and press
+                        evenly into the pan. Cut into 2-inch squares when cool.</li>
+                </ol>
+            </div>            
+        </div>
+    </div>  
+    <!-- 팝업창3 -->
+    <div class="popupModule" id="popupRecipes_ps03">
+        <div>
+            <input type="button" value="X" class="btn_close">
+            <!-- <a href="" id="popup_open"></a> -->
+            <figure>
+                <img src="images/popuprecipes_ps_03.jpg" alt="peanut butter treats™">
+                <figcaption>
+                    <h2>PEANUT BUTTER TREATS™</h2>
+                    <p>You won't mind if these peanut-buttery squares stick to the roof of your mouth.</p>
+                    <div>
+                        <input type="button" value="print" class="btnPrint">
+                        <mark>PREP TIME : 10 MINUTES | TOTAL TIME : 20 MINUTES | 12 SERVINGS</mark>
+                    </div>
+                    <strong class="popupTitleGray">INGREDIENTS</strong>
+                    <ol>
+                        <li>3 tablespoons butter or margarine</li>
+                        <li>1 package (10 oz., about 40) JET-PUFFED Marshmallows</li>
+                        <li>5-1 / 2 cups JET-PUFFED Miniature Marshmallows</li>
+                        <li>1 / 2 cup peanut butter</li>
+                        <li>6 cups Kellogg's® Rice Krispies® cereal</li>
+                    </ol>
+                </figcaption>
+            </figure>
+            <div>
+                <strong class="popupTitleRed">DIRECTIONS</strong>
+                <ol>
+                    <li>In large saucepan melt butter over low heat. Add marshmallows and stir until completely melted. Remove from heat. Stir in peanut butter until melted.</li>
+                    <li>Add KELLOGG'S RICE KRISPIES cereal. Stir until well coated.</li>
+                    <li>Using buttered spatula or wax paper evenly press mixture into 13 x 9 x 2-inch pan coated with cooking spray. Cut into 2-inch squares. Best if served the same day.</li>
+                </ol>
+            </div>
+        </div>
+    </div>      
+
+        
+    <section class="listContainer">
+    <!-- listContainer -> 첫번째 div로 선택자 -->
+        <!-- 메인배너 -->
+        <div class="listTitle listbanner06">
+            <h2>PROTEIN BARS &amp; SHAKES</h2>
+            <p>
+                Looking to get more protein in your diet?<br>
+                Then look no further than Kellogg’s all-star lineup of delicious protein bars<br>
+                and shakes on the go.
+            </p>
+        </div>
+        <!-- 브랜드로고 -->
+        <div class="listBrand">
+            <h3 class="titleModule">
+                <small>PROTEIN BARS &amp; SHAKES</small>
+                BRANDS
+            </h3>
+            <ul class="brandSlider">
+                <li>
+                    <img src="images/logo_specialK.png" alt="Special K">
+                    <p>
+                        <strong>HELP FEED YOUR HUNGER</strong>
+                        Special K® has snacks and cereal to fuel your amazing.
+                    </p>  
+                </li>  
+                <li>
+                    <img src="images/logo_kashi.png" alt="Kashi">
+                    <p>
+                        <strong>SIMPE, WHOLESOME INGREDIENTS</strong>
+                        Combining plant-based, nutritious ingredients in our cereal,
+                        bars and waffles makes choosing wholesome a little easier. 
+                    </p>  
+                </li> 
+            </ul>        
+        </div>
+        <!-- 제품목록 -->
+        <div class="listProduct">
+            <h3 class="titleModule">
+                <small>PROTEIN BARS &amp; SHAKES</small>
+                FOODS
+            </h3>
+            <ul class="productModule">
+                <li>
+                    <img src="images/productList_ps_01.png" alt="Kellogg's® Special K® Protein Cereal">
+                    <dl>
+                        <dt>Kellogg's® Special K® Protein Cereal</dt>
+                        <dd><span>4.3</span> • 11 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_ps_01.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_ps_02.png" alt="Kellogg's® Special K® Strawberry Protein Meal Bars">
+                    <dl>
+                        <dt>Kellogg's® Special K® Strawberry
+                            Protein Meal Bars</dt>
+                        <dd><span>4.8</span> • 8 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_ps_02.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_ps_03.png" alt="Kellogg's® Special K® Chocolate Mocha Protein Shakes">
+                    <dl>
+                        <dt>Kellogg's® Special K® Chocolate Mocha
+                            Protein Shakes</dt>
+                        <dd><span>4.8</span> • 12 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_ps_03.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_ps_04.png" alt="Kellogg's® Special K® Protein Honey Almond Ancient Grain Cereal">
+                    <dl>
+                        <dt>Kellogg's® Special K® Protein Honey
+                            Almond Ancient Grain Cereal</dt>
+                        <dd><span>4.3</span> • 18 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_ps_04.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_ps_05.png" alt="Kellogg's® Special K® Blueberry Protein Meal Bars">
+                    <dl>
+                        <dt>Kellogg's® Special K® Blueberry Protein
+                            Meal Bars</dt>
+                        <dd><span>4.6</span> • 5 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_ps_05.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_ps_06.png" alt="Kellogg's® Special K® Chocolate Peanut Butter Protein Meal Bars">
+                    <dl>
+                        <dt>Kellogg's® Special K® Chocolate Peanut
+                            Butter Protein Meal Bars</dt>
+                        <dd><span>4.6</span> • 7 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_ps_06.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_ps_07.png" alt="Kellogg's® Special K® Fruit and Salted Nut Protein Snack Bars">
+                    <dl>
+                        <dt>Kellogg's® Special K® Fruit &amp; Salted Nut
+                            Protein Snack Bars</dt>
+                        <dd><span>5.0</span> • 2 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_ps_07.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_ps_08.png" alt="Kellogg's® Special K® Milk Chocolate Protein Shakes">
+                    <dl>
+                        <dt>Kellogg's® Special K® Milk Chocolate
+                            Protein Shakes</dt>
+                        <dd><span>5.0</span> • 13 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_ps_08.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_ps_09.png" alt="Kellogg's® Special K® Rich Chocolate Protein Shakes">
+                    <dl>
+                        <dt>Kellogg's® Special K® Rich Chocolate
+                            Protein Shakes</dt>
+                        <dd><span>4.8</span> • 4 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_ps_09.html">RATE REVIEW</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 레시피 -->
+        <div class="lastContent">
+            <h3 class="titleModule">
+                <small>CREATIVE RECIPES USING PROTEIN BARS &amp; SHAKES</small>
+                RESIPES
+            </h3>
+            <ul di="recipesList">
+                <li>
+                    <a href="#recipesList" data-panel="popupRecipes_ps01"><img src="images/recipes_ps_01.jpg" alt="almond crunch pudding"></a>
+                    <strong>ALMOND CRUNCH PUDDING</strong>
+                    <small>20 MIN | 6 SERVINGS</small>            
+                </li>
+                <li>
+                    <a href="#recipesList" data-panel="popupRecipes_ps02"><img src="images/recipes_ps_02.jpg" alt="caramel cashew crunch bars"></a>
+                    <strong>CARAMEL CASHEW CRUNCH BARS</strong>
+                    <small>10 MIN | 24 SERVINGS</small>  
+                </li>
+                <li>
+                    <a href="#recipesList" data-panel="popupRecipes_ps03"><img src="images/recipes_ps_03.jpg" alt="peanut butter treats"></a>
+                    <strong>PEANUT BUTTER TREATS™</strong>
+                    <small>10 MIN | 12 SERVINGS</small>
+                </li>
+            </ul>        
+        </div>
+        <!-- 와이조인 -->
+        <div class="joinUsModule">
+        <h2>EXCITING CHANGES ARE COMING TO<br>
+            KELLOGG’S FAMILY REWARDS®.
+        </h2>
+            <a href="whyJoin.html" target="_blank">JOIN THE FAM</a>
+            <p>
+                Check out the new Kellogg’s Family Rewards®! More of what you love, less stuff you don’t.<br>
+                It’s a new way of earning and getting rewarded. Simpler, faster, better - and best of all - fun-er!
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <div>
+                <h2>GET SUPPORT</h2>
+                <ul>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>KELLOGG'S FAMILY REWARDS</h2>
+                <ul>
+                    <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                    <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                    <li><a href="logIn.html" target="_blank">Log In</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>CONNECT WITH US</h2>
+                <ul>            
+                    <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                    <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                    <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.kelloggcompany.com/en_US/privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="https://www.kelloggcompany.com/en_US/legal.html">Terms Of Use</a></li>
+                <li><a href="https://www.privacy.kelloggcompany.com/us/homepage.html">California Consumer Rights</a></li>
+            </ul>
+            <p>
+                ®Kellogg's Company 2022
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+
+/* desktop */
+a{text-decoration: none; color: #07000E;}
+header{position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: gray;} 
+
+header > div:first-child{height: 190px; margin: 0 auto; max-width: 1600px; display: flex; justify-content: space-between; align-items: center; background-color: white;}
+header div nav{font-size: 16px; font-weight: 500; display: flex; justify-content: center; align-items: center;}
+header div nav ul{display: flex; justify-content: center; align-items: center;}
+header div nav ul li , header div nav input{margin-left: 45px;}
+
+/* header .fnbPanel{position: absolute;}
+header .fnbPanel h2{display: flex; justify-content: space-between; align-items: center;}
+ */
+ 
+ header .fnbPanel ol{
+    width: 100%;  padding: 265px 8.3% 125px; list-style: decimal-leading-zero outside;
+    box-sizing: border-box;
+}
+
+/* header .fnbPanel ol::after{
+    content: ''; display: block; clear: both;
+} */
+
+header .fnbPanel ol > li{
+    font-size: 32px; font-weight: 900; color: white;
+    /* width: 100%; float: left;  */
+    /* display: inline-block; */
+}
+
+header .fnbPanel ol > li::after{
+    content: ''; display: block; clear: both;
+}
+
+header .fnbPanel ol > li:not(:last-child){
+    margin-bottom: 70px;
+}
+
+header .fnbPanel ol > li:hover{
+    color: #e5ff00;
+}
+
+
+header .fnbPanel ol > li ul{
+    width: 100%; display: block;
+    margin-left: 41.5%;
+    float: left; 
+     /* top:265px; padding-left: 34.6%; */
+}
+
+header .fnbPanel ol > li:not(:first-child) ul{
+    display: none;
+}
+
+header .fnbPanel ol li ul li{
+    margin-bottom: 50px; list-style: none;
+}
+
+
+header .fnbPanel ol li ul li a{
+    font-size: 25px; font-weight: 400; color: #bfbfbf; 
+}
+
+header .fnbPanel ol li ul li a:hover{
+    color: black; font-weight: 500;
+}

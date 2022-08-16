@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kellogg</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+    <!-- 내일 global cdn 설정 및 file setting -->
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="index.html"><img src="images/kellogg_logo_red.png" alt="kellogg"></a></h1>
+             <nav>
+                <ul>
+                    <li><a href="breakfastFavorites.html">OUR FOODS</a></li>
+                    <li><a href="sustainability.html">OUR IMPACT</a></li>
+                    <li><a href="whoWeAre.html">OUR STORE</a></li>
+                </ul>
+                <input type="button" data-panel="fnb_open" value="openMenu" class="fnbOpenBtn">
+            </nav>
+        </div>
+        <div class="fnbPanel" id="fnb_open">
+            <input type="button" class="btn_close" value="closeMenu">
+            <ol>
+                <li>
+                    OUR FOODS
+                    <ul>
+                        <li><a href="breakfastFavorites.html">BREAKFAST FAVORITES &amp; TREATS</a></li>
+                        <li><a href="cerealGranola.html">CEREAL &amp; GRANOLA</a></li>
+                        <li><a href="savorySnacks.html">SAVORY SNACKS</a></li>
+                        <li><a href="plantbasedProtein.html">PLANT-BASED PROTEINS</a></li>
+                        <li><a href="snackbarsBites.html">SNACK BARS &amp; BITES</a></li>
+                        <li><a href="proteinbarsShake.html">PROTEIN BARS &amp; SHAKES</a></li>
+                        <li><a href="frozenBreakfast.html">FROZEN BREAKFAST</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR IMPACT
+                    <ul>
+                        <li><a href="sustainability.html">SUSTAINABILITY</a></li>
+                        <li><a href="philanthropy.html">PHILANTHROPY</a></li>
+                        <li><a href="nourishment.html">NOURISHMENT</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR STORE
+                    <ul>
+                        <li><a href="whoWeAre.html">WHO WE ARE</a></li>
+                        <li><a href="kelloggHistory.html">KELLOGG HISTORY</a></li>
+                        <li><a href="openForBreakfast.html">OPEN FOR BREAKFAST</a></li>                    
+                    </ul>
+                </li>
+            </ol>
+            <div>
+                <form>
+                    <div>
+                        <input type="search" placeholder="search form" title="insert ur search keyword's">
+                    </div>
+                </form>
+                <div>
+                    <h3>JOIN AND BE REWARDED</h3>
+                    <ul>
+                        <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                        <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                        <li><a href="logIn.html" target="_blank">Log In</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>CONNECT WITH US</h3>
+                    <ul>            
+                        <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                        <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                        <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- 공통 클래스 확인, 공통 요소 있는지 확인 / 텍스트 다시 확인 / 스타카운팅 확인 -->
+
+    <ul class="mainSlider">
+        <li>
+            <div>
+                <img src="images/mainSlider01.png" alt="ourBrand">
+                <h2>
+                    ALL YOUR SAVORY,<br>
+                    SNACKABLE, MUNCHABLE FAVORITES<br>
+                    <a href="breakfastFavorites.html" class="arrowYellowBTN">SEE OUR BRANDS</a>
+                </h2>
+            </div>
+            <div class="redSideModule">
+                <h2>
+                    PURE ORGANIC®<br>
+                    <a href="breakfastFavorites.html" class="arrowYellowBTN">LEARN MORE</a>
+                </h2>
+                <p>
+                    Get Away with Something Tasty<br>
+                    Pure Organic snacks are crafted to be delightfully delicious and always 
+                    organic, gluten-free, non-GMO Project Verified and vegan, for blissful and 
+                    indulgent snacking. Made with real fruit purees and juices, Pure Organic 
+                    Layered Fruit Bars are pure joy!
+                </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <img src="images/mainSlider02.png" alt="sustainability">
+                <h2>
+                    WE’RE CULTIVATING<br>
+                    A BETTER WORLD FOR EVERYONE<br>
+                    <a href="sustainability.html" class="arrowYellowBTN">SEE HOW WE SUPPORT SUSTAINABILITY</a>
+                </h2>
+            </div>
+            <div class="redSideModule">
+                <h2>
+                    RECYCLE YOUR KELLOGG PACKAGING<br>
+                    <a href="savorySnacks.html" class="arrowYellowBTN">LEARN MORE</a>
+                </h2>
+                <p>
+                    When the first box of Kellogg’s Corn Flakes® cereal was introduced by our 
+                    company in 1906, it came in 100 percent paperboard packaging, then 
+                    considered the most environmentally friendly option. That’s because our 
+                    founder, W.K. Kellogg, didn’t just envision a healthier breakfast option, he 
+                    also was an early conservationist who donated significant amounts of land 
+                    and resources to protecting the environment.
+                </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <img src="images/mainSlider03.png" alt="kelloggHistory">
+                <h2>
+                    WHERE WE’VE COME FROM<br>
+                    AND WHERE WE’RE GOING<br>
+                    <a href="kelloggHistory.html" class="arrowYellowBTN">READ OUR STORY</a>
+                </h2>
+            </div>
+            <div class="redSideModule">
+                <h2>
+                    WHO WE ARE<br>
+                    <a href="kelloggHistory.html" class="arrowYellowBTN">LEARN MORE</a>
+                </h2>
+                <p>
+                    Kellogg is the original plant-based food company offering an unmatched 
+                    portfolio of favorite foods to drive holistic wellbeing.<br>  
+                    
+                    We are also a company with a Heart &amp; Soul with dedicated to feeding 
+                    hungry children, protecting our planet, promoting positive nutrition and 
+                    driving equity.  
+                </p>
+            </div>
+        </li>
+        <li>
+            <div>
+                <img src="images/mainSlider04.png" alt="whyJoin">
+                <h2>
+                    FAMILY KELLOGG’S<br>
+                    REWARDS<br>
+                    <a href="whyJoin.html" class="arrowYellowBTN" target="_blank">WHY JOIN?</a>
+                </h2>
+            </div>
+            <div class="redSideModule">
+                <h2>
+                    MORE TO LOVE<br>
+                    <a href="whyJoin.html" class="arrowYellowBTN" target="_blank">LEARN MORE</a>
+                </h2>
+                <p>
+                    You love Kellogg’s® and you love earning rewards. The new KFR makes 
+                    great things happen before you even open the box. Receipts are still the 
+                    key to everything, but now they’ll work harder to get you the rewards and 
+                    offers you love.
+                </p>
+            </div>
+        </li>
+    </ul>
+
+    <section class="ourfoodsBFList">
+        <h2 class="titleModule">
+            <small>OUR FOODS</small>
+            BREAKFAST FAVORITES &amp; TREATS
+        </h2>
+        <ul>
+            <li>
+                <img src="images/index_ourFood_img01.png" alt="Pop-Tarts® Crisps Brown Sugar Cinnamazing">
+                <dl>
+                    <dt>Pop-Tarts® Crisps Brown Sugar Cinnamazing</dt>
+                    <dd class="countingStar star5"></dd>
+                </dl>
+            </li>            
+            <li>
+                <img src="images/index_ourFood_img02.png" alt="Blueberrific Pop-Tarts® Crisps">
+                <dl>
+                    <dt>Blueberrific Pop-Tarts® Crisps</dt>
+                    <dd class="countingStar star4"></dd>
+                </dl>
+            </li>
+        </ul>
+    </section>
+
+    <div class="redSideModule">
+        <h2>
+            INGRAINED: NEW KELLOGG PROGRAM
+            TO HELP RICE FARMERS REDUCE CLIMATE
+            IMPACT<br>
+            <a href="sustainability.html" class="arrowYellowBTN">LEARN MORE</a>
+        </h2>
+        <img src="images/redSideModule01.png" alt="sustainability">
+    </div>
+
+    <section class="impactSustainList">        
+        <h2 class="titleModule">
+            <small>OUR IMPACT</small>
+            SUSTAINABILITY
+        </h2>   
+        <ul>
+            <li>
+                <a href="sustainability.html">
+                    <img src="images/index_ourImpact_img01.png" alt="how sustainable is your breakfast">
+                </a>
+                <p>
+                    <strong>HOW SUSTAINABLE IS YOUR BREAKFAST</strong>
+                    How Sustainable Is Your Cereal?<br>
+                    Grading Our Progress to a More Sustainable Future
+                </p>
+            </li>
+            <li>
+                <a href="sustainability.html">
+                    <img src="images/index_ourImpact_img02.png" alt="ecycle your kellogg packaging">                
+                </a>
+                <p>
+                    <strong>ECYCLE YOUR KELLOGG PACKAGING</strong>
+                    When the first box of Kellogg’s Corn Flakes® cereal was 
+                    introduced by our company in 1906
+                </p>
+            </li>
+            <li>
+                <a href="sustainability.html">
+                    <img src="images/index_ourImpact_img03.png" alt="Fighting Hunger Around the World">
+                </a>
+                <p>
+                    <strong>FIGHTING HUNGER AROUND THE WORLD</strong>
+                    Kellogg to host virtual World Food Day Event<br>
+                    October 13 at 12 p.m. ET
+                </p>
+            </li>
+            <li>
+                <a href="sustainability.html">
+                    <img src="images/index_ourImpact_img04.png" alt="Good To Grow">
+                </a>
+                <p>
+                    <strong>GOOD TO GROW</strong>
+                    Kellogg advances its sustainable growing efforts.
+                </p>
+            </li>
+            <li>
+                <a href="sustainability.html">
+                    <img src="images/index_ourImpact_img05.png" alt="Supporting Farmers Around the Globe">
+                </a>
+                <p>
+                    <strong>SUPPORTING FARMERS AROUND THE GLOBE</strong>
+                    To the casual observer, it might look like weeds are growing
+                    between rows of corn on some Nebraska farms.
+                </p>
+            </li>
+            <li>
+                <a href="sustainability.html">
+                    <img src="images/index_ourImpact_img06.png" alt="Kellogg & Energy Conservation">
+                </a>
+                <p>
+                    <strong>KELLOGG &amp; ENERGY CONSERVATION</strong>
+                    Conserving natural resources across our supply chain
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <div class="redSideModule">
+        <h2>
+            MAKING FOOD FOR ON THE GO!<br>
+            <a href="breakfastFavorites.html" class="arrowYellowBTN">RECIPES</a>
+        </h2>
+        <img src="images/redSideModule02.png" alt="breakfast">
+    </div>
+
+    
+    <div class="joinUsModule">
+        <h2>EXCITING CHANGES ARE COMING TO<br>
+            KELLOGG’S FAMILY REWARDS®.
+        </h2>
+        <a href="whyJoin.html" target="_blank">JOIN THE FAM</a>
+        <p>
+            Check out the new Kellogg’s Family Rewards®! More of what you love, less stuff you don’t.<br>
+            It’s a new way of earning and getting rewarded. Simpler, faster, better - and best of all - fun-er!
+        </p>
+    </div>
+
+
+
+    <footer>
+        <div>
+            <div>
+                <h2>GET SUPPORT</h2>
+                <ul>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>KELLOGG'S FAMILY REWARDS</h2>
+                <ul>
+                    <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                    <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                    <li><a href="logIn.html" target="_blank">Log In</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>CONNECT WITH US</h2>
+                <ul>            
+                    <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                    <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                    <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.kelloggcompany.com/en_US/privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="https://www.kelloggcompany.com/en_US/legal.html">Terms Of Use</a></li>
+                <li><a href="https://www.privacy.kelloggcompany.com/us/homepage.html">California Consumer Rights</a></li>
+            </ul>
+            <p>
+                ®Kellogg's Company 2022
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

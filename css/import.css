@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+/* webfont CDN  */
+
+@import url('reset.css');
+@import url('jquery.bxslider.css');
+@import url('global.css');
+/* header class="mainHeader", footer, popup, panel.... = 전페이지에서 공통으로 사용하는 것들 */
+@import url('page.css');
+/* global 외 page마다 다른 css. 각각 html을 주석으로 분리. */

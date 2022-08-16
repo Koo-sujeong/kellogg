@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kellogg</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="index.html"><img src="images/kellogg_logo_red.png" alt="kellogg"></a></h1>
+             <nav>
+                <ul>
+                    <li><a href="breakfastFavorites.html">OUR FOODS</a></li>
+                    <li><a href="sustainability.html">OUR IMPACT</a></li>
+                    <li><a href="whoWeAre.html">OUR STORE</a></li>
+                </ul>
+                <input type="button" data-panel="fnb_open" value="openMenu" class="fnbOpenBtn">
+            </nav>
+        </div>
+        <div class="fnbPanel" id="fnb_open">
+            <input type="button" class="btn_close" value="closeMenu">
+            <ol>
+                <li>
+                    OUR FOODS
+                    <ul>
+                        <li><a href="breakfastFavorites.html">BREAKFAST FAVORITES &amp; TREATS</a></li>
+                        <li><a href="cerealGranola.html">CEREAL &amp; GRANOLA</a></li>
+                        <li><a href="savorySnacks.html">SAVORY SNACKS</a></li>
+                        <li><a href="plantbasedProtein.html">PLANT-BASED PROTEINS</a></li>
+                        <li><a href="snackbarsBites.html">SNACK BARS &amp; BITES</a></li>
+                        <li><a href="proteinbarsShake.html">PROTEIN BARS &amp; SHAKES</a></li>
+                        <li><a href="frozenBreakfast.html">FROZEN BREAKFAST</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR IMPACT
+                    <ul>
+                        <li><a href="sustainability.html">SUSTAINABILITY</a></li>
+                        <li><a href="philanthropy.html">PHILANTHROPY</a></li>
+                        <li><a href="nourishment.html">NOURISHMENT</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR STORE
+                    <ul>
+                        <li><a href="whoWeAre.html">WHO WE ARE</a></li>
+                        <li><a href="kelloggHistory.html">KELLOGG HISTORY</a></li>
+                        <li><a href="openForBreakfast.html">OPEN FOR BREAKFAST</a></li>                    
+                    </ul>
+                </li>
+            </ol>
+            <div>
+                <form>
+                    <div>
+                        <input type="search" placeholder="search" title="insert ur search keyword's">
+                    </div>
+                </form>
+                <div>
+                    <h3>JOIN AND BE REWARDED</h3>
+                    <ul>
+                        <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                        <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                        <li><a href="logIn.html" target="_blank">Log In</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>CONNECT WITH US</h3>
+                    <ul>            
+                        <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                        <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                        <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="faqMenu">        
+        <h2>
+            <mark>F</mark>requently <mark>A</mark>sked <mark>Q</mark>uestions
+        </h2>
+        <p>Use the tabs below to reveal the frequently asked questions in that category. Click on the questions to get more information.
+            Not sure where to look for your question? Use keywords in our FAQ Search to find what you’re looking for.</p>
+        
+        <ul>
+            <li data-tabName="topAcc" class="active">TOP FAQS</li>
+            <li data-tabName="companyAcc">COMPANY INFORMATION</li>
+            <li data-tabName="ingredientAcc">INGREDIENT ALLERGEN NUTRITION</li>
+            <li data-tabName="promotionAss">PROMOTIONS</li>
+            <li data-tabName="recipesAcc">RECIPES</li>
+        </ul>
+
+        <ol id="topAcc" class="faqContents active">
+            <li class="faqOpen">
+                <strong>Best If Used Before Date - Expiration Date</strong>
+                <div>
+                    <p>We print a "Best If Used By" date on each product package to indicate the date that we guarantee the freshness and quality of the product. The product is still safe to eat after that date but you might notice
+                        a change in texture or flavor. </p>
+                    <p>The product's "Best If Used By" date is printed as a series of letters and numbers showing the "Best If Used By" date as well as bakery information.</p>
+                    <p>For reference, a product with any of<br>
+                        the following "Best If Used By" date code formats <br>
+                        should be enjoyed by November 7, 2021:</p>
+                    <ul>
+                        <li>NOV 07 2021 KLA</li>
+                        <li>NOV 07 21 CPC3</li>
+                        <li>NOV0721 PM</li>
+                    </ul>
+                    <ul>
+                        <li>11071 CG</li>
+                        <li>T11071</li>
+                    </ul>   
+                </div>               
+            </li>
+            <li>
+                <strong>Where to buy Cannot Find Products</strong>
+                <div>
+                    <p>We’re glad you’re interested in finding our foods.</p>
+                    <p>Products may be hard to find because they are in high demand, discontinued, or available at another store in your area. Check the information below or visit our Where To Buy Search Tool.</p>
+                    <p>The following are currently in high demand:</p>
+                    <ul>
+                        <li>Cereal</li>
+                        <li>Kellogg's® Cracklin' Oat Bran® cereal</li>
+                        <li>Kellogg's® Crispix® cereal</li>
+                        <li>Kellogg's® Cocoa Krispies cereal</li>
+                        <li>Kellogg's® Frosted Krispies cereal</li>
+                        <li>Kellogg's® Rice Krispies cereal</li>
+                        <li>Special K® Chocolatey Delight cereal</li>
+                        <li>Special K® Original cereal</li>
+                    </ul>
+                    <ul>
+                        <li>Frozen Foods</li>
+                        <li>Eggo® Pancakes & Waffles</li>
+                        <li>MorningStar Farms® Veggie Dogs</li>
+                        <li>MorningStar Farms® Corn Dogs</li>
+                        <li>MorningStar Farms® Sausage Links</li>
+                    </ul>
+                    <ul>
+                        <li>Snacks</li>
+                        <li>Cheez-It® crackers and snack mixes</li>
+                        <li>Club® crackers</li>
+                        <li>Gripz® crackers</li>
+                        <li>Krispy® crackers</li>
+                        <li>Pringles® Snack Stack crisps</li>
+                        <li>Scooby Doo® Cinnamon graham crackers</li>
+                        <li>Toasteds® crackers</li>
+                        <li>Zesta® crackers</li>
+                    </ul>
+                    <ul>
+                        <li>Discontinued</li>
+                        <li>The following are commonly requested discontinued products:</li>
+                        <li>Eggo® Nutri-Grain Waffles</li>
+                        <li>Frosted Flakes® Cinnamon cereal</li>
+                        <li>Frosted Mini-Wheats® Maple Brown Sugar cereal</li>
+                        <li>Frosted Mini-Wheats® Filled Mixed Berry cereal</li>
+                        <li>Krave®Double Chocolate cereal</li>
+                        <li>Pop-Tarts® Simply Frosted Harvest Strawberry 8ct(32ct Club still active)</li>
+                        <li>Pop-Tarts® Simply Frosted Orchard Cinnamon</li>
+                        <li>Rice Krispies Treats® cereal</li>
+                        <li>Rice Krispies Treats Poppers - All varieties</li>
+                        <li>Rice Krispies® Strawberry cereal</li>
+                        <li>Special K® Honey Oat cereal</li>
+                        <li>Special K® Raspberry cereal</li>
+                        <li>Special K® Blueberry Lemon cereal</li>
+                        <li>Special K® Chocolatey Strawberry cereal</li>
+                        <li>Special K® Probiotics Peaches & Berry cereal</li>
+                        <li>Special K® Flatbread Sandwiches</li>
+                        <li>Special K® Crustless Quiche</li>
+                        <li>MorningStar Farms® Mini Corn Dogs</li>
+                        <li>MorningStar Farms® Veggie Lovers Quarter Pound Burger</li>
+                        <li>Gardenburger® Original and Black Bean Chipotle burgers</li>
+                        <li>Kashi® 7 Whole Grain Puffs</li>
+                    </ul>
+                    <p>To keep things simple, only the most requested discontinued products are listed. There are other discontinued items that are not on this list. We encourage you to check here to explore the products that are 
+                        currently available.</p>
+                    
+                </div>
+            </li>
+            <li>
+                <strong>Coupon Requests</strong>
+                <div>
+                    <p>We often have coupons available under the Coupons section of our website. You must be a registered Kellogg Family Rewards (KFR) member to access the coupons.</p>
+                    <p>Registration is easy and free. For more information on KFR, click here.</p>
+                </div>
+            </li>
+            <li>
+                <strong>Where To Buy</strong>
+                <div>
+                    <p>Click here to find online retailers or stores near you that may carry our products. This is the same tool we use to help you find our foods.</p>
+                </div>
+            </li>
+        </ol>
+
+        <ol id="companyAcc" class="faqContents">
+            <li>
+                <strong>Finance - Investor Relations</strong>  
+                <div>
+                    <p>Please click here to learn more about finance related company information including annual reports, shareowner services, and upcoming events.</p>                
+                </div>
+            </li>
+            <li>
+                <strong>Employment - Opportunities</strong>              
+                <div>
+                    <p>Please click here to learn about employment opportunities.</p>    
+                </div>
+            </li>
+            <li>
+                <strong>Donations - Requests</strong>                 
+                <div>
+                    <p>Although we'd love to help everyone who's making a positive impact in their community, we are sorry to say that we cannot offer donation support at this time.</p> 
+                </div>
+            </li>
+            <li>
+                <strong>Company History - Tours</strong>
+                <div>
+                    <p>Company History<br>
+                        To learn more about Kellogg History please click here.</p>
+                    <p>Tours<br>
+                        Does Kellogg's have tours of their facility?<br>
+                        Unfortunately, for both safety and security reasons, we ended our plant tours in 1986.</p>
+                </div>
+            </li>
+        </ol>
+
+        <ol id="ingredientAcc" class="faqContents">
+            <li>                
+                <strong>Ingredient Allergen Nutrition</strong>  
+                <div>
+                    <p>MSF Vegan - MorningStar Farms Vegan Options</p>
+                    <p>We are excited to share that our entire portfolio will be 100% plant-based (Vegan) by the end of 2021.</p>
+                    <p>All Morningstar Farms® foods are 100% vegetarian. Roughly 75% of our portfolio is already vegan including Chik’n patties and nuggets, meatballs, crumbles, pizza bites, corn dogs, and newer burgers such as 
+                        Meat Lovers, Veggie Lovers, and Cheezeburgers.  Plus, all of our new Incogmeato™ branded items are vegan.</p>
+                    <p>If you are curious about our other burgers, veggie dogs, bacon or sausages, we are working to make all of these delicious foods vegan as well.  The foodies are doing a great job and we are confident that you 
+                        will enjoy the new vegan recipes.</p>
+                </div>
+            </li>
+            <li>
+                <strong>MSF - Non-GMO MorningStar Farms Non-GMO Options</strong>              
+                <div>
+                    <p>Does Morningstar Farms offer Non-GMO products?<br>
+                        At MorningStar Farms, we are on a journey to enhance our foods and simplify ingredients.  We recently removed artificial colors and flavors and now use Non-GMO soy in all of our top selling burgers, patties, 
+                        nuggets and wings.  Look for the NON-GMO-SOY flag on the package to be sure the item you are buying uses Non-GMO soy. </p>   
+                    <p>We are excited about these recent changes and hope you are too. </p> 
+                    <p>Which products use Non-GMO Soy?<br>
+                        The following products now use Non-GMO soy.  As some of our foods are still in transition, look for the NON-GMO-SOY flag on the package to be sure you are buying an item with Non-GMO soy.</p> 
+                    <ul>
+                        <li>Morningstar Farms® Vegan Cheezeburger</li>
+                        <li>Morningstar Farms® Meat Lovers Vegan Burgers</li>
+                        <li>Morningstar Farms® Veggie Lovers Vegan Burgers</li>
+                        <li>Morningstar Farms® Spicy Black Bean Veggie Burgers</li>
+                        <li>Morningstar Farms® Grillers® Original Veggie Burgers</li>
+                        <li>Morningstar Farms® Grillers Prime® Veggie Burgers</li>
+                        <li>Morningstar Farms® Mediterranean Chickpea Veggie Burgers</li>
+                        <li>Morningstar Farms® Garden Veggie Burgers</li>
+                        <li>Morningstar Farms® Original Chik Patties®</li>
+                        <li>Morningstar Farms® Buffalo Chik Patties®</li>
+                        <li>Morningstar Farms® Chik'n Nuggets Veggie Classics</li>
+                        <li>Morningstar Farms® Buffalo Wings Veggie Classics</li>
+                        <li>Morningstar Farms® Parmesan Garlic Wings Veggie Classics</li>
+                        <li>Morningstar Farms® Chorizo Crumbles</li>
+                        <li>Morningstar Farms® Grillers® Crumbles</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <strong>Nutrition FAQ Vegan and Vegetarian - Ingredients</strong>                 
+                <div>
+                    <p>We understand your concern and interest in avoiding ingredients from animal sources.  Many of our foods are either vegetarian or vegan but they are not always labeled as such.  Because people have 
+                        individualized preferences, we think it’s best to read the label to determine if the ingredients meet your needs.</p> 
+                    <p>The following information applies to products made for the United States market. Products sold in other countries may have different ingredients and nutrition information. </p> 
+                    <p>Non-Animal Sources:</p>
+                    <ul>
+                        <li>Vitamin B12</li>
+                        <li>Vitamin D2 (but the ingredient label may not denote whether the vitamin is D2 or D3)</li>
+                        <li>Vitamin B2/riboflavin</li>
+                        <li>Lactic acid</li>
+                        <li>Proteolytic enzymes</li>
+                        <li>Rennet</li>
+                        <li>Emulsifiers (including monoglycerides, diglycerides and polysorbate)</li>
+                        <li>Enzymes</li>
+                        <li>Glycerin</li>
+                        <li>Yeast ingredients</li>
+                    </ul> 
+                    <p>Animal Sources:</p>
+                    <ul>
+                        <li>Eggs</li>
+                        <li>Dairy (Milk, Whey, Casein, Cheese, Lactose and Yogurt)</li>
+                        <li>Gelatin</li>
+                        <li>Vitamin D3 (but the ingredient label may not denote whether the vitamin is D2 or D3)</li>
+                    </ul>
+                    <p>I hope that this information was helpful.  If you have additional questions or want to know about other ingredients not listed above, feel free to reach out to us further.</p>
+                </div>
+            </li>
+            <li>
+                <strong>Nutrition FAQ Kosher - How to identify labeling</strong>
+                <div>
+                    <p>The package is always the best place to check for the kosher status. Our foods that have been certified as Kosher or Kosher Dairy will include a certification symbol on the front panel of the package under
+                        the name.
+                       </p>
+                    <p>You can also check the kosher status of your Kellogg product under the nutrition information on www.kelloggs.com. In the SmartLabel nutrition section, look under "Other Information" to see if the product is 
+                        kosher.  If there is no kosher designation listed, the product is not kosher.
+                        </p>
+                    <p>The symbols we use to indicate the kosher status and the corresponding councils are listed below:</p>
+                    <p>Symbol = "Circle U" (kosher/pareve) - or - "Circle UD" (kosher dairy) confirms certification from:</p>
+                    <ul>
+                        <li>Orthodox Union Kashruth Division</li>
+                        <li>11 Broadway, 14th Floor</li>
+                        <li>New York, NY 10004</li>
+                    </ul>
+                    <p>Symbol = "Circle K" (kosher/pareve) - or - "Circle KD" (kosher dairy) - confirms certification from:</p>
+                    <ul>
+                        <li>OK Kosher Certification</li>
+                        <li>391 Troy Avenue</li>
+                        <li>Brooklyn, NY 11213</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <strong>Nutrition FAQ Gelatin - Source - Products that contain</strong>              
+                <div>
+                    <p>Gelatin is used to help the texture of the product and can be from pork or beef.</p>
+                    <p>The following information applies to products made for the United States market. Products sold in other countries may have different ingredients and nutrition information.</p>
+                    <p>Gelatin derived from PORK is found in the following:</p>
+                    <ul>
+                        <li>Kellogg's® cereal products that contain marshmallow pieces</li>
+                        <li>Example: Kellogg's® Marshmallow Froot Loops cereal</li>
+                    </ul>
+                    <p>Gelatin derived from BEEF is found in the following:</p>
+                    <ul>
+                        <li>All varieties of Kellogg's® Frosted Pop-Tarts® </li>
+                        <li>All varieties of Kellogg's® Frosted Pop-Tarts® Bites</li>
+                        <li>All varieties of Kellogg's® Frosted Mini-Wheats® cereal</li>
+                    </ul>
+                    <p>Some of our foods contain gelatin that is derived from EITHER Beef or Pork; sourcing is based on availability in the marketplace. These include:</p>
+                    <ul>
+                        <li>All varieties of Kellogg's® Rice Krispies Treats®</li>
+                    </ul>
+                </div>
+            </li>
+            <li>                
+                <strong>Nutrition FAQ Fiber - Cereals that are Excellent source</strong>                 
+                <div>
+                    <p>There are so many great benefits of this important nutrient! Did you know that 9 out of 10 people don’t get enough fiber? </p>
+                    <p>For those looking to include more fiber in their diet, I hope you find a cereal from the list below you enjoy. All of the cereals listed are an excellent source of fiber providing at least 20% daily value of your fiber 
+                        needs, or 6 grams per serving.</p>
+                    <ul>
+                        <li>Kellogg's® All-Bran® cereals</li>
+                        <li>Kellogg's® Cracklin' Oat Bran®</li>
+                        <li>Kellogg's Raisin Bran® cereal</li>
+                        <li>Most flavors of Kellogg's® Frosted Mini-Wheats®</li>
+                        <li>Most flavors of Kashi®organic wheat biscuit cereals</li>
+                        <li>Most flavors of Kashi GO® protein cereals</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <strong>Nutrition FAQ Allergens - Top 8 Labeling</strong>
+                <div>
+                    <p>We understand and share the concerns of consumers who are affected by food allergies. We continually partner with allergy organizations and research groups to remain knowledgeable and empathetic to
+                        the seriousness and complexities of food allergies.</p>
+                    <p>The top eight allergens that make up about 90% of all food allergies in the United States and must be declared on any processed food according to the USA Food Allergen Labeling and Consumer Protection 
+                        Act (FALCPA) are:</p>
+                    <ul>
+                        <li>peanuts</li>
+                        <li>tree nuts</li>
+                        <li>milk</li>
+                        <li>egg</li>
+                        <li>soy</li>
+                        <li>wheat</li>
+                        <li>shellfish</li>
+                        <li>fish</li>
+                    </ul>
+                    <p>We share the most accurate and precise allergen content on every product package. Our product labels identify allergens using CONTAINS and/or MAY CONTAIN labeling statements immediately below the 
+                        ingredient list.<br>
+                        Allergens listed in the “CONTAINS” statement refers to the allergen(s) in the product’s recipe and ingredient list.<br>
+                        The “MAY CONTAIN’ statement refers to any allergen(s) not in the product’s recipe or ingredients but may be present despite all efforts to exclude the allergen.<br>
+                        Persons sensitive to any of the identified allergens in the “CONTAINS” or “MAY CONTAINS” statement should avoid that food.</p>
+                    <p>Always trust the ingredient and allergen information on the package at hand, as the ingredient list and product label may change over time due to product recipe changes.</p>
+                    <p>We recognize that other ingredients, beyond the top eight allergens, can cause serious allergic reactions. We encourage you to always read the ingredient list carefully to avoid those that are of concern to you
+                        and your family.</p>
+                </div>
+            </li>
+        </ol>
+
+        <ol id="promotionAss" class="faqContents">
+            <li>
+                <strong>$6 Concession Cash Offer 2022</strong>       
+            </li>
+            <li>
+                <strong>2022 Minecraft Build for Better FAQ's</strong>     
+            </li>
+            <li>
+                <strong>2022 Minecraft Minecoins FAQ's</strong> 
+                
+            </li>
+            <li>
+                <strong>Breakfast For All 2022 FAQs SPANISH</strong> 
+                
+            </li>
+            <li>
+                <strong>Breakfast For All 2022 FAQs</strong>       
+                
+            </li>
+            <li>
+                <strong>2022 Celebrity Crunch Classic Sweepstakes FAQs</strong>
+                
+            </li>
+            <li>
+                <strong>Employment - Opportunities</strong>              
+                <div>
+                    <p>Please click here to learn about employment opportunities.</p>    
+                </div>
+                
+            </li>
+            <li>
+                <strong>Check status of promotion item - How to</strong>                 
+                <div>
+                    <p>It takes up to 90 days for the processing, mailing and delivery of most promotional items.</p> 
+                    <p>We encourage you to check your Order Status but please keep in mind we need to allow up to 3 weeks from the date you mailed an order to us for the order to appear in our system.
+                    </p> 
+                </div>
+                
+            </li>
+            <li>
+                <strong>Tips for Log In and Website errors</strong>
+                <div>
+                    <p>Below are key troubleshooting tips for most website and log in errors:  </p>
+                    <p>Clear your cache and browser history<br>
+                        Web browsers often use a cache, or other storage system, to store secure content, speed up webpage uploads and increase your productivity online. This cache can sometimes become unusable and cause 
+                        difficulties with your internet browsing. </p>
+                    <p>To clear your cache, please refer to your browser's specific help documentation below</p>
+                    <ul>
+                        <li><a href="http://support.mozilla.org/en-US/kb/h...">Mozilla: Firefox: http://support.mozilla.org/en-US/kb/h...</a></li>
+                        <li><a href="http://support.microsoft.com/kb/260897">Microsoft: Internet Explorer: http://support.microsoft.com/kb/260897</a></li>
+                        <li><a href="https://support.google.com/chrome/ans...">Google: Chrome: https://support.google.com/chrome/ans...</a></li>
+                        <li><a href="https://support.apple.com/kb/PH19215">Apple: Safari: https://support.apple.com/kb/PH19215</a></li>
+                    </ul>
+                    <p>If your browser is not listed above, select "Help" from the menu bar and search for the topic "Clearing Cache" or "Clearing History." </p>
+                    <p>Try a different browser
+                        Many systems come with a preinstalled browser, however, Mozilla Firefox and Google Chrome listed above, are examples free for download.  We have also found these two work best with our websites. All 
+                        browser developers program slight differences into the software which makes having a backup browser a valuable tool on any system.</p>
+                    <p>MOBILE: If you’re attempting to access our site using a mobile device, you may need to turn off the 'private browser' setting (also known as incognito mode) in order to fully interact with our mobile website.</p>
+                    <p>Confirm software is up to date<br>
+                        Updating browsers and plug-ins like Java can help with browsing. Web pages are programmed primarily using three different languages:</p>
+                    <ul>
+                        <li>HTML:  defines the structure of documents</li>
+                        <li>CSS: determines the way they look</li>
+                        <li>JavaScript: is used to drive interactive features</li>
+                    </ul>
+                    <p>Updating software can help with variances in these different languages and can have an impact on how a browser displays a page.</p>
+                    <p>Try a different computer and network<br>
+                        Computers can have different settings that may impact browsing ability. Try to access the content from a different network if possible. You may find that the issue is the result of network settings and security 
+                        firewalls. </p>
+                </div>                
+            </li>
+        </ol>
+
+        <ol id="recipesAcc" class="faqContents">
+            <li>
+                <strong>Recipes - How to find</strong>  
+                <div>
+                    <p>We love to cook and we're here to help you get the most out of your recipe box!</p>
+                    <p>All Kellogg branded recipes are available at: www.kelloggfamilyrewards.com</p>
+                    <p>Many of our product specific recipes are also featured on our brand pages:</p>        
+                    <ul>
+                        <li><a href="www.kelloggs.com">All-Bran recipes: www.kelloggs.com</a></li>
+                        <li><a href="www.kashi.com">Kashi recipes: www.kashi.com</a></li>
+                        <li><a href="www.morningstarfarms.com">Morningstar Farms recipes: www.morningstarfarms.com</a></li>
+                        <li><a href="www.ricekrispies.com">Rice Krispies recipes: www.ricekrispies.com</a></li>
+                        <li><a href="www.specialk.com"></a>Special K recipes at: www.specialk.com</li>
+                    </ul>  
+                    <p>A couple of our most popular recipes:</p>
+                    <ul>
+                        <li><a href="https://www.ricekrispies.com/en_US/recipes/the-original-treats-recipe.html">The Original Treats™ https://www.ricekrispies.com/en_US/recipes/the-original-treats-recipe.html</a></li>
+                    </ul>   
+                    <p>We also provide tips and tricks for all kinds of backing occasions at: Baking Blunders - Advice from our Kellogg Culinary Expert</p>  
+                </div>
+            </li>
+            <li>
+                <strong>Recipes - Baking Blunders - Advice from Culinary Expert</strong>
+                <div>
+                    <p>Why does my cake have a coarse texture?<br>
+                        Coarse textured cakes may be the result of inadequate beating of the fat and sugar. Next time beat them longer. If that doesn’t seem likely, check your oven temperature. Too cool of a baking temperature 
+                        sometimes causes coarse cakes. Finally, be sure that you have accurately measured all of your ingredients.
+                        </p>
+                    <p>Why is my cake heavy and dense?<br>
+                        You may need more leavening or liquid or you may have used too much sugar or shortening. Be sure to measure carefully and accurately. Or the problem could be that your oven was too cool. Use an oven 
+                        thermometer to check it.
+                        </p>
+                    <p>Why does my cake have elongated, irregular holes?<br>
+                        You may have over mixed the batter after adding the flour. Mix just until the ingredients are combined. If you don’t think that over mixing is the problem, check your oven temperature. It might be too high. Or, you
+                         may have added too much flour. Measure carefully by stirring the flour before measuring and then lightly spooning it into the measuring cup.
+                        </p>
+                    <p>Why is my cake dry?<br>
+                        You might have over baked the cake. Always check the doneness after the minimum baking time. Or, if beaten egg whites were used, they might have been over beaten. Stiffly beaten egg whites should have 
+                        peaks that stand straight up, but they should still look moist and shiny.
+                        </p>
+                    <p>Why does my cheesecake puff, fall and crack?<br>
+                        You probably beat the batter too much. After adding the eggs, beat on low speed of an electric mixer just until combined. Then stir in any remaining ingredients by hand. Beating too long incorporates too much 
+                        air which causes a cheesecake to puff and, then, fall and crack.
+                        </p>
+                    <p>Why is my cheesecake dry?<br>
+                        You might have over-baked the cheesecake. Test it for doneness at the minimal baking time.
+                        </p>
+                    <p>How do I keep my pancakes from being cooked on the edges, but doughy in the center?<br>
+                        Don’t rush the cooking of your pancakes. For perfect pancakes, preheat your griddle or skillet over medium-high heat. Test for readiness by sprinkling a few drops of water on the hot surface. If the water jumps
+                         and sizzles, the griddle is ready. Cook the pancakes until about half of the bubbles that form around the edges have broken and the edges of the pancakes are slightly dry. Turn the pancakes over and cook 
+                        about 1 minute more or until they are brown on both sides.
+                        </p>
+                    <p>Why did my drop cookies spread so much?<br>
+                        You might have dropped the batter onto warm cookie sheets, causing excessive spreading. Let your cookie sheets cool completely before reusing. Or, you might have greased the cookie sheets too much. 
+                        Just use a light coating of shortening or cooking spray to prepare your cookie sheets and only grease the cookie sheets if it’s specified in the recipe.
+                        </p>
+                    <p>Why do my muffins or quick breads have pointed or peaked tops?
+                        You may have stirred the batter until all of the lumps were out and it looked smooth. This produces muffins or quick breads with pointed tops and elongated cells (tunnels) throughout the product. Muffins 
+                        or quick bread with these undesirable characteristics still taste good, but they are usually tough. Next time, stir the batter just until moistened—the batter should still be lumpy.
+                        </p>
+                    <p>Why do my muffins or quick breads crumble?<br>
+                        Mixing the batter differently from the recipe directions may cause muffins or quick breads to crumble. For quick breads, also be sure to completely cool them before slicing. Sometimes, it even helps to 
+                        tightly wrap the cooled bread in foil and store it overnight before slicing.
+                        </p>
+                    <p>Why are my biscuits crumbly instead of flakey?<br>
+                        You might have mixed the fat with the flour beyond coarse crumb stage (coarse crumbs are the size of small peas). The resulting fat particles are too small and you end up with mealy biscuits instead of 
+                        flakey. If butter is used in your recipe, be sure to start with it cold. This makes it easier to cut it into the flour and get coarse crumbs.
+                        </p>
+                    <p>Why are my biscuits tough or heavy?<br>
+                        Too much kneading of the dough often produces tough or heavy biscuits. Next time try kneading the dough for just 10 to 12 strokes or just enough for it to hold together. This distributes the moisture just 
+                        enough for a flakey product and keeps the fat in large enough particles to create layers in the biscuits.</p>
+                </div>
+            </li>
+            <li>
+                <strong>Recipe Tips - Spices Ingredients Storage</strong>                 
+                <div>
+                    <p>How can I determine if my baking powder has lost its potency?<br>
+                        Check the can for an expiration date. If your baking powder is past or close to its expiration date, dissolve 1 / 2 teaspoon of it in 1 / 4 cup hot water. If it doesn’t foam and bubble within a few seconds or if the 
+                        reaction is minimal, replace your baking soda. As a general rule of thumb, baking soda should be stored in a cool, dry place and replaced every 6 months.
+                        </p>
+                    <p>Is it necessary to peel carrots?<br>
+                        Peeling carrots is a matter of personal preference, just be sure to scrub them well with a stiff brush before using.
+                        </p>
+                    <p>How do I freeze a cheesecake?<br>
+                        If you want to freeze a whole cheesecake, cool it completely and refrigerate it for at least 2 hours. Completely wrap it in plastic wrap and, then, wrap it again in heavy duty foil (or place it in an airtight container).
+                         Freeze it for up to 1 month. Before serving, loosen the covering and thaw it in the refrigerator for 24 hours.
+                        </p>
+                    <p>To freeze individual slices of cheesecake, cut the chilled cheesecake into the desired size slices. Completely wrap the pieces, individually, in plastic wrap and place them in a freezer bag or airtight container. 
+                        Freeze for up to 2 weeks. Before serving, loosen the covering and thaw at room temperature for 2 hours.
+                        </p>
+                    <p>Can chocolate still be used when it looks gray on the surface?<br>
+                        Yes. The gray color is called bloom and results from storing chocolate in hot or humid conditions. Though the appearance is less desirable, the gray color disappears when the chocolate is heated.
+                        </p>
+                    <p>Can I “fix” chocolate that stiffened during melting?<br>
+                        Yes, just stir in either shortening or vegetable oil, 1 / 2 to 1 teaspoon at a time, until the mixture is smooth and shiny. Do not use margarine or butter.
+                        </p>
+                    <p>Can I freeze whipped cream?<br>
+                        Yes. The next time you have leftover whipped cream, just spoon mounds of it onto a baking sheet lined with wax paper. Freeze until firm and then transfer the mounds into an airtight container. When you want 
+                        to use the frozen whipped cream, remove the number of mounds you need and let them stand at room temperature for 5 minutes before serving.
+                        </p>
+                    <p>How do I make my own five-spice powder?<br>
+                        In a blender combine 3 tablespoons ground cinnamon, 2 teaspoons aniseed, 1 1 / 2 teaspoons fennel seed, 1 1 / 2 teaspoons whole Szechwan peppercorns or whole black peppercorns and 3/4 teaspoon ground 
+                        cloves. Cover and blend until finely ground. Store the mixture in a tightly covered container for up to 1 year.
+                        </p>
+                    <p>How do I substitute whole wheat flour for all-purpose flour?<br>
+                        Substituting whole wheat flour for all-purpose requires experimentation. In baked products with a sturdy texture (bread, pizza dough), try swapping 1 / 2 to 3/4 of the all-purpose flour with regular whole wheat 
+                        flour. In more tender baked products, like cookies or cakes, replace 1 / 3 to 1 / 2 of the all-purpose flour with whole wheat pastry flour.
+                        </p>
+                    <p>What can I do if my gelatin mixture has chilled beyond the desired stage?<br>
+                        Place the bowl containing the gelatin mixture in hot water and let it stand until it melts slightly, stirring frequently. Return the mixture to the refrigerator to chill to the correct stage.
+                        </p>
+                    <p>How can I tell if my dried herbs are fresh?<br>
+                        Look on the herb container to see if it has a “best by” or “use by” date. If a date is not available, just crush a small amount in your hand. The aroma should be full-bodied. If the aroma is weak, discard the herb. 
+                        Also if the color looks faded, the flavor may be weakened.
+                        </p>
+                    <p>How can I tell if a spice is fresh?<br>
+                        Look on the spice container for a “best by” or “use by” date. If a date is not available, smell the spice and look at its color. Fresh spices have bright, rich colors and a strong aroma when you open the container. 
+                        If the color is pale or the aroma weak, replace the spice. Typically ground spices have a shelf life of 2 to 4 years and whole spices last about 4 years.
+                        </p>
+                    <p>How do I knead dough?<br>
+                        Place the dough on a lightly floured surface, then using the heel of your hands push it down and away from you. Give the dough a quarter-turn, fold it over and repeat. Continue turning and kneading until the 
+                        dough is smooth and elastic, adding flour as necessary to keep the dough from sticking to the surface.
+                        </p>
+                    <p>Can I substitute different nuts from those specified in my recipe?<br>
+                        The flavors of walnuts and pecans are versatile enough to be substituted for almost any nut in most recipes. Almonds and hazelnuts may be substituted for each other. However, use caution when 
+                        substituting nuts in tortes. Often those recipes are formulated for specific nuts. If you are unsure about substituting nuts, limit your substitutions to walnuts for pecans, almonds for hazelnuts and vice versa.
+                        </p>
+                    <p>Do I have to toast the nuts for my recipe?<br>
+                        Toasting brings out the full flavor and aroma of nuts. It also keeps nuts crisp in moist mixtures such as salads. So if your recipe calls for toasted nuts, it’s best to toast them.
+                        </p>
+                    <p>How do I toast nuts?<br>
+                        Spread the nuts in a single layer on a baking sheet. Place on the middle rack of an oven preheated to 350° F and bake for 10 to 15 minutes or until golden, stirring after half of the baking time. Or, place the nuts 
+                        in a single layer in a skillet. Heat them over medium-high heat for 5 to 7 minutes or until golden, stirring or shaking the nuts constantly.
+                        </p>
+                    <p>How do I freeze a pie?<br>
+                        Fruit and ice-cream pies freeze well. However, freezing cream or custard pies is not suggested. For unbaked fruit pies, add a little powdered produce protector (ascorbic acid that keeps produce from 
+                        browning—found in the food preservation section of the grocery store) to the filling and prepare the pie as usual, except do not cut slits in the top crust and be sure the pie is prepared in a metal or freezer-to
+                        -oven pie plate. Place the prepared, but not baked, pie in an extra-large freezer bag and freeze it for up to 4 months. Before serving, unwrap the pie and cut slits in the top of the pie. Cover the edges of the pie 
+                        crust with foil and bake for 15 minutes in an oven preheated to 450° F, then reduce the oven temperature to 375° F and bake for 35 to 45 minutes more, removing the foil from the edge of the pie after baking 
+                        at the lower temperature for 15 minutes.
+                        </p>
+                    <p>You may also freeze baked fruit pies. Just place the completely cooled pie in an extra-large freezer bag and freeze it for up to 8 months. Before serving, thaw the wrapped pie. Then remove the wrapping and 
+                        reheat the pie.
+                        </p>
+                    <p>Ice cream pies should be frozen until solid, then covered with plastic wrap and placed in extra-large freezer bags. Keep them frozen for up to 2 weeks.
+                    </p>
+                    <p>Can I use paper bake cups instead of foil bake cups for muffins or cupcakes?<br>
+                        Foil bake cups release the baked product easier than paper. So if your recipe is low in fat and specifies foil bake cups, it’s best to use the foil. However, if your recipe contains a standard amount of fat, either 
+                        should work well.</p>
+                </div>
+            </li>
+            <li>
+                <strong>Donations - Requests</strong>                 
+                <div>
+                    <p>Although we'd love to help everyone who's making a positive impact in their community, we are sorry to say that we cannot offer donation support at this time.</p> 
+                </div>
+
+            </li>
+        </ol>
+    </section>
+    
+    <footer>
+        <div>
+            <div>
+                <h2>GET SUPPORT</h2>
+                <ul>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>KELLOGG'S FAMILY REWARDS</h2>
+                <ul>
+                    <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                    <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                    <li><a href="logIn.html" target="_blank">Log In</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>CONNECT WITH US</h2>
+                <ul>            
+                    <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                    <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                    <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.kelloggcompany.com/en_US/privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="https://www.kelloggcompany.com/en_US/legal.html">Terms Of Use</a></li>
+                <li><a href="https://www.privacy.kelloggcompany.com/us/homepage.html">California Consumer Rights</a></li>
+            </ul>
+            <p>
+                ®Kellogg's Company 2022
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

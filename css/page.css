@@ -1,0 +1,4402 @@
+    * > strong ,
+    * > h2 , * > h3 , h4 ,
+    * > dt , * > .titleRed ,
+    .productInformation .pageNavigate li ,
+    .reviewControler ,
+    .impactNewsContainer .newsDetails mark , .joinMembership fieldset legend ,
+    .faqMenu ul li{
+        font-family: 'open sans';
+    }
+
+    * > p ,
+    .joinUsModule a ,
+    * > dd , 
+    * > small ,
+    * > span , * > a ,
+    span > mark ,fieldset legend , fieldset > span , .selectComponent select ,
+    * > label , * > button ,
+    [id ^= 'popupRecipes'] div ol , 
+    input[type='button'] , input[type='submit'] ,
+    .impactNewsContainer .newsDetails .newsDetailList ul , * > figcaption
+    {
+        font-family: 'Roboto';
+    }
+
+    
+
+
+
+    
+@media screen and (min-width: 280px){
+
+        /* .redSideModule */
+        .redSideModule h2{        
+            width: 100%; padding: 80px 5% 80px 10%; box-sizing: border-box;
+            font-size: 20px; font-weight: 900; color: white;
+            background-color: #d31245; 
+        }
+    
+        .redSideModule h2 a{
+            color: white; font-size: 12px; font-weight: 500; padding-right: 25px;
+            background: url('../images/icon_arrow.png') no-repeat right;
+            background-size: contain;
+        }
+    
+        .redSideModule h2 .arrowYellowBTN:hover{
+            color: #e5ff00;
+        }       
+        
+    
+        .redSideModule p{
+            width: 100%; padding: 40px 5% 5% 5%; box-sizing: border-box;
+            line-height: 22px; font-size: 14px; background-color: white;
+        }
+    
+        .redSideModule img{
+            width: 100%; object-fit: cover;
+        }
+    
+        .mainSlider{
+            width: 100%; margin-bottom: 125px; 
+        }
+    
+        .mainSlider li{
+            position: relative;
+        }
+    
+        .mainSlider li > div:first-of-type img{
+            width: 100%; object-fit: cover; min-height: 400px;
+        }
+    
+        .mainSlider li > div:first-child h2{
+            padding: 20% 10%; line-height: 25px; box-sizing: border-box;
+            position: absolute; top: 0; left: 0; font-size: 20px; font-weight: 900; color: white;
+        }
+    
+        .mainSlider li > div:first-child h2 a{
+            font-size: 12px; font-weight: 500; color: white; padding-right: 25px;
+            background: url('../images/icon_arrow.png') no-repeat right; 
+            background-size: contain;       
+        }
+    
+        .mainSlider li > div:first-child h2 .arrowYellowBTN:hover{
+            color: #e5ff00;
+        }
+        
+        .mainSlider li .redSideModule{
+            width: 100%;
+        }
+    
+        .redSideModule:first-of-type{
+            margin-bottom: 125px;
+        }
+    
+        
+        .ourfoodsBFList{
+            width: 100%; margin-bottom: 100px; padding-top: 80px;
+        }
+    
+        .ourfoodsBFList ul{
+            padding-top: 70px; margin: 0 auto; 
+        }
+    
+        .ourfoodsBFList ul li:first-child{
+            margin-bottom: 70px;
+        }
+    
+        .ourfoodsBFList ul li{
+            display: flex; flex-direction: column; align-items: center;
+        }
+
+        .ourfoodsBFList ul li img{
+            width: 80%;
+        }
+    
+        .ourfoodsBFList ul li dl{
+            padding-top: 60px; display: flex; flex-direction: column; align-items: center;
+        }
+    
+        .ourfoodsBFList ul li dl dt{
+            font-size: 18px; font-weight: 700; padding-bottom: 25px; text-align: center;
+        }
+    
+        .impactSustainList{
+            width: 100%; margin-bottom: 100px; padding-top: 100px;
+        }
+    
+        .impactSustainList ul{
+            padding-top: 45px; 
+        }
+    
+        .impactSustainList ul::after{
+            content: ''; display: block; clear: both;
+        }
+    
+        .impactSustainList ul li{
+            list-style: none; width: 100%;
+            margin-bottom: 35px;
+        }  
+    
+        .impactSustainList ul li a{
+            display: block;
+        }
+    
+        .impactSustainList ul li a img{
+            width: 100%;
+        }
+    
+        .impactSustainList ul li p{
+            font-size: 12px; font-weight: 200; padding-top: 15px; line-height: 18px;
+        }
+        
+        .impactSustainList ul li p strong{
+            color: #bfbfbf; font-size: 15px; font-weight: 900; display: block; padding-bottom: 10px;
+        }
+    
+        
+        /* 리스트페이지 */
+    
+        * > .listTitle{
+            width: 100%; margin-bottom: 100px; padding: 100px 10%; box-sizing: border-box;
+            
+        }
+        
+        .listContainer .listbanner01{
+            background: url('../images/ourFoods_headBanner01.png') no-repeat center / cover;
+        }
+        .listContainer .listbanner02{
+            background: url('../images/ourFoods_headBanner02.jpg') no-repeat center / cover;
+        }
+        .listContainer .listbanner03{
+            background: url('../images/ourFoods_headBanner03.jpg') no-repeat center / cover;
+        }
+        .listContainer .listbanner04{
+            background: url('../images/ourFoods_headBanner04.jpg') no-repeat center / cover;
+        }
+        .listContainer .listbanner05{
+            background: url('../images/ourFoods_headBanner05.jpg') no-repeat right / cover;
+        }
+        .listContainer .listbanner06{
+            background: url('../images/ourFoods_headBanner06.jpg') no-repeat right / cover;
+        }
+        .listContainer .listbanner07{
+            background: url('../images/ourFoods_headBanner07.jpg') no-repeat right / cover;
+        } 
+        .listContainer .listbanner08{
+            background: url('../images/ourImpact_headBanner01.jpg') no-repeat center / cover;
+        }    
+        .listContainer .listbanner09{
+            background: url('../images/ourImpact_headBanner02.jpg') no-repeat center / cover;
+        }    
+        .listContainer .listbanner10{
+            background: url('../images/ourImpact_headBanner03.jpg') no-repeat center / cover;
+        }    
+        .whoWeAreContainer .listbanner11{
+            background: url('../images/ourStore_headBanner01.jpg') no-repeat center / cover;
+        }      
+        .listbanner12{
+            background: url('../images/ourStore_headBanner02.jpg') no-repeat left / cover;
+        }    
+        .listbanner13{
+            background: url('../images/ourStore_headBanner03.jpg') no-repeat center / cover;
+        }    
+    
+        * > .listTitle h2{
+            line-height: 28px; box-sizing: border-box;
+            font-size: 20px; font-weight: 900; color: white;        
+        }
+    
+        * > .listTitle p{
+            color: white; font-size: 10px; font-weight: 200; line-height: 14px;
+        }
+    
+        .listContainer .listBrand{
+            margin-bottom: 80px;
+        }
+        
+        .listContainer .listBrand .brandSlider{
+            padding-top: 45px;
+        }
+    
+        .listContainer .listProduct{
+            margin-bottom: 100px;
+        }
+    
+        .listContainer .listProduct .productModule{
+            padding-top: 25px;
+        }
+    
+        .listContainer .listProduct .productModule li{
+            width: 100%; list-style: none; border: #d9d9d9 solid 1px; border-radius: 10px;
+            text-align: center; box-sizing: border-box; padding: 25px 4%;
+            min-height: 320px; background-color: white;
+        }
+    
+        .listContainer .listProduct .productModule li:hover{
+            border: white solid 1px; border-radius: 10px; box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.15);
+            box-sizing: border-box;
+        }
+        
+        .listContainer .listProduct .productModule li:not(:last-child){
+            margin-bottom: 20px;
+        }
+    
+        .listContainer .listProduct .productModule li img{
+            width: 55%; object-fit: contain; padding: 15% 0;
+        }
+    
+        .listContainer .listProduct .productModule li dl{
+            margin-bottom: 20px;  
+        }
+    
+        .listContainer .listProduct .productModule li dl dt{
+            font-size: 18px; line-height: 23px; padding-bottom: 15px; white-space: nowrap; text-overflow: ellipsis;
+            overflow-x: hidden;        
+        }
+    
+        .listContainer .listProduct .productModule li dl dd{
+            font-size: 12px; color: #bfbfbf;       
+        }
+    
+        .listContainer .listProduct .productModule li dl dd span{
+            font-size: 16px; font-weight: 500; color: #404040;
+            background: url('../images/icon_reviews.png') no-repeat left; padding-left: 32px;
+            background-size: contain;
+        }
+    
+        .listContainer .listProduct .productModule li a{
+            display: inline-block; text-align: center; min-width: 138px; font-size: 14px; line-height: 22px; box-sizing: border-box;
+            border: #d9d9d9 solid 1px; color: #d31245; border-radius: 13.5px;
+            background: url('../images/icon_redStar.png') no-repeat; padding-left: 12px;
+            background-position: 10% 50%;
+        }
+    
+        .listContainer .listProduct .productModule li a:hover{
+            color: white;
+            background: url('../images/icon_whiteStar.png') no-repeat; padding-left: 14px;
+            background-position: 5% 50%; background-color: #d31245;
+        }
+    
+        .listContainer .lastContent{
+            margin-bottom: 100px;
+        }
+    
+        .listContainer .lastContent ul{
+            padding-top: 25px; box-sizing: border-box; 
+        }
+    
+    
+        .listContainer .lastContent ul li{
+            list-style: none; width: 100%; 
+        }
+
+        .listContainer .lastContent ul li:not(:last-child){
+            margin-bottom: 30px;
+        }
+    
+        .listContainer .lastContent ul li a img{
+            width: 100%;
+        }
+        .listContainer .lastContent ul li strong{
+            display: block; font-size: 18px; font-weight: 900; padding: 2% 0 1.5%;
+        }
+        .listContainer .lastContent ul li small{
+            font-size: 12px; color: #bfbfbf;
+        }
+    
+    
+        /* 디테일 페이지 */
+        .productInformation{
+            margin-bottom: 100px;
+        }
+    
+        .productInformation .pageNavigate::after{
+            content: ''; display: block; clear: both;
+        }
+    
+        .productInformation .pageNavigate li{
+            float: left; list-style: none; font-weight: 500; margin-left: 5px; font-size: 10px; line-height: 15px;
+        }
+        .productInformation .pageNavigate li a::after{
+            content: " /";
+        }
+    
+        .productInformation .pageNavigate li a{
+            color: #bfbfbf; 
+        }
+        
+        .productInformation .detailContainer{
+            padding-top: 20px;
+        }
+    
+        .productInformation .detailContainer img{
+            width: 100%; border: #d9d9d9 solid 1px; border-radius: 5px; box-sizing: border-box;
+            margin-bottom: 30px;
+        }
+    
+        .productInformation .detailContainer div{
+            width: 100%;
+        }
+    
+        .productInformation .detailContainer div h2{
+            background: url('../images/icon_redLine.png') no-repeat; padding-top: 10px;
+            font-size: 20px; font-weight: 700; line-height: 25px;
+        }
+    
+        .productInformation .detailContainer div > span{
+            font-size: 14px; font-weight: 200; color: #bfbfbf; display: block;
+            padding-top: 15px; margin-bottom: 40px;
+        }
+    
+        .productInformation .detailContainer div span mark{
+            font-size: 16px; font-weight: 600; color: #d31245;
+            background: url('../images/icon_red_reviews.png') no-repeat; padding-left: 32px;
+            margin-right: 12px; background-position: 5% 50%;
+        }
+    
+        .productInformation .detailContainer div div{
+            width: 100%;
+        }
+    
+    
+        .productInformation .detailContainer div div h3{
+            font-size: 12px; color: #d9d9d9; font-weight: 900; margin-bottom: 10px;
+        }
+    
+        .productInformation .detailContainer div div p{
+            line-height: 20px; font-size: 12px;
+        }
+    
+        .productInformation .detailContainer div div p:first-of-type{
+            margin-bottom: 20px;
+        }
+    
+        * > .titleRed{
+            display: block; font-size: 16px; font-weight: 900; color: #d31245; 
+        }
+    
+        .productInformation .detailContainer div div p strong{
+            padding-bottom: 10px;
+        }
+    
+        .productInformation .detailContainer div div label{
+            color: #bfbfbf; font-size: 10px; font-weight: 200;
+        }
+    
+        .productInformation .detailContainer div div .selectComponent select{
+            width: 80%;
+        }
+    
+        .productInformation .detailContainer div div a{
+            font-size: 14px; font-weight: 600; line-height: 40px; padding: 0 28px;
+            display: block; text-align: center;
+        }
+
+        .productInformation .detailContainer div div a:first-of-type{
+            margin-bottom: 10px;
+        }
+    
+        .productInformation .detailContainer div div  small{
+            display: block; font-size: 14px; font-weight: 200; color: #d9d9d9; padding-top: 12px;
+        }
+        
+        .reviewModule{
+            margin-bottom: 80px;
+        }
+    
+        .reviewModule::after,
+        .reviewModule div:first-of-type fieldset:after{
+            content: ''; display: block; clear: both;
+        }
+    
+        .reviewModule h2{
+            font-size: 18px; font-weight: 900; margin-bottom: 15px;
+        }
+       
+    
+        .reviewModule div:first-of-type{
+            width: 100%; margin-bottom: 70px;
+        }
+        
+    
+        .reviewModule div small{
+            color: #4d4d4d; display: block; margin-bottom: 30px; font-size: 14px;
+        }
+        
+        .reviewModule div:first-of-type > fieldset legend{
+            color: #999999; margin-bottom: 20px;
+        }
+        .reviewModule div:first-of-type > fieldset ol{
+            width: 100%; margin-bottom: 30px;
+        }    
+    
+        .reviewModule div:first-of-type > fieldset ol li{
+            list-style: none; display: flex; 
+        }
+    
+        .reviewModule div:first-of-type > fieldset ol li label{
+            color: #999999;
+        }
+    
+        .reviewModule div:first-of-type > fieldset ol li span{
+            color: #d9d9d9;
+        }
+    
+        .reviewModule div:first-of-type > fieldset ol li label ,
+        .reviewModule div:first-of-type > fieldset ol li meter{
+            padding-right: 12px;
+        }
+    
+        .reviewModule div a{
+            display: block; text-align: center; padding: 15px 0; 
+            font-size: 20px; font-weight: 900; margin-bottom: 50px;
+        }
+    
+        .reviewModule div:last-of-type{
+            width: 100%;
+        }
+        .reviewModule div:last-of-type > fieldset legend{
+            font-size: 16px; font-weight: 500; color: #4d4d4d; margin-bottom: 20px;
+        }
+    
+        #reviewsRating , #reviewerGender{
+            width: 28%; margin-right: 0.4%; margin-bottom: 15px;
+        }
+    
+        #reviewerAge{
+            width: 40%;  margin-bottom: 15px;
+        }
+    
+        #reviewsSortby{
+            width: 58%; margin-right: 0.4%;
+        }
+        #englishLocale{
+            width: 40%;
+        }
+    
+        
+    
+        .reviewDetails li{
+            list-style: none; padding: 40px 0; border-top: #e6e6e6 solid 1px; 
+        }
+    
+        .reviewDetails li:last-child{
+            border-bottom: #e6e6e6 solid 1px;
+        }
+    
+        .reviewDetails li dl{
+            margin-bottom: 25px;
+        }
+    
+        .reviewDetails li dl dt{
+            font-size: 18px; color: #999999; margin-bottom: 15px; 
+        }
+    
+        .reviewDetails li dl dd{
+            font-size: 12px; font-weight: 200; color: #d31245;
+        }
+
+    
+        .reviewDetails li div span{
+            min-height: 22px; width: 100%;
+        }
+    
+        .reviewDetails li div span time{
+            padding-left: 142px; color: #bfbfbf; line-height: 25px; font-size: 14px;
+        }
+    
+        .reviewDetails li div h3{
+            font-size: 16px; color: #4d4d4d; padding-top: 25px; box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+
+        .reviewDetails li div blockquote{
+            font-size: 14px;
+        }
+    
+        .reviewDetails li div blockquote:nth-of-type(1){
+            font-weight: 200; color: #4d4d4d; line-height: 18px; 
+        }
+    
+        .reviewDetails li div blockquote:nth-of-type(2){
+            padding-top: 25px; box-sizing: border-box;
+            background: url('../images/icon_feedback.png') no-repeat 2% 25px;
+            padding-left: 25px;
+        }
+        
+
+        .reviewDetails li form fieldset legend{
+            font-size: 12px; font-weight: 500; color: #bfbfbf;
+            margin-bottom: 10px; padding-top: 35px;
+        }
+    
+        .reviewDetails li form fieldset mark{
+            font-size: 14px;
+            display: none;
+            color: #bfbfbf;
+            margin-bottom: 25px;
+        }
+    
+        .reviewDetails li form fieldset mark:first-of-type{
+            background: url('../images/icon_yes.png') no-repeat center left;
+            padding-left: 18px; box-sizing: border-box;
+        }
+        .reviewDetails li form fieldset mark:last-of-type{
+            background: url('../images/icon_no.png') no-repeat center left;
+            padding-left: 15px; box-sizing: border-box;
+        }
+    
+        .reviewDetails li form fieldset mark.activate{
+            display: block;
+        }
+    
+        .reviewDetails li form fieldset span{
+            font-size: 14px; font-weight: 500; color: #bfbfbf; display: block;
+            margin-bottom: 15px;
+        }
+    
+        .reviewDetails li form fieldset button{
+            background-color: #e6e6e6; border-radius: 5px; width: 45%; min-height: 30px;
+            font-size: 14px; border: none; font-weight: 500;
+        }
+    
+        .reviewDetails li form fieldset button:first-of-type{
+            margin-right: 5%;
+        }
+    
+        .reviewDetails li form fieldset button:first-of-type.activate{
+            color: #26784b;
+        }
+    
+        .reviewDetails li form fieldset button:last-of-type.activate{
+            color: #d31245;
+        }
+    
+        .reviewControler{
+            font-size: 20px; color: #d9d9d9; text-align: right;
+            padding: 20px 3% 100px; cursor: default;
+            overflow: hidden;
+        }
+    
+        .reviewControler .prevPage{
+            display: inline-block;
+            width: 20px; height: 20px; text-indent: 9999px; border: #d9d9d9 solid 1px; border-radius: 3px;
+            background: url('../images/icon_controller_prevPage.png') no-repeat center; 
+            background-size: 30%;
+        }
+    
+        .reviewControler .nextPage{
+            display: inline-block;
+            width: 20px; height: 20px; text-indent: 9999px; border: #d9d9d9 solid 1px; border-radius: 3px;
+            background: url('../images/icon_controller_nextPage.png') no-repeat center;  
+            background-size: 30%
+        }
+    
+    
+        /* impact */
+        .listContainer .listNews{
+            margin-bottom: 100px;
+        }
+
+        .listContainer .listNews .impactNews{
+            padding-top: 45px;  
+        }
+    
+        .listContainer .listNews .impactNews li{
+            list-style: none; 
+            padding: 120px 0 0; box-sizing: border-box;
+            background-position: top; width: 100%;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    
+        .listContainer .listNews .impactNews .impactBG01{
+            background-image: url('../images/sustainability_news01.jpg');
+        }
+        .listContainer .listNews .impactNews .impactBG02{
+            background-image: url('../images/sustainability_news02.jpg');
+        }
+        .listContainer .listNews .impactNews .impactBG03{
+            background-image: url('../images/sustainability_news03.jpg');
+        }
+        .listContainer .listNews .impactNews .impactBG04{
+            background-image: url('../images/sustainability_news04.jpg');
+        }
+    
+        .listContainer .listNews .impactNews .impactBG05{
+            background-image: url('../images/philanthropy_news01.jpg');
+        }
+        .listContainer .listNews .impactNews .impactBG06{
+            background-image: url('../images/philanthropy_news02.jpg');
+        }
+        .listContainer .listNews .impactNews .impactBG07{
+            background-image: url('../images/philanthropy_news03.jpg');
+        }
+        .listContainer .listNews .impactNews .impactBG08{
+            background-image: url('../images/philanthropy_news04.jpg');
+        }
+        
+        .listContainer .listNews .impactNews .impactBG09{
+            background-image: url('../images/nourishment_news01.jpg');
+        }    
+        .listContainer .listNews .impactNews .impactBG10{
+            background-image: url('../images/nourishment_news02.jpg');
+        }    
+        .listContainer .listNews .impactNews .impactBG11{
+            background-image: url('../images/nourishment_news03.jpg');
+        }    
+        .listContainer .listNews .impactNews .impactBG12{
+            background-image: url('../images/nourishment_news04.jpg');
+        }
+        
+    
+        .listContainer .listNews .impactNews li div{
+           background: white; width: 100%;
+           padding: 40px 10% 40px 10%; box-sizing: border-box;
+        }
+    
+    
+        .listContainer .listNews .impactNews li div h4{
+            font-size: 18px; font-weight: 800; margin-bottom: 20px;
+        }
+    
+        .listContainer .listNews .impactNews li div p{
+            font-size: 14px; line-height: 20px; color: #bfbfbf; margin-bottom: 20px;
+        }
+        
+        .listContainer .listNews .impactNews li div a{
+             font-size: 12px; font-weight: 500; color: black; padding-right: 25px;
+             background: url('../images/icon_arrowBlack.png') no-repeat right / contain;      
+        }
+    
+        .listContainer .listNews .impactNews li div .arrowRedBTN:hover{
+            color: #d31245;
+        }
+    
+        /* news page */
+        .impactNewsContainer .qaField mark::before{
+            content: 'Q: ';
+        }
+    
+        .impactNewsContainer .qaField p:first-of-type::before{
+            content: 'A: '; font-weight: 700;
+        }
+    
+        .impactNewsContainer .newsTitle{
+            min-height: 123px;
+        }
+    
+        .impactNewsContainer .newsTitle img{
+            width: 100%;
+        }
+    
+        .impactNewsContainer .newsTitle h2{
+            font-size: 20px; font-weight: 700; padding: 20px 0; border-bottom: solid 1px #e6e6e6;
+            line-height: 24px;
+        }
+    
+        .impactNewsContainer .newsDetails{
+            padding-top: 20px;
+        }
+    
+        .impactNewsContainer .newsDetails mark{
+            font-size: 16px; font-weight: 900; color: #d31245; 
+            display: block; margin-bottom: 20px; line-height: 22px;
+        }
+    
+        .impactNewsContainer .newsDetails a{
+            display: block; color: #d31245; font-size: 14px; text-decoration: underline;
+        }
+    
+        .impactNewsContainer .newsDetails p a{
+            display: inline;
+        }
+    
+        .impactNewsContainer .newsDetails p,
+        .impactNewsContainer .newsDetails .newsDetailList ul ,
+        .impactNewsContainer .newsDetails > ul{
+            font-size: 12px; line-height: 18px; color: #4d4d4d;
+        }
+    
+        .impactNewsContainer .newsDetails p:not(:last-child),
+        .impactNewsContainer .newsDetails .newsDetailList{
+            display: inline-block; margin-bottom: 25px;
+        }
+    
+        .impactNewsContainer .newsDetails .newsDetailList ul ,
+        .impactNewsContainer .newsDetails > ul{
+            list-style-position: inside; 
+        }
+    
+        .impactNewsContainer .newsDetails .newsDetailList ul li ,
+        .impactNewsContainer .newsDetails > ul li{
+            list-style-type: '• ';
+        }
+    
+        .impactNewsContainer .newsDetails .newsDetailList strong{
+            font-size: 13px; font-weight: 700; color: #4d4d4d; line-height: 20px;
+        }
+    
+        .impactNewsContainer small{
+            display: block; text-align: right; border-top: solid 1px #e6e6e6; padding-top: 20px;
+            font-size: 10px; line-height: 14px; font-weight: 200; color: #4d4d4d; margin-top: 40px;
+        }     
+    
+        .impactNewsContainer .joinUsModule{
+            margin-top: 100px;
+        }
+    
+        /* whoweare */
+        .whoWeAreContainer .betterDays{
+            margin-bottom: 100px;
+        }
+    
+        .whoWeAreContainer .betterDays > div{
+            padding-top: 45px; margin-bottom: 60px;
+    
+        }
+    
+        .whoWeAreContainer .betterDays div img{
+            width: 100%; 
+        }
+    
+        .whoWeAreContainer .betterDays div div{
+            width: 100%; padding: 20px 0 0;
+        }
+    
+        .whoWeAreContainer .betterDays div div a{
+            line-height: 50px; font-size: 16px; font-weight: 700; text-align: center;
+            display: block; margin-bottom: 10px;     
+        }
+    
+        .whoWeAreContainer .betterDays div div small{
+            font-size: 12px; font-weight: 200; color: #bfbfbf; text-align: right;
+            display: block;
+        }
+    
+        .whoWeAreContainer .betterDays p{
+            font-size: 12px; color: #bfbfbf; line-height: 22px;
+        }
+    
+        .whoWeAreContainer .betterDays p mark{
+            font-size: 16px; font-weight: 700; color: #d31245; line-height: 23px; display: block;
+            margin-bottom: 20px;
+        }
+    
+    
+        .whoWeAreContainer figure{        
+            background: url('../images/whoWeAre_figure.jpg') no-repeat center;
+            background-size: cover; margin-bottom: 100px;
+        }
+    
+        .whoWeAreContainer figure figcaption{
+            font-size: 15px; font-weight: 500; padding: 100px 3%;
+            color: white; text-align: center;
+        }
+    
+        .whoWeAreContainer .ourLatestNews{
+            margin-bottom: 100px;
+        }
+    
+        .whoWeAreContainer .ourLatestNews div{
+            padding-top: 50px; width: 100%; 
+        }
+    
+        .whoWeAreContainer .ourLatestNews div ul li{
+            list-style: none; background: url('../images/icon_redLine.png') no-repeat;
+            margin-bottom: 35px; padding-top: 20px;
+        }
+    
+        .whoWeAreContainer .ourLatestNews div ul li a{
+           font-size: 14px; font-weight: 700; color: #4d4d4d; text-decoration: underline;
+           line-height: 20px; display: block; margin-bottom: 10px;
+        }
+    
+        .whoWeAreContainer .ourLatestNews div ul li time{
+            color: #bfbfbf; font-size: 12px;
+        }
+    
+        .whoWeAreContainer .ourLatestNews iframe{
+            padding-top: 50px;
+            width: 100%;
+        }  
+    
+    
+        .whoWeAreContainer .ourLatestNews div > a{
+            font-size: 12px; font-weight: 500; color: black; padding-right: 25px;
+            background: url('../images/icon_arrowBlack.png') no-repeat right;   
+            background-size: contain;   
+        }
+       
+        .whoWeAreContainer .ourLatestNews div .arrowRedBTN:hover{
+            color: #d31245;
+        }
+    
+        /* history */
+    
+        .historyContainer .historySlider::after{
+            content: ''; display: block; clear: both;
+        }
+        
+        .historyContainer .historySlider li{
+            list-style: none; box-sizing: border-box; width: 100%;
+            background-position: center; background-repeat: no-repeat;
+            background-size: cover; 
+        }
+    
+        .historyContainer .historySlider li[data-tabName="historyPanel01"]{
+            background-image: url('../images/historySlider01.jpg');
+        }
+        .historyContainer .historySlider li[data-tabName="historyPanel02"]{
+            background-image: url('../images/historySlider02.jpg');
+        }
+        .historyContainer .historySlider li[data-tabName="historyPanel03"]{
+            background-image: url('../images/historySlider03.jpg');
+        }
+        .historyContainer .historySlider li[data-tabName="historyPanel04"]{
+            background-image: url('../images/historySlider04.jpg');
+        }
+        .historyContainer .historySlider li h4{
+            padding: 10px 0; transition: padding 0.75s ease-in-out;
+            font-size: 20px; font-weight: 200; color: white; text-align: center;
+        }
+        
+        .historyContainer .historySlider li.active h4{
+           padding-top: 200px; font-size: 20px; font-weight: 800; color: white;
+        }
+    
+    
+        .historyContainer .historySlider li h4 span{
+            display: none; 
+        }
+    
+        .historyContainer .historySlider li.active h4 span{
+            display: inline-block; 
+        }
+    
+    
+        .historyContainer [id^='historyPanel']{
+            padding: 20px 5%; background-color: black; box-sizing: border-box;
+            display: none;
+        }
+        .historyContainer [id^='historyPanel'].active{
+            display: block;
+        }
+    
+        .historyContainer [id ^= 'historyPanel'] ol{
+            color: white;
+        }
+    
+        .historyContainer [id ^= 'historyPanel'] ol li{
+            list-style: none; width: 100%;
+        }
+    
+    
+        .historyContainer [id ^= 'historyPanel'] ol li:not(:last-child){
+            margin-bottom: 20px;
+        }
+    
+    
+        .historyContainer [id ^= 'historyPanel'] ol li mark{
+            color: #d31245; font-size: 14px; font-weight: 700; display: block; margin-bottom: 5px;
+        }
+    
+        .historyContainer [id ^= 'historyPanel'] ol li p{
+            font-weight: 200; line-height: 18px; font-size: 12px;
+        }
+    
+        .historyContainer [id ^= 'historyPanel'] ol li p strong{
+            font-weight: 600; display: block; padding-bottom: 5px;
+        }
+        
+    
+        /* open for breakfast */
+        .openContainer .honestAnswers{
+            margin-bottom: 100px;
+        }
+    
+        .openContainer .honestAnswers > div{
+            padding-top: 45px; margin-bottom: 60px;
+        }
+    
+        .openContainer .honestAnswers > div > div:first-of-type{
+            width: 100%; margin-right: 5%; padding: 0 10%; box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+        .openContainer .honestAnswers > div > div:nth-of-type(2){
+            width: 100%; 
+        }
+        
+        .openContainer .honestAnswers div ul li{
+            list-style: none;
+        }
+            
+        .openContainer .honestAnswers div .thumbNailPager::after{
+            content: ''; display: block; clear: both;
+        }
+    
+        .openContainer .honestAnswers div .thumbNailPager{
+            margin: 0 auto; padding-top: 20px;
+        }
+        
+        .openContainer .honestAnswers div .thumbNailPager li{
+            width: 22%; float: left;
+        }
+    
+    
+        .openContainer .honestAnswers div .thumbNailPager li:not(:last-child){
+            margin-right: 4%;
+        }
+        
+        .openContainer .honestAnswers div .thumbNailPager li a img{
+            width: 100%;
+        }
+    
+    
+        .openContainer .honestAnswers div div:nth-of-type(2) a{
+            line-height: 50px; font-size: 16px; font-weight: 700; text-align: center;
+            display: block; margin-bottom: 10px;  
+         }
+         
+        .openContainer .honestAnswers div div small{
+            font-size: 12px; font-weight: 200; color: #bfbfbf; text-align: right;
+            display: block;
+        }
+    
+        .openContainer .honestAnswers p{
+            font-size: 12px; color: #bfbfbf; line-height: 22px;     
+        }
+        
+        .openContainer .honestAnswers p:first-of-type{
+            margin-bottom: 30px;
+        }
+    
+        .openContainer .honestAnswers mark{
+            font-size: 16px; font-weight: 700; color: #d31245; line-height: 23px; display: block;
+            margin-bottom: 20px;
+        }
+    
+        .openContainer .honestAnswers p a{
+            color: #d31245; text-decoration: underline;
+        }
+    
+    
+
+        
+    
+        /* contact us */
+    
+        .contactUs{
+            margin-bottom: 60px;
+        }
+    
+        .contactUs > div:first-child{
+            width: 100%; margin-bottom: 30px;
+        }
+    
+        .contactUs > div:last-child{
+            width: 100%; 
+        }
+    
+        .contactUs > div form fieldset{
+            border-radius: 5px; width: 100%;
+            background-color: white; box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.15);
+            margin-right: 2%; box-sizing: border-box; padding: 8% 5%;
+            position: relative;
+    
+        }
+    
+        .contactUs div form fieldset legend{
+            font-size: 14px; font-weight: 900; color: #bfbfbf; position: absolute;
+        }
+    
+        .contactUs div form fieldset ul{
+            padding-top: 40px; box-sizing: border-box;
+        }
+    
+    
+        .contactUs div form fieldset ul li{
+            list-style: none; margin-bottom: 20px;
+        }
+    
+    
+        .contactUs div form fieldset ul li:not(:last-child) label{
+            display: block; font-weight: 600; color: #4d4d4d; margin-bottom: 5px;
+            font-size: 14px;
+        }
+    
+        .contactUs div form fieldset ul li:last-child label{
+            font-size: 12px; font-weight: 200; color: #999999; 
+        }
+    
+        .contactUs div form fieldset ul li input[type='text'] ,
+        .contactUs div form fieldset ul li input[type='email']{
+            line-height: 35px; border: 1px solid #bfbfbf; box-sizing: border-box; display: block; width: 100%; border-radius: 5px;
+        }
+    
+        .contactUs div form fieldset ul li textarea{
+            font-family: 'Roboto'; font-size: 15px; font-weight: 200; color: #d9d9d9;
+            border-radius: 5px; border: #bfbfbf solid 1px; width: 100%; box-sizing: border-box;
+            padding-left: 10px; height: 100px; resize: none;
+        }
+    
+        .contactUs div form fieldset ul li span{
+            display: block; font-size: 10px;font-weight: 200; color: #bfbfbf; padding-top: 10px; box-sizing: border-box;
+        }
+        
+        .contactUs div form fieldset input[type='submit']{
+            width: 50%; line-height: 40px; font-size: 16px; font-weight: 900;
+            border: none; margin: 0 25%;
+        }
+    
+    
+        .contactUs div h2{
+            background: url('../images/icon_redLine.png') no-repeat; padding-top: 10px;
+            font-size: 20px; font-weight: 700; line-height: 24px;
+            padding-bottom: 10px; box-sizing: border-box;
+        }
+    
+        .contactUs div p{
+            color: #4d4d4d; line-height: 18px; font-size: 12px;
+        }
+    
+        .contactUs > div > p:first-of-type{
+            padding-bottom: 15px;
+        }
+    
+        .contactUs div div{
+            padding: 40px 0; box-sizing: border-box;
+        }
+    
+        .contactUs div div:first-of-type{
+            border-bottom: solid 1px #e6e6e6;
+        }
+    
+        .contactUs div div:first-of-type a{
+            display: block;border-radius: 5px;
+            background: url('../images/icon_call.png') no-repeat left;
+            color: #4d4d4d; font-size: 16px; font-weight: 700; 
+            padding-left: 40px; line-height: 30px;
+            background-size: contain;
+        }
+    
+        .contactUs div div:first-of-type address{
+            display: block;border-radius: 5px;
+            background: url('../images/icon_mail.png') no-repeat left;
+            color: #4d4d4d; font-size: 16px; font-weight: 700; 
+            padding-left: 40px; line-height: 25px; font-style: normal;            
+            height: 30px;
+            background-size: contain;
+        }
+    
+        .contactUs div div:first-of-type small{
+            padding-left: 40px; color: #bfbfbf; display: inline-block;
+            font-size: 11px;
+        }
+    
+        .contactUs div div:first-of-type small:first-of-type{
+            margin-bottom: 30px;
+        }
+
+        .contactUs div div:first-of-type small:last-of-type{
+            padding-top: 55px;
+        }
+    
+        .contactUs div div:last-of-type h3{
+            font-size: 12px; font-weight: 900; color: #d9d9d9; margin-bottom: 10px;
+        }
+    
+        .contactUs div div:last-of-type strong{
+            margin-bottom: 15px;
+        }   
+    
+        .contactUs div div:last-of-type p{
+            margin-bottom: 10px;
+        }
+        
+    
+        .contactUs div div:last-of-type a{
+            font-size: 12px; font-weight: 500; color: black; padding-right: 20px;
+            background: url('../images/icon_arrowBlack.png') no-repeat right;   
+            display: inline-block;  background-size: contain;
+        }
+    
+    
+        .contactUs div div:last-of-type a:first-of-type{
+            margin-bottom: 35px;
+        }
+    
+        .contactUs div div:last-of-type .arrowRedBTN:hover{
+            color: #d31245;
+        }
+    
+        /* FAQs */
+        .faqMenu h2{
+            background: url('../images/icon_redLine.png') no-repeat; padding-top: 10px;
+            font-size: 20px; font-weight: 700; line-height: 26px;
+            padding-bottom: 10px; box-sizing: border-box;
+        }
+        .faqMenu h2 mark{
+            color: #d31245;
+        }
+    
+        .faqMenu p{
+            line-height: 18px; color: #4d4d4d;
+            font-size: 12px;
+        }
+    
+        .faqMenu > ul{
+            padding: 40px 0;
+        }
+        
+        .faqMenu > ul li{
+            list-style: none; font-size: 14px; color: #4d4d4d; font-weight: 800;
+            cursor: pointer; line-height: 30px;
+        }
+    
+    
+        .faqMenu > ul li.active{
+            color: #d31245; text-decoration: underline;
+        }
+    
+        .faqMenu ol{
+            display: none;  margin-bottom: 150px;
+        }
+    
+        .faqMenu ol.active{
+            display: block;
+        }
+    
+    
+        .faqMenu > ol > li{
+            list-style: none; 
+            padding: 3%; border: solid 1px #bfbfbf; border-radius: 5px; 
+        }
+        .faqMenu > ol > li:not(:last-child){
+            margin-bottom: 15px;
+        }
+    
+        .faqMenu ol .faqOpen strong{
+            font-size: 14px; font-weight: 500; line-height: 20px;
+            display: block; margin-bottom: 15px; padding-right: 25px;
+            background: url('../images/icon_faqclose.png') no-repeat right;
+            background-size: 15px;            
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow-x: hidden;
+        }
+        .faqMenu ol li strong{
+            font-size: 14px; font-weight: 500; line-height: 20px;
+            display: block; padding-right: 25px;
+            background: url('../images/icon_faqOpen.png') no-repeat right;
+            background-size: 15px;         
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow-x: hidden;
+        }
+        
+        .faqMenu ol > li{
+            cursor: pointer;
+        }
+    
+        .faqMenu ol .faqOpen div p ,
+        .faqMenu ol .faqOpen div ul li{
+            color: #999999; line-height: 18px; padding-right: 2%;
+            list-style-type: "-"; list-style-position: inside;        
+            display: list-item;
+            font-size: 12px;
+        }
+        .faqMenu ol .faqOpen div ul li a{
+            color: #999999; line-height: 18px; padding-right: 2%;
+            font-size: 12px;
+        }
+    
+        .faqMenu ol li div p ,
+        .faqMenu ol li div ul li{
+            display: none;
+        }
+    
+        .faqMenu ol li div p:not(:last-of-type) ,
+        .faqMenu ol li div ul li:not(:last-of-type){
+            margin-bottom: 15px;
+        }
+        
+    
+    
+    
+        /* family rewards - Why join */
+        .rewardsWhyjoin {
+            padding-top: 50px;
+        }
+        .rewardsWhyjoin li{
+            list-style: none; padding: 30px 10%; box-sizing: border-box; 
+            background-repeat: no-repeat;
+    
+    
+        }
+    
+    
+        .rewardsWhyjoin li:first-child{
+            background: url('../images/familyReward_list01.png') no-repeat top center;
+            background-size: 80%;        
+        }
+        .rewardsWhyjoin li:nth-child(2){
+            background: url('../images/familyReward_list02.png') no-repeat top center;
+            background-size: 50%;        
+        }
+        .rewardsWhyjoin li:last-child{
+            background: url('../images/familyReward_list03.png') no-repeat top center;
+            background-size: 50%;        
+        }
+    
+        .rewardsWhyjoin li div{
+            width: 100%; padding: 65% 0 0; 
+        }
+     
+         .rewardsWhyjoin li div h3{
+            margin-bottom: 10px; color: #d31245;
+             background: url('../images/icon_redLine.png') no-repeat; padding-top: 15px;
+             font-size: 20px; font-weight: 700; line-height: 28px; 
+         }
+     
+         .rewardsWhyjoin li div p{
+             font-size: 14px; line-height: 20px; color: black; margin-bottom: 40px;
+         }
+         
+    
+    
+        /* family rewards - join Now */
+         .joinMembership{
+            max-width: 260px; margin: 0 auto;
+         }
+    
+         .joinMembership > span{
+            font-size: 14px; display: block; text-align: center; padding-bottom: 30px;
+         }
+         .joinMembership span a{
+            color: #d31245; font-size: 16px; 
+         }
+    
+         .joinMembership fieldset:not(:last-of-type){
+            margin-bottom: 40px;
+         }
+    
+         .joinMembership fieldset:first-of-type input{
+            margin-bottom: 10px;
+         }
+    
+         .joinMembership fieldset:nth-of-type(2) input{
+            margin-bottom: 10px;
+         }
+    
+         .joinMembership fieldset:nth-of-type(3) input{
+            width: 31%; line-height: 40px; padding-left: 20px;
+             border: 1px solid #bfbfbf; box-sizing: border-box; border-radius: 5px;
+         }
+    
+         .joinMembership fieldset:nth-of-type(3) input:not(:last-of-type){
+            margin-right: 1%; 
+         }
+    
+         .joinMembership fieldset:nth-of-type(4) input:first-of-type{
+            margin-bottom: 10px;
+         }
+    
+         .joinMembership fieldset:nth-of-type(5) input:not(:last-of-type){
+            margin-bottom: 10px;
+         }
+    
+         .joinMembership fieldset:last-of-type .selectComponent select{
+            margin-bottom: 10px;
+         }
+    
+         .joinMembership fieldset:last-of-type p{
+            padding-top: 70px;
+         }
+    
+         .joinMembership fieldset:not(:nth-of-type(3)) input{
+            display: block; width: 100%; line-height: 40px; padding-left: 20px;
+             border: 1px solid #bfbfbf; box-sizing: border-box; border-radius: 5px;
+         }
+         .joinMembership fieldset .selectComponent select{
+            display: block; width: 100%; height: 40px; padding-left: 20px;
+             border: 1px solid #bfbfbf; box-sizing: border-box; border-radius: 5px;
+         }
+    
+         
+         .joinMembership fieldset input[type='checkbox']{
+            display: inline-block; width: 20px;
+         }
+    
+         .joinMembership fieldset label{
+            font-size: 10px; font-weight: 200; line-height: 10px; color: #999999;
+         }
+    
+    
+         .joinMembership fieldset input::-webkit-input-placeholder{
+            font-size: 12px; font-weight: 200; color: #d9d9d9;
+        }
+    
+        .joinMembership fieldset input:-moz-placeholder{
+            font-size: 12px; font-weight: 200; color: #d9d9d9;
+        }
+    
+        .joinMembership fieldset legend{
+            font-size: 20px; font-weight: 900; color: #d31245; line-height: 26px;
+            padding-bottom: 10px;
+        }
+    
+        .joinMembership fieldset legend small{
+            font-size: 12px; color: black; font-weight: 200; line-height: 20px;  display: block;
+            padding-top: 5px;
+        }
+    
+        .joinMembership fieldset p{
+            font-weight: 200; line-height: 20px; font-size: 12px;
+        }
+    
+        .joinMembership fieldset:first-of-type p{
+            border-bottom: #e6e6e6 1px solid; padding-bottom: 40px;
+        }
+    
+    
+        /* family rewards - login */
+        .loginInput{
+            max-width: 260px; margin: 0 auto;
+         }
+         .loginInput fieldset input{
+            display: block; width: 100%; line-height: 40px; padding-left: 20px;
+             border: 1px solid #bfbfbf; box-sizing: border-box; border-radius: 5px;
+         }
+    
+         .loginInput fieldset input:first-of-type{
+            margin-bottom: 10px;
+         }
+    
+         .loginInput fieldset input::-webkit-input-placeholder{
+            font-size: 12px; font-weight: 200; color: #d9d9d9;
+        }
+    
+        .loginInput fieldset input:-moz-placeholder{
+            font-size: 15px; font-weight: 200; color: #d9d9d9;
+        }
+    
+        .signinBTN{
+            padding: 70px 10% 150px;
+            background: url('../images/familyReward_btnBG.png') no-repeat bottom;
+    
+        }
+    
+        .signinBTN > a{
+            display: inline-block; color: white;
+            width: 100%; line-height: 50px; text-align: center; font-size: 18px; font-weight: 900;
+            border-radius: 35px; 
+        }
+    
+        .signinBTN > a:not(:last-of-type){
+            margin-bottom: 15px;
+        }
+    
+        .signinBTN > a:last-of-type{
+            margin-bottom: 40px;
+        }
+    
+        .signinBTN > a:first-child{
+            background-color: #d31245;
+        }
+        .signinBTN > a:nth-child(2){
+            background-color: #1d9bf0;
+        }
+        .signinBTN > a:nth-child(3){
+            background-color: #1877f2;
+        }
+    
+        .signinBTN span{
+            display: block; text-align: center; font-size: 14px; color: black;
+            line-height: 20px;
+        }
+    
+        .signinBTN span a{
+            color: #d31245; display: block;
+        }
+}
+
+
+
+
+@media screen and (min-width: 768px){
+
+    /* .redSideModule */
+    .redSideModule h2{        
+        width: 100%; padding: 145px 5% 145px 10%; box-sizing: border-box;
+        font-size: 32px; font-weight: 900; color: white;
+        background-color: #d31245; 
+    }
+
+    .redSideModule h2 a{
+        color: white; font-size: 18px; font-weight: 500; padding-right: 32px;
+        background: url('../images/icon_arrow.png') no-repeat right;
+    }
+
+    .redSideModule h2 .arrowYellowBTN:hover{
+        color: #e5ff00;
+    }       
+    
+
+    .redSideModule p{
+        width: 100%; padding: 70px 5% 5% 5%; box-sizing: border-box;
+        line-height: 26px; font-size: 19px; background-color: white;
+    }
+
+    .redSideModule img{
+        width: 100%; object-fit: cover;
+    }
+
+    .mainSlider{
+        width: 100%; margin-bottom: 125px; 
+    }
+
+    .mainSlider li{
+        position: relative;
+    }
+
+    .mainSlider li > div:first-of-type img{
+        width: 100%; object-fit: cover; min-height: 550px;
+    }
+
+    .mainSlider li > div:first-child h2{
+        padding: 15% 10%; line-height: 57px; box-sizing: border-box;
+        position: absolute; top: 0; left: 0; font-size: 50px; font-weight: 900; color: white;
+    }
+
+    .mainSlider li > div:first-child h2 a{
+        font-size: 18px; font-weight: 500; color: white; padding-right: 32px;
+        background: url('../images/icon_arrow.png') no-repeat right;        
+    }
+
+    .mainSlider li > div:first-child h2 .arrowYellowBTN:hover{
+        color: #e5ff00;
+    }
+    
+    .mainSlider li .redSideModule{
+        width: 100%;
+    }
+
+    .redSideModule:first-of-type{
+        margin-bottom: 125px;
+    }
+
+    
+    .ourfoodsBFList{
+        width: 100%; margin-bottom: 150px; padding-top: 125px;
+    }
+
+    .ourfoodsBFList ul{
+        padding-top: 105px; margin: 0 auto; 
+    }
+
+    .ourfoodsBFList ul li:first-child{
+        margin-bottom: 105px;
+    }
+
+    .ourfoodsBFList ul li{
+        display: flex; flex-direction: column; align-items: center;
+    }
+    
+    .ourfoodsBFList ul li img{
+        width: 40%;
+    }
+
+    .ourfoodsBFList ul li dl{
+        padding-top: 105px; display: flex; flex-direction: column; align-items: center;
+    }
+
+    .ourfoodsBFList ul li dl dt{
+        font-size: 32px; font-weight: 700; padding-bottom: 25px; text-align: center;
+    }
+
+    .impactSustainList{
+        width: 100%; margin-bottom: 155px; padding-top: 125px;
+    }
+
+    .impactSustainList ul{
+        padding-top: 45px; 
+    }
+
+    .impactSustainList ul::after{
+        content: ''; display: block; clear: both;
+    }
+
+    .impactSustainList ul li{
+        float: left; list-style: none; width: 49%;
+        min-height: 370px; margin-bottom: 0;
+    }  
+
+    .impactSustainList ul li:nth-child(2n){
+        margin-left: 2%;
+    }
+
+    .impactSustainList ul li a{
+        display: block;
+    }
+
+    .impactSustainList ul li a img{
+        width: 100%;
+    }
+
+    .impactSustainList ul li p{
+        font-size: 16px; font-weight: 200; padding-top: 20px; line-height: 22px;
+    }
+    
+    .impactSustainList ul li p strong{
+        color: #bfbfbf; font-size: 18px; font-weight: 900; display: block; padding-bottom: 10px;
+    }
+
+    
+    /* 리스트페이지 */
+
+    * > .listTitle{
+        width: 100%; margin-bottom: 125px; padding: 265px 10%; box-sizing: border-box;
+        
+    }
+    .listContainer .listbanner01{
+        background: url('../images/ourFoods_headBanner01.png') no-repeat center;
+    }
+    .listContainer .listbanner02{
+        background: url('../images/ourFoods_headBanner02.jpg') no-repeat center;
+    }
+    .listContainer .listbanner03{
+        background: url('../images/ourFoods_headBanner03.jpg') no-repeat center;
+    }
+    .listContainer .listbanner04{
+        background: url('../images/ourFoods_headBanner04.jpg') no-repeat center;
+    }
+    .listContainer .listbanner05{
+        background: url('../images/ourFoods_headBanner05.jpg') no-repeat center;
+    }
+    .listContainer .listbanner06{
+        background: url('../images/ourFoods_headBanner06.jpg') no-repeat center;
+    }
+    .listContainer .listbanner07{
+        background: url('../images/ourFoods_headBanner07.jpg') no-repeat center;
+    } 
+    .listContainer .listbanner08{
+        background: url('../images/ourImpact_headBanner01.jpg') no-repeat center;
+    }    
+    .listContainer .listbanner09{
+        background: url('../images/ourImpact_headBanner02.jpg') no-repeat center;
+    }    
+    .listContainer .listbanner10{
+        background: url('../images/ourImpact_headBanner03.jpg') no-repeat center;
+    }    
+    .whoWeAreContainer .listbanner11{
+        background: url('../images/ourStore_headBanner01.jpg') no-repeat center;
+    }      
+    .listbanner12{
+        background: url('../images/ourStore_headBanner02.jpg') no-repeat center;
+    }    
+    .listbanner13{
+        background: url('../images/ourStore_headBanner03.jpg') no-repeat center;
+    }    
+
+    * > .listTitle h2{
+        line-height: 57px; box-sizing: border-box;
+        font-size: 50px; font-weight: 900; color: white;        
+    }
+
+    * > .listTitle p{
+        color: white; font-size: 18px; font-weight: 200; line-height: 28px;
+    }
+
+    .listContainer .listBrand{
+        margin-bottom: 150px;
+    }
+    
+    .listContainer .listBrand .brandSlider{
+        padding-top: 45px;
+    }
+
+    .listContainer .listProduct{
+        margin-bottom: 150px;
+    }
+
+    .listContainer .listProduct .productModule{
+        padding-top: 45px;
+    }
+
+    .listContainer .listProduct .productModule::after{
+        content: ''; display: block; clear: both;
+    }
+
+    .listContainer .listProduct .productModule li{
+        width: 49%; list-style: none; border: #d9d9d9 solid 1px; border-radius: 10px;
+        text-align: center; float: left; box-sizing: border-box; padding: 30px 1.87%;
+        min-height: 320px; background-color: white;
+    }
+
+    .listContainer .listProduct .productModule li:hover{
+        border: white solid 1px; border-radius: 10px; box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.15);
+        box-sizing: border-box;
+    }
+
+    .listContainer .listProduct .productModule li:not(:nth-child(2n + 1)){
+        margin-left: 2%;
+    }
+
+    .listContainer .listProduct .productModule li:not(:last-child){
+        margin-bottom: 30px;
+    }
+
+    .listContainer .listProduct .productModule li img{
+        width: 55%; object-fit: contain; padding: 15% 0;
+    }
+
+    .listContainer .listProduct .productModule li dl{
+        margin-bottom: 20px;  
+    }
+
+    .listContainer .listProduct .productModule li dl dt{
+        font-size: 25px; line-height: 35px; padding-bottom: 15px; white-space: nowrap; text-overflow: ellipsis;
+        overflow-x: hidden;        
+    }
+
+    .listContainer .listProduct .productModule li dl dd{
+        font-size: 18px; color: #bfbfbf;       
+    }
+
+    .listContainer .listProduct .productModule li dl dd span{
+        font-size: 25px; font-weight: 500; color: #404040;
+        background: url('../images/icon_reviews.png') no-repeat left; padding-left: 32px;
+    }
+
+    .listContainer .listProduct .productModule li a{
+        display: inline-block; text-align: center; min-width: 138px; line-height: 27px; box-sizing: border-box;
+        border: #d9d9d9 solid 1px; color: #d31245; border-radius: 13.5px;
+        background: url('../images/icon_redStar.png') no-repeat; padding-left: 14px;
+        background-position: 5% 50%;
+    }
+
+    .listContainer .listProduct .productModule li a:hover{
+        color: white;
+        background: url('../images/icon_whiteStar.png') no-repeat; padding-left: 14px;
+        background-position: 5% 50%; background-color: #d31245;
+    }
+
+    .listContainer .lastContent{
+        margin-bottom: 150px;
+    }
+
+    .listContainer .lastContent ul{
+        padding-top: 45px; box-sizing: border-box; 
+    }
+
+    .listContainer .lastContent ul::after{
+        content: ''; display: block; clear: both; 
+    }
+
+    .listContainer .lastContent ul li{
+        list-style: none; float: left;
+    }
+
+    .listContainer .lastContent ul li:first-child{
+        width: 100%; padding-bottom: 2%;
+    }
+
+    .listContainer .lastContent ul li:not(:first-child){
+        width: 49%; 
+    }
+
+    .listContainer .lastContent ul li:last-child{
+        margin-left: 2%;
+    }
+
+    .listContainer .lastContent ul li a img{
+        width: 100%;
+    }
+    .listContainer .lastContent ul li strong{
+        display: block; font-size: 22px; font-weight: 900; padding: 2% 0 1.5%;
+    }
+    .listContainer .lastContent ul li small{
+        font-size: 16px; color: #bfbfbf;
+    }
+
+
+    /* 디테일 페이지 */
+    .productInformation{
+        margin-bottom: 125px;
+    }
+
+    .productInformation .pageNavigate::after{
+        content: ''; display: block; clear: both;
+    }
+
+    .productInformation .pageNavigate li{
+        float: left; list-style: none; font-weight: 500; margin-left: 5px; font-size: 16px;
+    }
+    .productInformation .pageNavigate li a::after{
+        content: " /";
+    }
+
+    .productInformation .pageNavigate li a{
+        color: #bfbfbf; 
+    }
+    
+    .productInformation .detailContainer{
+        padding-top: 20px;
+    }
+
+    .productInformation .detailContainer img{
+        width: 100%; border: #d9d9d9 solid 1px; border-radius: 10px; box-sizing: border-box;
+        margin-bottom: 30px;
+    }
+
+    .productInformation .detailContainer div{
+        width: 100%;
+    }
+
+    .productInformation .detailContainer div h2{
+        background: url('../images/icon_redLine.png') no-repeat; padding-top: 10px;
+        font-size: 40px; font-weight: 700; line-height: 50px;
+    }
+
+    .productInformation .detailContainer div > span{
+        font-size: 18px; font-weight: 200; color: #bfbfbf; display: block;
+        padding-top: 15px; margin-bottom: 40px;
+    }
+
+    .productInformation .detailContainer div span mark{
+        font-size: 25px; font-weight: 600; color: #d31245;
+        background: url('../images/icon_red_reviews.png') no-repeat; padding-left: 32px;
+        margin-right: 12px; background-position: 5% 50%;
+    }
+
+    .productInformation .detailContainer div div{
+        width: 100%;
+    }
+
+
+    .productInformation .detailContainer div div h3{
+        font-size: 18px; color: #d9d9d9; font-weight: 900; margin-bottom: 15px;
+    }
+
+    .productInformation .detailContainer div div p{
+        line-height: 24px; font-size: 16px;
+    }
+
+    .productInformation .detailContainer div div p:first-of-type{
+        margin-bottom: 30px;
+    }
+
+    * > .titleRed{
+        display: block; font-size: 22px; font-weight: 900; color: #d31245; 
+    }
+
+    .productInformation .detailContainer div div p strong{
+        padding-bottom: 10px;
+    }
+
+    .productInformation .detailContainer div div label{
+        color: #bfbfbf; font-size: 14px; font-weight: 200;
+    }
+
+    .productInformation .detailContainer div div .selectComponent select{
+        width: 465px;
+    }
+
+    .productInformation .detailContainer div div a{
+        font-size: 18px; font-weight: 600; line-height: 50px; padding: 0 28px;
+    }
+    
+    .productInformation .detailContainer div div a:first-of-type{
+        margin-bottom: 10px;
+    }
+
+    .productInformation .detailContainer div div  small{
+        display: block; font-size: 14px; font-weight: 200; color: #d9d9d9; padding-top: 12px;
+    }
+    
+    .reviewModule{
+        margin-bottom: 105px;
+    }
+
+    .reviewModule::after,
+    .reviewModule div:first-of-type fieldset:after{
+        content: ''; display: block; clear: both;
+    }
+
+    .reviewModule h2{
+        font-size: 32px; font-weight: 900; margin-bottom: 20px;
+    }
+   
+
+    .reviewModule div:first-of-type{
+        width: 100%; margin-bottom: 70px;
+    }
+    
+
+    .reviewModule div small{
+        color: #4d4d4d; display: block; margin-bottom: 40px; font-size: 16px;
+    }
+    
+    .reviewModule div:first-of-type > fieldset{
+        position: relative; padding-right: 35%; box-sizing: border-box;
+    }
+    .reviewModule div:first-of-type > fieldset legend{
+        color: #999999; margin-bottom: 20px;
+    }
+    .reviewModule div:first-of-type > fieldset ol{
+        width: 65%;
+    }    
+
+    .reviewModule div:first-of-type > fieldset ol li{
+        list-style: none; display: flex; justify-content: space-between;
+    }
+
+    .reviewModule div:first-of-type > fieldset ol li label{
+        color: #999999;
+    }
+
+    .reviewModule div:first-of-type > fieldset ol li span{
+        color: #d9d9d9;
+    }
+
+    .reviewModule div:first-of-type > fieldset ol li label ,
+    .reviewModule div:first-of-type > fieldset ol li meter{
+        padding-right: 12px;
+    }
+
+    .reviewModule div a{
+        display: block; text-align: center; padding: 25px 0; 
+        font-size: 30px; font-weight: 900; margin-bottom: 50px;
+    }
+
+    .reviewModule div:last-of-type{
+        width: 100%;
+    }
+    .reviewModule div:last-of-type > fieldset legend{
+        font-size: 25px; font-weight: 500; color: #4d4d4d; margin-bottom: 30px;
+    }
+
+    #reviewsRating , #reviewerGender{
+        width: 12.5%; margin-right: 0.4%; margin-bottom: 0;
+    }
+
+    #reviewerAge{
+        width: 15%; margin-right: 0.4%; margin-bottom: 0;
+    }
+
+    #reviewsSortby{
+        width: 30%; margin-right: 0.4%;
+    }
+    #englishLocale{
+        width: 26%;
+    }
+
+    
+
+    .reviewDetails li{
+        list-style: none; padding: 50px 0; border-top: #e6e6e6 solid 1px; 
+    }
+
+    .reviewDetails li:last-child{
+        border-bottom: #e6e6e6 solid 1px;
+    }
+
+    .reviewDetails li::after{
+        content: ''; display: block; clear: both;
+    }
+
+    .reviewDetails li dl{
+        width: 13%; float: left;
+    }
+
+    .reviewDetails li dl dt{
+        font-size: 20px; color: #999999; margin-bottom: 20px; 
+    }
+
+    .reviewDetails li dl dd{
+        font-size: 14px; font-weight: 200; color: #d31245;
+    }
+
+    .reviewDetails li div{
+        width: 83%; float: left; margin-left: 4%;
+    }
+
+    .reviewDetails li div span{
+        min-height: 22px; width: 100%;
+    }
+
+    .reviewDetails li div span time{
+        padding-left: 142px; color: #bfbfbf; line-height: 25px; font-size: 16px;
+    }
+
+    .reviewDetails li div h3{
+        font-size: 18px; color: #4d4d4d; padding-top: 25px; box-sizing: border-box;
+        margin-bottom: 15px;
+    }
+    
+    .reviewDetails li div blockquote{
+        font-size: 16px;
+    }
+
+    .reviewDetails li div blockquote:nth-of-type(1){
+        font-weight: 200; color: #4d4d4d; line-height: 22px; font-size: 16px;
+    }
+
+    .reviewDetails li div blockquote:nth-of-type(2){
+        padding-top: 25px; box-sizing: border-box;
+        background: url('../images/icon_feedback.png') no-repeat 2% 25px;
+        padding-left: 40px;
+    }
+    
+
+    .reviewDetails li form fieldset{
+        width: 83%; margin-left: 17%;
+    }
+
+    .reviewDetails li form fieldset legend{
+        font-size: 14px; font-weight: 500; color: #bfbfbf;
+        margin-bottom: 15px; padding-top: 50px;
+    }
+
+    .reviewDetails li form fieldset mark{
+        font-size: 16px;
+        display: none;
+        color: #bfbfbf;
+        margin-bottom: 25px;
+    }
+
+    .reviewDetails li form fieldset mark:first-of-type{
+        background: url('../images/icon_yes.png') no-repeat center left;
+        padding-left: 18px; box-sizing: border-box;
+    }
+    .reviewDetails li form fieldset mark:last-of-type{
+        background: url('../images/icon_no.png') no-repeat center left;
+        padding-left: 15px; box-sizing: border-box;
+    }
+
+    .reviewDetails li form fieldset mark.activate{
+        display: block;
+    }
+
+    .reviewDetails li form fieldset span{
+        font-size: 14px; font-weight: 500; color: #bfbfbf; display: block;
+        margin-bottom: 15px;
+    }
+
+    .reviewDetails li form fieldset button{
+        background-color: #e6e6e6; border-radius: 5px; width: 45%; min-height: 30px;
+        font-size: 16px; border: none; font-weight: 500;
+    }
+
+    .reviewDetails li form fieldset button:first-of-type{
+        margin-right: 5%;
+    }
+
+    .reviewDetails li form fieldset button:first-of-type.activate{
+        color: #26784b;
+    }
+
+    .reviewDetails li form fieldset button:last-of-type.activate{
+        color: #d31245;
+    }
+
+    .reviewControler{
+        font-size: 25px; color: #d9d9d9; text-align: right;
+        padding: 30px 3% 150px; line-height: 35px; cursor: default;
+        overflow: hidden;
+    }
+
+    .reviewControler .prevPage{
+        display: inline-block;
+        width: 35px; height: 35px; text-indent: 9999px; border: #d9d9d9 solid 2px; border-radius: 3px;
+        background: url('../images/icon_controller_prevPage.png') no-repeat center; 
+    }
+
+    .reviewControler .nextPage{
+        display: inline-block;
+        width: 35px; height: 35px; text-indent: 9999px; border: #d9d9d9 solid 2px; border-radius: 3px;
+        background: url('../images/icon_controller_nextPage.png') no-repeat center; 
+    }
+
+
+    /* impact */
+    .listContainer .listNews{
+         margin-bottom: 150px;
+    }
+
+    .listContainer .listNews .impactNews{
+        padding-top: 45px;
+    }
+
+    .listContainer .listNews .impactNews li{
+        list-style: none; 
+        padding: 400px 0 0; box-sizing: border-box;
+        background-position: top; width: 100%;
+        background-repeat: no-repeat;
+        min-height: 800px;
+    }
+
+    .listContainer .listNews .impactNews .impactBG01{
+        background-image: url('../images/sustainability_news01.jpg');
+    }
+    .listContainer .listNews .impactNews .impactBG02{
+        background-image: url('../images/sustainability_news02.jpg');
+    }
+    .listContainer .listNews .impactNews .impactBG03{
+        background-image: url('../images/sustainability_news03.jpg');
+    }
+    .listContainer .listNews .impactNews .impactBG04{
+        background-image: url('../images/sustainability_news04.jpg');
+    }
+
+    .listContainer .listNews .impactNews .impactBG05{
+        background-image: url('../images/philanthropy_news01.jpg');
+    }
+    .listContainer .listNews .impactNews .impactBG06{
+        background-image: url('../images/philanthropy_news02.jpg');
+    }
+    .listContainer .listNews .impactNews .impactBG07{
+        background-image: url('../images/philanthropy_news03.jpg');
+    }
+    .listContainer .listNews .impactNews .impactBG08{
+        background-image: url('../images/philanthropy_news04.jpg');
+    }
+    
+    .listContainer .listNews .impactNews .impactBG09{
+        background-image: url('../images/nourishment_news01.jpg');
+    }    
+    .listContainer .listNews .impactNews .impactBG10{
+        background-image: url('../images/nourishment_news02.jpg');
+    }    
+    .listContainer .listNews .impactNews .impactBG11{
+        background-image: url('../images/nourishment_news03.jpg');
+    }    
+    .listContainer .listNews .impactNews .impactBG12{
+        background-image: url('../images/nourishment_news04.jpg');
+    }
+    
+
+    .listContainer .listNews .impactNews li div{
+       background: white; width: 100%;
+       padding: 120px 10% 120px 10%; box-sizing: border-box;
+    }
+
+
+    .listContainer .listNews .impactNews li div h4{
+        font-size: 25px; font-weight: 800; margin-bottom: 20px;
+    }
+
+    .listContainer .listNews .impactNews li div p{
+        font-size: 19px; line-height: 26px; color: #bfbfbf; margin-bottom: 40px;
+    }
+    
+    .listContainer .listNews .impactNews li div a{
+         font-size: 18px; font-weight: 500; color: black; padding-right: 32px;
+         background: url('../images/icon_arrowBlack.png') no-repeat right;      
+    }
+
+    .listContainer .listNews .impactNews li div .arrowRedBTN:hover{
+        color: #d31245;
+    }
+
+    /* news page */
+    .impactNewsContainer .qaField mark::before{
+        content: 'Q: ';
+    }
+
+    .impactNewsContainer .qaField p:first-of-type::before{
+        content: 'A: '; font-weight: 700;
+    }
+
+    .impactNewsContainer .newsTitle{
+        min-height: 332px;
+    }
+
+    .impactNewsContainer .newsTitle img{
+        width: 100%;
+    }
+
+    .impactNewsContainer .newsTitle h2{
+        font-size: 40px; font-weight: 700; padding: 30px 0; border-bottom: solid 1px #e6e6e6;
+        line-height: 50px;
+    }
+
+    .impactNewsContainer .newsDetails{
+        padding-top: 40px;
+    }
+
+    .impactNewsContainer .newsDetails mark{
+        font-size: 25px; font-weight: 900; color: #d31245; 
+        display: block; margin-bottom: 30px; line-height: 32px;
+    }
+
+    .impactNewsContainer .newsDetails a{
+        display: block; color: #d31245; font-size: 19px; text-decoration: underline;
+    }
+
+    .impactNewsContainer .newsDetails p a{
+        display: inline;
+    }
+
+    .impactNewsContainer .newsDetails p,
+    .impactNewsContainer .newsDetails .newsDetailList ul ,
+    .impactNewsContainer .newsDetails > ul{
+        font-size: 19px; line-height: 30px; color: #4d4d4d;
+    }
+
+    .impactNewsContainer .newsDetails p:not(:last-child),
+    .impactNewsContainer .newsDetails .newsDetailList{
+        display: inline-block; margin-bottom: 40px;
+    }
+
+    .impactNewsContainer .newsDetails .newsDetailList ul ,
+    .impactNewsContainer .newsDetails > ul{
+        list-style-position: inside; 
+    }
+
+    .impactNewsContainer .newsDetails .newsDetailList ul li ,
+    .impactNewsContainer .newsDetails > ul li{
+        list-style-type: '• ';
+    }
+
+    .impactNewsContainer .newsDetails .newsDetailList strong{
+        font-size: 18px; font-weight: 700; color: #4d4d4d; line-height: 30px;
+    }
+
+    .impactNewsContainer small{
+        display: block; text-align: right; border-top: solid 1px #e6e6e6; padding-top: 20px;
+        font-size: 14px; font-weight: 200; color: #4d4d4d; margin-top: 40px;
+    }     
+
+    .impactNewsContainer .joinUsModule{
+        margin-top: 150px;
+    }
+
+    /* whoweare */
+    .whoWeAreContainer .betterDays{
+        margin-bottom: 145px;
+    }
+
+    .whoWeAreContainer .betterDays > div{
+        padding-top: 45px; margin-bottom: 145px;
+
+    }
+
+    .whoWeAreContainer .betterDays div img{
+        width: 100%; 
+    }
+
+    .whoWeAreContainer .betterDays div div{
+        width: 100%; padding: 70px 0 0;
+    }
+
+    .whoWeAreContainer .betterDays div div a{
+        line-height: 60px; font-size: 20px; font-weight: 700; text-align: center;
+        display: block; margin-bottom: 15px;     
+    }
+
+    .whoWeAreContainer .betterDays div div small{
+        font-size: 18px; font-weight: 200; color: #bfbfbf; text-align: right;
+        display: block;
+    }
+
+    .whoWeAreContainer .betterDays p{
+        font-size: 19px; color: #bfbfbf; line-height: 30px;
+    }
+
+    .whoWeAreContainer .betterDays p mark{
+        font-size: 25px; font-weight: 700; color: #d31245; line-height: 32px; display: block;
+        margin-bottom: 40px;
+    }
+
+
+    .whoWeAreContainer figure{        
+        background: url('../images/whoWeAre_figure.jpg') no-repeat center;
+        background-size: cover; margin-bottom: 150px;
+    }
+
+    .whoWeAreContainer figure figcaption{
+        font-size: 25px; font-weight: 500; padding: 190px 3%;
+        color: white; text-align: center;
+    }
+
+    .whoWeAreContainer .ourLatestNews{
+        margin-bottom: 180px;
+    }
+
+    .whoWeAreContainer .ourLatestNews div{
+        padding-top: 50px; width: 100%; 
+    }
+
+    .whoWeAreContainer .ourLatestNews div ul li{
+        list-style: none; background: url('../images/icon_redLine.png') no-repeat;
+        margin-bottom: 50px; padding-top: 20px;
+    }
+
+    .whoWeAreContainer .ourLatestNews div ul li a{
+       font-size: 18px; font-weight: 700; color: #4d4d4d; text-decoration: underline;
+       line-height: 25px; display: block; margin-bottom: 15px;
+    }
+
+    .whoWeAreContainer .ourLatestNews div ul li time{
+        color: #bfbfbf; font-size: 16px;
+    }
+
+    .whoWeAreContainer .ourLatestNews iframe{
+        padding-top: 50px;
+        width: 100%; min-height: 435px;
+    }  
+
+
+    .whoWeAreContainer .ourLatestNews div > a{
+        font-size: 18px; font-weight: 500; color: black; padding-right: 32px;
+        background: url('../images/icon_arrowBlack.png') no-repeat right;      
+    }
+   
+    .whoWeAreContainer .ourLatestNews div .arrowRedBTN:hover{
+        color: #d31245;
+    }
+
+    /* history */
+
+    .historyContainer .historySlider::after{
+        content: ''; display: block; clear: both;
+    }
+    
+    .historyContainer .historySlider li{
+        list-style: none; box-sizing: border-box; width: 100%;
+        background-position: center; background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .historyContainer .historySlider li[data-tabName="historyPanel01"]{
+        background-image: url('../images/historySlider01.jpg');
+    }
+    .historyContainer .historySlider li[data-tabName="historyPanel02"]{
+        background-image: url('../images/historySlider02.jpg');
+    }
+    .historyContainer .historySlider li[data-tabName="historyPanel03"]{
+        background-image: url('../images/historySlider03.jpg');
+    }
+    .historyContainer .historySlider li[data-tabName="historyPanel04"]{
+        background-image: url('../images/historySlider04.jpg');
+    }
+    .historyContainer .historySlider li h4{
+        padding: 15px 0; transition: padding 0.75s ease-in-out;
+        font-size: 50px; font-weight: 200; color: white; text-align: center;
+    }
+    
+    .historyContainer .historySlider li.active h4{
+       padding-top: 400px; font-size: 50px; font-weight: 800; color: white;
+    }
+
+
+    .historyContainer .historySlider li h4 span{
+        display: none; 
+    }
+
+    .historyContainer .historySlider li.active h4 span{
+        display: inline-block; 
+    }
+
+
+    .historyContainer [id^='historyPanel']{
+        padding: 40px 15%; background-color: black; min-height: 400px; box-sizing: border-box;
+        display: none;
+    }
+    .historyContainer [id^='historyPanel'].active{
+        display: block;
+    }
+
+    .historyContainer [id ^= 'historyPanel'] ol{
+        color: white;
+    }
+
+    .historyContainer [id ^= 'historyPanel'] ol::after{
+        content: ''; display: block; clear: both;
+    }
+
+    .historyContainer [id ^= 'historyPanel'] ol li{
+        list-style: none; float: left; width: 47.5%;
+    }
+
+    
+    .historyContainer [id ^= 'historyPanel'] ol li:not(:nth-child(2n)){
+        margin-right: 5%;
+    }
+
+    .historyContainer [id ^= 'historyPanel'] ol li:not(:nth-child(n + 8)){
+        margin-bottom: 35px;
+    }
+
+
+    .historyContainer [id ^= 'historyPanel'] ol li mark{
+        color: #d31245; font-size: 18px; font-weight: 700; display: block; margin-bottom: 5px;
+    }
+
+    .historyContainer [id ^= 'historyPanel'] ol li p{
+        font-weight: 200; line-height: 18px; font-size: 16px;
+    }
+
+    .historyContainer [id ^= 'historyPanel'] ol li p strong{
+        font-weight: 600; display: block; padding-bottom: 10px;
+    }
+
+
+
+    /* open for breakfast */
+    .openContainer .honestAnswers{
+        margin-bottom: 150px;
+    }
+
+    .openContainer .honestAnswers > div{
+        padding-top: 45px; margin-bottom: 100px;
+    }
+
+    .openContainer .honestAnswers > div > div:first-of-type{
+        width: 100%; margin-right: 5%; padding: 0 10%; box-sizing: border-box;
+        margin-bottom: 100px;
+    }
+    .openContainer .honestAnswers > div > div:nth-of-type(2){
+        width: 100%; 
+    }
+    
+    .openContainer .honestAnswers div ul li{
+        list-style: none;
+    }
+        
+    .openContainer .honestAnswers div .thumbNailPager::after{
+        content: ''; display: block; clear: both;
+    }
+
+    .openContainer .honestAnswers div .thumbNailPager{
+        margin: 0 auto; padding-top: 20px;
+    }
+    
+    .openContainer .honestAnswers div .thumbNailPager li{
+        width: 22%; float: left;
+    }
+
+
+    .openContainer .honestAnswers div .thumbNailPager li:not(:last-child){
+        margin-right: 4%;
+    }
+    
+    .openContainer .honestAnswers div .thumbNailPager li a img{
+        width: 100%;
+    }
+
+
+    .openContainer .honestAnswers div div:nth-of-type(2) a{
+        line-height: 60px; font-size: 20px; font-weight: 700; text-align: center;
+        display: block; margin-bottom: 15px;  
+     }
+     
+    .openContainer .honestAnswers div div small{
+        font-size: 18px; font-weight: 200; color: #bfbfbf; text-align: right;
+        display: block;
+    }
+
+    .openContainer .honestAnswers p{
+        font-size: 19px; color: #bfbfbf; line-height: 30px;     
+    }
+    
+    .openContainer .honestAnswers p:first-of-type{
+        margin-bottom: 30px;
+    }
+
+    .openContainer .honestAnswers mark{
+        font-size: 25px; font-weight: 700; color: #d31245; line-height: 32px; display: block;
+        margin-bottom: 40px;
+    }
+
+    .openContainer .honestAnswers p a{
+        color: #d31245; text-decoration: underline;
+    }
+
+    
+
+
+
+
+
+    
+
+    /* contact us */
+
+    .contactUs{
+        margin-bottom: 60px;
+    }
+
+    .contactUs > div:first-child{
+        width: 100%; margin-bottom: 30px;
+    }
+
+    .contactUs > div:last-child{
+        width: 100%; 
+    }
+
+    .contactUs div form fieldset{
+        border-radius: 10px; min-height: 840px; width: 100%;
+        background-color: white; box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.15);
+        margin-right: 2%; box-sizing: border-box; padding: 5%;
+        position: relative;
+
+    }
+
+    .contactUs div form fieldset legend{
+        font-size: 22px; font-weight: 900; color: #bfbfbf; position: absolute;
+    }
+
+    .contactUs div form fieldset ul{
+        padding-top: 60px; box-sizing: border-box;
+    }
+
+    .contactUs div form fieldset ul::after{
+        content: ''; display: block; clear: both;
+    }
+
+    .contactUs div form fieldset ul li{
+        list-style: none; margin-bottom: 30px;
+    }
+
+    .contactUs div form fieldset ul li:nth-child(n):nth-child(-n+4){
+        float: left; width: 48%;
+    }
+
+    .contactUs div form fieldset ul li:nth-child(2n):nth-child(-n+4){
+        margin-left: 4%;
+    }
+
+    .contactUs div form fieldset ul li:not(:last-child) label{
+        display: block; font-weight: 600; color: #4d4d4d; margin-bottom: 10px; font-size: 16px;
+    }
+
+    .contactUs div form fieldset ul li:last-child label{
+        font-size: 14px; font-weight: 200; color: #999999; 
+    }
+
+    .contactUs div form fieldset ul li input[type='text'] ,
+    .contactUs div form fieldset ul li input[type='email']{
+        line-height: 40px; border: 1px solid #bfbfbf; box-sizing: border-box; display: block; width: 100%; border-radius: 5px;
+    }
+
+    .contactUs div form fieldset ul li textarea{
+        font-family: 'Roboto'; font-size: 15px; font-weight: 200; color: #d9d9d9;
+        border-radius: 5px; border: #bfbfbf solid 1px; width: 100%; box-sizing: border-box;
+        padding-left: 10px; height: 200px; resize: none;
+    }
+
+    .contactUs div form fieldset ul li span{
+        display: block; font-size: 12px;font-weight: 200; color: #bfbfbf; padding-top: 10px; box-sizing: border-box;
+    }
+    
+    .contactUs div form fieldset input[type='submit']{
+        width: 25%; line-height: 50px; font-size: 18px; font-weight: 900;
+        border: none; margin: 0 35.5%;
+    }
+
+
+    .contactUs div h2{
+        background: url('../images/icon_redLine.png') no-repeat; padding-top: 10px;
+        font-size: 40px; font-weight: 700; line-height: 50px;
+        padding-bottom: 35px; box-sizing: border-box;
+    }
+
+    .contactUs div p{
+        color: #4d4d4d; line-height: 24px; font-size: 16px;
+    }
+
+    .contactUs > div > p:first-of-type{
+        padding-bottom: 15px;
+    }
+
+    .contactUs div div{
+        padding: 50px 0; box-sizing: border-box;
+    }
+
+    .contactUs div div:first-of-type{
+        border-bottom: solid 1px #e6e6e6;
+    }
+
+    .contactUs div div:first-of-type a{
+        display: block;border-radius: 5px;
+        background: url('../images/icon_call.png') no-repeat left;
+        color: #4d4d4d; font-size: 18px; font-weight: 700; 
+        padding-left: 52px; line-height: 40px;
+    }
+
+    .contactUs div div:first-of-type address{
+        display: block;border-radius: 5px;
+        background: url('../images/icon_mail.png') no-repeat left;
+        color: #4d4d4d; font-size: 18px; font-weight: 700; 
+        padding-left: 52px; line-height: 40px; font-style: normal;
+    }
+
+    .contactUs div div:first-of-type small{
+        padding-left: 52px; color: #bfbfbf; display: inline-block;
+        font-size: 16px;
+    }
+
+    .contactUs div div:first-of-type small:first-of-type{
+        margin-bottom: 30px;
+    }
+
+    .contactUs div div:first-of-type small:last-of-type{
+        padding-top: 0px;
+    }    
+
+    .contactUs div div:last-of-type h3{
+        font-size: 18px; font-weight: 900; color: #d9d9d9; margin-bottom: 25px;
+    }
+
+    .contactUs div div:last-of-type strong{
+        margin-bottom: 15px;
+    }   
+
+    .contactUs div div:last-of-type p{
+        margin-bottom: 20px;
+    }
+    
+
+    .contactUs div div:last-of-type a{
+        font-size: 18px; font-weight: 500; color: black; padding-right: 32px;
+        background: url('../images/icon_arrowBlack.png') no-repeat right;   
+        display: inline-block;  
+    }
+
+
+    .contactUs div div:last-of-type a:first-of-type{
+        margin-bottom: 35px;
+    }
+
+    .contactUs div div:last-of-type .arrowRedBTN:hover{
+        color: #d31245;
+    }
+
+    /* FAQs */
+    .faqMenu h2{
+        background: url('../images/icon_redLine.png') no-repeat; padding-top: 10px;
+        font-size: 40px; font-weight: 700; line-height: 50px;
+        padding-bottom: 20px; box-sizing: border-box;
+    }
+    .faqMenu h2 mark{
+        color: #d31245;
+    }
+
+    .faqMenu p{
+        line-height: 24px; color: #4d4d4d; font-size: 16px;
+    }
+
+    .faqMenu > ul{
+        padding: 60px 0;
+    }
+
+    .faqMenu ul::after{
+        content: ''; display: block; clear: both;
+    }
+
+    .faqMenu > ul li{
+        list-style: none; font-size: 18px; color: #4d4d4d; font-weight: 800;
+        float: left; cursor: pointer; line-height: 40px;
+    }
+
+    .faqMenu > ul li:not(:last-child){
+        margin-right: 60px;
+    }
+
+    .faqMenu > ul li.active{
+        color: #d31245; text-decoration: underline;
+    }
+
+    .faqMenu ol{
+        display: none;  margin-bottom: 150px;
+    }
+
+    .faqMenu ol.active{
+        display: block;
+    }
+
+
+    .faqMenu > ol > li{
+        list-style: none; 
+        padding: 2%; border: solid 1px #bfbfbf; border-radius: 10px; 
+    }
+    .faqMenu > ol > li:not(:last-child){
+        margin-bottom: 25px;
+    }
+
+
+    .faqMenu ol .faqOpen strong{
+        font-size: 25px; font-weight: 500; line-height: 32px;
+        display: block; padding-bottom: 25px;
+        background: url('../images/icon_faqclose.png') no-repeat right;
+        background-size: 20px;
+    }
+    .faqMenu ol li strong{
+        font-size: 25px; font-weight: 500; line-height: 32px;
+        display: block;
+        background: url('../images/icon_faqOpen.png') no-repeat right;
+        background-size: 20px;
+    }
+    
+    .faqMenu ol > li{
+        cursor: pointer;
+    }
+
+    .faqMenu ol .faqOpen div p ,
+    .faqMenu ol .faqOpen div ul li{
+        color: #999999; line-height: 24px; padding-right: 2%;
+        list-style-type: "-"; list-style-position: inside;        
+        display: list-item; font-size: 16px;
+    }
+    .faqMenu ol .faqOpen div ul li a{
+        color: #999999; line-height: 18px; padding-right: 2%;
+        font-size: 16px;
+    }
+
+    .faqMenu ol li div p ,
+    .faqMenu ol li div ul li{
+        display: none;
+    }
+
+    .faqMenu ol li div p:not(:last-of-type) ,
+    .faqMenu ol li div ul li:not(:last-of-type){
+        margin-bottom: 30px;
+    }
+    
+
+
+
+    /* family rewards - Why join */
+    .rewardsWhyjoin {
+        padding-top: 150px;
+    }
+    .rewardsWhyjoin li{
+        list-style: none; padding: 30px 10%; box-sizing: border-box; 
+        background-repeat: no-repeat;
+
+
+    }
+
+
+    .rewardsWhyjoin li:first-child{
+        background: url('../images/familyReward_list01.png') no-repeat top center;
+        background-size: 70%;        
+    }
+    .rewardsWhyjoin li:nth-child(2){
+        background: url('../images/familyReward_list02.png') no-repeat top center;
+        background-size: 50%;        
+    }
+    .rewardsWhyjoin li:last-child{
+        background: url('../images/familyReward_list03.png') no-repeat top center;
+        background-size: 50%;        
+    }
+
+    .rewardsWhyjoin li div{
+        width: 100%; padding: 400px 0 0; 
+    }
+ 
+     .rewardsWhyjoin li div h3{
+        margin-bottom: 20px; color: #d31245;
+         background: url('../images/icon_redLine.png') no-repeat; padding-top: 25px;
+         font-size: 40px; font-weight: 700; line-height: 50px; 
+     }
+ 
+     .rewardsWhyjoin li div p{
+         font-size: 25px; line-height: 38px; color: black; margin-bottom: 40px;
+     }
+     
+
+
+    /* family rewards - join Now */
+     .joinMembership{
+        max-width: 680px; margin: 0 auto;
+     }
+
+     .joinMembership > span{
+        font-size: 20px; display: block; text-align: center; padding-bottom: 50px;
+     }
+     .joinMembership span a{
+        color: #d31245; font-size: 25px; 
+     }
+
+     .joinMembership fieldset:not(:last-of-type){
+        margin-bottom: 40px;
+     }
+
+     .joinMembership fieldset:first-of-type input{
+        margin-bottom: 20px;
+     }
+
+     .joinMembership fieldset:nth-of-type(2) input{
+        margin-bottom: 20px;
+     }
+
+     .joinMembership fieldset:nth-of-type(3) input{
+        width: 32%; line-height: 50px; padding-left: 20px;
+         border: 1px solid #bfbfbf; box-sizing: border-box; border-radius: 5px;
+     }
+
+     .joinMembership fieldset:nth-of-type(3) input:not(:last-of-type){
+        margin-right: 1%; 
+     }
+
+     .joinMembership fieldset:nth-of-type(4) input:first-of-type{
+        margin-bottom: 20px;
+     }
+
+     .joinMembership fieldset:nth-of-type(5) input:not(:last-of-type){
+        margin-bottom: 20px;
+     }
+
+     .joinMembership fieldset:last-of-type .selectComponent select{
+        margin-bottom: 20px;
+     }
+
+     .joinMembership fieldset:last-of-type p{
+        padding-top: 40px;
+     }
+
+     .joinMembership fieldset:not(:nth-of-type(3)) input{
+        display: block; width: 100%; line-height: 50px; padding-left: 20px;
+         border: 1px solid #bfbfbf; box-sizing: border-box; border-radius: 5px;
+     }
+     .joinMembership fieldset .selectComponent select{
+        display: block; width: 100%; height: 50px; padding-left: 20px;
+         border: 1px solid #bfbfbf; box-sizing: border-box; border-radius: 5px;
+     }
+
+     
+     .joinMembership fieldset input[type='checkbox']{
+        display: inline-block; width: 20px;
+     }
+
+     .joinMembership fieldset label{
+        font-size: 14px; font-weight: 200; line-height: 20px; color: #999999;
+     }
+
+
+     .joinMembership fieldset input::-webkit-input-placeholder{
+        font-size: 15px; font-weight: 200; color: #d9d9d9;
+    }
+
+    .joinMembership fieldset input:-moz-placeholder{
+        font-size: 15px; font-weight: 200; color: #d9d9d9;
+    }
+
+    .joinMembership fieldset legend{
+        font-size: 40px; font-weight: 900; color: #d31245; line-height: 50px;
+        padding-bottom: 10px;
+    }
+
+    .joinMembership fieldset legend small{
+        font-size: 16px; color: black; font-weight: 200; line-height: 20px;  display: block;
+        padding-top: 10px;
+    }
+
+    .joinMembership fieldset p{
+        font-weight: 200; line-height: 20px; font-size: 16px
+    }
+
+    .joinMembership fieldset:first-of-type p{
+        border-bottom: #e6e6e6 1px solid; padding-bottom: 50px;        
+    }
+
+
+    /* family rewards - login */
+    .loginInput{
+        max-width: 680px; margin: 0 auto;
+     }
+     .loginInput fieldset input{
+        display: block; width: 100%; line-height: 50px; padding-left: 20px;
+         border: 1px solid #bfbfbf; box-sizing: border-box; border-radius: 5px;
+     }
+
+     .loginInput fieldset input:first-of-type{
+        margin-bottom: 20px;
+     }
+
+     .loginInput fieldset input::-webkit-input-placeholder{
+        font-size: 15px; font-weight: 200; color: #d9d9d9;
+    }
+
+    .loginInput fieldset input:-moz-placeholder{
+        font-size: 15px; font-weight: 200; color: #d9d9d9;
+    }
+
+    .signinBTN{
+        padding: 85px 25% 250px;
+        background: url('../images/familyReward_btnBG.png') no-repeat bottom;
+
+    }
+
+    .signinBTN > a{
+        display: inline-block; color: white;
+        width: 100%; line-height: 50px; text-align: center; font-size: 25px; font-weight: 900;
+        border-radius: 35px; 
+    }
+
+    .signinBTN > a:not(:last-of-type){
+        margin-bottom: 25px;
+    }
+
+    .signinBTN > a:last-of-type{
+        margin-bottom: 40px;
+    }
+
+    .signinBTN > a:first-child{
+        background-color: #d31245;
+    }
+    .signinBTN > a:nth-child(2){
+        background-color: #1d9bf0;
+    }
+    .signinBTN > a:nth-child(3){
+        background-color: #1877f2;
+    }
+
+    .signinBTN span{
+        display: block; text-align: center; font-size: 20px; color: black;
+    }
+
+    .signinBTN span a{
+        color: #d31245; display: inline;
+    }
+}
+
+
+@media screen and (min-width: 1280px){  
+
+
+    /* .redSideModule */
+    .redSideModule{
+        background-color: #d31245; display: flex;
+    }
+    .redSideModule h2{        
+        width: 50%; padding: 145px 5% 145px 10%; box-sizing: border-box;
+        font-size: 32px; font-weight: 900; color: white;
+    }
+    .redSideModule > *{
+        flex: 1 auto; align-content: stretch;
+        /* justify */
+    }
+
+    .redSideModule h2 a{
+        color: white; font-size: 18px; font-weight: 500; padding-right: 32px;
+        background: url('../images/icon_arrow.png') no-repeat right;
+    }
+
+    .redSideModule h2 .arrowYellowBTN:hover{
+        color: #e5ff00;
+    }   
+    
+    
+
+    .redSideModule p{
+        width: 50%; padding: 70px 10% 5% 160px; box-sizing: border-box;
+        line-height: 26px; font-size: 19px; background-color: white;
+    }
+
+    .redSideModule img{
+        width: 50%; object-fit: cover;
+
+    }
+
+
+
+
+    .mainSlider{
+        width: 100%; margin-bottom: 125px;
+    }
+
+    .mainSlider li{
+        position: relative;
+    }
+
+    .mainSlider li > div:first-of-type img{
+        width: 100%;
+    }
+
+    /* .mainSlider li > div:first-of-type::after{
+        content: '>';
+        background: url('../images/icon_mainController_nextPage.png') no-repeat left;
+    } */
+
+    .mainSlider li > div:first-child h2{
+        padding: 15% 10%; line-height: 57px; box-sizing: border-box;
+        position: absolute; top: 0; left: 0; font-size: 50px; font-weight: 900; color: white;
+    }
+
+    .mainSlider li > div:first-child h2 a{
+        font-size: 18px; font-weight: 500; color: white; padding-right: 32px;
+        background: url('../images/icon_arrow.png') no-repeat right;        
+    }
+
+    .mainSlider li > div:first-child h2 .arrowYellowBTN:hover{
+        color: #e5ff00;
+    }
+    
+    .mainSlider li .redSideModule{
+        width: 100%;
+    }
+
+    .redSideModule:first-of-type{
+        margin-bottom: 125px;
+    }
+
+    
+    .ourfoodsBFList{
+        width: 100%; margin-bottom: 150px; padding-top: 125px;
+    }
+
+    .ourfoodsBFList ul{
+        padding-top: 105px; margin: 0 auto; 
+        display: flex; justify-content: space-between;
+    }
+
+    .ourfoodsBFList ul li{
+        display: flex; flex-direction: column; align-items: center;
+        width: 45%;
+    }
+        
+    .ourfoodsBFList ul li img{
+        width: 50%;
+    }
+
+    .ourfoodsBFList ul li dl{
+        padding-top: 105px; display: flex; flex-direction: column; align-items: center;
+    }
+
+    .ourfoodsBFList ul li dl dt{
+        font-size: 32px; font-weight: 700; padding-bottom: 25px; text-align: center;
+    }
+
+
+    .impactSustainList{
+        width: 100%; margin-bottom: 155px; padding-top: 125px;
+    }
+
+    .impactSustainList ul{
+        padding-top: 45px; 
+    }
+
+    .impactSustainList ul::after{
+        content: ''; display: block; clear: both;
+    }
+
+    .impactSustainList ul li{
+        float: left; list-style: none; width: 32%;
+        min-height: 335px; margin-bottom: 0;
+    }
+
+    
+    .impactSustainList ul li:nth-child(n):nth-child(-n + 3){
+        margin-bottom: 70px;
+    }
+    
+    .impactSustainList ul li:nth-child(2n){
+        margin-left: 0;
+    }
+
+    .impactSustainList ul li:not(:nth-child(3n + 1)){
+        margin-left: 2%;
+    }
+
+
+    .impactSustainList ul li a{
+        display: block;
+    }
+
+    .impactSustainList ul li a img{
+        width: 100%;
+    }
+
+    .impactSustainList ul li p{
+        font-size: 16px; font-weight: 200; padding-top: 20px;line-height: 22px;
+    }
+
+    .impactSustainList ul li p strong{
+        color: #bfbfbf; font-size: 18px; font-weight: 900; display: block; padding-bottom: 10px;
+    }
+
+
+    /* 리스트페이지 */
+
+    * > .listTitle{
+        width: 100%; margin-bottom: 125px; padding: 265px 10%; box-sizing: border-box;
+        
+    }
+    .listContainer .listbanner01{
+        background: url('../images/ourFoods_headBanner01.png') no-repeat;
+    }
+    .listContainer .listbanner02{
+        background: url('../images/ourFoods_headBanner02.jpg') no-repeat;
+    }
+    .listContainer .listbanner03{
+        background: url('../images/ourFoods_headBanner03.jpg') no-repeat;
+    }
+    .listContainer .listbanner04{
+        background: url('../images/ourFoods_headBanner04.jpg') no-repeat;
+    }
+    .listContainer .listbanner05{
+        background: url('../images/ourFoods_headBanner05.jpg') no-repeat;
+    }
+    .listContainer .listbanner06{
+        background: url('../images/ourFoods_headBanner06.jpg') no-repeat;
+    }
+    .listContainer .listbanner07{
+        background: url('../images/ourFoods_headBanner07.jpg') no-repeat;
+    } 
+    .listContainer .listbanner08{
+        background: url('../images/ourImpact_headBanner01.jpg') no-repeat;
+    }    
+    .listContainer .listbanner09{
+        background: url('../images/ourImpact_headBanner02.jpg') no-repeat;
+    }    
+    .listContainer .listbanner10{
+        background: url('../images/ourImpact_headBanner03.jpg') no-repeat;
+    }    
+    .whoWeAreContainer .listbanner11{
+        background: url('../images/ourStore_headBanner01.jpg') no-repeat;
+    }      
+    .listbanner12{
+        background: url('../images/ourStore_headBanner02.jpg') no-repeat;
+    }    
+    .listbanner13{
+        background: url('../images/ourStore_headBanner03.jpg') no-repeat;
+    }    
+
+    * > .listTitle h2{
+        line-height: 57px; box-sizing: border-box;
+        font-size: 50px; font-weight: 900; color: white;        
+    }
+
+    * > .listTitle p{
+        color: white; font-size: 18px; font-weight: 200; line-height: 28px;
+    }
+
+    .listContainer .listBrand{
+        margin-bottom: 150px;
+    }
+    
+    .listContainer .listBrand .brandSlider{
+        padding-top: 45px;
+    }
+
+    .listContainer .listProduct{
+        margin-bottom: 150px;
+    }
+
+    .listContainer .listProduct .productModule{
+        padding-top: 45px;
+    }
+
+    .listContainer .listProduct .productModule::after{
+        content: ''; display: block; clear: both;
+    }
+
+    .listContainer .listProduct .productModule li{
+        width: 32%; list-style: none; border: #d9d9d9 solid 1px; border-radius: 10px;
+        text-align: center; float: left; box-sizing: border-box; padding: 30px 1.87%;
+        min-height: 580px; background-color: white;
+    }
+
+    .listContainer .listProduct .productModule li:hover{
+        border: white solid 1px; border-radius: 10px; box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.15);
+        box-sizing: border-box;
+    }
+
+    
+    .listContainer .listProduct .productModule li:not(:nth-child(2n + 1)){
+        margin-left: 0;
+    }
+
+    .listContainer .listProduct .productModule li:not(:last-child){
+        margin-bottom: 0;
+    }
+
+    .listContainer .listProduct .productModule li:not(:nth-child(3n + 1)){
+        margin-left: 2%;
+    }
+
+    .listContainer .listProduct .productModule li:not(:nth-child(n + 7)){
+        margin-bottom: 30px;
+    }
+
+    .listContainer .listProduct .productModule li img{
+        width: 55%; object-fit: contain; padding: 15% 0;
+    }
+
+    .listContainer .listProduct .productModule li dl{
+        margin-bottom: 20px;  
+    }
+
+    .listContainer .listProduct .productModule li dl dt{
+        font-size: 25px; line-height: 35px; padding-bottom: 15px; white-space: nowrap; text-overflow: ellipsis;
+        overflow-x: hidden;        
+    }
+
+    .listContainer .listProduct .productModule li dl dd{
+        font-size: 18px; color: #bfbfbf;       
+    }
+
+    .listContainer .listProduct .productModule li dl dd span{
+        font-size: 25px; font-weight: 500; color: #404040;
+        background: url('../images/icon_reviews.png') no-repeat left; padding-left: 32px;
+    }
+
+    .listContainer .listProduct .productModule li a{
+        display: inline-block; text-align: center; min-width: 138px; line-height: 27px; box-sizing: border-box;
+        border: #d9d9d9 solid 1px; color: #d31245; border-radius: 13.5px;
+        background: url('../images/icon_redStar.png') no-repeat; padding-left: 14px;
+        background-position: 5% 50%;
+    }
+
+    .listContainer .listProduct .productModule li a:hover{
+        color: white;
+        background: url('../images/icon_whiteStar.png') no-repeat; padding-left: 14px;
+        background-position: 5% 50%; background-color: #d31245;
+    }
+
+    .listContainer .lastContent{
+        margin-bottom: 150px;
+    }
+
+    .listContainer .lastContent ul{
+        padding-top: 45px; box-sizing: border-box; 
+    }
+
+    .listContainer .lastContent ul::after{
+        content: ''; display: block; clear: both; 
+    }
+
+    .listContainer .lastContent ul li{
+        list-style: none; float: left;
+    }
+
+    .listContainer .lastContent ul li:first-child{
+        width: 64%; margin-right: 2%; padding-bottom: 0;
+    }
+
+    
+    .listContainer .lastContent ul li:last-child{
+        padding-top: 2%; box-sizing: border-box; margin-left: 0%;
+    }
+
+    .listContainer .lastContent ul li:not(:first-child){
+        width: 34%; 
+    }
+
+
+    .listContainer .lastContent ul li a img{
+        width: 100%;
+    }
+    .listContainer .lastContent ul li strong{
+        display: block; font-size: 22px; font-weight: 900; padding: 2% 0 1.5%;
+    }
+    .listContainer .lastContent ul li small{
+        font-size: 16px; color: #bfbfbf;
+    }
+
+
+    /* 디테일 페이지 */
+    .productInformation{
+        margin-bottom: 125px;
+    }
+
+    .productInformation .pageNavigate::after{
+        content: ''; display: block; clear: both;
+    }
+
+    .productInformation .pageNavigate li{
+        float: left; list-style: none; font-weight: 500; margin-left: 5px; font-size: 16px;
+    }
+    .productInformation .pageNavigate li a::after{
+        content: " /";
+    }
+
+    .productInformation .pageNavigate li a{
+        color: #bfbfbf; 
+    }
+    
+    .productInformation .detailContainer{
+        padding-top: 20px;
+    }
+
+    .productInformation .detailContainer::after{
+        content: ''; display: block; clear: both;
+    }
+
+    .productInformation .detailContainer img{
+        width: 48%; border: #d9d9d9 solid 1px; border-radius: 10px; float: left; margin-right: 2%; box-sizing: border-box;
+        margin-bottom: 0;
+    }
+
+    .productInformation .detailContainer div{
+        float: left; width: 50%;
+    }
+
+    .productInformation .detailContainer div h2{
+        background: url('../images/icon_redLine.png') no-repeat; padding-top: 10px;
+        font-size: 40px; font-weight: 700; line-height: 50px;
+    }
+
+    .productInformation .detailContainer div > span{
+        font-size: 18px; font-weight: 200; color: #bfbfbf; display: block;
+        padding-top: 15px; margin-bottom: 40px;
+    }
+
+    .productInformation .detailContainer div span mark{
+        font-size: 25px; font-weight: 600; color: #d31245;
+        background: url('../images/icon_red_reviews.png') no-repeat; padding-left: 32px;
+        margin-right: 12px; background-position: 5% 50%;
+    }
+
+    .productInformation .detailContainer div div{
+        width: 100%;
+    }
+
+
+    .productInformation .detailContainer div div h3{
+        font-size: 18px; color: #d9d9d9; font-weight: 900; margin-bottom: 15px;
+    }
+
+    .productInformation .detailContainer div div p{
+        line-height: 24px; font-size: 16px;
+    }
+
+    .productInformation .detailContainer div div p:first-of-type{
+        margin-bottom: 30px;
+    }
+
+    * > .titleRed{
+        display: block; font-size: 22px; font-weight: 900; color: #d31245; 
+    }
+
+    .productInformation .detailContainer div div p strong{
+        padding-bottom: 10px;
+    }
+
+    .productInformation .detailContainer div div label{
+        color: #bfbfbf; font-size: 14px; font-weight: 200;
+    }
+
+    .productInformation .detailContainer div div .selectComponent select{
+        width: 250px;
+    }
+
+    .productInformation .detailContainer div div a{
+        font-size: 18px; font-weight: 600; line-height: 50px; padding: 0 28px;
+    }
+    
+    .productInformation .detailContainer div div a:first-of-type{
+        margin-bottom: 10px;
+    }
+
+    .productInformation .detailContainer div div  small{
+        display: block; font-size: 14px; font-weight: 200; color: #d9d9d9; padding-top: 12px;
+    }
+    
+    .reviewModule{
+        margin-bottom: 105px;
+    }
+
+    .reviewModule::after,
+    .reviewModule div:first-of-type fieldset:after{
+        content: ''; display: block; clear: both;
+    }
+
+    .reviewModule h2{
+        font-size: 32px; font-weight: 900; margin-bottom: 20px;
+    }
+
+    .reviewModule div{
+        float: left; 
+    }
+    
+
+    .reviewModule div:first-of-type{
+        margin-right: 10%; width: 40%; margin-bottom: 0;
+    }
+    
+
+    .reviewModule div small{
+        color: #4d4d4d; display: block; margin-bottom: 40px; font-size: 16px;
+    }
+    
+    .reviewModule div:first-of-type > fieldset{
+        position: relative; padding-right: 35%; box-sizing: border-box;
+    }
+    .reviewModule div:first-of-type > fieldset legend{
+        color: #999999; margin-bottom: 20px;
+    }
+    .reviewModule div:first-of-type > fieldset ol{
+        width: 65%;
+    }    
+
+    .reviewModule div:first-of-type > fieldset ol li{
+        list-style: none; display: flex; justify-content: space-between;
+    }
+
+    .reviewModule div:first-of-type > fieldset ol li label{
+        color: #999999;
+    }
+
+    .reviewModule div:first-of-type > fieldset ol li span{
+        color: #d9d9d9;
+    }
+
+    .reviewModule div:first-of-type > fieldset ol li label ,
+    .reviewModule div:first-of-type > fieldset ol li meter{
+        padding-right: 12px;
+    }
+
+    .reviewModule div a{
+        display: block; text-align: center; padding: 25px 0; 
+        font-size: 30px; font-weight: 900; margin-bottom: 50px;
+    }
+
+    .reviewModule div:last-of-type{
+        width: 50%;
+    }
+    .reviewModule div:last-of-type > fieldset legend{
+        font-size: 25px; font-weight: 500; color: #4d4d4d; margin-bottom: 30px;
+    }
+
+    #reviewsRating , #reviewerGender{
+        width: 12.5%; margin-right: 0.4%; margin-bottom: 0;
+    }
+
+    #reviewerAge{
+        width: 15%; margin-right: 0.4%; margin-bottom: 0;
+    }
+
+    #reviewsSortby{
+        width: 30%; margin-right: 0.4%;
+    }
+    #englishLocale{
+        width: 26%;
+    }
+
+    
+
+    .reviewDetails li{
+        list-style: none; padding: 50px 0; border-top: #e6e6e6 solid 1px; 
+    }
+
+    .reviewDetails li:last-child{
+        border-bottom: #e6e6e6 solid 1px;
+    }
+
+    .reviewDetails li::after{
+        content: ''; display: block; clear: both;
+    }
+
+    .reviewDetails li dl{
+        width: 13%; float: left;
+    }
+
+    .reviewDetails li dl dt{
+        font-size: 20px; color: #999999; margin-bottom: 20px;
+    }
+
+    .reviewDetails li dl dd{
+        font-size: 14px; font-weight: 200; color: #d31245;
+    }
+
+    .reviewDetails li div{
+        width: 70%; float: left; margin-right: 4%; margin-left: 0;
+    }
+
+    .reviewDetails li div span{
+        min-height: 22px; width: 100%;
+    }
+
+    .reviewDetails li div span time{
+        padding-left: 142px; color: #bfbfbf; line-height: 25px; font-size: 16px;
+    }
+
+    .reviewDetails li div h3{
+        font-size: 18px; color: #4d4d4d; padding-top: 25px; box-sizing: border-box;
+        margin-bottom: 15px;
+    }
+    
+    .reviewDetails li div blockquote{
+        font-size: 16px;
+    }
+
+    .reviewDetails li div blockquote:nth-of-type(1){
+        font-weight: 200; color: #4d4d4d; line-height: 22px;
+    }
+
+    .reviewDetails li div blockquote:nth-of-type(2){
+        padding-top: 25px; box-sizing: border-box;
+        background: url('../images/icon_feedback.png') no-repeat 2% 25px;
+        padding-left: 40px;
+    }
+    
+
+    .reviewDetails li form fieldset{
+        width: 13%; float: left; margin-left: 0;
+    }
+
+    .reviewDetails li form fieldset legend{
+        font-size: 14px; font-weight: 500; color: #bfbfbf;
+        margin-bottom: 15px; padding-top: 0;
+    }
+
+    .reviewDetails li form fieldset mark{
+        font-size: 16px;
+        display: none;
+        color: #bfbfbf;
+        margin-bottom: 25px;
+    }
+
+    .reviewDetails li form fieldset mark:first-of-type{
+        background: url('../images/icon_yes.png') no-repeat center left;
+        padding-left: 18px; box-sizing: border-box;
+    }
+    .reviewDetails li form fieldset mark:last-of-type{
+        background: url('../images/icon_no.png') no-repeat center left;
+        padding-left: 15px; box-sizing: border-box;
+    }
+
+    .reviewDetails li form fieldset mark.activate{
+        display: block;
+    }
+
+    .reviewDetails li form fieldset span{
+        font-size: 14px; font-weight: 500; color: #bfbfbf; display: block;
+        margin-bottom: 15px;
+    }
+
+    .reviewDetails li form fieldset button{
+        background-color: #e6e6e6; border-radius: 5px; width: 45%; min-height: 30px;
+        font-size: 16px; border: none; font-weight: 500;
+    }
+
+    .reviewDetails li form fieldset button:first-of-type{
+        margin-right: 5%;
+    }
+
+    .reviewDetails li form fieldset button:first-of-type.activate{
+        color: #26784b;
+    }
+
+    .reviewDetails li form fieldset button:last-of-type.activate{
+        color: #d31245;
+    }
+
+    .reviewControler{
+        font-size: 25px; color: #d9d9d9; text-align: right;
+        padding: 30px 3% 150px; line-height: 35px; cursor: default;
+        overflow: hidden;
+    }
+
+    .reviewControler .prevPage{
+        display: inline-block;
+        width: 35px; height: 35px; text-indent: 9999px; border: #d9d9d9 solid 2px; border-radius: 3px;
+        background: url('../images/icon_controller_prevPage.png') no-repeat center; 
+    }
+
+    .reviewControler .nextPage{
+        display: inline-block;
+        width: 35px; height: 35px; text-indent: 9999px; border: #d9d9d9 solid 2px; border-radius: 3px;
+        background: url('../images/icon_controller_nextPage.png') no-repeat center; 
+    }
+
+
+    /* impact */
+    .listContainer .listNews{
+        margin-bottom: 150px;
+    }
+    .listContainer .listNews .impactNews{
+        padding-top: 45px;
+    }
+
+    .listContainer .listNews .impactNews li{
+        list-style: none; padding: 0 10%; box-sizing: border-box;
+        width: 100%; background-repeat: no-repeat;
+        min-height: 400px;
+    }
+
+
+    .listContainer .listNews .impactNews li:nth-child(2n - 1){
+        background-position: left;
+    }
+
+    .listContainer .listNews .impactNews li:nth-child(2n){        
+        background-position: right;
+    }
+
+    .listContainer .listNews .impactNews .impactBG01{
+        background-image: url('../images/sustainability_news01.jpg');
+    }
+    .listContainer .listNews .impactNews .impactBG02{
+        background-image: url('../images/sustainability_news02.jpg');
+    }
+    .listContainer .listNews .impactNews .impactBG03{
+        background-image: url('../images/sustainability_news03.jpg');
+    }
+    .listContainer .listNews .impactNews .impactBG04{
+        background-image: url('../images/sustainability_news04.jpg');
+    }
+
+    .listContainer .listNews .impactNews .impactBG05{
+        background-image: url('../images/philanthropy_news01.jpg');
+    }
+    .listContainer .listNews .impactNews .impactBG06{
+        background-image: url('../images/philanthropy_news02.jpg');
+    }
+    .listContainer .listNews .impactNews .impactBG07{
+        background-image: url('../images/philanthropy_news03.jpg');
+    }
+    .listContainer .listNews .impactNews .impactBG08{
+        background-image: url('../images/philanthropy_news04.jpg');
+    }
+    
+    .listContainer .listNews .impactNews .impactBG09{
+        background-image: url('../images/nourishment_news01.jpg');
+    }    
+    .listContainer .listNews .impactNews .impactBG10{
+        background-image: url('../images/nourishment_news02.jpg');
+    }    
+    .listContainer .listNews .impactNews .impactBG11{
+        background-image: url('../images/nourishment_news03.jpg');
+    }    
+    .listContainer .listNews .impactNews .impactBG12{
+        background-image: url('../images/nourishment_news04.jpg');
+    }
+    
+
+    .listContainer .listNews .impactNews li div{
+       background: white; width: 50%;  
+       min-height: 400px;      
+    }
+
+    .listContainer .listNews .impactNews li:nth-child(2n - 1) div{
+        margin-left: 50%; 
+        padding: 100px 0 100px 10%; box-sizing: border-box;
+    }
+
+    .listContainer .listNews .impactNews li:nth-child(2n) div{
+        padding: 100px 2% 100px 0; box-sizing: border-box;
+    }
+
+    .listContainer .listNews .impactNews li div h4{
+        font-size: 25px; font-weight: 800; margin-bottom: 20px;
+    }
+
+    .listContainer .listNews .impactNews li div p{
+        font-size: 19px; line-height: 26px; color: #bfbfbf; margin-bottom: 40px;
+    }
+    
+    .listContainer .listNews .impactNews li div a{
+         font-size: 18px; font-weight: 500; color: black; padding-right: 32px;
+         background: url('../images/icon_arrowBlack.png') no-repeat right;      
+    }
+
+    .listContainer .listNews .impactNews li div .arrowRedBTN:hover{
+        color: #d31245;
+    }
+
+    /* news page */
+
+    .impactNewsContainer .qaField mark::before{
+        content: 'Q: ';
+    }
+
+    .impactNewsContainer .qaField p:first-of-type::before{
+        content: 'A: '; font-weight: 700;
+    }
+
+    .impactNewsContainer .newsTitle{
+        min-height: 750px;
+    }
+
+    .impactNewsContainer .newsTitle img{
+        width: 100%;
+    }
+
+    .impactNewsContainer .newsTitle h2{
+        font-size: 40px; font-weight: 700; padding: 30px 0; border-bottom: solid 1px #e6e6e6;
+        line-height: 50px;
+    }
+
+    .impactNewsContainer .newsDetails{
+        padding-top: 40px;
+    }
+
+    .impactNewsContainer .newsDetails mark{
+        font-size: 25px; font-weight: 900; color: #d31245; 
+        display: block; margin-bottom: 30px; line-height: 32px;
+    }
+
+    .impactNewsContainer .newsDetails a{
+        display: block; color: #d31245; font-size: 19px; text-decoration: underline;
+    }
+
+    .impactNewsContainer .newsDetails p a{
+        display: inline;
+    }
+
+    .impactNewsContainer .newsDetails p,
+    .impactNewsContainer .newsDetails .newsDetailList ul ,
+    .impactNewsContainer .newsDetails > ul{
+        font-size: 19px; line-height: 30px; color: #4d4d4d;
+    }
+
+    .impactNewsContainer .newsDetails p:not(:last-child),
+    .impactNewsContainer .newsDetails .newsDetailList{
+        display: inline-block; margin-bottom: 40px;
+    }
+
+    .impactNewsContainer .newsDetails .newsDetailList ul ,
+    .impactNewsContainer .newsDetails > ul{
+        list-style-position: inside; 
+    }
+
+    .impactNewsContainer .newsDetails .newsDetailList ul li ,
+    .impactNewsContainer .newsDetails > ul li{
+        list-style-type: '• ';
+    }
+
+    .impactNewsContainer .newsDetails .newsDetailList strong{
+        font-size: 18px; font-weight: 700; color: #4d4d4d; line-height: 30px;
+    }
+
+    .impactNewsContainer small{
+        display: block; text-align: right; border-top: solid 1px #e6e6e6; padding-top: 20px;
+        font-size: 14px; font-weight: 200; color: #4d4d4d; margin-top: 40px;
+    }     
+
+    .impactNewsContainer .joinUsModule{
+        margin-top: 150px;
+    }
+
+    /* whoweare */
+    .whoWeAreContainer .betterDays{
+        margin-bottom: 145px;
+    }
+
+    .whoWeAreContainer .betterDays > div{
+        padding-top: 45px; margin-bottom: 145px;
+
+    }
+    .whoWeAreContainer .betterDays div::after{
+        content: ''; display: block; clear: both;
+    }
+
+    .whoWeAreContainer .betterDays div img{
+        width: 65%; float: left; margin-right: 5%;
+    }
+
+    .whoWeAreContainer .betterDays div div{
+        float: left; width: 30%; padding: 160px 0;
+    }
+
+    .whoWeAreContainer .betterDays div div a{
+        line-height: 60px; font-size: 20px; font-weight: 700; text-align: center;
+        display: block; margin-bottom: 15px;     
+    }
+
+    .whoWeAreContainer .betterDays div div small{
+        font-size: 18px; font-weight: 200; color: #bfbfbf; text-align: right;
+        display: block;
+    }
+
+    .whoWeAreContainer .betterDays p{
+        font-size: 19px; color: #bfbfbf; line-height: 30px;
+    }
+
+    .whoWeAreContainer .betterDays p mark{
+        font-size: 25px; font-weight: 700; color: #d31245; line-height: 32px; display: block;
+        margin-bottom: 40px;
+    }
+
+
+    .whoWeAreContainer figure{        
+        background: url('../images/whoWeAre_figure.jpg') no-repeat;
+        background-size: cover; margin-bottom: 150px;
+    }
+
+    .whoWeAreContainer figure figcaption{
+        font-size: 25px; font-weight: 500; padding: 190px 0;
+        color: white; text-align: center;
+    }
+
+    .whoWeAreContainer .ourLatestNews{
+        margin-bottom: 180px;
+    }
+
+    .whoWeAreContainer .ourLatestNews::after{
+        content: ''; display: block; clear: both;
+    }
+
+    .whoWeAreContainer .ourLatestNews div{
+        float: left; padding-top: 50px; width: 40%; margin-right: 10%;
+    }
+
+    .whoWeAreContainer .ourLatestNews div ul li{
+        list-style: none; background: url('../images/icon_redLine.png') no-repeat;
+        margin-bottom: 50px; padding-top: 20px;
+    }
+
+    .whoWeAreContainer .ourLatestNews div ul li a{
+       font-size: 18px; font-weight: 700; color: #4d4d4d; text-decoration: underline;
+       line-height: 25px; display: block; margin-bottom: 15px;
+    }
+
+    .whoWeAreContainer .ourLatestNews div ul li time{
+        color: #bfbfbf; font-size: 16px;
+    }
+
+    .whoWeAreContainer .ourLatestNews iframe{
+        float: left; padding-top: 50px; width: 50%; min-height: 435px;
+    }  
+
+
+    .whoWeAreContainer .ourLatestNews div > a{
+        font-size: 18px; font-weight: 500; color: black; padding-right: 32px;
+        background: url('../images/icon_arrowBlack.png') no-repeat right;      
+    }
+   
+    .whoWeAreContainer .ourLatestNews div .arrowRedBTN:hover{
+        color: #d31245;
+    }
+
+    /* history */
+
+    .historyContainer .historySlider::after{
+        content: ''; display: block; clear: both;
+    }
+    
+    .historyContainer .historySlider li{
+        min-height: 515px; float: left; list-style: none; box-sizing: border-box;
+        width: 10%; background-position: left center; background-repeat: no-repeat;
+        background-size: cover; transition: width 0.75s ease-in-out;
+    }
+    .historyContainer .historySlider li.active{
+        width: 70%;
+    }
+
+    .historyContainer .historySlider li[data-tabName="historyPanel01"]{
+        background-image: url('../images/historySlider01.jpg');
+    }
+    .historyContainer .historySlider li[data-tabName="historyPanel02"]{
+        background-image: url('../images/historySlider02.jpg');
+    }
+    .historyContainer .historySlider li[data-tabName="historyPanel03"]{
+        background-image: url('../images/historySlider03.jpg');
+    }
+    .historyContainer .historySlider li[data-tabName="historyPanel04"]{
+        background-image: url('../images/historySlider04.jpg');
+    }
+    
+    .historyContainer .historySlider li.active h4{
+       padding-top: 400px; font-size: 50px; font-weight: 800; color: white; padding-left: 10%;
+        
+    }
+    .historyContainer .historySlider li h4{
+        padding: 400px 0 0;  font-size: 50px; font-weight: 200; color: white; text-align: center;
+    }
+
+
+    .historyContainer .historySlider li h4 span{
+        display: none; 
+    }
+
+    .historyContainer .historySlider li.active h4 span{
+        display: inline-block; 
+    }
+
+
+    .historyContainer [id^='historyPanel']{
+        padding: 40px 15%; background-color: black; min-height: 400px; box-sizing: border-box;
+        display: none;
+    }
+    .historyContainer [id^='historyPanel'].active{
+        display: block;
+    }
+
+    .historyContainer [id ^= 'historyPanel'] ol{
+        color: white;
+    }
+
+    .historyContainer [id ^= 'historyPanel'] ol::after{
+        content: ''; display: block; clear: both;
+    }
+
+    .historyContainer [id ^= 'historyPanel'] ol li{
+        list-style: none; float: left; width: 30%;
+    }
+           
+    .historyContainer [id ^= 'historyPanel'] ol li:not(:nth-child(2n)){
+        margin-right: 0%;
+    }
+
+    .historyContainer [id ^= 'historyPanel'] ol li:not(:nth-child(n + 8)){
+        margin-bottom: 0;
+    }
+
+    .historyContainer [id ^= 'historyPanel'] ol li:not(:nth-child(3n)){
+        margin-right: 5%;
+    }
+
+    .historyContainer [id ^= 'historyPanel'] ol li:not(:nth-child(n + 7)){
+        margin-bottom: 35px;
+    }
+
+ 
+
+    .historyContainer [id ^= 'historyPanel'] ol li mark{
+        color: #d31245; font-size: 18px; font-weight: 700; display: block; margin-bottom: 5px;
+    }
+
+    .historyContainer [id ^= 'historyPanel'] ol li p{
+        font-weight: 200; line-height: 18px; font-size: 16px;
+    }
+
+    .historyContainer [id ^= 'historyPanel'] ol li p strong{
+        font-weight: 600; display: block; padding-bottom: 10px;
+    }
+
+
+
+    /* open for breakfast */
+    .openContainer .honestAnswers{
+        margin-bottom: 150px;
+    }
+    .openContainer .honestAnswers > div:after{
+        content: ''; display: block; clear: both;
+    }
+
+    .openContainer .honestAnswers > div{
+        padding-top: 45px;
+    }
+
+    .openContainer .honestAnswers > div > div{
+        float: left;
+    }
+    .openContainer .honestAnswers > div > div:first-of-type{
+        width: 65%; margin-right: 5%; padding: 0 3%; box-sizing: border-box;
+        margin-bottom: 100px;
+    }
+    .openContainer .honestAnswers > div > div:nth-of-type(2){
+        width: 30%; padding: 160px 0;
+    }
+    
+    .openContainer .honestAnswers div ul li{
+        list-style: none;
+    }
+        
+    .openContainer .honestAnswers div .thumbNailPager::after{
+        content: ''; display: block; clear: both;
+    }
+
+    .openContainer .honestAnswers div .thumbNailPager{
+        margin: 0 auto; padding-left: 20px;
+    }
+    
+    .openContainer .honestAnswers div .thumbNailPager li{
+        width: 22%; float: left;
+    }
+
+
+    .openContainer .honestAnswers div .thumbNailPager li:not(:last-child){
+        margin-right: 4%;
+    }
+    
+    .openContainer .honestAnswers div .thumbNailPager li a img{
+        width: 100%;
+    }
+
+
+    .openContainer .honestAnswers div div:nth-of-type(2) a{
+        line-height: 60px; font-size: 20px; font-weight: 700; text-align: center;
+        display: block; margin-bottom: 15px;  
+     }
+     
+    .openContainer .honestAnswers div div small{
+        font-size: 18px; font-weight: 200; color: #bfbfbf; text-align: right;
+        display: block;
+    }
+
+    .openContainer .honestAnswers p{
+        font-size: 19px; color: #bfbfbf; line-height: 30px;     
+    }
+    
+    .openContainer .honestAnswers p:first-of-type{
+        margin-bottom: 30px;
+    }
+
+    .openContainer .honestAnswers mark{
+        font-size: 25px; font-weight: 700; color: #d31245; line-height: 32px; display: block;
+        margin-bottom: 40px;
+    }
+
+    .openContainer .honestAnswers p a{
+        color: #d31245; text-decoration: underline;
+    } 
+
+    /* contact us */
+
+    .contactUs{
+        margin-bottom: 60px;
+    }
+
+    .contactUs:after{
+        content: ''; display: block; clear: both;
+    }
+
+    .contactUs div{
+        float: left;
+    }
+
+    .contactUs > div:first-child{
+        width: 48%; margin-right: 2%; margin-bottom: 0;
+    }
+
+    .contactUs > div:last-child{
+        width: 50%;
+    }
+
+    .contactUs div form fieldset{
+        border-radius: 10px; min-height: 840px; width: 100%;
+        background-color: white; box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.15);
+        margin-right: 2%; box-sizing: border-box; padding: 5%;
+        position: relative;
+
+    }
+
+    .contactUs div form fieldset legend{
+        font-size: 22px; font-weight: 900; color: #bfbfbf; position: absolute;
+    }
+
+    .contactUs div form fieldset ul{
+        padding-top: 60px; box-sizing: border-box;
+    }
+
+    .contactUs div form fieldset ul::after{
+        content: ''; display: block; clear: both;
+    }
+
+    .contactUs div form fieldset ul li{
+        list-style: none; margin-bottom: 30px;
+    }
+
+    .contactUs div form fieldset ul li:nth-child(n):nth-child(-n+4){
+        float: left; width: 48%;
+    }
+
+    .contactUs div form fieldset ul li:nth-child(2n):nth-child(-n+4){
+        margin-left: 4%;
+    }
+
+    .contactUs div form fieldset ul li:not(:last-child) label{
+        display: block; font-weight: 600; color: #4d4d4d; margin-bottom: 10px; font-size: 16px;
+    }
+
+    .contactUs div form fieldset ul li:last-child label{
+        font-size: 14px; font-weight: 200; color: #999999; 
+    }
+
+    .contactUs div form fieldset ul li input[type='text'] ,
+    .contactUs div form fieldset ul li input[type='email']{
+        line-height: 40px; border: 1px solid #bfbfbf; box-sizing: border-box; display: block; width: 100%; border-radius: 5px;
+    }
+
+    .contactUs div form fieldset ul li textarea{
+        font-family: 'Roboto'; font-size: 15px; font-weight: 200; color: #d9d9d9;
+        border-radius: 5px; border: #bfbfbf solid 1px; width: 100%; box-sizing: border-box;
+        padding-left: 10px; height: 200px; resize: none;
+    }
+
+    .contactUs div form fieldset ul li span{
+        display: block; font-size: 12px;font-weight: 200; color: #bfbfbf; padding-top: 10px; box-sizing: border-box;
+    }
+    
+    .contactUs div form fieldset input[type='submit']{
+        width: 25%; line-height: 50px; font-size: 18px; font-weight: 900;
+        border: none; margin: 0 35.5%;
+    }
+
+
+    .contactUs div h2{
+        background: url('../images/icon_redLine.png') no-repeat; padding-top: 10px;
+        font-size: 40px; font-weight: 700; line-height: 50px;
+        padding-bottom: 35px; box-sizing: border-box;
+    }
+
+    .contactUs div p{
+        color: #4d4d4d; line-height: 24px; font-size: 16px;
+    }
+
+    .contactUs > div > p:first-of-type{
+        padding-bottom: 15px;
+    }
+
+    .contactUs div div{
+        padding: 50px 0; box-sizing: border-box;
+    }
+
+    .contactUs div div:first-of-type{
+        border-bottom: solid 1px #e6e6e6;
+    }
+
+    .contactUs div div:first-of-type a{
+        display: block;border-radius: 5px;
+        background: url('../images/icon_call.png') no-repeat left;
+        color: #4d4d4d; font-size: 18px; font-weight: 700; 
+        padding-left: 52px; line-height: 40px;
+    }
+
+    .contactUs div div:first-of-type address{
+        display: block;border-radius: 5px;
+        background: url('../images/icon_mail.png') no-repeat left;
+        color: #4d4d4d; font-size: 18px; font-weight: 700;
+        padding-left: 52px; line-height: 40px; font-style: normal;
+    }
+
+    .contactUs div div:first-of-type small{
+        padding-left: 52px; color: #bfbfbf; display: inline-block;
+        font-size: 16px;
+    }
+
+    .contactUs div div:first-of-type small:first-of-type{
+        margin-bottom: 30px;
+    }
+
+    .contactUs div div:first-of-type small:last-of-type{
+        padding-top: 0px;
+    }
+
+    .contactUs div div:last-of-type h3{
+        font-size: 18px; font-weight: 900; color: #d9d9d9; margin-bottom: 25px;
+    }
+
+    .contactUs div div:last-of-type strong{
+        margin-bottom: 15px;
+    }   
+
+    .contactUs div div:last-of-type p{
+        margin-bottom: 20px;
+    }
+    
+
+    .contactUs div div:last-of-type a{
+        font-size: 18px; font-weight: 500; color: black; padding-right: 32px;
+        background: url('../images/icon_arrowBlack.png') no-repeat right;   
+        display: inline-block;  
+    }
+
+
+    .contactUs div div:last-of-type a:first-of-type{
+        margin-bottom: 35px;
+    }
+
+    .contactUs div div:last-of-type .arrowRedBTN:hover{
+        color: #d31245;
+    }
+
+    /* FAQs */
+    .faqMenu h2{
+        background: url('../images/icon_redLine.png') no-repeat; padding-top: 10px;
+        font-size: 40px; font-weight: 700; line-height: 50px;
+        padding-bottom: 20px; box-sizing: border-box;
+    }
+    .faqMenu h2 mark{
+        color: #d31245;
+    }
+
+    .faqMenu p{
+        line-height: 24px; color: #4d4d4d; font-size: 16px;
+    }
+
+    .faqMenu > ul{
+        padding: 60px 0;
+    }
+
+    .faqMenu ul::after{
+        content: ''; display: block; clear: both;
+    }
+
+    .faqMenu > ul li{
+        list-style: none; font-size: 18px; color: #4d4d4d; font-weight: 800;
+        float: left; cursor: pointer;
+    }
+
+    .faqMenu > ul li:not(:last-child){
+        margin-right: 60px;
+    }
+
+    .faqMenu > ul li.active{
+        color: #d31245; text-decoration: underline;
+    }
+
+    .faqMenu ol{
+        display: none;  margin-bottom: 150px;
+    }
+
+    .faqMenu ol.active{
+        display: block;
+    }
+
+
+    .faqMenu > ol > li{
+        list-style: none; 
+        padding: 2%; border: solid 1px #bfbfbf; border-radius: 10px; 
+    }
+    .faqMenu > ol > li:not(:last-child){
+        margin-bottom: 25px;
+    }
+
+
+    .faqMenu ol .faqOpen strong{
+        font-size: 25px; font-weight: 500; line-height: 32px;
+        display: block; padding-bottom: 25px;
+        background: url('../images/icon_faqclose.png') no-repeat right;
+        background-size: 20px;
+    }
+    .faqMenu ol li strong{
+        font-size: 25px; font-weight: 500; line-height: 32px;
+        display: block;
+        background: url('../images/icon_faqOpen.png') no-repeat right;
+        background-size: 20px;
+    }
+    
+    .faqMenu ol > li{
+        cursor: pointer;
+    }
+
+    .faqMenu ol .faqOpen div p ,
+    .faqMenu ol .faqOpen div ul li{
+        color: #999999; line-height: 24px; padding-right: 2%;
+        list-style-type: "-"; list-style-position: inside;        
+        display: list-item; font-size: 16px;
+    }
+    .faqMenu ol .faqOpen div ul li a{
+        color: #999999; line-height: 18px; padding-right: 2%;
+        font-size: 16px;
+    }
+
+    .faqMenu ol li div p ,
+    .faqMenu ol li div ul li{
+        display: none;
+    }
+
+    .faqMenu ol li div p:not(:last-of-type) ,
+    .faqMenu ol li div ul li:not(:last-of-type){
+        margin-bottom: 30px;
+    }
+    
+
+
+
+    /* family rewards - Why join */
+    .rewardsWhyjoin {
+        padding-top: 150px;
+    }
+    .rewardsWhyjoin li{
+        list-style: none; padding: 150px 0; box-sizing: border-box; width: 90%; margin: 0 auto;
+    }
+
+    .rewardsWhyjoin li:nth-child(2n){        
+        background-repeat: no-repeat;
+    }
+
+    .rewardsWhyjoin li:first-child{
+        background: url('../images/familyReward_list01.png') no-repeat left;
+        background-size: 50%;        
+    }
+    .rewardsWhyjoin li:nth-child(2){
+        background: url('../images/familyReward_list02.png') no-repeat right;
+        background-size: 35%;        
+    }
+    .rewardsWhyjoin li:last-child{
+        background: url('../images/familyReward_list03.png') no-repeat left;
+        background-size: 35%;        
+    }
+
+    .rewardsWhyjoin li div{
+        width: 40%; padding: 0; 
+    }
+ 
+    .rewardsWhyjoin li:nth-child(2n - 1) div{
+         margin-left: 60%; box-sizing: border-box;
+     }
+ 
+     .rewardsWhyjoin li:nth-child(2n) div{
+         padding: 120px 0; box-sizing: border-box;
+     }
+ 
+     .rewardsWhyjoin li div h3{
+        margin-bottom: 20px; color: #d31245;
+         background: url('../images/icon_redLine.png') no-repeat; padding-top: 25px;
+         font-size: 40px; font-weight: 700; line-height: 50px; 
+     }
+ 
+     .rewardsWhyjoin li div p{
+         font-size: 25px; line-height: 38px; color: black; margin-bottom: 40px;
+     }
+     
+
+
+    /* family rewards - join Now */
+     .joinMembership{
+        max-width: 800px; margin: 0 auto;
+     }
+
+     .joinMembership > span{
+        font-size: 20px; display: block; text-align: center; padding-bottom: 50px;
+     }
+     .joinMembership span a{
+        color: #d31245; font-size: 25px; 
+     }
+
+     .joinMembership fieldset:not(:last-of-type){
+        margin-bottom: 50px;
+     }
+
+     .joinMembership fieldset:first-of-type input{
+        margin-bottom: 20px;
+     }
+
+     .joinMembership fieldset:nth-of-type(2) input{
+        margin-bottom: 20px;
+     }
+
+     .joinMembership fieldset:nth-of-type(3) input{
+        width: 32%; line-height: 50px; padding-left: 20px;
+         border: 1px solid #bfbfbf; box-sizing: border-box; border-radius: 5px;
+     }
+
+     .joinMembership fieldset:nth-of-type(3) input:not(:last-of-type){
+        margin-right: 1%; 
+     }
+
+     .joinMembership fieldset:nth-of-type(4) input:first-of-type{
+        margin-bottom: 20px;
+     }
+
+     .joinMembership fieldset:nth-of-type(5) input:not(:last-of-type){
+        margin-bottom: 20px;
+     }
+
+     .joinMembership fieldset:last-of-type .selectComponent select{
+        margin-bottom: 20px;
+     }
+
+     .joinMembership fieldset:last-of-type p{
+        padding-top: 70px;
+     }
+
+     .joinMembership fieldset:not(:nth-of-type(3)) input{
+        display: block; width: 100%; line-height: 50px; padding-left: 20px;
+         border: 1px solid #bfbfbf; box-sizing: border-box; border-radius: 5px;
+     }
+     .joinMembership fieldset .selectComponent select{
+        display: block; width: 100%; height: 50px; padding-left: 20px;
+         border: 1px solid #bfbfbf; box-sizing: border-box; border-radius: 5px;
+     }
+
+     
+     .joinMembership fieldset input[type='checkbox']{
+        display: inline-block; width: 20px;
+     }
+
+     /* ? 재확인 */
+     .joinMembership fieldset label{
+        font-size: 14px; font-weight: 200; line-height: 20px; color: #999999;
+     }
+
+
+     .joinMembership fieldset input::-webkit-input-placeholder{
+        font-size: 15px; font-weight: 200; color: #d9d9d9;
+    }
+
+    .joinMembership fieldset input:-moz-placeholder{
+        font-size: 15px; font-weight: 200; color: #d9d9d9;
+    }
+
+    .joinMembership fieldset legend{
+        font-size: 40px; font-weight: 900; color: #d31245; line-height: 50px;
+        padding-bottom: 10px;
+    }
+
+    .joinMembership fieldset legend small{
+        font-size: 16px; color: black; font-weight: 200; line-height: 20px;  display: block;
+        padding-top: 10px;
+    }
+
+    .joinMembership fieldset p{
+        font-weight: 200; line-height: 20px; font-size: 16px
+    }
+
+    .joinMembership fieldset:first-of-type p{
+        border-bottom: #e6e6e6 1px solid; padding-bottom: 50px;
+    }
+
+
+    /* family rewards - login */
+    .loginInput{
+        max-width: 800px; margin: 0 auto;
+     }
+     .loginInput fieldset input{
+        display: block; width: 100%; line-height: 50px; padding-left: 20px;
+         border: 1px solid #bfbfbf; box-sizing: border-box; border-radius: 5px;
+     }
+
+     .loginInput fieldset input:first-of-type{
+        margin-bottom: 20px;
+     }
+
+     .loginInput fieldset input::-webkit-input-placeholder{
+        font-size: 15px; font-weight: 200; color: #d9d9d9;
+    }
+
+    .loginInput fieldset input:-moz-placeholder{
+        font-size: 15px; font-weight: 200; color: #d9d9d9;
+    }
+
+    .signinBTN{
+        padding: 85px 35% 250px;
+        background: url('../images/familyReward_btnBG.png') no-repeat bottom;
+
+    }
+
+    .signinBTN > a{
+        display: inline-block; color: white;
+        width: 100%; line-height: 50px; text-align: center; font-size: 25px; font-weight: 900;
+        border-radius: 35px; 
+    }
+
+    .signinBTN > a:not(:last-of-type){
+        margin-bottom: 25px;
+    }
+
+    .signinBTN > a:last-of-type{
+        margin-bottom: 40px;
+    }
+
+    .signinBTN > a:first-child{
+        background-color: #d31245;
+    }
+    .signinBTN > a:nth-child(2){
+        background-color: #1d9bf0;
+    }
+    .signinBTN > a:nth-child(3){
+        background-color: #1877f2;
+    }
+
+    .signinBTN span{
+        display: block; text-align: center; font-size: 20px; color: black;
+    }
+
+    .signinBTN span a{
+        color: #d31245; display: inline;
+    }
+
+}
+/* desktop */

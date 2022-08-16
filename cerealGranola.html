@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kellogg</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="index.html"><img src="images/kellogg_logo_red.png" alt="kellogg"></a></h1>
+             <nav>
+                <ul>
+                    <li><a href="breakfastFavorites.html">OUR FOODS</a></li>
+                    <li><a href="sustainability.html">OUR IMPACT</a></li>
+                    <li><a href="whoWeAre.html">OUR STORE</a></li>
+                </ul>
+                <input type="button" data-panel="fnb_open" value="openMenu" class="fnbOpenBtn">
+            </nav>
+        </div>
+        <div class="fnbPanel" id="fnb_open">
+            <input type="button" class="btn_close" value="closeMenu">
+            <ol>
+                <li>
+                    OUR FOODS
+                    <ul>
+                        <li><a href="breakfastFavorites.html">BREAKFAST FAVORITES &amp; TREATS</a></li>
+                        <li><a href="cerealGranola.html">CEREAL &amp; GRANOLA</a></li>
+                        <li><a href="savorySnacks.html">SAVORY SNACKS</a></li>
+                        <li><a href="plantbasedProtein.html">PLANT-BASED PROTEINS</a></li>
+                        <li><a href="snackbarsBites.html">SNACK BARS &amp; BITES</a></li>
+                        <li><a href="proteinbarsShake.html">PROTEIN BARS &amp; SHAKE</a></li>
+                        <li><a href="frozenBreakfast.html">FROZEN BREAKFAST</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR IMPACT
+                    <ul>
+                        <li><a href="sustainability.html">SUSTAINABILITY</a></li>
+                        <li><a href="philanthropy.html">PHILANTHROPY</a></li>
+                        <li><a href="nourishment.html">NOURISHMENT</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR STORE
+                    <ul>
+                        <li><a href="whoWeAre.html">WHO WE ARE</a></li>
+                        <li><a href="kelloggHistory.html">KELLOGG HISTORY</a></li>
+                        <li><a href="openForBreakfast.html">OPEN FOR BREAKFAST</a></li>                    
+                    </ul>
+                </li>
+            </ol>
+            <div>
+                <form>
+                    <div>
+                        <input type="search" placeholder="search" title="insert ur search keyword's">
+                    </div>
+                </form>
+                <div>
+                    <h3>JOIN AND BE REWARDED</h3>
+                    <ul>
+                        <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                        <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                        <li><a href="logIn.html" target="_blank">Log In</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>CONNECT WITH US</h3>
+                    <ul>            
+                        <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                        <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                        <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>    
+        
+    <!-- 팝업창1 -->
+    <div class="popupModule" id="popupRecipes_cg01">
+        <div>
+            <input type="button" value="X"  class="btn_close">
+            <!-- <a href="" id="popup_open"></a> -->
+            <figure>
+                <img src="images/popupRecipes_cg_01.jpg" alt="creamy cheese pie">
+                <figcaption>
+                    <h2>CREAMY CHEESE PIE</h2>
+                    <p>A crust made with cinnamon and Kellogg's Corn Flakes® cereal encloses the 
+                        cheesecake-like filling of this pie.</p>
+                    <div>
+                        <input type="button" value="print" class="btnPrint">
+                        <mark>PREP TIME : 30 MINUTES | TOTAL TIME : 180 MINUTES | 8 SERVINGS</mark>
+                    </div>
+                    <strong class="popupTitleGray">INGREDIENTS</strong>
+                    <ol>
+                        <li>3 cups Kellogg's Corn Flakes® cereal</li>
+                        <li>1 / 2 cup margarine or butter, melted</li>
+                        <li>1 / 4 cup sugar, 1 / 3 cup sugar, 2 tablespoons sugar</li>
+                        <li>1 / 2 teaspoon cinnamon</li>
+                        <li>2 packages (8oz. each) light cream cheese, softened</li>
+                        <li>2 eggs / 1 teaspoon vanilla</li>
+                        <li>2 teaspoons lemon juice, divided</li>
+                        <li>1 cup sour cream</li>
+                        <li>1 can (21 oz.) tart cherry pie filling</li>
+                    </ol>
+                </figcaption>
+            </figure>
+            <div>
+                <strong class="popupTitleRed">DIRECTIONS</strong>
+                <ol>
+                    <li>Combine KELLOGG'S CORN FLAKES cereal, margarine, the 1 / 4 cup sugar and cinnamon. Press and arrange mixture evenly in bottom and on side of 9-inch pie pan.
+                        Set aside.</li>
+                    <li>In large mixing bowl, beat cream cheese until smooth. Add eggs, vanilla, the 1 / 3 cup sugar and 1 teaspoon of the lemon juice, mixing until well combined and smooth.
+                        Pour mixture into crust.</li>
+                    <li>Bake at 375° F about 20 minutes or until center is set.</li>
+                    <li>While pie is baking, stir together sour cream and the remaining 2 tablespoons sugar. Remove pie from oven. Spread sour cream mixture over top. Return to oven.
+                        Bake 5 minutes longer. Cool completely.</li>
+                    <li>Stir together cherry pie filling and the remaining 1 teaspoon lemon juice. Spread over top of cooled pie. Chill thoroughly. Serve cold. Store in refrigerator.</li>
+                </ol>
+            </div>            
+        </div>
+    </div>        
+    <!-- 팝업창2 -->
+    <div class="popupModule" id="popupRecipes_cg02">
+        <div>
+            <input type="button" value="X"  class="btn_close">
+            <!-- <a href="" id="popup_open"></a> -->
+            <figure>
+                <img src="images/popupRecipes_cg_02.jpg" alt="peach yogurt smoothie breakfast">
+                <figcaption>
+                    <h2>PEACH YOGURT SMOOTHIE
+                        BREAKFAST</h3>
+                    <p>A delicious way to start your morning--Kellogg's® Special K® Red Berries cereal
+                        topped with a sweet mixture of yogurt and peaches.</p>
+                    <div>
+                        <input type="button" value="print" class="btnPrint">
+                        <mark>PREP TIME : 5 MINUTES | TOTAL TIME : 5 MINUTES | 4 SERVINGS</mark>
+                    </div>
+                    <strong class="popupTitleGray">INGREDIENTS</strong>
+                    <ol>
+                        <li>2 cups frozen, unsweetened peach slices</li>
+                        <li>1 / 2 cup fat-free plain yogurt</li>
+                        <li>1 / 2 cup fat-free milk</li>
+                        <li>1 / 2 cup sugar</li>
+                        <li>4 cups Kellogg's® Special K® Cereal Red Berries</li>
+                    </ol>
+                </figcaption>
+            </figure>
+            <div>
+                <strong class="popupTitleRed">DIRECTIONS</strong>
+                <ol>
+                    <li>Place peaches, yogurt, milk, and sugar in food processor or blender container. Using metal blade, process until smooth, scrapping container occasionally. Serve over 
+                        KELLOGG'S® SPECIAL K® Red Berries cereal.</li>
+                </ol>
+            </div>
+        </div>
+    </div>      
+    <!-- 팝업창3 -->    
+    <div class="popupModule" id="popupRecipes_cg03">
+        <div>
+            <input type="button" value="X"  class="btn_close">
+            <!-- <a href="" id="popup_open"></a> -->
+            <figure>
+                <img src="images/popupRecipes_cg_03.jpg" alt="rainbow mix">
+                <figcaption>
+                    <h2>RAINBOW MIX</h2>
+                    <p>Start your morning by combining Kellogg’s® Special K® Cereal, vanilla almond milk 
+                        and dried cranberries, brown sugar and a touch of cinnamon.</p>
+                    <div>
+                        <input type="button" value="print" class="btnPrint">
+                        <mark>PREP TIME : 5 MINUTES | TOTAL TIME : 5 MINUTES | 13 SERVINGS</mark>
+                    </div>
+                    <strong class="popupTitleGray">INGREDIENTS</strong>
+                    <ol>
+                        <li>3 cups Kellogg's® Froot Loops® cereal</li>
+                        <li>3 cups Kellogg's® Froot Loops® Marshmallow cereal</li>
+                        <li>1 / 2 cup raisins</li>
+                        <li>1 / 2 cup candy coated chocolate pieces</li>
+                        <li>1 / 2 cup dry roasted peanuts (optional)</li>
+                    </ol>
+                </figcaption>
+            </figure>
+            <div>
+                <strong class="popupTitleRed">DIRECTIONS</strong>
+                <ol>
+                    <li>In a medium bowl, mix all ingredients gently.</li>
+                    <li>Store in individual-serving zipper lock bags or airtight container.</li>
+                </ol>
+            </div>
+        </div>
+    </div>  
+      
+    
+    <section class="listContainer">
+        <!-- listContainer -> 첫번째 div로 선택자 -->
+        <!-- 메인배너 -->
+        <div class="listTitle listbanner02">
+            <h2>CEREAL AND GRANOLA</h2>
+            <p>
+                More than 100 years ago, W.K. Kellogg invented Corn Flakes<br>
+                ushering in an entire new way of eating breakfast...<br>
+                and we are still innovating for you today
+            </p>
+        </div>
+        <!-- 브랜드로고 -->
+        <div class="listBrand">
+            <h3 class="titleModule">
+                <small>CEREAL AND GRANOLA</small>
+                BRANDS
+            </h3>
+            <ul class="brandSlider">
+                <li>
+                    <img src="images/logo_specialK.png" alt="Special K">
+                    <p>
+                        <strong>HELP FEED YOUR HUNGER</strong>
+                        Special K® has snacks and cereal to fuel your amazing.
+                    </p>  
+                </li>
+                <li>
+                    <img src="images/logo_frostedFlakes.png" alt="Kellogg's Frosted Flakes">
+                    <p>
+                        <strong>EVERY KID DESERVES A CHANCE TO BE A TIGER</strong>
+                        Together we’ll help bring back school sports.
+                    </p>  
+                </li>
+                <li>
+                    <img src="images/logo_frootLoops.png" alt="Froot Loops">
+                    <p>
+                        <strong>#FOLLOW YOUR NOSE</strong>
+                        Whether it's morning, noon or night, it's always a good time for Froot Loops®.
+                    </p>  
+                </li>
+                <li>
+                    <img src="images/logo_miniWheals.png" alt="Frosted Mini-Wheats">
+                    <p>
+                        <strong>1 BOWL AND YOU'RE GOOD TILL LUNCH</strong>
+                        After a bowl of Frosted Mini-Wheats Original and milk, adults had a lower desire to eat than before breakfast
+                    </p>  
+                </li>
+                <li>
+                    <img src="images/logo_kashi.png" alt="Kashi">
+                    <p>
+                        <strong>SIMPE, WHOLESOME INGREDIENTS</strong>
+                        Combining plant-based, nutritious ingredients in our cereal,
+                        bars and waffles makes choosing wholesome a little easier.  
+                    </p>  
+                </li>
+                <li>
+                    <img src="images/logo_riceKrispies.png" alt="Rice Krispies">
+                    <p>
+                        <strong>SIMPLE MOMENTS OF FUN</strong>
+                        The classic cereal and treat that has been making memories for kids and parents alike for generations.
+                    </p>  
+                </li>
+                <li>
+                    <img src="images/logo_krave.png" alt="Krave">
+                    <p>
+                        <strong>SATISFY YOUR INNER CHOCOVORE</strong>
+                        The perfect combo of crunchy cereal outside and REAL, chocolate filling inside.
+                    </p>  
+                </li>
+                <li>
+                    <img src="images/logo_cornPops.png" alt="Corn Pops">
+                    <p>
+                        <strong>GOTTA HAVE MY POPS!</strong>
+                        A sweet, crispy, crunchy way to start your day.
+                    </p>  
+                </li>
+                <li>
+                    <img src="images/logo_smartStart.png" alt="Smart Start">
+                    <p>
+                        <strong>A SMART WAY TO START THE DAY</strong>
+                        Lightly sweetened, toasted multi-grain flakes and crunchy oat clusters. 
+                    </p>  
+                </li>
+                <li>
+                    <img src="images/logo_appleJacks.png" alt="Apple Jacks">
+                    <p>
+                        <strong>THE SWEET TASTE OF APPLE CINNAMON</strong>
+                        A delicious cereal the whole family can enjoy.
+                    </p>  
+                </li>
+                <li>
+                    <img src="images/logo_mueslix.png" alt="Mueslix">
+                    <p>
+                        <strong>KELLOGG'S MUESLIX CEREAL</strong>
+                        A delightfully wholesome cereal made of barley, whole grain wheat and oats with raisins, dates, and almonds mixed in.
+                    </p>  
+                </li>
+                <li>
+                    <img src="images/logo_raisinBran.png" alt="Kellogg’s Raisin Bran">
+                    <p>
+                        <strong>KELLOGG'S RAISIN BRAN</strong>
+                        Crispy whole grain bran flakes and raisins 
+                    </p>  
+                </li>
+                <li>
+                    <img src="images/logo_bearNaked.png" alt="Bear Naked">
+                    <p>
+                        <strong>WILDLY DELICIOUS GRANOLA</strong>
+                        Find your favorite flavor and dig in! 
+                    </p>  
+                </li>
+                <li>
+                    <img src="images/logo_cornFlakes.png" alt="Kellogg’s Corn Flakes">
+                    <p>
+                        <strong>THE ORIGINAL AND BEST</strong>
+                        Every bite of these crispy, golden flakes is just as delicious as the first.
+                    </p>  
+                </li>
+                <li>
+                    <img src="images/logo_honeySmacks.png" alt="Honey Smacks">
+                    <p>
+                        <strong>HONEY SMACKIN' GOOD!</strong>
+                        Whole grain that’s lightly puffed, sweetened with honey and fortified with 10 essential vitamins and minerals per serving.
+                    </p>  
+                </li>
+                <li>
+                    <img src="images/logo_cracklinOatbran.png" alt="Cracklin’ Oat Bran">
+                    <p>
+                        <strong>A DELICIOUS START</strong>
+                        Crunchy, sweet, oven-baked oat cereal
+                    </p>  
+                </li>
+                <li>
+                    <img src="images/logo_allBran.png" alt="All-Bran">
+                    <p>
+                        <strong>FEEL ALL-BRAN NEW</strong>
+                        Tasty and fiber-filled cereal that you can feel good about.
+                    </p>  
+                </li>                
+            </ul>        
+        </div>
+        <!-- 제품목록 -->
+        <div class="listProduct">
+            <h3 class="titleModule">
+                <small>CEREAL AND GRANOLA</small>
+                FOODS
+            </h3>
+            <ul class="productModule">
+                <li>
+                    <img src="images/productList_cg_01.png" alt="Bear Naked® Granola Banana Nut">
+                    <dl>
+                        <dt>Bear Naked® Granola Banana Nut</dt>
+                        <dd><span>5.0</span> • 2 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_cg_01.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_cg_02.png" alt="Kellogg's® Apple Jacks® Jumbo Snax">
+                    <dl>
+                        <dt>Kellogg's® Apple Jacks® Jumbo Snax</dt>
+                        <dd><span>4.7</span> • 47 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_cg_02.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_cg_03.png" alt="Kashi® Organic Blueberry Clusters Cereal">
+                    <dl>
+                        <dt>Kashi® Organic Blueberry 
+                            Clusters Cereal</dt>
+                        <dd><span>5.0</span> • 1 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_cg_03.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_cg_04.png" alt="Kellogg's® Special K® Vanilla Almond Cereal">
+                    <dl>
+                        <dt>Kellogg's® Special K® Vanilla 
+                            Almond Cereal</dt>
+                        <dd><span>4.8</span> • 30 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_cg_04.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_cg_05.png" alt="Kashi GO® Cereal Original">
+                    <dl>
+                        <dt>Kashi GO® Cereal Original</dt>
+                        <dd><span>0.0</span> • 0 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_cg_05.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_cg_06.png" alt="Kellogg's Raisin Bran® with Cranberries cereal">
+                    <dl>
+                        <dt>Kellogg's Raisin Bran® with 
+                            Cranberries cereal</dt>
+                        <dd><span>4.5</span> • 11 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_cg_06.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_cg_07.png" alt="Kellogg's® Raisin Bran Crunch® cereal">
+                    <dl>
+                        <dt>Kellogg's® Raisin Bran Crunch® cereal</dt>
+                        <dd><span>5.0</span> • 7 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_cg_07.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_cg_08.png" alt="Paw Patrol® Frosted Mini-Wheats® Little Bites">
+                    <dl>
+                        <dt>Paw Patrol® Frosted Mini-Wheats® 
+                            Little Bites</dt>
+                            <dd><span>4.8</span> • 9 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_cg_08.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_cg_09.png" alt="Kellogg's® All-Bran® Original Cereal">
+                    <dl>
+                        <dt>Kellogg's® All-Bran® Original Cereal</dt>
+                        <dd><span>4.3</span> • 11 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_cg_09.html">RATE REVIEW</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 레시피 -->
+        <div class="lastContent">
+            <h3 class="titleModule">
+                <small>CREATIVE RECIPES USING CEREAL AND GRANOLA</small>
+                RESIPES
+            </h3>
+            <ul id="recipesList">
+                <li>
+                    <a href="#recipesList" data-panel="popupRecipes_cg01"><img src="images/recipes_cg_01.jpg" alt="creamy cheese pie"></a>
+                    <strong>CREAMY CHEESE PIE</strong>
+                    <small>30 MIN | 8 SERVINGS</small>               
+                </li>
+                <li>
+                    <a href="#recipesList" data-panel="popupRecipes_cg02"><img src="images/recipes_cg_02.jpg" alt="peach yogurt smoothie breakfast"></a>
+                    <strong>PEACH YOGURT SMOOTHIE BREAKFAST</strong>
+                    <small>10 MIN | 2 SERVINGS</small>
+                </li>
+                <li>
+                    <a href="#recipesList" data-panel="popupRecipes_cg03"><img src="images/recipes_cg_03.jpg" alt="rainbow mix"></a>
+                    <strong>RAINBOW MIX</strong>
+                    <small>5 MIN | 13 SERVINGS</small>
+                </li>
+            </ul>        
+        </div>
+        <!-- 와이조인 -->
+        <div class="joinUsModule">
+        <h2>EXCITING CHANGES ARE COMING TO<br>
+            KELLOGG’S FAMILY REWARDS®.
+        </h2>
+            <a href="whyJoin.html" target="_blank">JOIN THE FAM</a>
+            <p>
+                Check out the new Kellogg’s Family Rewards®! More of what you love, less stuff you don’t.<br>
+                It’s a new way of earning and getting rewarded. Simpler, faster, better - and best of all - fun-er!
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <div>
+                <h2>GET SUPPORT</h2>
+                <ul>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>KELLOGG'S FAMILY REWARDS</h2>
+                <ul>
+                    <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                    <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                    <li><a href="logIn.html" target="_blank">Log In</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>CONNECT WITH US</h2>
+                <ul>            
+                    <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                    <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                    <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.kelloggcompany.com/en_US/privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="https://www.kelloggcompany.com/en_US/legal.html">Terms Of Use</a></li>
+                <li><a href="https://www.privacy.kelloggcompany.com/us/homepage.html">California Consumer Rights</a></li>
+            </ul>
+            <p>
+                ®Kellogg's Company 2022
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

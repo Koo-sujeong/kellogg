@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kellogg</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="index.html"><img src="images/kellogg_logo_red.png" alt="kellogg"></a></h1>
+             <nav>
+                <ul>
+                    <li><a href="breakfastFavorites.html">OUR FOODS</a></li>
+                    <li><a href="sustainability.html">OUR IMPACT</a></li>
+                    <li><a href="whoWeAre.html">OUR STORE</a></li>
+                </ul>
+                <input type="button" data-panel="fnb_open" value="openMenu" class="fnbOpenBtn">
+            </nav>
+        </div>
+        <div class="fnbPanel" id="fnb_open">
+            <input type="button" class="btn_close" value="closeMenu">
+            <ol>
+                <li>
+                    OUR FOODS
+                    <ul>
+                        <li><a href="breakfastFavorites.html">BREAKFAST FAVORITES &amp; TREATS</a></li>
+                        <li><a href="cerealGranola.html">CEREAL &amp; GRANOLA</a></li>
+                        <li><a href="savorySnacks.html">SAVORY SNACKS</a></li>
+                        <li><a href="plantbasedProtein.html">PLANT-BASED PROTEINS</a></li>
+                        <li><a href="snackbarsBites.html">SNACK BARS &amp; BITES</a></li>
+                        <li><a href="proteinbarsShake.html">PROTEIN BARS &amp; SHAKE</a></li>
+                        <li><a href="frozenBreakfast.html">FROZEN BREAKFAST</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR IMPACT
+                    <ul>
+                        <li><a href="sustainability.html">SUSTAINABILITY</a></li>
+                        <li><a href="philanthropy.html">PHILANTHROPY</a></li>
+                        <li><a href="nourishment.html">NOURISHMENT</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR STORE
+                    <ul>
+                        <li><a href="whoWeAre.html">WHO WE ARE</a></li>
+                        <li><a href="kelloggHistory.html">KELLOGG HISTORY</a></li>
+                        <li><a href="openForBreakfast.html">OPEN FOR BREAKFAST</a></li>                    
+                    </ul>
+                </li>
+            </ol>
+            <div>
+                <form>
+                    <div>
+                        <input type="search" placeholder="search" title="insert ur search keyword's">
+                    </div>
+                </form>
+                <div>
+                    <h3>JOIN AND BE REWARDED</h3>
+                    <ul>
+                        <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                        <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                        <li><a href="logIn.html" target="_blank">Log In</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>CONNECT WITH US</h3>
+                    <ul>            
+                        <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                        <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                        <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- 팝업창1 -->
+    <div class="popupModule" id="popupRecipes_bf01">
+        <div>
+            <input type="button" value="X" class="btn_close">
+            <!-- <a href="" id="popup_open"></a> -->
+            <figure>
+                <img src="images/popupRecipes_bf_01.jpg" alt="simple strawberry shortcake">
+                <figcaption>
+                    <h2>SIMPLE STRAWBERRY SHORTCAKE</h2>
+                    <p>Pop-Tarts® Strawberry, sliced strawberries and whipped topping make a shortcake
+                        that's super-simple and super-scrumptious</p>
+                    <div>
+                        <input type="button" value="print" class="btnPrint">
+                        <mark>PREP TIME : 10 MINUTES | TOTAL TIME : 10 MINUTES | 4 SERVINGS</mark>
+                    </div>
+                    <strong class="popupTitleGray">INGREDIENTS</strong>
+                    <ol>
+                        <li>4 Pop-Tarts® Strawberry toaster pastries</li>
+                        <li>3 cups sliced fresh strawberries</li>
+                        <li>3/4 cup frozen fat-free non-dairy whipped topping, thawed</li>
+                        <li>1 tablespoon sugar</li>
+                    </ol>
+                </figcaption>
+            </figure>
+            <div>
+                <strong class="popupTitleRed">DIRECTIONS</strong>
+                <ol>
+                    <li>Use 1 3/4 - 2-inch cookie cutter(s) coated with cooking spray to cut 8 desired shapes from Pop-Tarts®. Set aside.</li>
+                    <li>In a medium bowl, stir together strawberries and sugar.</li>
+                    <li>Place 1 Pop-Tart® shape in each of 4 dessert dishes. Spoon strawberries on top. Add dollop of whipped topping to each dish. Stand remaining Pop-Tart® shapes in 
+                        whipped topping. Serve immediately.</li>
+                </ol>
+            </div>
+        </div>
+    </div>    
+    <!-- 팝업창2 -->
+    <div class="popupModule" id="popupRecipes_bf02">
+        <div>
+            <input type="button" value="X" class="btn_close">
+            <!-- <a href="" id="popup_open"></a> -->
+            <figure>
+                <img src="images/popupRecipes_bf_02.jpg" alt="cookies and creme milkshakes">
+                <figcaption>
+                    <h2>COOKIES &amp; CREME MILKSHAKES</h2>
+                    <p>Pop-Tarts® Cookies and Crème, a dash of vanilla and vanilla ice cream punch up this
+                       classic, sippable delight.</p>
+                    <div>
+                        <input type="button" value="print" class="btnPrint">
+                        <mark>PREP TIME : 10 MINUTES | TOTAL TIME : 10 MINUTES | 2 SERVINGS</mark>
+                    </div>
+                    <strong class="popupTitleGray">INGREDIENTS</strong>
+                    <ol>
+                        <li>2 Pop-Tarts® Frosted Cookies &amp; Creme toaster pastries</li>
+                        <li>1 pint vanilla ice cream, slightly softened</li>
+                        <li>1 / 2 cup fat-free milk</li>
+                        <li>1 / 2 teaspoon vanilla</li>
+                    </ol>
+                </figcaption>
+            </figure>
+            <div>
+                <strong class="popupTitleRed">DIRECTIONS</strong>
+                <ol>
+                    <li>Cut one 3-inch triangle from the corner of each Pop-Tart®. Coarsely crumble remaining Pop-Tart® pieces. Set aside.</li>
+                    <li>In blender container combine ice cream, milk and vanilla. Cover and blend just until smooth. Add Pop-Tart® crumbs (reserve triangle pieces for garnish). Blend just
+                        until combined.</li>
+                    <li>Pour ice cream mixture into two 16-ounce serving glasses. Garnish each with a Pop-Tart® triangle. Serve immediately.</li>
+                </ol>
+            </div>
+        </div>
+    </div>  
+    <!-- 팝업창3 -->
+    <div class="popupModule" id="popupRecipes_bf03">
+        <div>
+            <input type="button" value="X" class="btn_close">
+            <!-- <a href="" id="popup_open"></a> -->
+            <figure>
+                <img src="images/popupRecipes_bf_03.jpg" alt="very cherry hearts">
+                <figcaption>
+                    <h2>VERY CHERRY HEARTS</h2>
+                    <p>Surprise your kids with this very cherry, tasty snack. Just cut out the heart shapes and
+                        spell out lovey-dovey words with frosting.</p>
+                    <div>
+                        <input type="button" value="print" class="btnPrint">
+                        <mark>PREP TIME : 5 MINUTES | TOTAL TIME : 5 MINUTES | 2 SERVINGS</mark>
+                    </div>
+                    <strong class="popupTitleGray">INGREDIENTS</strong>
+                    <ol>
+                        <li>2 Pop-Tarts® Frosted Cherry toaster pastries</li>
+                        <li>White canned frosting</li>
+                    </ol>
+                </figcaption>
+            </figure>
+            <div>
+                <strong class="popupTitleRed">DIRECTIONS</strong>
+                <ol>
+                    <li>Use 2 1 / 2- to 2 3/4-inch heart-shaped cookie cutter coated with cooking spray to cut out a heart from each Pop-Tart®.</li>
+                    <li>Use white frosting to write the words "Be Mine" or another message on each.</li>
+                </ol>
+            </div>
+        </div>
+    </div>  
+
+    
+    <section class="listContainer">
+        <!-- listContainer -> 첫번째 div로 선택자 -->
+        <!-- 메인배너 -->
+        <div class="listTitle listbanner01">
+            <h2>BREAKFAST FAVORITES &amp; TREATS</h2>
+            <p>
+                Bite size granola bites for your commute.<br>
+                A toasty Pop-Tarts toaster pastry after school. A smoothie bowl on the go.<br>
+                This lineup is perfect for a quick bit of energy or a few minutes of relaxing.
+            </p>
+        </div>
+        <!-- 브랜드로고 -->
+        <div class="listBrand">
+            <h3 class="titleModule">
+                <small>BREAKFAST FAVORITES &amp; TREATS</small>
+                BRANDS
+            </h3>
+            <ul class="brandSlider">
+                <!-- 이미지 각 넣기 -->
+                <li>
+                    <img src="images/logo_nutriGrain.png" alt="nutri grain">
+                    <p>
+                        <strong>MADE FOR MORNINGS</strong>
+                        Rise and thrive with a soft, chewy crust made with whole grains
+                        and a sweet filling for feel good mornings.
+                    </p>  
+                </li>
+                <li>
+                    <img src="images/logo_kashi.png" alt="kashi">
+                    <p>
+                        <strong>SIMPE, WHOLESOME INGREDIENTS</strong>
+                        Combining plant-based, nutritious ingredients in our cereal,
+                        bars and waffles makes choosing wholesome a little easier.  
+                    </p>
+                </li>
+                <li>
+                    <img src="images/logo_popTarts.png" alt="poptarts">
+                    <p>
+                        <strong>FULLY BAKED AND READY TO EAT</strong>
+                        Crazy Good Family Favorites 
+                    </p>
+                </li>
+            </ul>        
+        </div>
+        <!-- 제품목록 -->
+        <div class="listProduct">
+            <h3 class="titleModule">
+                <small>BREAKFAST FAVORITES &amp; TREATS</small>
+                FOODS
+            </h3>
+            <ul class="productModule">
+                <!-- 이미지 각 넣기 -->
+                <li>
+                    <img src="images/productList_bf_01.png" alt="Pop-Tarts® Crisps Brown Sugar Cinnamazing">
+                    <dl>
+                        <dt>Pop-Tarts® Crisps Brown Sugar
+                            Cinnamazing</dt>
+                        <dd><span>4.9</span> • 9 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_bf_01.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_bf_02.png" alt="Blueberrific Pop-Tarts® Crisps">
+                    <dl>
+                        <dt>Blueberrific Pop-Tarts® Crisps</dt>
+                        <dd><span>4.8</span> • 11 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_bf_02.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_bf_03.png" alt="Banana Crème Pie Pop-Tarts®">
+                    <dl>
+                        <dt>Banana Crème Pie Pop-Tarts®</dt>
+                        <dd><span>4.8</span> • 8 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_bf_03.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_bf_04.png" alt="Nutri-Grain® Bites Strawberry Mini Bars">
+                    <dl>
+                        <dt>Nutri-Grain® Bites Strawberry 
+                            Mini Bars</dt>
+                        <dd><span>3.2</span> • 6 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_bf_04.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_bf_05.png" alt="Lemon Crème Pie Pop-Tarts®">
+                    <dl>
+                        <dt>Lemon Crème Pie Pop-Tarts®</dt>
+                        <dd><span>4.3</span> • 18 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_bf_05.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_bf_06.png" alt="Kellogg's® Rice Krispies Treats® Cookies'n Creme">
+                    <dl>
+                        <dt>Kellogg's® Rice Krispies Treats® 
+                            Cookies'n Creme</dt>
+                        <dd><span>4.2</span> • 13 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_bf_06.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_bf_07.png" alt="Kellogg's® Rice Krispies Treats Original Mini Squares Halloween">
+                    <dl>
+                        <dt>Kellogg's® Rice Krispies Treats Original 
+                            Mini Squares Halloween</dt>
+                        <dd><span>0</span> • 0 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_bf_07.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_bf_08.png" alt="Kellogg's® Rice Krispies Treats® Mini-Squares">
+                    <dl>
+                        <dt>Kellogg's® Rice Krispies Treats® 
+                            Mini-Squares</dt>
+                        <dd><span>4.6</span> • 5 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_bf_08.html">RATE REVIEW</a>
+                </li>
+                <li>
+                    <img src="images/productList_bf_09.png" alt="Kellogg's® Rice Krispies Treats® Original Treats Sheets">
+                    <dl>
+                        <dt>Kellogg's® Rice Krispies Treats® 
+                            Original Treats Sheets</dt>
+                        <dd><span>3.0</span> • 1 REVIEWS</dd>
+                    </dl>
+                    <a href="productList_bf_09.html">RATE REVIEW</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 레시피 -->
+        <div class="lastContent">
+            <h3 class="titleModule">
+                <small>CREATIVE RECIPES USING SNACK BARS &amp; BITES</small>
+                RESIPES
+            </h3>
+            <ul id="recipesList">
+                <li>
+                    <a href="#recipesList" data-panel="popupRecipes_bf01"><img src="images/recipes_bf_01.jpg" alt="simple strawberry shortcake"></a>
+                    <strong>SIMPLE STRAWBERRY SHORTCAKE</strong>
+                    <small>10 MIN | 4 SERVING</small>            
+                </li>
+                <li>
+                    <a href="#recipesList" data-panel="popupRecipes_bf02"><img src="images/recipes_bf_02.jpg" alt="cookies and creme milkshakes"></a>
+                    <strong>COOKIES &amp; CREME MILKSHAKES</strong>
+                    <small>10 MIN | 2 SERVINGS</small>
+                </li>
+                <li>
+                    <a href="#recipesList" data-panel="popupRecipes_bf03"><img src="images/recipes_bf_03.jpg" alt="very cherry hearts"></a>
+                    <strong>VERY CHERRY HEARTS</strong>
+                    <small>5 MIN | 2 SERVING</small> 
+                </li>
+            </ul>        
+        </div>
+        <!-- 와이조인 -->
+        <div class="joinUsModule">
+        <h2>EXCITING CHANGES ARE COMING TO<br>
+            KELLOGG’S FAMILY REWARDS®.
+        </h2>
+            <a href="whyJoin.html" target="_blank">JOIN THE FAM</a>
+            <p>
+                Check out the new Kellogg’s Family Rewards®! More of what you love, less stuff you don’t.<br>
+                It’s a new way of earning and getting rewarded. Simpler, faster, better - and best of all - fun-er!
+            </p>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div>
+            <div>
+                <h2>GET SUPPORT</h2>
+                <ul>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>KELLOGG'S FAMILY REWARDS</h2>
+                <ul>
+                    <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                    <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                    <li><a href="logIn.html" target="_blank">Log In</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>CONNECT WITH US</h2>
+                <ul>            
+                    <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                    <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                    <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.kelloggcompany.com/en_US/privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="https://www.kelloggcompany.com/en_US/legal.html">Terms Of Use</a></li>
+                <li><a href="https://www.privacy.kelloggcompany.com/us/homepage.html">California Consumer Rights</a></li>
+            </ul>
+            <p>
+                ®Kellogg's Company 2022
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

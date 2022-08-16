@@ -1,0 +1,1307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kellogg</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <script src="js/core.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="index.html"><img src="images/kellogg_logo_red.png" alt="kellogg"></a></h1>
+             <nav>
+                <ul>
+                    <li><a href="breakfastFavorites.html">OUR FOODS</a></li>
+                    <li><a href="sustainability.html">OUR IMPACT</a></li>
+                    <li><a href="whoWeAre.html">OUR STORE</a></li>
+                </ul>
+                <input type="button" data-panel="fnb_open" value="openMenu" class="fnbOpenBtn">
+            </nav>
+        </div>
+        <div class="fnbPanel" id="fnb_open">
+            <input type="button" class="btn_close" value="closeMenu">
+            <ol>
+                <li>
+                    OUR FOODS
+                    <ul>
+                        <li><a href="breakfastFavorites.html">BREAKFAST FAVORITES &amp; TREATS</a></li>
+                        <li><a href="cerealGranola.html">CEREAL &amp; GRANOLA</a></li>
+                        <li><a href="savorySnacks.html">SAVORY SNACKS</a></li>
+                        <li><a href="plantbasedProtein.html">PLANT-BASED PROTEINS</a></li>
+                        <li><a href="snackbarsBites.html">SNACK BARS &amp; BITES</a></li>
+                        <li><a href="proteinbarsShake.html">PROTEIN BARS &amp; SHAKES</a></li>
+                        <li><a href="frozenBreakfast.html">FROZEN BREAKFAST</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR IMPACT
+                    <ul>
+                        <li><a href="sustainability.html">SUSTAINABILITY</a></li>
+                        <li><a href="philanthropy.html">PHILANTHROPY</a></li>
+                        <li><a href="nourishment.html">NOURISHMENT</a></li>
+                    </ul>
+                </li>
+                <li>
+                    OUR STORE
+                    <ul>
+                        <li><a href="whoWeAre.html">WHO WE ARE</a></li>
+                        <li><a href="kelloggHistory.html">KELLOGG HISTORY</a></li>
+                        <li><a href="openForBreakfast.html">OPEN FOR BREAKFAST</a></li>                    
+                    </ul>
+                </li>
+            </ol>
+            <div>
+                <form>
+                    <div>
+                        <input type="search" placeholder="search" title="insert ur search keyword's">
+                    </div>
+                </form>
+                <div>
+                    <h3>JOIN AND BE REWARDED</h3>
+                    <ul>
+                        <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                        <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                        <li><a href="logIn.html" target="_blank">Log In</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>CONNECT WITH US</h3>
+                    <ul>            
+                        <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                        <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                        <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                        <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 팝업창 -->
+    <div class="popupModule" id="popupReview">
+        <div>
+            <input type="button" value="X" class="btn_close">
+            <div class="writeContainer">
+                <img src="images/popup_productMain_cg04.png" alt="Kellogg's® Special K® Vanilla Almond Cereal">
+                <h2>
+                    <strong>MY REVIEW FOR</strong>
+                    Kellogg's® Special K® Vanilla Almond Cereal<br>
+                    <small>Required fields are marked with <mark>RED</mark></small>
+                </h2>
+                <form>
+                    <fieldset>
+                        <ul>
+                            <li>
+                                <label for="star1" class="requiredRed">
+                                    OVERALL RATING
+                                    <small>Required:Overall Rating</small>
+                                </label>
+                                <div class="starCount">
+                                    <input type="button" value="1" id="star1">
+                                    <input type="button" value="2" id="star2">
+                                    <input type="button" value="3" id="star3">
+                                    <input type="button" value="4" id="star4">
+                                    <input type="button" value="5" id="star5">
+                                    <mark>EXCELLENT</mark>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="reviewTitle" class="requiredRed">
+                                    REVIEW TITLE
+                                    <small>Required:Review Title</small>
+                                </label>                                
+                                <input type="text" id="reviewTitle" placeholder="Example: Tastes great!">
+                            </li>
+                            <li>
+                                <label for="reviewText" class="requiredRed">
+                                    REVIEW
+                                    <small>(numb) characters too short</small>
+                                </label>                                
+                                <textarea name="review" id="reviewText" placeholder="Example: I bought these for my family. Everyone loved the taste and texture..."></textarea>
+                            </li>                
+                            <li>
+                                <label for="reviewPurchase">WHERE DID YOU PURCHASE?</label>
+                                <span class="selectComponent">
+                                    <select id="reviewPurchase">
+                                        <option>Select</option>
+                                        <option value="inStore">In-Store</option>
+                                        <option value="onlineandPickup">Online, Curbside Pick-Up</option>
+                                        <option value="onlineandhome">Online, Ship-to-Home</option>
+                                    </select>                  
+                                </span>
+                            </li>
+                            <li>
+                                <label for="urGender">WHAT IS YOUR GENDER?</label>
+                                <span class="selectComponent">
+                                    <select id="urGender">
+                                        <option>Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>                
+                                </span>
+                            </li>
+                            <li>
+                                <label for="urAge">HOW OLD ARE YOU?</label>
+                                <span class="selectComponent">
+                                    <select id="urAge">
+                                        <option>Age</option>
+                                        <option value="18to24">18 to 24</option>
+                                        <option value="25to34">25 to 34</option>
+                                        <option value="35to44">35 to 44</option>
+                                        <option value="45to54">45 to 54</option>
+                                        <option value="55to64">55 to 64</option>
+                                        <option value="65orOver">65 or over</option>
+                                    </select>            
+                                </span>
+                            </li>
+                            <li>
+                                <label for="urLocation">LOCATION</label>
+                                <input type="text" id="urLocation" placeholder="Example: New York, NY">
+                            </li>
+                            <li>
+                                <label for="urNickname" class="requiredRed">
+                                    NICKNAME
+                                    <small>Required:Nickname</small>
+                                </label>                                
+                                <input type="text" id="urNickname" placeholder="Example: bob27">
+                            </li>
+                            <li>
+                                <label for="urMail" class="requiredRed">
+                                    EMAIL
+                                    <small>Required:Email</small>
+                                </label>                                
+                                <input type="email" id="urMail" placeholder="Example: youremail@example.com">
+                            </li>
+                            <li>
+                                <label for="productRecommend">WOULD YOU RECOMMEND THIS PRODUCT TO A FRIEND?</label>
+                                <input type="button" id="productRecommend" value="YES" class="btnRed btnRadius">
+                                <input type="button" value="NO" class="btnGray btnRadius">
+                            </li>                
+                            <li>                
+                                <input type="checkbox" id="termsCondition">
+                                <label for="termsCondition">
+                                    I agree to the Ratings and Reviews Terms and Conditions
+                                    <small class="requiredRed">Required:Agreements</small>
+                                </label>
+                                <span>You may receive emails regarding this submission. Any emails will include the ability to opt-out of future communications.</span>
+                            </li>  
+                        </ul>             
+                        <input type="submit" value="POST REVIEW" class="btnPost btnRed btnRadius">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>  
+    
+    <!-- 제품소개 -->
+    <section class="productInformation">
+        <ol class="pageNavigate">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="cerealGranola.html">OUR FOODS</a></li>
+            <li>Kellogg's® Special K® Vanilla Almond Cereal</li>            
+        </ol>
+        <div class="detailContainer">
+            <img src="images/productMain_cg04.png" alt="Kellogg's® Special K® Vanilla Almond Cereal">
+            <div>
+                <h2>Kellogg's® Special K® Vanilla Almond Cereal</h2>
+                <span>
+                    <mark>4.8</mark>• 30 REVIEWS
+                </span>
+                <div>
+                    <h3>ABOUT THIS ITEM</h3>
+                    <p>
+                        <strong class="titleRed">DETAILS</strong>
+                        Sprinkled with almonds, and the sweet smell of vanilla, Special K® Vanilla Almond Cereal tastes great, is 
+                        nutritious and will leave you feeling satisfied. It's a delicious blend of nutty almonds and smooth vanilla. 
+                        Just add milk.
+                    </p>
+                    <p>
+                        <strong class="titleRed">NUTRITION FACTS &amp; INGREDIENTS</strong>
+                        Nutrition Facts and Ingredients
+                    </p>
+                    <label for="selectThisSize">SELECT PACK SIZE</label>
+                    <span class="selectComponent">
+                        <select id="selectThisSize">
+                            <option>18.8oz</option>
+                            <option>12.9oz</option>
+                        </select>
+                        <input type="button" value="print" class="btnPrint">
+                    </span>
+                </div>
+                <div>
+                    <!-- <a href="https://www.bearnaked.com/en_US/home.html" class="viewSite btnRed btnRadius">
+                        VIEW BRAND SITE
+                    </a> -->
+                    <a href="whyJoin.html" target="_blank" class="familyRewards btnGray btnRadius">KELLOGG’S FAMILY REWARDS</a>
+                    <!-- <small>Check out Bear Naked.com</small> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 리뷰모듈 -->
+    <div class="reviewModule">
+        <h2>REVIEWS</h2>
+        <div>
+            <small>29 out of 30 (97%) reviewers recommend this product</small>
+            <fieldset>
+                <legend>RATING SNAPSHOT</legend>
+                <ol>
+                    <li>
+                        <label for="count5">5</label>
+                        <meter value="80" min="0" max="100" id="count5"></meter>
+                        <span>80%</span>
+                    </li>
+                    <li>
+                        <label for="count4">4</label>
+                        <meter value="30" min="0" max="100" id="count4"></meter>
+                        <span>30%</span>
+                    </li>
+                    <li>
+                        <label for="count3">3</label>
+                        <meter value="10" min="0" max="100" id="count3"></meter>
+                        <span>10%</span>
+                    </li>
+                    <li>
+                        <label for="count2">2</label>
+                        <meter value="0" min="0" max="100" id="count2"></meter>
+                        <span>0%</span>
+                    </li>
+                    <li>
+                        <label for="count1">1</label>
+                        <meter value="0" min="0" max="100" id="count1"></meter>
+                        <span>0%</span>
+                    </li>
+                </ol>
+                <span class="starGraph graph4">
+                    4.8
+                </span>
+                <!-- scoreCount Background -->
+            </fieldset>
+        </div>
+
+        <div>
+            <a href="#" data-panel="popupReview" class="btnRed btnRadius">WRITE A REVIEW</a>
+            <fieldset>
+                <legend>30 REVIEWS</legend>
+                <!-- select module -->
+                <span class="selectComponent">
+                    <select id="reviewsRating">
+                        <option>Rating</option>
+                        <option value="1">1 Star</option>
+                        <option value="2">2 Star</option>
+                        <option value="3">3 Star</option>
+                        <option value="4">4 Star</option>
+                        <option value="5">5 Star</option>
+                    </select>                    
+                </span>
+                <span class="selectComponent">
+                    <select id="reviewerGender">
+                        <option>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </span>
+                <span class="selectComponent">                    
+                    <select id="reviewerAge">
+                        <option>Age</option>
+                        <option value="18to24">18 to 24</option>
+                        <option value="25to34">25 to 34</option>
+                        <option value="35to44">35 to 44</option>
+                        <option value="45to54">45 to 54</option>
+                        <option value="55to64">55 to 64</option>
+                        <option value="65orOver">65 or over</option>
+                    </select>
+                </span>                
+                <span class="selectComponent">
+                    <select id="reviewsSortby">
+                        <option>Sort by</option>
+                        <option value="mostRelevant">Most Relevant</option>
+                        <option value="mostHelpful">Most Helpful</option>
+                        <option value="highestLowest">Highest to Lowest Rating</option>
+                        <option value="lowestHighest">Lowest to Highest Rating</option>
+                        <option value="mostRecent">Most Recent</option>
+                    </select>
+                </span>
+                <span class="selectComponent">
+                    <select id="englishLocale">
+                        <option>Locale</option>
+                        <option value="English">English</option>
+                        <option value="unitedStates">English(United States)</option>
+                    </select>
+                </span>
+            </fieldset>
+        </div>
+    </div>
+    
+    <!-- 리뷰상세1 -->
+    <ul class="reviewDetails">
+        <li>
+            <dl>
+                <dt>Brendy</dt>
+                <dd>Dorado,PR</dd>
+            </dl>
+            <div>
+                <span class="countingStar star4">
+                    <time datetime="2022-03">· 3 months ago </time>
+                </span>
+                <h3>
+                    Delicios
+                </h3>
+                <blockquote>
+                    I bougth this for my house,and my family love it,is great
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 3</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>April</dt>
+                <dd>Pascagoula</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    THE FLAVOR IN EVERY BITE!!!
+                </h3>
+                <blockquote>
+                    We had one box and this happened! I will continue buy all of your products!!!!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 12</button>
+                    <button class="activate">NO · 1</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>betlee11</dt>
+                <dd>New York, NY</dd>
+            </dl>
+            <div>
+                <span class="countingStar star4">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Nutty and Satisfying
+                </h3>
+                <blockquote>
+                    Out of all the Special K cereals I have to say that Vanilla & Almond is my favorite flavor. It has sliced almonds and it is slightly sweet and crunchy which really hits 
+                    the spot without all the sugar. I normally eat this for breakfast but sometimes having breakfast for dinner can be pretty satisfying.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 10</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>1Rejoice!</dt>
+                <dd>Dutchess Co., NY</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    My All-Time Favorite Special K!
+                </h3>
+                <blockquote>
+                    I buy several varieties of Special K cereals, but the vanilla almond is my all-time favorite! It has a light, refreshing flavor; not heavy on the tummy. Many times I have 
+                    it for a light dinner if I have had a late lunch. The flakes are large & the almonds crunchy! I can eat it anytime of the day!  
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 9</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>IvonneQC</dt>
+                <dd>Kissimmee, FL</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Great Cereal
+                </h3>
+                <blockquote>
+                    Great Cereal<br>
+                    The cereal has the right amount of almonds, it is not extremely sweet and has a wonderful taste. Some flakes are extremely big, but easy to trim down for biting. 
+                    The flakes do not get soggy and maintain the toast until the last bite. I have tried other cereals, but always come back to Special K.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 1</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>AjBillMom</dt>
+                <dd>Racine, WI</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Best cereal ever!!!
+                </h3>
+                <blockquote>
+                    My husband and I bought a box of Special K Vanilla & Almond about a month ago. We devoured the box in a matter of days. We went back to the store when it was 
+                    on sale and purchased 6 more boxes. I plan on taking a box of it to work to share with my co-workers. I do believe they will get hooked as well.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 7</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>bcnative</dt>
+                <dd></dd>
+            </dl>
+            <div>
+                <span class="countingStar star4">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Better than average Special K
+                </h3>
+                <blockquote>
+                    Gave Vanilla and Almond Special K a try and found it to be a good cereal. The flakes had a nice crunch, and paired well with the sliced almonds. I'm not a fan of 
+                    sweet cereals. This one was on the higher end of my sweetness tolerance, so I won't be purchasing it on a regular basis, but it's a decent change-of-pace breakfast 
+                    cereal.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Tsparks</dt>
+                <dd>Cape Girardeau, Missouri</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2022-03">· 3 months ago </time>
+                </span>
+                <h3>
+                    Vanilla & Almond Cereal
+                </h3>
+                <blockquote>
+                    I love this cereal<br>
+                    This is my go to breakfast<br>
+                    I normally eat it dry
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Lynn</dt>
+                <dd>Venice,ca</dd>
+            </dl>
+            <div>
+                <span class="countingStar star3">
+                    <time datetime="2020">· 2 years ago</time>
+                </span>
+                <h3>
+                    Like it don't love it
+                </h3>
+                <blockquote>
+                    This was my back up from cholatley delight. I like this cereal not love. I like the flavor. I don't love it because the flakes are thinner and so it soaks up milk to fast and 
+                    get mushy quickly.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button class="activate">YES · 1</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>DreDay</dt>
+                <dd>Atlanta</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021-12">· 6 months ago </time>
+                </span>
+                <h3>
+                    THE BEST
+                </h3>
+                <blockquote>
+                    Kellogg's please never never ever stop making this cereal. It's so delicious and holds so well with milk. The crunch, the vanilla, the almonds. ooooooooo makes me 
+                    so happy to start the day. I wish the box could be larger XXL size because I get very sad when I run out and can't find any at the market because everyone is 
+                    enjoying this Special K Vanilla Almond Cereal. Thank you Kellogg's for making this my official adult cereal!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+    </ul>
+    <!-- 리뷰상세2 -->
+    <ul class="reviewDetails">
+        <li>
+            <dl>
+                <dt>Purpledog</dt>
+                <dd>York, Pa</dd>
+            </dl>
+            <div>
+                <span class="countingStar star4">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Nice light sweet flavor.
+                </h3>
+                <blockquote>
+                    For awhile we bought this weekly along with the Dark Chocolate and Almond, which was our favorite. Then they no longer made our favorite so we started to by the 
+                    regular chocolate and almond, then they quite making that kind, so we would by the vanilla almond occasionally, but got tired of it weekly with nothing to alternate 
+                    with. So have been exploring other cereals.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Charlie$</dt>
+                <dd>Plano TX</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2022-04">· 2 months ago </time>
+                </span>
+                <h3>
+                    This stuff ROCKS!!!
+                </h3>
+                <blockquote>
+                    I have tried ALL the different varieties of Special K and the vanilla/almond is the best! Crunchy sweet flavorful….shall I go on? Ok I will…..hint of vanilla and almond 
+                    slivers top off the delightfulness!! Go get some TODAY!!! It will become your favorite! I got my son who hated cereal to try it now he eats a box in two days!! Nuff said
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Debbie307</dt>
+                <dd>Mississippi</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    The Best of the Best
+                </h3>
+                <blockquote>
+                    Special K Vanilla Almond is the best of the lot. The flakes stay crispy in milk, right down to the bottom of the bowl. This cereal has just the right amount of crunchy 
+                    almonds. The vanilla gives a nice finishing touch. All this and not too sweet. It's great any time of day or night!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Sophiajo</dt>
+                <dd>Wilson, NC</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    My favorite cereal, the only kind I buy!
+                </h3>
+                <blockquote>
+                    My favorite cereal, the only kind I buy!<br>
+                    It is my favorite cereal and I buy it in multiples! It is the only cereal that I eat on a regular basis. Please do not take it away or I will never eat cereal again! It has just 
+                    the right amount of everything and can even be eaten as a snack. Again, IT IS MY FAVORITE CEREAL!!!!!!!!!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Bkseal</dt>
+                <dd>Fall River, MA</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Yum yum yum
+                </h3>
+                <blockquote>
+                    Been buying for years... the fam loves it.... I can barely keep it stocked in the house.... always watching for a sale.... also gave as a small extra Christmas gift to my 
+                    nephew..:. Twice!!! He said it was his favorite gift!!! Lol!!He loves it and they can’t keep it stocked either!!!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Mother Lady</dt>
+                <dd>Wisconsin</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021">· a year ago </time>
+                </span>
+                <h3>
+                    Tastes Great and is good for me.
+                </h3>
+                <blockquote>
+                    I think healthy...so Special K has always been in my cupboard. I like the new flavor, Vanilla Almond. A change-up is good so my taste buds have something to look 
+                    forward to. I love the almonds for their crunch. And Special K stays crisp even after the milk is getting low.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>matchewman</dt>
+                <dd>Western, KY</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021">· a year ago </time>
+                </span>
+                <h3>
+                    She loves it
+                </h3>
+                <blockquote>
+                    The Vanilla Almond Cereal is really good. She plans to keep it around, even though it is not gluten free.<br>
+                    I also tried a bowl and I thought it was quite tasty and stayed crunchy in milk.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Reader 5</dt>
+                <dd>Cincinnati, Ohio</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021">· a year ago </time>
+                </span>
+                <h3>
+                    Crispy Flakes and Almonds
+                </h3>
+                <blockquote>
+                    I eat Special K cereal every morning for breakfast, The Vanilla Almond is one of my three favorites that I always buy because of the crispiness and addition of 
+                    almonds. I like adding fresh fruit to this one and the Cinnamon Pecan and Chocolatey Delight.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Nana Nee</dt>
+                <dd>Columbus Nebraska</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    BEST CEREAL EVER
+                </h3>
+                <blockquote>
+                    Special K Vanilla Almond Cereal is my absolute favorite. The ONLY cereal I eat every morning been eating it since it first came to our local stores. I have at least 
+                    4boxes on hand cause I never want to be without. The only thing is I can’t find coupon.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>My Cereal </dt>
+                <dd>Salem, VA</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021">· a year ago</time>
+                </span>
+                <h3>
+                    Love the almonds
+                </h3>
+                <blockquote>
+                    I bought this cereal a few weeks ago as a replacement for my very favorite Special K Cinnamon Pecan Cereal which was out of stock. I am very pleased with it. I like 
+                    how crunchy it is and how it is not too sweet. I wish there were more almonds in it.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+    </ul>
+    <!-- 리뷰상세3 -->
+    <ul class="reviewDetails">
+        <li>
+            <dl>
+                <dt>ReeRee</dt>
+                <dd>Brighton, MI</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2022-05">· a month ago </time>
+                </span>
+                <h3>
+                    Just right!
+                </h3>
+                <blockquote>
+                    I've been searching for healthy flakes that have a touch of sweetness and a little crunch! Special K Vanilla Almond is PERFECT! I prefer flakes having stay firm as 
+                    you work your way through the bowl. The almonds add a wonderful taste on top!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark>YES</mark>
+                    <mark class="activate">NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Susie</dt>
+                <dd>Cincinnati OH</dd>
+            </dl>
+            <div>
+                <span class="countingStar star4">
+                    <time datetime="2021">· a year ago </time>
+                </span>
+                <h3>
+                    Love the almond slivers!
+                </h3>
+                <blockquote>
+                    I'm partial to Kellogg's Special K; like to mix it up with the various choices. Kellogg's Special K Vanilla Almond fits nicely with the almond slivers for crunch, and the 
+                    vanilla is just right - not too strong, not too weak. MMMmmmm.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Chris</dt>
+                <dd>Independence, KY</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2022-03">· 3 months ago </time>
+                </span>
+                <h3>
+                    Almost every morning
+                </h3>
+                <blockquote>
+                    I really do eat this almost every morning. It is just sweet enough to feel like an indulgence, but not too sweet so that it gets overwhelming. The almonds add a really 
+                    nice contrast to the flakes. This is one of my favorite cereals.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Cricket</dt>
+                <dd>New York</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Delicious!
+                </h3>
+                <blockquote>
+                    Special K Vanilla Almond Cereal has become one of our favorites. It has a wonderful vanilla taste that is not overpowering or too sweet. With the crunch of the 
+                    flakes and almonds it a perfect cereal.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>Jody</dt>
+                <dd>Holiday, FL</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2021">· a year ago </time>
+                </span>
+                <h3>
+                    Always delicious and fresh
+                </h3>
+                <blockquote>
+                    Since I started buying Special K with almonds, I have a hard time buying anything else. It is always fresh, delicious, crispy and satisfying! It's like dessert for 
+                    breakfast every time! Love it!!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>giraffe</dt>
+                <dd>Des Moines IA</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago</time>
+                </span>
+                <h3>
+                    Great Snack
+                </h3>
+                <blockquote>
+                    I buy this regularly and use it for snacking as well as cereal. I also use it for coating on fish. I find the flakes too big for me, so I crush them somewhat for snacking 
+                    and more so for coating.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>smiller</dt>
+                <dd>Allentown, PA</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Excellent Taste
+                </h3>
+                <blockquote>
+                    The Vanilla Almond Special K is my go to in the morning and keeps me energized. It's so good that my 2 year old son stole some of mine and now he eats it every 
+                    now and then for his breakfast too!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>iamafoodie</dt>
+                <dd></dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Dee-lish!
+                </h3>
+                <blockquote>
+                    I eat cereal as a dessert, so love all the almonds in this cereal. I hope Kellogg's does not make any changes to this, as it's perfect! When this goes on sale, we'd get 
+                    at least 4 boxes of this!
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>DLM</dt>
+                <dd>West Palm Beach, FL</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Sweet
+                </h3>
+                <blockquote>
+                    The flakes are too big and the cereal is way too sweet. I prefer the small and airy round Special K from the 1970’s to the new harder and larger flakes. The Original 
+                    now is not a real original.
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+        <li>
+            <dl>
+                <dt>CraftyGreek</dt>
+                <dd>Fresno, California</dd>
+            </dl>
+            <div>
+                <span class="countingStar star5">
+                    <time datetime="2020">· 2 years ago </time>
+                </span>
+                <h3>
+                    Loads of Almonds
+                </h3>
+                <blockquote>
+                    This cereal is great if you like a lot of almonds in your bowl...after the cereal was gone and what looked like just the milk left, there was hoards of almonds chillin at 
+                    the bottom of my bowl
+                </blockquote>
+            </div>
+            <form>
+                <fieldset>
+                    <legend>
+                        Recommands this product
+                    </legend>
+                    <mark class="activate">YES</mark>
+                    <mark>NO</mark>
+                    <span>helpful?</span>
+                    <button>YES · 0</button>
+                    <button>NO · 0</button>
+                </fieldset>
+            </form>
+        </li>
+    </ul>    
+
+    <!-- 컨트롤러 -->
+    <div class="reviewControler activated">
+        1 / 3
+        <a href="#" class="prevPage">prevPage</a>
+        <a href="#" class="nextPage">nextPage</a>
+        <!-- 
+            <button enabled></button>
+            <button disabled></button>
+         -->
+    </div>
+
+    <footer>
+        <div>
+            <div>
+                <h2>GET SUPPORT</h2>
+                <ul>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>KELLOGG'S FAMILY REWARDS</h2>
+                <ul>
+                    <li><a href="whyJoin.html" target="_blank">Why Join?</a></li>
+                    <li><a href="joinNow.html" target="_blank">Join Now</a></li>
+                    <li><a href="logIn.html" target="_blank">Log In</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>CONNECT WITH US</h2>
+                <ul>            
+                    <li><a href="https://www.facebook.com/KelloggsLatinoamerica/"><img src="images/icon_facebook.png" alt="facebook"></a></li>
+                    <li><a href="https://twitter.com/kelloggcompany"><img src="images/icon_twitter.png" alt="twitter"></a></li>
+                    <li><a href="https://www.pinterest.co.kr/kelloggs/_created/"><img src="images/icon_pinterest.png" alt="pinterest"></a></li>
+                    <li><a href="https://www.youtube.com/user/KelloggCompany"><img src="images/icon_youtube.png" alt="youtube"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.kelloggcompany.com/en_US/privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="https://www.kelloggcompany.com/en_US/legal.html">Terms Of Use</a></li>
+                <li><a href="https://www.privacy.kelloggcompany.com/us/homepage.html">California Consumer Rights</a></li>
+            </ul>
+            <p>
+                ®Kellogg's Company 2022
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
