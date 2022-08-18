@@ -19,7 +19,6 @@ button{
     background-color: transparent;
 }
 
-/* ! fna 부분 코드 전체수정 */
 
 
 @media screen and (min-width: 280px){
@@ -138,7 +137,6 @@ button{
 
     header .fnbPanel ol{
         padding-top: 180px;
-        /* max-width: 768%; */
         list-style: decimal-leading-zero outside;
     } 
 
@@ -397,7 +395,7 @@ button{
     }
     * > .graph5{
         background:url('../images/icon_redStarBig.png') no-repeat center top 30% , 
-        url('../images/starGraph_5.png') center 210px / 211px repeat; height: 210px;
+        url('../images/starGraph_5.png') center / contain no-repeat; height: 210px;
     }
     * > .graph4{
         background:url('../images/icon_redStarBig.png') no-repeat center top 30% , 
@@ -534,7 +532,7 @@ button{
     }
 
     [id ^= 'popupPlanet'] div figure figcaption p{
-        font-size: 12px; line-height: 18px; color: #999999; line-height: 20px;
+        font-size: 12px; line-height: 18px; color: #999999;
     }
 
     [id ^= 'popupPlanet'] div figure figcaption p:not(:last-child){
@@ -1042,11 +1040,11 @@ button{
     header .fnbPanel input[type='button']{
         width: 30px; height: 30px; text-indent: -9999px; border: none; margin-top: 80px;
         background: url('../images/icon_fnb_close.png') no-repeat center; float: right; cursor: pointer;
+        position: static;
     }
 
     header .fnbPanel ol{
         padding-top: 205px;
-        /* max-width: 768%; */
         max-width: 90%;
         list-style: decimal-leading-zero outside;
         position: relative;
@@ -1386,7 +1384,7 @@ button{
     /* our Foods 리스트_팝업 */
     
     [id ^= 'popupRecipes'] > div{
-        background-color: white; max-width: 680px; width: 100%;  height: 95%;
+        background-color: white; max-width: 680px; width: 100%;  max-height: 95%;
         margin: 0 auto; border-radius: 10px; padding: 40px 2%; box-sizing: border-box;
         position: relative; overflow-y: scroll;
     } 
@@ -1414,7 +1412,7 @@ button{
     }
 
     [id ^= 'popupRecipes'] div figure figcaption div{
-        padding-top: 10px; margin-bottom: 25px;
+        padding-top: 10px; margin-bottom: 25px; text-align: left;
     }
 
     [id ^= 'popupRecipes'] div figure figcaption div .btnPrint[type='button']{
@@ -1448,7 +1446,7 @@ button{
 
     /* our impact 리스트_팝업 */
     [id ^= 'popupPlanet'] > div{
-        background-color: white; max-width: 680px; width: 100%;  height: 95%;
+        background-color: white; max-width: 680px; width: 100%;  max-height: 95%;
         margin: 0 auto; border-radius: 10px; padding: 50px 2%; box-sizing: border-box;
         position: relative;
         overflow-y: scroll;
@@ -1465,15 +1463,15 @@ button{
 
 
     [id ^= 'popupPlanet'] div figure figcaption h2{
-        font-size:  32px; font-weight: 900; margin-bottom: 10px;
+        font-size:  32px; font-weight: 900; margin-bottom: 20px;
     }
 
     [id ^= 'popupPlanet'] div figure figcaption p{
-        font-size: 15px; line-height: 23px; color: #999999; line-height: 20px;
+        font-size: 15px; line-height: 23px; color: #999999;
     }
 
     [id ^= 'popupPlanet'] div figure figcaption p:not(:last-child){
-        margin-bottom: 10px;
+        margin-bottom: 25px;
     }
 
     [id ^= 'popupPlanet'] div figure figcaption p strong{
@@ -1483,7 +1481,7 @@ button{
     /* 디테일 팝업 */
    
     #popupReview > div{
-        background-color: white; max-width: 680px; width: 100%; height: 95%;
+        background-color: white; max-width: 680px; width: 100%; max-height: 95%;
         margin: 0 auto; border-radius: 10px; padding: 35px 2%; box-sizing: border-box;
         position: relative; overflow-y: scroll;
     }
@@ -1955,6 +1953,7 @@ button{
     header .fnbPanel input[type='button']{
         width: 30px; height: 30px; text-indent: -9999px; border: none; margin-top: 80px;
         background: url('../images/icon_fnb_close.png') no-repeat center; float: right; cursor: pointer;
+        position: static;
     }
 
     header .fnbPanel ol{
@@ -2319,7 +2318,7 @@ button{
     }
 
     [id ^= 'popupRecipes'] div figure figcaption div{
-        padding-top: 10px; margin-bottom: 25px;
+        padding-top: 10px; margin-bottom: 25px; text-align: left;
     }
 
     [id ^= 'popupRecipes'] div figure figcaption div .btnPrint[type='button']{
@@ -2373,7 +2372,7 @@ button{
     }
 
     [id ^= 'popupPlanet'] div figure figcaption p{
-        font-size: 15px; line-height: 23px; color: #999999; line-height: 20px;
+        font-size: 15px; line-height: 23px; color: #999999;
     }
 
     [id ^= 'popupPlanet'] div figure figcaption p:not(:last-child){

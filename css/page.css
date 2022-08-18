@@ -17,7 +17,9 @@
     * > label , * > button ,
     [id ^= 'popupRecipes'] div ol , 
     input[type='button'] , input[type='submit'] ,
-    .impactNewsContainer .newsDetails .newsDetailList ul , * > figcaption
+    .impactNewsContainer .newsDetails .newsDetailList ul , * > figcaption , address ,blockquote,
+    fieldset > mark , .impactNewsContainer .newsDetails ul li , .whoWeAreContainer .ourLatestNews div ul li time ,
+    .historyContainer [id ^= 'historyPanel'] ol li mark
     {
         font-family: 'Roboto';
     }
@@ -298,7 +300,7 @@
             width: 100%;
         }
         .listContainer .lastContent ul li strong{
-            display: block; font-size: 18px; font-weight: 900; padding: 2% 0 1.5%;
+            display: block; font-size: 18px; font-weight: 900; padding: 10px 0 6px;
         }
         .listContainer .lastContent ul li small{
             font-size: 12px; color: #bfbfbf;
@@ -723,13 +725,11 @@
             display: inline-block; margin-bottom: 25px;
         }
     
-        .impactNewsContainer .newsDetails .newsDetailList ul ,
-        .impactNewsContainer .newsDetails > ul{
+        .impactNewsContainer .newsDetails ul{
             list-style-position: inside; 
         }
     
-        .impactNewsContainer .newsDetails .newsDetailList ul li ,
-        .impactNewsContainer .newsDetails > ul li{
+        .impactNewsContainer .newsDetails ul li{
             list-style-type: '• ';
         }
     
@@ -1389,7 +1389,7 @@
     
         .signinBTN > a{
             display: inline-block; color: white;
-            width: 100%; line-height: 50px; text-align: center; font-size: 18px; font-weight: 900;
+            width: 100%; line-height: 40px; text-align: center; font-size: 18px; font-weight: 900;
             border-radius: 35px; 
         }
     
@@ -1710,11 +1710,15 @@
         margin-left: 2%;
     }
 
+    .listContainer .lastContent ul li:not(:last-child){
+        margin-bottom: 0;
+    }
+
     .listContainer .lastContent ul li a img{
         width: 100%;
     }
     .listContainer .lastContent ul li strong{
-        display: block; font-size: 22px; font-weight: 900; padding: 2% 0 1.5%;
+        display: block; font-size: 22px; font-weight: 900; padding: 12px 0 10px;
     }
     .listContainer .lastContent ul li small{
         font-size: 16px; color: #bfbfbf;
@@ -1800,7 +1804,7 @@
     }
 
     .productInformation .detailContainer div div .selectComponent select{
-        width: 465px;
+        width: 40%;
     }
 
     .productInformation .detailContainer div div a{
@@ -2150,13 +2154,11 @@
         display: inline-block; margin-bottom: 40px;
     }
 
-    .impactNewsContainer .newsDetails .newsDetailList ul ,
-    .impactNewsContainer .newsDetails > ul{
+    .impactNewsContainer .newsDetails ul{
         list-style-position: inside; 
     }
 
-    .impactNewsContainer .newsDetails .newsDetailList ul li ,
-    .impactNewsContainer .newsDetails > ul li{
+    .impactNewsContainer .newsDetails ul li{
         list-style-type: '• ';
     }
 
@@ -2532,6 +2534,7 @@
         background: url('../images/icon_mail.png') no-repeat left;
         color: #4d4d4d; font-size: 18px; font-weight: 700; 
         padding-left: 52px; line-height: 40px; font-style: normal;
+        height: 40px;
     }
 
     .contactUs div div:first-of-type small{
@@ -3188,12 +3191,15 @@
         width: 34%; 
     }
 
+    .listContainer .lastContent ul li:not(:last-child){
+        margin-bottom: 0;
+    }
 
     .listContainer .lastContent ul li a img{
         width: 100%;
     }
     .listContainer .lastContent ul li strong{
-        display: block; font-size: 22px; font-weight: 900; padding: 2% 0 1.5%;
+        display: block; font-size: 22px; font-weight: 900; padding: 12px 0 10px;
     }
     .listContainer .lastContent ul li small{
         font-size: 16px; color: #bfbfbf;
@@ -3288,6 +3294,7 @@
 
     .productInformation .detailContainer div div a{
         font-size: 18px; font-weight: 600; line-height: 50px; padding: 0 28px;
+        display: inline-block;
     }
     
     .productInformation .detailContainer div div a:first-of-type{
@@ -3652,13 +3659,11 @@
         display: inline-block; margin-bottom: 40px;
     }
 
-    .impactNewsContainer .newsDetails .newsDetailList ul ,
-    .impactNewsContainer .newsDetails > ul{
+    .impactNewsContainer .newsDetails ul{
         list-style-position: inside; 
     }
 
-    .impactNewsContainer .newsDetails .newsDetailList ul li ,
-    .impactNewsContainer .newsDetails > ul li{
+    .impactNewsContainer .newsDetails ul li{
         list-style-type: '• ';
     }
 
@@ -4057,6 +4062,7 @@
         background: url('../images/icon_mail.png') no-repeat left;
         color: #4d4d4d; font-size: 18px; font-weight: 700;
         padding-left: 52px; line-height: 40px; font-style: normal;
+        height: 40px;
     }
 
     .contactUs div div:first-of-type small{
