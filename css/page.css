@@ -19,7 +19,7 @@
     input[type='button'] , input[type='submit'] ,
     .impactNewsContainer .newsDetails .newsDetailList ul , * > figcaption , address ,blockquote,
     fieldset > mark , .impactNewsContainer .newsDetails ul li , .whoWeAreContainer .ourLatestNews div ul li time ,
-    .historyContainer [id ^= 'historyPanel'] ol li mark
+    .historyContainer [id ^= 'historyPanel'] ol li mark , #popupReview div .writeContainer form fieldset ul li .starCount mark
     {
         font-family: 'Roboto';
     }
@@ -2641,7 +2641,10 @@
         font-size: 25px; font-weight: 500; line-height: 32px;
         display: block;
         background: url('../images/icon_faqOpen.png') no-repeat right;
-        background-size: 20px;
+        background-size: 20px;        
+        white-space: normal;
+        text-overflow: clip;
+        overflow-x: visible;
     }
     
     .faqMenu ol > li{
@@ -4169,7 +4172,10 @@
         font-size: 25px; font-weight: 500; line-height: 32px;
         display: block;
         background: url('../images/icon_faqOpen.png') no-repeat right;
-        background-size: 20px;
+        background-size: 20px; 
+        white-space: normal;
+        text-overflow: clip;
+        overflow-x: visible;
     }
     
     .faqMenu ol > li{

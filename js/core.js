@@ -81,10 +81,12 @@ $(document).ready(function(){
 
     function mainSlider(){
         $('.mainSlider').bxSlider({
-            mode: 'horizontal' ,
-            startSlide: 0,
+            mode: 'horizontal',
             hideControlOnEnd: false,
-            controls: true,            
+            controls: true,
+            touchEnabled: false,
+            auto: true
+
         });
     };
     function videoSlider(){
